@@ -196,6 +196,35 @@
     .about-grid{grid-template-columns:1fr;}
     nav.links{display:none;}
   }
+
+  /* CONTACT */
+  .contact-section{background:var(--bg-alt);border-top:1px solid var(--card-border);border-bottom:1px solid var(--card-border);}
+  .contact-section .sec-head{max-width:640px;margin:0 auto 44px;text-align:center;}
+  .contact-section .eyebrow{justify-content:center;}
+  .contact-section .divider{margin:18px auto 0;}
+  .contact-card{
+    max-width:640px;margin:0 auto;
+    background:var(--card);border:1px solid var(--card-border);
+    border-radius:4px;padding:40px 36px;
+  }
+  .contact-form{display:flex;flex-direction:column;gap:20px;}
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+  .contact-form label{display:flex;flex-direction:column;gap:8px;font-family:'Cinzel',serif;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);}
+  .contact-form input,.contact-form textarea{
+    font-family:'EB Garamond',serif;font-size:16px;color:var(--text);
+    background:var(--bg);border:1px solid var(--card-border);border-radius:2px;
+    padding:12px 14px;resize:vertical;
+  }
+  .contact-form input:focus,.contact-form textarea:focus{outline:none;border-color:var(--gold);}
+  .contact-form button{align-self:flex-start;cursor:pointer;}
+  .contact-form button:disabled{opacity:.6;cursor:default;}
+  .form-status{font-size:14px;min-height:20px;}
+  .form-status.ok{color:#9fd39f;}
+  .form-status.err{color:#e18f8f;}
+  @media (max-width:600px){
+    .form-row{grid-template-columns:1fr;}
+    .contact-card{padding:30px 22px;}
+  }
 </style>
 <script type="application/ld+json">
 {
@@ -554,7 +583,38 @@
   </div>
 </section>
 
-<footer id="contato">
+<section class="contact-section" id="contato">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Fale Comigo</div>
+      <h2>Envie sua Mensagem</h2>
+      <div class="divider"></div>
+      <p>Dúvidas, parcerias ou só quer comentar sobre alguma obra? Escreva abaixo.</p>
+    </div>
+    <div class="contact-card">
+      <form id="contact-form" class="contact-form">
+        <div class="form-row">
+          <label>Nome
+            <input type="text" name="nome" required>
+          </label>
+          <label>Email
+            <input type="email" name="email" required>
+          </label>
+        </div>
+        <label>Assunto
+          <input type="text" name="assunto" required>
+        </label>
+        <label>Mensagem
+          <textarea name="mensagem" rows="5" required></textarea>
+        </label>
+        <button type="submit" class="btn solid">Enviar Mensagem</button>
+        <p class="form-status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
   <div class="wrap footer-grid">
     <div>
       <div class="brand">DOMENICO <span>FALCO</span></div>
@@ -569,5 +629,42 @@
   </div>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+<script>
+  (function(){
+    var sb = supabase.createClient(
+      'https://nxyfrctnavkleusiuvsp.supabase.co',
+      'sb_publishable_Pu5RG0UsGTg447l5u7AnvQ_ostSUQ3J'
+    );
+    var form = document.getElementById('contact-form');
+    var status = form.querySelector('.form-status');
+    var button = form.querySelector('button');
+
+    form.addEventListener('submit', async function(e){
+      e.preventDefault();
+      button.disabled = true;
+      status.textContent = 'Enviando...';
+      status.className = 'form-status';
+
+      var fd = new FormData(form);
+      var { error } = await sb.from('contact_messages').insert({
+        nome: fd.get('nome'),
+        email: fd.get('email'),
+        assunto: fd.get('assunto'),
+        mensagem: fd.get('mensagem')
+      });
+
+      button.disabled = false;
+      if (error) {
+        status.textContent = 'Não foi possível enviar agora. Tente novamente em instantes.';
+        status.className = 'form-status err';
+      } else {
+        status.textContent = 'Mensagem enviada! Obrigado pelo contato.';
+        status.className = 'form-status ok';
+        form.reset();
+      }
+    });
+  })();
+</script>
 </body>
 </html>
