@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MLBYLVG60B"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MLBYLVG60B');
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Domenico Falco — Autor de Ficção Histórica</title>
@@ -75,12 +84,20 @@
   .nav-inner{
     max-width:1180px;margin:0 auto;padding:16px 28px;
     display:flex;align-items:center;justify-content:space-between;
+    gap:16px;flex-wrap:wrap;
   }
   .brand{
     font-family:'Cinzel',serif;font-weight:700;font-size:19px;
     letter-spacing:.12em;color:var(--text);
   }
   .brand span{color:var(--gold);}
+  .brand-lockup{display:flex;align-items:center;gap:10px;}
+  .brand-mark{width:34px;height:34px;flex-shrink:0;display:block;}
+  @media (max-width:480px){
+    .brand-lockup{gap:7px;}
+    .brand-mark{width:26px;height:26px;}
+    .nav-inner{gap:10px;row-gap:12px;}
+  }
   nav.links{display:flex;gap:32px;align-items:center;}
   nav.links a{font-size:15px;letter-spacing:.04em;color:var(--text-muted);transition:color .2s;}
   nav.links a:hover{color:var(--gold-bright);}
@@ -272,7 +289,7 @@
         "name": "Domenico Falco"
       },
       "genre": "Ficção Histórica",
-      "description": "Reims, 1900. Em busca de independência, Joana mergulha no mundo glamoroso e perigoso dos cabarés parisienses. Sua transformação em mulher forte e influente a leva, anos depois, a emigrar para o Brasil, fugindo dos horrores da Primeira Guerra Mundial.",
+      "description": "A história da irreverente Joana — seus familiares, amores e aventuras — durante a primeira metade do século XX, entre a França e o Brasil.",
       "url": "https://www.livrosdofalco.com.br/#joana",
       "inLanguage": "pt-BR"
     },
@@ -284,7 +301,7 @@
         "name": "Domenico Falco"
       },
       "genre": "Ficção Histórica",
-      "description": "Nascido no porto de Londres, John Storm se torna marinheiro, corsário e pirata em uma epopeia que atravessa tempestades e batalhas navais — até buscar refúgio no interior da China pela Rota da Seda.",
+      "description": "As aventuras de um corsário inglês que se torna pirata durante o século XVIII, percorrendo os principais oceanos da Terra.",
       "url": "https://www.livrosdofalco.com.br/#mestre-das-tormentas",
       "inLanguage": "pt-BR"
     },
@@ -296,7 +313,7 @@
         "name": "Domenico Falco"
       },
       "genre": "Ficção Histórica",
-      "description": "Sob o céu poeirento de um faroeste sem lei, uma sombra atravessa a poeira em busca de justiça. Uma trama que expõe as feridas do preconceito e do ódio através de uma vingança implacável.",
+      "description": "O sofrimento e a luta de um homem escravizado desde o nascimento para vencer o preconceito e o ódio impostos à sua condição humana — em meados do século XIX, entre a África e os Estados Unidos.",
       "url": "https://www.livrosdofalco.com.br/#sangue-frio",
       "inLanguage": "pt-BR"
     },
@@ -308,7 +325,7 @@
         "name": "Domenico Falco"
       },
       "genre": "Ficção Histórica",
-      "description": "Entre a arena do Coliseu e a fúria do Vesúvio, Julius mergulha no esplendor e na brutalidade de Roma antiga — corridas de biga, poder imperial e a fragilidade de tudo o que parece eterno.",
+      "description": "Um romano nascido na mesma época de Jesus (Yeshua), que tem sua vida transformada pelo legado do Nazareno.",
       "url": "https://www.livrosdofalco.com.br/#julius",
       "inLanguage": "pt-BR"
     },
@@ -332,7 +349,7 @@
         "name": "Domenico Falco"
       },
       "genre": "Ficção Histórica",
-      "description": "Sob o sol nascente do Japão tradicional, entre katanas e casas de gueixas, uma trama de injustiça desperta um ciclo de vingança que atravessa gerações.",
+      "description": "Uma família que, apesar de sofrer uma grande injustiça, consegue se reerguer aproveitando oportunidades inesperadas que a vida lhe oferece — um romance ambientado no Japão feudal.",
       "url": "https://www.livrosdofalco.com.br/#a-casa-dos-prazeres",
       "inLanguage": "pt-BR"
     },
@@ -356,7 +373,7 @@
         "name": "Domenico Falco"
       },
       "genre": "Ficção Histórica",
-      "description": "Um jovem soldado italiano, farda e bengala em punho, carrega o peso da história do seu país em uma narrativa sobre identidade, honra e pertencimento.",
+      "description": "A história de uma família de italianos em busca de melhores condições de vida na América do Norte e do Sul — uma ficção baseada em fatos reais que atravessa todo o século XX até o início do XXI, retratando os principais eventos históricos do período.",
       "url": "https://www.livrosdofalco.com.br/#os-italianos",
       "inLanguage": "pt-BR"
     },
@@ -368,7 +385,7 @@
         "name": "Domenico Falco"
       },
       "genre": "Ficção Histórica",
-      "description": "Do Ártico às savanas africanas, das montanhas dos Andes às ruínas de civilizações perdidas — uma jornada por continentes em busca de descoberta e mistério.",
+      "description": "A história de um jovem inglês do século XIX, apaixonado por aventuras e ávido por conhecer o mundo.",
       "url": "https://www.livrosdofalco.com.br/#o-explorador",
       "inLanguage": "pt-BR"
     },
@@ -380,7 +397,7 @@
         "name": "Domenico Falco"
       },
       "genre": "Ficção Histórica",
-      "description": "Entre sacas de açúcar e velas ao vento, a história de Mariana e José Inácio atravessa o Atlântico no tempo das grandes navegações, onde comércio, destino e amor se cruzam.",
+      "description": "As aventuras de um casal de portugueses que desembarca no Brasil colonial do século XVI para implantar engenhos e explorar as riquezas geradas pela cana-de-açúcar.",
       "url": "https://www.livrosdofalco.com.br/#mariana-e-jose-inacio",
       "inLanguage": "pt-BR"
     },
@@ -392,8 +409,161 @@
         "name": "Domenico Falco"
       },
       "genre": "Ficção Histórica",
-      "description": "Cruzados avançam sob estandartes sagrados em uma imersão nos mistérios, na fé guerreira e nos segredos guardados pela Ordem do Templo em \"tempos misteriosos\".",
+      "description": "Dois cavaleiros templários vivem aventuras na Terra Santa e na Europa em busca do Santo Graal.",
       "url": "https://www.livrosdofalco.com.br/#os-templarios",
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "Book",
+      "name": "Os Dois Irmãos",
+      "author": { "@type": "Person", "name": "Domenico Falco" },
+      "genre": "Ficção Histórica",
+      "description": "Na Campagna dos anos 1860, dois irmãos italianos atravessam provações que testam os laços de sangue — uma história densa e imprevisível sobre redenção e superação.",
+      "url": "https://www.livrosdofalco.com.br/#os-dois-irmaos",
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "Book",
+      "name": "O Tesouro Maldito",
+      "author": { "@type": "Person", "name": "Domenico Falco" },
+      "genre": "Ficção Histórica",
+      "description": "No início do século XVI, o capitão Diego García rouba um tesouro asteca e foge amaldiçoado pelos mares do Caribe, enquanto uma criatura misteriosa começa a rondar seu navio.",
+      "url": "https://www.livrosdofalco.com.br/#o-tesouro-maldito",
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "Book",
+      "name": "A Indústria do Vício",
+      "author": { "@type": "Person", "name": "Domenico Falco" },
+      "genre": "Ficção Histórica",
+      "description": "Durante a Lei Seca americana, o capo Don Domenico e seu conselheiro Vince constroem um império à sombra da lei nas ruas de Nova Iorque e Atlantic City.",
+      "url": "https://www.livrosdofalco.com.br/#a-industria-do-vicio",
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "Book",
+      "name": "O Siciliano",
+      "author": { "@type": "Person", "name": "Domenico Falco" },
+      "genre": "Ficção Histórica",
+      "description": "Obrigado a deixar a Sicília após uma disputa de terras, Matteo reconstrói sua vida como imigrante no Rio de Janeiro e em São Paulo, nas primeiras décadas do século XX.",
+      "url": "https://www.livrosdofalco.com.br/#o-siciliano",
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "Book",
+      "name": "O Explorador: Em Busca do Desconhecido",
+      "author": { "@type": "Person", "name": "Domenico Falco" },
+      "genre": "Ficção Histórica",
+      "description": "Resgatado à deriva perto da Antártida e sem memória, o explorador James encontra em Luna, uma cientista argentina, o caminho para novas aventuras em Galápagos e na Amazônia Andina.",
+      "url": "https://www.livrosdofalco.com.br/#o-explorador-desconhecido",
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "Book",
+      "name": "A Teia",
+      "author": { "@type": "Person", "name": "Domenico Falco" },
+      "genre": "Drama Contemporâneo",
+      "description": "Nascidos na mesma favela carioca, Joca se torna um criminoso poderoso e Helena, promotora pública decidida a desmontar seu império — até seus caminhos se cruzarem de novo.",
+      "url": "https://www.livrosdofalco.com.br/#a-teia",
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "Book",
+      "name": "O Asilo",
+      "author": { "@type": "Person", "name": "Domenico Falco" },
+      "genre": "Ficção Histórica",
+      "description": "Em um asilo nos arredores do Rio de Janeiro, em meados do século XX, moradores idosos e enfermos dividem histórias de vida, perda e companheirismo.",
+      "url": "https://www.livrosdofalco.com.br/#o-asilo",
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "Book",
+      "name": "A Viagem",
+      "author": { "@type": "Person", "name": "Domenico Falco" },
+      "genre": "Drama Contemporâneo",
+      "description": "A bordo do iate de luxo Aurora, três casais jovens e ricos navegam pelo Mediterrâneo — até que o confinamento e o imprevisível coloquem suas crenças e destinos em xeque.",
+      "url": "https://www.livrosdofalco.com.br/#a-viagem",
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "Book",
+      "name": "Amor e Ódio",
+      "author": { "@type": "Person", "name": "Domenico Falco" },
+      "genre": "Ficção Histórica",
+      "description": "Entre a Guerra Civil Espanhola e a Segunda Guerra Mundial, um triângulo amoroso se transforma em traições e crimes passionais e políticos, revelando personalidades tão ambíguas quanto a própria guerra.",
+      "url": "https://www.livrosdofalco.com.br/#amor-e-odio",
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "Book",
+      "name": "A Vila",
+      "author": { "@type": "Person", "name": "Domenico Falco" },
+      "genre": "Ficção Histórica",
+      "description": "Numa aldeia de pescadores de sardinhas na Grécia do início do século XX, Athena, Andreas e seus quatro filhos vivem um drama familiar de amor, paixão e tragédia.",
+      "url": "https://www.livrosdofalco.com.br/#a-vila",
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "Book",
+      "name": "Destinos Cruzados",
+      "author": { "@type": "Person", "name": "Domenico Falco" },
+      "genre": "Ficção Histórica",
+      "description": "Uma inglesa, um chinês e um indiano — três jovens amigos cujas vidas são moldadas pelos grandes acontecimentos históricos das décadas de 1940 e 1950.",
+      "url": "https://www.livrosdofalco.com.br/#destinos-cruzados",
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "Book",
+      "name": "Destinos Cruzados: Parte 2",
+      "author": { "@type": "Person", "name": "Domenico Falco" },
+      "genre": "Ficção Histórica",
+      "description": "Já agente do MI6, o jovem William parte para a Hong Kong dos anos 1960 em busca de sua mãe desaparecida — uma missão que mistura espionagem e história pessoal.",
+      "url": "https://www.livrosdofalco.com.br/#destinos-cruzados-parte-2",
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "Book",
+      "name": "O Que Eu Lembro Deles",
+      "author": { "@type": "Person", "name": "Domenico Falco" },
+      "genre": "Ficção Histórica",
+      "description": "Kilian e Eileen se apaixonam em Belfast durante os anos mais duros dos conflitos entre católicos e protestantes — um drama sobre amor, tradição e as escolhas que moldam um destino.",
+      "url": "https://www.livrosdofalco.com.br/#o-que-eu-lembro-deles",
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "Book",
+      "name": "Os Refugiados",
+      "author": { "@type": "Person", "name": "Domenico Falco" },
+      "genre": "Drama Contemporâneo",
+      "description": "Contada pelos próprios personagens, esta é a história de uma família síria de classe média que atravessa a guerra civil e se torna símbolo de resiliência e esperança.",
+      "url": "https://www.livrosdofalco.com.br/#os-refugiados",
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "Book",
+      "name": "O Reino",
+      "author": { "@type": "Person", "name": "Domenico Falco" },
+      "genre": "Ficção",
+      "description": "Homens poderosos, dispostos a tudo para alcançar o que desejam — inclusive viver para sempre.",
+      "url": "https://www.livrosdofalco.com.br/#o-reino",
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "Book",
+      "name": "Um Lugar ao Sol",
+      "author": { "@type": "Person", "name": "Domenico Falco" },
+      "genre": "Ficção Histórica",
+      "description": "Cinco alunos de um instituto de artes cênicas em Nova Iorque atravessam as grandes transformações culturais das décadas de 1960 e 1970, incluindo a Guerra do Vietnã.",
+      "url": "https://www.livrosdofalco.com.br/#um-lugar-ao-sol",
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "Book",
+      "name": "Reflexões Sobre a Vida",
+      "author": { "@type": "Person", "name": "Domenico Falco" },
+      "genre": "Ensaio (exceção no catálogo)",
+      "description": "Reflexões e pensamentos sobre a vida — e também sobre os tempos vividos durante a pandemia.",
+      "url": "https://www.livrosdofalco.com.br/#reflexoes-sobre-a-vida",
       "inLanguage": "pt-BR"
     }
   ]
@@ -404,7 +574,10 @@
 
 <header class="nav">
   <div class="nav-inner">
-    <div class="brand">DOMENICO <span>FALCO</span></div>
+    <a href="#" class="brand-lockup" aria-label="Domenico Falco — Início">
+      <img src="logo-mark.png" srcset="logo-mark.png 1x, logo-mark@2x.png 2x" alt="" width="34" height="34" class="brand-mark">
+      <div class="brand">DOMENICO <span>FALCO</span></div>
+    </a>
     <nav class="links">
       <a href="#sobre">Sobre o Autor</a>
       <a href="#obras">Obras</a>
@@ -450,7 +623,7 @@
       <div class="eyebrow">Catálogo</div>
       <h2>As Obras</h2>
       <div class="divider"></div>
-      <p>Doze romances, doze mundos — piratas, samurais, jesuítas, cruzados e sobreviventes atravessando a história.</p>
+      <p>Vinte e nove romances, vinte e nove mundos — piratas, samurais, jesuítas, cruzados e sobreviventes atravessando a história.</p>
     </div>
 
     <div class="books-grid">
@@ -461,7 +634,7 @@
           <div class="book-tag">Japão Imperial</div>
           <h3>Akira: O Senhor das Armas</h3>
           <p>No Japão em plena modernização após o fim do xogunato, o jovem Akira troca a vida simples na fazenda da avó pela disciplina do exército imperial. Ferido e condecorado como herói, reconstrói-se como um dos mais poderosos industriais do ramo de armamentos — "O Senhor das Armas".</p>
-          <a class="btn small" href="https://www.amazon.com.br/Livros-DOMENICO-FALCO/s?rh=n%3A6740748011%2Cp_27%3ADOMENICO%2BFALCO" target="_blank" rel="noopener">Comprar na Amazon</a>
+          <a class="btn small" href="https://link.amazon/B062ef4xG" target="_blank" rel="noopener">Comprar na Amazon</a>
         </div>
       </div>
 
@@ -470,8 +643,8 @@
         <div class="book-body">
           <div class="book-tag">Belle Époque</div>
           <h3>Joana: A Dama da Noite</h3>
-          <p>Reims, 1900. Em busca de independência, Joana mergulha no mundo glamoroso e perigoso dos cabarés parisienses. Sua transformação em mulher forte e influente a leva, anos depois, a emigrar para o Brasil, fugindo dos horrores da Primeira Guerra Mundial.</p>
-          <a class="btn small" href="https://www.amazon.com.br/Livros-DOMENICO-FALCO/s?rh=n%3A6740748011%2Cp_27%3ADOMENICO%2BFALCO" target="_blank" rel="noopener">Comprar na Amazon</a>
+          <p>A história da irreverente Joana — seus familiares, amores e aventuras — durante a primeira metade do século XX, entre a França e o Brasil.</p>
+          <a class="btn small" href="https://link.amazon/B08IDAJBy" target="_blank" rel="noopener">Comprar na Amazon</a>
         </div>
       </div>
 
@@ -480,8 +653,8 @@
         <div class="book-body">
           <div class="book-tag">Saga em 3 Livros</div>
           <h3>O Mestre das Tormentas</h3>
-          <p>Nascido no porto de Londres, John Storm se torna marinheiro, corsário e pirata em uma epopeia que atravessa tempestades e batalhas navais — até buscar refúgio no interior da China pela Rota da Seda.</p>
-          <a class="btn small" href="https://www.amazon.com.br/Livros-DOMENICO-FALCO/s?rh=n%3A6740748011%2Cp_27%3ADOMENICO%2BFALCO" target="_blank" rel="noopener">Comprar na Amazon</a>
+          <p>As aventuras de um corsário inglês que se torna pirata durante o século XVIII, percorrendo os principais oceanos da Terra.</p>
+          <a class="btn small" href="https://link.amazon/B01k8LazN" target="_blank" rel="noopener">Comprar na Amazon</a>
         </div>
       </div>
 
@@ -490,8 +663,8 @@
         <div class="book-body">
           <div class="book-tag">Faroeste</div>
           <h3>Sangue Frio</h3>
-          <p>Sob o céu poeirento de um faroeste sem lei, uma sombra atravessa a poeira em busca de justiça. Uma trama que expõe as feridas do preconceito e do ódio através de uma vingança implacável.</p>
-          <a class="btn small" href="https://www.amazon.com.br/Livros-DOMENICO-FALCO/s?rh=n%3A6740748011%2Cp_27%3ADOMENICO%2BFALCO" target="_blank" rel="noopener">Comprar na Amazon</a>
+          <p>O sofrimento e a luta de um homem escravizado desde o nascimento para vencer o preconceito e o ódio impostos à sua condição humana — em meados do século XIX, entre a África e os Estados Unidos.</p>
+          <a class="btn small" href="https://link.amazon/B06W7KyzS" target="_blank" rel="noopener">Comprar na Amazon</a>
         </div>
       </div>
 
@@ -500,8 +673,8 @@
         <div class="book-body">
           <div class="book-tag">Roma Antiga</div>
           <h3>Julius</h3>
-          <p>Entre a arena do Coliseu e a fúria do Vesúvio, Julius mergulha no esplendor e na brutalidade de Roma antiga — corridas de biga, poder imperial e a fragilidade de tudo o que parece eterno.</p>
-          <a class="btn small" href="https://www.amazon.com.br/Livros-DOMENICO-FALCO/s?rh=n%3A6740748011%2Cp_27%3ADOMENICO%2BFALCO" target="_blank" rel="noopener">Comprar na Amazon</a>
+          <p>Um romano nascido na mesma época de Jesus (Yeshua), que tem sua vida transformada pelo legado do Nazareno.</p>
+          <a class="btn small" href="https://link.amazon/B0gm2f63E" target="_blank" rel="noopener">Comprar na Amazon</a>
         </div>
       </div>
 
@@ -511,7 +684,7 @@
           <div class="book-tag">Fé & Mistério</div>
           <h3>O Jesuíta</h3>
           <p>Sob o capuz de um velho missionário pesa um passado de escolhas difíceis. Entre mapas antigos e ruínas de impérios, uma história sobre fé, culpa e os limites da devoção.</p>
-          <a class="btn small" href="https://www.amazon.com.br/Livros-DOMENICO-FALCO/s?rh=n%3A6740748011%2Cp_27%3ADOMENICO%2BFALCO" target="_blank" rel="noopener">Comprar na Amazon</a>
+          <a class="btn small" href="https://link.amazon/B0bjfPAhK" target="_blank" rel="noopener">Comprar na Amazon</a>
         </div>
       </div>
 
@@ -520,8 +693,8 @@
         <div class="book-body">
           <div class="book-tag">Japão Feudal</div>
           <h3>A Casa dos Prazeres</h3>
-          <p>Sob o sol nascente do Japão tradicional, entre katanas e casas de gueixas, uma trama de injustiça desperta um ciclo de vingança que atravessa gerações.</p>
-          <a class="btn small" href="https://www.amazon.com.br/Livros-DOMENICO-FALCO/s?rh=n%3A6740748011%2Cp_27%3ADOMENICO%2BFALCO" target="_blank" rel="noopener">Comprar na Amazon</a>
+          <p>Uma família que, apesar de sofrer uma grande injustiça, consegue se reerguer aproveitando oportunidades inesperadas que a vida lhe oferece — um romance ambientado no Japão feudal.</p>
+          <a class="btn small" href="https://link.amazon/B05HgVbe9" target="_blank" rel="noopener">Comprar na Amazon</a>
         </div>
       </div>
 
@@ -531,7 +704,7 @@
           <div class="book-tag">Ficção Científica</div>
           <h3>O Marciano</h3>
           <p>Um raro desvio da ficção histórica de Falco: sob um céu alienígena pairando sobre dunas avermelhadas, um conto especulativo sobre solidão, contato e o desconhecido.</p>
-          <a class="btn small" href="https://www.amazon.com.br/Livros-DOMENICO-FALCO/s?rh=n%3A6740748011%2Cp_27%3ADOMENICO%2BFALCO" target="_blank" rel="noopener">Comprar na Amazon</a>
+          <a class="btn small" href="https://link.amazon/B01MYHAbP" target="_blank" rel="noopener">Comprar na Amazon</a>
         </div>
       </div>
 
@@ -540,8 +713,8 @@
         <div class="book-body">
           <div class="book-tag">Entreguerras</div>
           <h3>Os Italianos</h3>
-          <p>Um jovem soldado italiano, farda e bengala em punho, carrega o peso da história do seu país em uma narrativa sobre identidade, honra e pertencimento.</p>
-          <a class="btn small" href="https://www.amazon.com.br/Livros-DOMENICO-FALCO/s?rh=n%3A6740748011%2Cp_27%3ADOMENICO%2BFALCO" target="_blank" rel="noopener">Comprar na Amazon</a>
+          <p>A história de uma família de italianos em busca de melhores condições de vida na América do Norte e do Sul — uma ficção baseada em fatos reais que atravessa todo o século XX até o início do XXI, retratando os principais eventos históricos do período.</p>
+          <a class="btn small" href="https://link.amazon/B0a17JfGu" target="_blank" rel="noopener">Comprar na Amazon</a>
         </div>
       </div>
 
@@ -550,8 +723,8 @@
         <div class="book-body">
           <div class="book-tag">Aventura</div>
           <h3>O Explorador</h3>
-          <p>Do Ártico às savanas africanas, das montanhas dos Andes às ruínas de civilizações perdidas — uma jornada por continentes em busca de descoberta e mistério.</p>
-          <a class="btn small" href="https://www.amazon.com.br/Livros-DOMENICO-FALCO/s?rh=n%3A6740748011%2Cp_27%3ADOMENICO%2BFALCO" target="_blank" rel="noopener">Comprar na Amazon</a>
+          <p>A história de um jovem inglês do século XIX, apaixonado por aventuras e ávido por conhecer o mundo.</p>
+          <a class="btn small" href="https://link.amazon/B03lGhsxT" target="_blank" rel="noopener">Comprar na Amazon</a>
         </div>
       </div>
 
@@ -560,8 +733,8 @@
         <div class="book-body">
           <div class="book-tag">Grandes Navegações</div>
           <h3>Mariana &amp; José Inácio</h3>
-          <p>Entre sacas de açúcar e velas ao vento, a história de Mariana e José Inácio atravessa o Atlântico no tempo das grandes navegações, onde comércio, destino e amor se cruzam.</p>
-          <a class="btn small" href="https://www.amazon.com.br/Livros-DOMENICO-FALCO/s?rh=n%3A6740748011%2Cp_27%3ADOMENICO%2BFALCO" target="_blank" rel="noopener">Comprar na Amazon</a>
+          <p>As aventuras de um casal de portugueses que desembarca no Brasil colonial do século XVI para implantar engenhos e explorar as riquezas geradas pela cana-de-açúcar.</p>
+          <a class="btn small" href="https://link.amazon/B0eEyJ9Zy" target="_blank" rel="noopener">Comprar na Amazon</a>
         </div>
       </div>
 
@@ -570,8 +743,178 @@
         <div class="book-body">
           <div class="book-tag">Cruzadas</div>
           <h3>Os Templarios</h3>
-          <p>Cruzados avançam sob estandartes sagrados em uma imersão nos mistérios, na fé guerreira e nos segredos guardados pela Ordem do Templo em "tempos misteriosos".</p>
-          <a class="btn small" href="https://www.amazon.com.br/Livros-DOMENICO-FALCO/s?rh=n%3A6740748011%2Cp_27%3ADOMENICO%2BFALCO" target="_blank" rel="noopener">Comprar na Amazon</a>
+          <p>Dois cavaleiros templários vivem aventuras na Terra Santa e na Europa em busca do Santo Graal.</p>
+          <a class="btn small" href="https://link.amazon/B0fxnejMl" target="_blank" rel="noopener">Comprar na Amazon</a>
+        </div>
+      </div>
+
+      <div class="book-card" id="os-dois-irmaos">
+        <div class="book-cover"><img src="covers/os-dois-irmaos.jpg" alt="Os Dois Irmãos"></div>
+        <div class="book-body">
+          <div class="book-tag">Itália, 1860</div>
+          <h3>Os Dois Irmãos</h3>
+          <p>Na Campagna dos anos 1860, dois irmãos italianos atravessam provações que testam os laços de sangue — uma história densa e imprevisível sobre redenção e superação.</p>
+          <a class="btn small" href="https://link.amazon/B099y4kAd" target="_blank" rel="noopener">Comprar na Amazon</a>
+        </div>
+      </div>
+
+      <div class="book-card" id="o-tesouro-maldito">
+        <div class="book-cover"><img src="covers/o-tesouro-maldito.jpg" alt="O Tesouro Maldito"></div>
+        <div class="book-body">
+          <div class="book-tag">Piratas &amp; Maldições</div>
+          <h3>O Tesouro Maldito</h3>
+          <p>No início do século XVI, o capitão Diego García rouba um tesouro asteca e foge amaldiçoado pelos mares do Caribe, enquanto uma criatura misteriosa começa a rondar seu navio.</p>
+          <a class="btn small" href="https://link.amazon/B079khqVa" target="_blank" rel="noopener">Comprar na Amazon</a>
+        </div>
+      </div>
+
+      <div class="book-card" id="a-industria-do-vicio">
+        <div class="book-cover"><img src="covers/a-industria-do-vicio.jpg" alt="A Indústria do Vício"></div>
+        <div class="book-body">
+          <div class="book-tag">Lei Seca</div>
+          <h3>A Indústria do Vício</h3>
+          <p>Durante a Lei Seca americana, o capo Don Domenico e seu conselheiro Vince constroem um império à sombra da lei nas ruas de Nova Iorque e Atlantic City.</p>
+          <a class="btn small" href="https://link.amazon/B09juTmUd" target="_blank" rel="noopener">Comprar na Amazon</a>
+        </div>
+      </div>
+
+      <div class="book-card" id="o-siciliano">
+        <div class="book-cover"><img src="covers/o-siciliano.jpg" alt="O Siciliano"></div>
+        <div class="book-body">
+          <div class="book-tag">Imigração Italiana</div>
+          <h3>O Siciliano</h3>
+          <p>Obrigado a deixar a Sicília após uma disputa de terras, Matteo reconstrói sua vida como imigrante no Rio de Janeiro e em São Paulo, nas primeiras décadas do século XX.</p>
+          <a class="btn small" href="https://link.amazon/B08t0ClRq" target="_blank" rel="noopener">Comprar na Amazon</a>
+        </div>
+      </div>
+
+      <div class="book-card" id="o-explorador-desconhecido">
+        <div class="book-cover"><img src="covers/o-explorador-desconhecido.jpg" alt="O Explorador: Em Busca do Desconhecido"></div>
+        <div class="book-body">
+          <div class="book-tag">Aventura</div>
+          <h3>O Explorador: Em Busca do Desconhecido</h3>
+          <p>Resgatado à deriva perto da Antártida e sem memória, o explorador James encontra em Luna, uma cientista argentina, o caminho para novas aventuras em Galápagos e na Amazônia Andina.</p>
+          <a class="btn small" href="https://link.amazon/B09nhHaLT" target="_blank" rel="noopener">Comprar na Amazon</a>
+        </div>
+      </div>
+
+      <div class="book-card" id="a-teia">
+        <div class="book-cover"><img src="covers/a-teia.jpg" alt="A Teia"></div>
+        <div class="book-body">
+          <div class="book-tag">Drama Urbano</div>
+          <h3>A Teia</h3>
+          <p>Nascidos na mesma favela carioca, Joca se torna um criminoso poderoso e Helena, promotora pública decidida a desmontar seu império — até seus caminhos se cruzarem de novo.</p>
+          <a class="btn small" href="https://link.amazon/B06lJ8s2p" target="_blank" rel="noopener">Comprar na Amazon</a>
+        </div>
+      </div>
+
+      <div class="book-card" id="o-asilo">
+        <div class="book-cover"><img src="covers/o-asilo.jpg" alt="O Asilo"></div>
+        <div class="book-body">
+          <div class="book-tag">Drama &amp; Memória</div>
+          <h3>O Asilo</h3>
+          <p>Em um asilo nos arredores do Rio de Janeiro, em meados do século XX, moradores idosos e enfermos dividem histórias de vida, perda e companheirismo.</p>
+          <a class="btn small" href="https://link.amazon/B08KUy5xA" target="_blank" rel="noopener">Comprar na Amazon</a>
+        </div>
+      </div>
+
+      <div class="book-card" id="a-viagem">
+        <div class="book-cover"><img src="covers/a-viagem.jpg" alt="A Viagem"></div>
+        <div class="book-body">
+          <div class="book-tag">Drama no Mediterrâneo</div>
+          <h3>A Viagem</h3>
+          <p>A bordo do iate de luxo Aurora, três casais jovens e ricos navegam pelo Mediterrâneo — até que o confinamento e o imprevisível coloquem suas crenças e destinos em xeque.</p>
+          <a class="btn small" href="https://link.amazon/B0gD3RC5M" target="_blank" rel="noopener">Comprar na Amazon</a>
+        </div>
+      </div>
+
+      <div class="book-card" id="amor-e-odio">
+        <div class="book-cover"><img src="covers/amor-e-odio.jpg" alt="Amor e Ódio"></div>
+        <div class="book-body">
+          <div class="book-tag">Guerra Civil Espanhola</div>
+          <h3>Amor e Ódio</h3>
+          <p>Entre a Guerra Civil Espanhola e a Segunda Guerra Mundial, um triângulo amoroso se transforma em traições e crimes passionais e políticos, revelando personalidades tão ambíguas quanto a própria guerra.</p>
+          <a class="btn small" href="https://link.amazon/B05nNXv5D" target="_blank" rel="noopener">Comprar na Amazon</a>
+        </div>
+      </div>
+
+      <div class="book-card" id="a-vila">
+        <div class="book-cover"><img src="covers/a-vila.jpg" alt="A Vila"></div>
+        <div class="book-body">
+          <div class="book-tag">Grécia, Século XX</div>
+          <h3>A Vila</h3>
+          <p>Numa aldeia de pescadores de sardinhas na Grécia do início do século XX, Athena, Andreas e seus quatro filhos vivem um drama familiar de amor, paixão e tragédia.</p>
+          <a class="btn small" href="https://link.amazon/B00Abz1w9" target="_blank" rel="noopener">Comprar na Amazon</a>
+        </div>
+      </div>
+
+      <div class="book-card" id="destinos-cruzados">
+        <div class="book-cover"><img src="covers/destinos-cruzados.jpg" alt="Destinos Cruzados"></div>
+        <div class="book-body">
+          <div class="book-tag">Amizade &amp; História</div>
+          <h3>Destinos Cruzados</h3>
+          <p>Uma inglesa, um chinês e um indiano — três jovens amigos cujas vidas são moldadas pelos grandes acontecimentos históricos das décadas de 1940 e 1950.</p>
+          <a class="btn small" href="https://link.amazon/B0hDr3Z3s" target="_blank" rel="noopener">Comprar na Amazon</a>
+        </div>
+      </div>
+
+      <div class="book-card" id="destinos-cruzados-parte-2">
+        <div class="book-cover"><img src="covers/destinos-cruzados-parte-2.jpg" alt="Destinos Cruzados: Parte 2"></div>
+        <div class="book-body">
+          <div class="book-tag">Espionagem em Hong Kong</div>
+          <h3>Destinos Cruzados: Parte 2</h3>
+          <p>Já agente do MI6, o jovem William parte para a Hong Kong dos anos 1960 em busca de sua mãe desaparecida — uma missão que mistura espionagem e história pessoal.</p>
+          <a class="btn small" href="https://link.amazon/B0admSdvz" target="_blank" rel="noopener">Comprar na Amazon</a>
+        </div>
+      </div>
+
+      <div class="book-card" id="o-que-eu-lembro-deles">
+        <div class="book-cover"><img src="covers/o-que-eu-lembro-deles.jpg" alt="O Que Eu Lembro Deles"></div>
+        <div class="book-body">
+          <div class="book-tag">Conflitos na Irlanda do Norte</div>
+          <h3>O Que Eu Lembro Deles</h3>
+          <p>Kilian e Eileen se apaixonam em Belfast durante os anos mais duros dos conflitos entre católicos e protestantes — um drama sobre amor, tradição e as escolhas que moldam um destino.</p>
+          <a class="btn small" href="https://link.amazon/B03B5r7zc" target="_blank" rel="noopener">Comprar na Amazon</a>
+        </div>
+      </div>
+
+      <div class="book-card" id="os-refugiados">
+        <div class="book-cover"><img src="covers/os-refugiados.jpg" alt="Os Refugiados"></div>
+        <div class="book-body">
+          <div class="book-tag">Guerra Civil na Síria</div>
+          <h3>Os Refugiados</h3>
+          <p>Contada pelos próprios personagens, esta é a história de uma família síria de classe média que atravessa a guerra civil e se torna símbolo de resiliência e esperança.</p>
+          <a class="btn small" href="https://link.amazon/B0g7NULvj" target="_blank" rel="noopener">Comprar na Amazon</a>
+        </div>
+      </div>
+
+      <div class="book-card" id="o-reino">
+        <div class="book-cover"><img src="covers/o-reino.jpg" alt="O Reino"></div>
+        <div class="book-body">
+          <div class="book-tag">Poder &amp; Ambição</div>
+          <h3>O Reino</h3>
+          <p>Homens poderosos, dispostos a tudo para alcançar o que desejam — inclusive viver para sempre.</p>
+          <a class="btn small" href="https://link.amazon/B09rWOUcM" target="_blank" rel="noopener">Comprar na Amazon</a>
+        </div>
+      </div>
+
+      <div class="book-card" id="um-lugar-ao-sol">
+        <div class="book-cover"><img src="covers/um-lugar-ao-sol.jpg" alt="Um Lugar ao Sol"></div>
+        <div class="book-body">
+          <div class="book-tag">Nova Iorque, Anos 60/70</div>
+          <h3>Um Lugar ao Sol</h3>
+          <p>Cinco alunos de um instituto de artes cênicas em Nova Iorque atravessam as grandes transformações culturais das décadas de 1960 e 1970, incluindo a Guerra do Vietnã.</p>
+          <a class="btn small" href="https://link.amazon/B0aGQgpeB" target="_blank" rel="noopener">Comprar na Amazon</a>
+        </div>
+      </div>
+
+      <div class="book-card" id="reflexoes-sobre-a-vida">
+        <div class="book-cover"><img src="covers/reflexoes-sobre-a-vida.jpg" alt="Reflexões Sobre a Vida"></div>
+        <div class="book-body">
+          <div class="book-tag">Ensaio &amp; Reflexão</div>
+          <h3>Reflexões Sobre a Vida</h3>
+          <p>Reflexões e pensamentos sobre a vida — e também sobre os tempos vividos durante a pandemia.</p>
+          <a class="btn small" href="https://link.amazon/B0b0XZSET" target="_blank" rel="noopener">Comprar na Amazon</a>
         </div>
       </div>
 
