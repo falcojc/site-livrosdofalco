@@ -1,0 +1,9 @@
+Lista final consolidada (3 pilares, corrigida):
+
+Marca — home, H1, bio: Domenico Falco, Autor Domenico Falco, Escritor Domenico Falco, Livro do Falco (ajustar singular/plural conforme a decisão do domínio que já conversamos), Livros de ficção histórica Domenico Falco.
+
+Gênero — blog e páginas de obra: livros de ficção histórica e romance, livros de romance histórico nacional, melhores livros de ficção histórica nacional, livros de ficção histórica brasileira, autores de ficção histórica brasileiros modernos.
+
+Intenção — perto do CTA: onde comprar [nome do livro], livros de ficção histórica para ler na Amazon, comprar e-book de romance histórico, ler amostra grátis [nome do livro].
+
+H1 corrigido: "Conheça os Livros do Falco: Histórias de Ficção Histórica e Superação por Domenico Falco" (troquei "fantasia e romance" por "ficção histórica e superação" — este último é um tema real e recorrente nos livros dele: Akira, O Sem Nome, Joana).
