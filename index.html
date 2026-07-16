@@ -151,7 +151,25 @@
 
   /* ABOUT */
   .about{background:var(--bg-alt);border-top:1px solid var(--card-border);border-bottom:1px solid var(--card-border);}
-  .about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:start;}
+  .about-grid{display:grid;grid-template-columns:.85fr 1.3fr 1.05fr;gap:48px;align-items:start;}
+  .about-photo{display:flex;flex-direction:column;gap:16px;}
+  .about-photo-frame{position:relative;}
+  .about-photo-frame::after{
+    content:"";
+    position:absolute;
+    top:16px;left:16px;right:-16px;bottom:-16px;
+    border:1px solid var(--gold);
+    z-index:0;
+  }
+  .about-photo-frame img{
+    position:relative;z-index:1;
+    width:100%;aspect-ratio:3/4;object-fit:cover;
+    display:block;
+  }
+  .about-photo-caption{
+    font-family:'Cinzel',serif;font-size:12px;letter-spacing:.22em;
+    text-transform:uppercase;color:var(--text-muted);text-align:center;
+  }
   .about p{margin-bottom:18px;color:#ddd2bd;}
   .about p strong{color:var(--gold-bright);font-weight:600;}
   .pillars{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
@@ -601,6 +619,12 @@
 
 <section class="about" id="sobre">
   <div class="wrap about-grid">
+    <div class="about-photo">
+      <div class="about-photo-frame">
+        <img src="author-domenico-falco.jpg" alt="Domenico Falco">
+      </div>
+      <div class="about-photo-caption">Domenico Falco</div>
+    </div>
     <div>
       <div class="eyebrow">Sobre o Autor</div>
       <h2 style="font-family:'Cinzel',serif;font-size:34px;margin:12px 0 26px;color:#f6ecd9;">Domenico Falco</h2>
