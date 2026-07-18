@@ -114,6 +114,13 @@
   .btn.solid{background:var(--gold);color:#0b0908;}
   .btn.solid:hover{background:var(--gold-bright);border-color:var(--gold-bright);}
   .btn.small{padding:9px 18px;font-size:11.5px;}
+  .nav-actions{display:flex;align-items:center;gap:12px;}
+  .nav-actions .social-links{margin-top:0;gap:8px;}
+  .nav-actions .social-links a{width:32px;height:32px;}
+  .nav-actions .social-links svg{width:15px;height:15px;}
+  @media (max-width:480px){
+    .nav-actions{gap:8px;}
+  }
 
   /* HERO */
   .hero{
@@ -232,6 +239,31 @@
   .foot-links{display:flex;gap:22px;flex-wrap:wrap;}
   .foot-links a{font-size:14px;color:var(--text-muted);}
   .foot-links a:hover{color:var(--gold-bright);}
+  .social-links{display:flex;gap:12px;margin-top:22px;}
+  .social-links a{
+    width:38px;height:38px;display:flex;align-items:center;justify-content:center;
+    border:1px solid var(--gold);border-radius:4px;color:var(--gold-bright);
+    transition:background .2s,color .2s,border-color .2s;
+  }
+  .social-links a:hover{background:var(--gold);border-color:var(--gold);color:var(--bg);}
+  .social-links svg{width:18px;height:18px;}
+
+  /* BACK TO TOP */
+  .back-to-top{
+    position:fixed;right:26px;bottom:26px;z-index:60;
+    width:46px;height:46px;border-radius:50%;
+    border:1px solid var(--gold);background:rgba(11,9,8,.92);color:var(--gold-bright);
+    display:flex;align-items:center;justify-content:center;cursor:pointer;
+    opacity:0;visibility:hidden;transform:translateY(12px);
+    transition:opacity .3s,transform .3s,visibility .3s,background .2s,color .2s;
+  }
+  .back-to-top.visible{opacity:1;visibility:visible;transform:translateY(0);}
+  .back-to-top:hover{background:var(--gold);color:var(--bg);}
+  .back-to-top svg{width:19px;height:19px;}
+  @media (max-width:480px){
+    .back-to-top{right:16px;bottom:16px;width:40px;height:40px;}
+    .back-to-top svg{width:17px;height:17px;}
+  }
 
   @media (max-width:860px){
     .about-grid{grid-template-columns:1fr;}
@@ -601,7 +633,17 @@
       <a href="#obras">Obras</a>
       <a href="#contato">Contato</a>
     </nav>
-    <a class="btn small solid" href="https://www.amazon.com.br/Livros-DOMENICO-FALCO/s?rh=n%3A6740748011%2Cp_27%3ADOMENICO%2BFALCO" target="_blank" rel="noopener">Ver na Amazon</a>
+    <div class="nav-actions">
+      <div class="social-links">
+        <a href="https://www.instagram.com/livrosdofalco/" target="_blank" rel="noopener" aria-label="Domenico Falco no Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg>
+        </a>
+        <a href="https://www.tiktok.com/@livros_dofalco" target="_blank" rel="noopener" aria-label="Domenico Falco no TikTok">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.82c-1.12-1.08-1.67-2.64-1.75-4.17H11.9v14.4c0 1.75-1.42 3.19-3.19 3.19-1.76 0-3.19-1.44-3.19-3.19 0-1.76 1.43-3.2 3.19-3.2.35 0 .68.05 1 .16v-3.5a6.7 6.7 0 0 0-1-.08c-3.68 0-6.66 2.98-6.66 6.66S5.03 22.75 8.71 22.75s6.66-2.98 6.66-6.66V9.31c1.31.94 2.91 1.49 4.63 1.49V7.29c-1.28 0-2.47-.41-3.4-1.11-.03-.02-.06-.05-.09-.07l.09-.29z"></path></svg>
+        </a>
+      </div>
+      <a class="btn small solid" href="https://www.amazon.com.br/Livros-DOMENICO-FALCO/s?rh=n%3A6740748011%2Cp_27%3ADOMENICO%2BFALCO" target="_blank" rel="noopener">Ver na Amazon</a>
+    </div>
   </div>
 </header>
 
@@ -993,6 +1035,14 @@
       <div class="brand">DOMENICO <span>FALCO</span></div>
       <p>Ficção histórica que entrelaça fatos reais a personagens inesquecíveis — do Japão imperial aos sete mares.</p>
       <p class="credit">Arte das capas: Júlio Cesar Falco &nbsp;·&nbsp; Revisão: Marylin Falco</p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/livrosdofalco/" target="_blank" rel="noopener" aria-label="Domenico Falco no Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg>
+        </a>
+        <a href="https://www.tiktok.com/@livros_dofalco" target="_blank" rel="noopener" aria-label="Domenico Falco no TikTok">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.82c-1.12-1.08-1.67-2.64-1.75-4.17H11.9v14.4c0 1.75-1.42 3.19-3.19 3.19-1.76 0-3.19-1.44-3.19-3.19 0-1.76 1.43-3.2 3.19-3.2.35 0 .68.05 1 .16v-3.5a6.7 6.7 0 0 0-1-.08c-3.68 0-6.66 2.98-6.66 6.66S5.03 22.75 8.71 22.75s6.66-2.98 6.66-6.66V9.31c1.31.94 2.91 1.49 4.63 1.49V7.29c-1.28 0-2.47-.41-3.4-1.11-.03-.02-.06-.05-.09-.07l.09-.29z"></path></svg>
+        </a>
+      </div>
     </div>
     <div class="foot-links">
       <a href="https://www.amazon.com.br/Livros-DOMENICO-FALCO/s?rh=n%3A6740748011%2Cp_27%3ADOMENICO%2BFALCO" target="_blank" rel="noopener">Loja na Amazon</a>
@@ -1036,6 +1086,21 @@
         status.className = 'form-status ok';
         form.reset();
       }
+    });
+  })();
+</script>
+
+<button type="button" class="back-to-top" id="back-to-top" aria-label="Voltar ao topo">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+</button>
+<script>
+  (function(){
+    var btn = document.getElementById('back-to-top');
+    window.addEventListener('scroll', function(){
+      btn.classList.toggle('visible', window.scrollY > 600);
+    }, { passive: true });
+    btn.addEventListener('click', function(){
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   })();
 </script>
