@@ -1084,6 +1084,9 @@
       } else {
         status.textContent = 'Mensagem enviada! Obrigado pelo contato.';
         status.className = 'form-status ok';
+        if (typeof gtag === 'function') {
+          gtag('event', 'generate_lead', { event_category: 'contato', event_label: 'formulario_contato' });
+        }
         form.reset();
       }
     });
