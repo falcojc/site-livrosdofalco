@@ -1105,6 +1105,24 @@
   });
 </script>
 
+<script>
+  document.addEventListener('click', function(e){
+    if (typeof gtag !== 'function') return;
+    var link = e.target.closest('a[href]');
+    if (!link) return;
+    var href = link.getAttribute('href');
+    if (href === '#sobre') {
+      gtag('event', 'click_nav_sobre', { event_category: 'navegacao', event_label: 'sobre_autor' });
+    } else if (href === '#obras') {
+      gtag('event', 'click_nav_obras', { event_category: 'navegacao', event_label: 'obras' });
+    } else if (link.href.indexOf('instagram.com') !== -1) {
+      gtag('event', 'click_instagram', { event_category: 'redes_sociais', event_label: link.href });
+    } else if (link.href.indexOf('tiktok.com') !== -1) {
+      gtag('event', 'click_tiktok', { event_category: 'redes_sociais', event_label: link.href });
+    }
+  });
+</script>
+
 <button type="button" class="back-to-top" id="back-to-top" aria-label="Voltar ao topo">
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
 </button>
