@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Newsletter — Domenico Falco</title>
+<meta name="description" content="Assine a newsletter de Domenico Falco e receba bastidores, curiosidades históricas e lançamentos em primeira mão.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.livrosdofalco.com.br/newsletter">
+<link rel="icon" href="../favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0b0908; --bg-alt:#141110; --card:#191512; --card-border:#2b241d;
+    --gold:#c9a13a; --gold-bright:#e6c467; --red:#7a1f1f; --text:#efe6d6; --text-muted:#a99c85;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{background:var(--bg);color:var(--text);font-family:'EB Garamond',serif;font-size:19px;line-height:1.65;-webkit-font-smoothing:antialiased;}
+  a{color:inherit;}
+
+  header.nav{position:sticky;top:0;z-index:50;background:rgba(11,9,8,.88);backdrop-filter:blur(6px);border-bottom:1px solid var(--card-border);}
+  .nav-inner{max-width:1180px;margin:0 auto;padding:16px 28px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;}
+  .brand{font-family:'Cinzel',serif;font-weight:700;font-size:19px;letter-spacing:.12em;color:var(--text);}
+  .brand span{color:var(--gold);}
+  .brand-lockup{display:flex;align-items:center;gap:10px;text-decoration:none;}
+  .brand-mark{width:34px;height:34px;flex-shrink:0;display:block;}
+  nav.links{display:flex;gap:32px;align-items:center;}
+  nav.links a{font-size:15px;letter-spacing:.04em;color:var(--text-muted);transition:color .2s;text-decoration:none;}
+  nav.links a:hover,nav.links a:focus-visible{color:var(--gold-bright);}
+  nav.links a.current{color:var(--gold-bright);}
+  @media (max-width:900px){nav.links{display:none;}}
+
+  .btn{display:inline-block;font-family:'Cinzel',serif;font-size:13px;letter-spacing:.14em;text-transform:uppercase;padding:12px 26px;border-radius:2px;border:1px solid var(--gold);color:var(--gold-bright);text-decoration:none;transition:background .15s,color .15s;cursor:pointer;background:transparent;}
+  .btn:hover{background:var(--gold);color:#0b0908;}
+  .btn.solid{background:var(--gold);color:#0b0908;}
+
+  main{padding:clamp(52px,8vw,96px) clamp(20px,4vw,56px) 100px;}
+  .wrap{max-width:640px;margin:0 auto;}
+  .eyebrow{font-family:'Cinzel',serif;font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:12px;margin-bottom:18px;justify-content:center;}
+  .eyebrow::before,.eyebrow::after{content:'';width:34px;height:1px;background:var(--gold);}
+  .page-head{text-align:center;margin-bottom:44px;}
+  .page-head h1{font-family:'Cinzel',serif;font-size:clamp(32px,5vw,46px);}
+  .page-head p{color:var(--text-muted);margin-top:14px;font-size:18px;}
+
+  /* ---- override do formulário Brevo com a identidade da marca ---- */
+  .newsletter-form-wrap .sib-form{background:transparent !important;padding:0 !important;}
+  .newsletter-form-wrap #sib-form-container{background:transparent !important;}
+  .newsletter-form-wrap #sib-container{
+    background:var(--card) !important;border:1px solid var(--card-border) !important;border-radius:2px !important;
+    padding:36px clamp(20px,4vw,44px) !important;max-width:100% !important;
+  }
+  .newsletter-form-wrap .sib-form-block p,
+  .newsletter-form-wrap .sib-text-form-block p{
+    font-family:'EB Garamond',serif !important;color:var(--text) !important;
+  }
+  .newsletter-form-wrap .sib-form-block:first-of-type p{
+    font-family:'Cinzel',serif !important;font-size:24px !important;color:var(--gold-bright) !important;letter-spacing:.02em;
+  }
+  .newsletter-form-wrap .entry__label{
+    font-family:'Cinzel',serif !important;font-size:12px !important;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--text-muted) !important;font-weight:600 !important;
+  }
+  .newsletter-form-wrap .entry__specification{
+    font-family:'EB Garamond',serif !important;color:var(--text-muted) !important;font-size:14px !important;
+  }
+  .newsletter-form-wrap .input{
+    background:var(--bg) !important;border:1px solid var(--card-border) !important;border-radius:2px !important;
+    color:var(--text) !important;font-family:'EB Garamond',serif !important;font-size:17px !important;padding:12px 14px !important;
+  }
+  .newsletter-form-wrap .input:focus{border-color:var(--gold) !important;outline:none;}
+  .newsletter-form-wrap .input::placeholder{color:#6f6552 !important;}
+  .newsletter-form-wrap .sib-optin p,
+  .newsletter-form-wrap .entry_mcq span{color:var(--text-muted) !important;font-family:'EB Garamond',serif !important;}
+  .newsletter-form-wrap .sib-form-block__button{
+    background:var(--gold) !important;color:#0b0908 !important;font-family:'Cinzel',serif !important;
+    font-size:13px !important;letter-spacing:.14em;text-transform:uppercase;border-radius:2px !important;
+    padding:13px 30px !important;transition:background .15s;
+  }
+  .newsletter-form-wrap .sib-form-block__button:hover{background:var(--gold-bright) !important;}
+  .newsletter-form-wrap #error-message{background:#2a1414 !important;color:#e2a1a1 !important;border-color:var(--red) !important;}
+  .newsletter-form-wrap #success-message{background:#132a1c !important;color:#a8e2bd !important;border-color:#2f7a4f !important;}
+
+  footer{padding:32px clamp(20px,4vw,56px);border-top:1px solid var(--card-border);text-align:center;color:var(--text-muted);font-size:14px;}
+  footer a{color:var(--gold-bright);text-decoration:none;}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/" class="brand-lockup" aria-label="Domenico Falco — Início">
+      <img src="../logo-mark.png" srcset="../logo-mark.png 1x, ../logo-mark@2x.png 2x" alt="" width="34" height="34" class="brand-mark">
+      <div class="brand">DOMENICO <span>FALCO</span></div>
+    </a>
+    <nav class="links">
+      <a href="/#sobre">Sobre o Autor</a>
+      <a href="/#obras">Obras</a>
+      <a href="/o-mestre-das-tormentas">O Mestre das Tormentas</a>
+      <a href="/newsletter" class="current">Newsletter</a>
+    </nav>
+    <a class="btn solid" href="/">Voltar ao site</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="page-head">
+      <div class="eyebrow">Fique por Dentro</div>
+      <h1>Newsletter</h1>
+      <p>Bastidores, curiosidades históricas e lançamentos da família Falco — direto na sua caixa de entrada.</p>
+    </div>
+
+    <div class="newsletter-form-wrap">
+      <!-- Begin Brevo Form -->
+      <style>
+        :where(.sib-form-message-panel) { display: none; }
+        :where(.sib-form-message-panel .sib-notification__icon) { width: 20px; height: 20px; }
+      </style>
+      <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+
+      <div class="sib-form">
+        <div id="sib-form-container" class="sib-form-container">
+          <div id="error-message" class="sib-form-message-panel">
+            <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+              <span class="sib-form-message-panel__inner-text">Sua assinatura não pôde ser validada.</span>
+            </div>
+          </div>
+          <div id="success-message" class="sib-form-message-panel">
+            <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+              <span class="sib-form-message-panel__inner-text">Você fez sua assinatura com sucesso.</span>
+            </div>
+          </div>
+          <div id="sib-container" class="sib-container--large sib-container--vertical">
+            <form id="sib-form" method="POST" action="https://b432dfa1.sibforms.com/serve/MUIFAJHPVQJ0glEzWmgMzCuWWX9Pvo63JFXWOxBbeg7pZTuKnJlx3xZ-mixB_KwrTwIxawi5RJ7xkCG_2VwPZA5sEy6KgNFD7I-Pf7BUrG5mn_AecVflgKhwkaPgPAxDUH1UTK7gA0xKSlGDlEhf4bwXPurwry2oYV7OzGEtvOKAmrFpm-1Qa7cAeiT1oQKmgsCKF1ftBBJuDuU_Gw==" data-type="subscription">
+              <div style="padding: 8px 0;">
+                <div class="sib-form-block"><p>Newsletter</p></div>
+              </div>
+              <div style="padding: 8px 0;">
+                <div class="sib-form-block">
+                  <div class="sib-text-form-block"><p>Assine nossa newsletter e mantenha-se atualizado.</p></div>
+                </div>
+              </div>
+              <div style="padding: 8px 0;">
+                <div class="sib-input sib-form-block">
+                  <div class="form__entry entry_block">
+                    <div class="form__label-row">
+                      <label class="entry__label" for="EMAIL" data-required="*">Insira seu e-mail para fazer sua assinatura</label>
+                      <div class="entry__field">
+                        <input class="input" type="text" id="EMAIL" name="EMAIL" autocomplete="off" value="" placeholder="EMAIL" data-required="true" required />
+                      </div>
+                    </div>
+                    <label class="entry__error entry__error--primary"></label>
+                    <label class="entry__specification">Forneça seu e-mail para assinar. Por exemplo: abc@xyz.com</label>
+                  </div>
+                </div>
+              </div>
+              <div style="padding: 8px 0;">
+                <div class="sib-input sib-form-block">
+                  <div class="form__entry entry_block">
+                    <div class="form__label-row">
+                      <label class="entry__label" for="JOB_TITLE" data-required="*">Insira seu Nome</label>
+                      <div class="entry__field">
+                        <input class="input" maxlength="200" type="text" id="JOB_TITLE" name="JOB_TITLE" autocomplete="off" placeholder="Nome" data-required="true" required />
+                      </div>
+                    </div>
+                    <label class="entry__error entry__error--primary"></label>
+                    <label class="entry__specification">Assim sabemos como te chamar nos próximos e-mails.</label>
+                  </div>
+                </div>
+              </div>
+              <div style="padding: 8px 0;">
+                <div class="sib-captcha sib-form-block">
+                  <div class="form__entry entry_block">
+                    <div class="form__label-row">
+                      <script>
+                        function handleCaptchaResponse() {
+                          var event = new Event('captchaChange');
+                          document.getElementById('sib-captcha').dispatchEvent(event);
+                        }
+                      </script>
+                      <div class="g-recaptcha sib-visible-recaptcha" id="sib-captcha" data-sitekey="6Lf9EWItAAAAANR2NKE-L2ShxOJqIi2Ioy-ltWQ2" data-callback="handleCaptchaResponse" style="direction:ltr"></div>
+                    </div>
+                    <label class="entry__error entry__error--primary"></label>
+                  </div>
+                </div>
+              </div>
+              <div style="padding: 8px 0;">
+                <div class="sib-optin sib-form-block" data-required="true">
+                  <div class="form__entry entry_mcq">
+                    <div class="form__label-row">
+                      <label class="entry__label" for="OPT_IN" data-required="*">Opt-in</label>
+                      <div class="entry__choice">
+                        <label>
+                          <input type="checkbox" class="input_replaced" value="1" id="OPT_IN" name="OPT_IN" required />
+                          <span class="checkbox checkbox_tick_positive"></span><span><p>Eu concordo em receber seus boletins informativos e com os termos e condições.</p></span>
+                        </label>
+                      </div>
+                    </div>
+                    <label class="entry__error entry__error--primary"></label>
+                    <label class="entry__specification">Você pode cancelar a assinatura a qualquer momento usando o link em nossa newsletter.</label>
+                  </div>
+                </div>
+              </div>
+              <div style="padding: 8px 0;">
+                <div class="sib-form-block" style="text-align:left">
+                  <button class="sib-form-block__button sib-form-block__button-with-loader" form="sib-form" type="submit">ASSINAR</button>
+                </div>
+              </div>
+              <input type="text" name="email_address_check" value="" class="input--hidden" style="display:none">
+              <input type="hidden" name="locale" value="pt">
+            </form>
+          </div>
+        </div>
+      </div>
+      <script>
+        window.REQUIRED_CODE_ERROR_MESSAGE = 'Escolha um código de país';
+        window.LOCALE = 'pt';
+        window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "A informação fornecida não é valida. Verifique o formato do campo e tente novamente.";
+        window.REQUIRED_ERROR_MESSAGE = "Este campo não pode ser deixado em branco.";
+        window.GENERIC_INVALID_MESSAGE = "A informação fornecida não é valida. Verifique o formato do campo e tente novamente.";
+        window.INVALID_NUMBER = "A informação fornecida não é valida. Verifique o formato do campo e tente novamente.";
+        window.INVALID_DATE = "Insira uma data válida";
+        window.REQUIRED_MULTISELECT_MESSAGE = 'Selecione pelo menos 1 opção';
+        window.translation = { common: { selectedList: '{quantity} lista selecionada', selectedLists: '{quantity} listas selecionadas', selectedOption: '{quantity} selecionado', selectedOptions: '{quantity} selecionados' } };
+        var AUTOHIDE = Boolean(1);
+      </script>
+      <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
+      <script src="https://www.google.com/recaptcha/api.js?hl=pt"></script>
+      <!-- End Brevo Form -->
+    </div>
+  </div>
+</main>
+
+<footer>
+  <a href="/">livrosdofalco.com.br</a>
+</footer>
+
+</body>
+</html>

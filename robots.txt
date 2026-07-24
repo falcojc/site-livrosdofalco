@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.livrosdofalco.com.br/sitemap.xml
