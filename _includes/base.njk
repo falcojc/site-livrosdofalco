@@ -70,7 +70,14 @@
     }
     nav.links::-webkit-scrollbar{display:none;}
     nav.links a{white-space:nowrap;}
+    nav.links a.hide-compact{display:none;}
   }
+  .cart-btn{
+    width:32px;height:32px;flex-shrink:0;display:inline-flex;align-items:center;justify-content:center;
+    border:1px solid var(--gold);border-radius:2px;color:var(--gold-bright);transition:background .2s,color .2s;
+  }
+  .cart-btn:hover{background:var(--gold);color:var(--bg);}
+  .cart-btn svg{width:16px;height:16px;}
   .btn{
     font-family:Cinzel,Georgia,serif;font-size:12px;letter-spacing:.14em;text-transform:uppercase;
     border:1px solid var(--gold);color:var(--gold-bright);padding:9px 16px;border-radius:2px;white-space:nowrap;
@@ -163,13 +170,16 @@
       <div class="brand">DOMENICO <span>FALCO</span></div>
     </a>
     <nav class="links">
-      <a href="/#sobre">Sobre o Autor</a>
+      <a href="/#sobre">Autor</a>
       <a href="/#obras">Obras</a>
-      <a href="/o-mestre-das-tormentas">O Mestre das Tormentas</a>
+      <a href="/o-mestre-das-tormentas" class="hide-compact">O Mestre das Tormentas</a>
       <a href="/blog" {% if page.url == '/blog/' or '/blog/' in page.url %}class="current"{% endif %}>Blog</a>
+      <a href="/#contato">Contato</a>
       <a href="/newsletter">Newsletter</a>
     </nav>
-    <a class="btn solid" href="https://www.amazon.com.br/Livros-DOMENICO-FALCO/s?rh=n%3A6740748011%2Cp_27%3ADOMENICO%2BFALCO" target="_blank" rel="noopener">Ver na Amazon</a>
+    <a class="cart-btn" href="https://www.amazon.com.br/Livros-DOMENICO-FALCO/s?rh=n%3A6740748011%2Cp_27%3ADOMENICO%2BFALCO" target="_blank" rel="noopener" aria-label="Loja na Amazon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+    </a>
   </div>
 </header>
 

@@ -91,6 +91,7 @@
   .nav-actions .social-links{margin-top:0;gap:8px;}
   .nav-actions .social-links a{width:32px;height:32px;}
   .nav-actions .social-links svg{width:15px;height:15px;}
+  .nav-actions .btn{height:32px;padding:0 16px;display:inline-flex;align-items:center;justify-content:center;}
   @media (max-width:900px){
     .nav-inner{flex-wrap:wrap;row-gap:10px;}
     .brand-lockup .brand{display:none;}
@@ -101,6 +102,7 @@
     }
     nav.links::-webkit-scrollbar{display:none;}
     nav.links a{white-space:nowrap;font-size:14px;}
+    nav.links a.hide-compact{display:none;}
   }
   @media (max-width:480px){.brand-lockup{gap:7px;}.brand-mark{width:26px;height:26px;}.nav-inner{gap:10px;row-gap:12px;}.nav-actions{gap:8px;}}
 
@@ -253,10 +255,11 @@
       <div class="brand">DOMENICO <span>FALCO</span></div>
     </a>
     <nav class="links">
-      <a href="/#sobre">Sobre o Autor</a>
+      <a href="/#sobre">Autor</a>
       <a href="/#obras">Obras</a>
-      <a href="/o-mestre-das-tormentas" class="current">O Mestre das Tormentas</a>
+      <a href="/o-mestre-das-tormentas" class="current hide-compact">O Mestre das Tormentas</a>
       <a href="/blog">Blog</a>
+      <a href="/#contato">Contato</a>
       <a href="/newsletter">Newsletter</a>
     </nav>
     <div class="nav-actions">
@@ -271,7 +274,7 @@
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.55A3.02 3.02 0 0 0 .5 6.19 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.81 3.02 3.02 0 0 0 2.12 2.14C4.5 20.5 12 20.5 12 20.5s7.5 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.81zM9.6 15.6V8.4l6.4 3.6z"></path></svg>
         </a>
       </div>
-      <a class="btn small solid" href="https://www.amazon.com.br/Livros-DOMENICO-FALCO/s?rh=n%3A6740748011%2Cp_27%3ADOMENICO%2BFALCO" target="_blank" rel="noopener">Ver na Amazon</a>
+      <a class="btn small solid" href="https://www.amazon.com.br/Livros-DOMENICO-FALCO/s?rh=n%3A6740748011%2Cp_27%3ADOMENICO%2BFALCO" target="_blank" rel="noopener">Loja Amazon</a>
     </div>
   </div>
 </header>

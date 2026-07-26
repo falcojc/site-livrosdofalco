@@ -39,6 +39,7 @@
     }
     nav.links::-webkit-scrollbar{display:none;}
     nav.links a{white-space:nowrap;font-size:14px;}
+    nav.links a.hide-compact{display:none;}
   }
 
   .btn{display:inline-block;font-family:'Cinzel',serif;font-size:13px;letter-spacing:.14em;text-transform:uppercase;padding:12px 26px;border-radius:2px;border:1px solid var(--gold);color:var(--gold-bright);text-decoration:none;transition:background .15s,color .15s;cursor:pointer;background:transparent;}
@@ -104,10 +105,11 @@
       <div class="brand">DOMENICO <span>FALCO</span></div>
     </a>
     <nav class="links">
-      <a href="/#sobre">Sobre o Autor</a>
+      <a href="/#sobre">Autor</a>
       <a href="/#obras">Obras</a>
-      <a href="/o-mestre-das-tormentas">O Mestre das Tormentas</a>
+      <a href="/o-mestre-das-tormentas" class="hide-compact">O Mestre das Tormentas</a>
       <a href="/blog">Blog</a>
+      <a href="/#contato">Contato</a>
       <a href="/newsletter" class="current">Newsletter</a>
     </nav>
     <a class="btn solid" href="/">Voltar ao site</a>
