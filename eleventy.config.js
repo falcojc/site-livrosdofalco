@@ -19,6 +19,15 @@ module.exports = function (eleventyConfig) {
   // mas so renderizam de verdade quando isso virar true (pos-aprovacao do AdSense).
   eleventyConfig.addGlobalData("adsEnabled", false);
 
+  // Posts com "draft: true" continuam sendo construidos (URL acessivel pra
+  // revisao), mas ficam de fora do indice/RSS ate o rascunho ser publicado.
+  // Nota: "tags" e aditivo no data cascade do Eleventy (nao da pra "zerar"
+  // com tags:[] no front matter do post) — por isso o filtro e feito aqui,
+  // por draft, em vez de depender de remover a tag "post".
+  eleventyConfig.addCollection("post", function (collectionApi) {
+    return collectionApi.getFilteredByTag("post").filter((item) => !item.data.draft);
+  });
+
   eleventyConfig.addFilter("readingTime", function (content) {
     const text = String(content).replace(/<[^>]*>/g, " ");
     const words = text.trim().split(/\s+/).filter(Boolean).length;
