@@ -1,0 +1,50 @@
+---
+layout: base.njk
+ogType: article
+---
+<section style="background:var(--bg-alt);border-top:1px solid var(--card-border);">
+  <div class="wrap">
+    <article class="post">
+      <div class="post-hero-meta">
+        <span class="post-tag">{{ cluster }}</span>
+        <h1>{{ title }}</h1>
+        <div class="byline">Domenico Falco · {{ date | dateBR }} · {{ content | readingTime }} min de leitura</div>
+      </div>
+
+      {% if cover %}
+      <div class="post-cover-full">
+        <img src="{{ cover }}" alt="{{ title }}" width="1280" height="720" loading="eager">
+      </div>
+      {% endif %}
+
+      <div class="post-content">
+        {{ content | safe }}
+      </div>
+
+      {% if obra_relacionada %}
+      <div class="cta-box">
+        <span class="post-tag">Continue a jornada</span>
+        <h3>Conheça {{ obra_relacionada_titulo or "esta obra" }}</h3>
+        <p>{{ obra_relacionada_cta or "Descubra a saga completa e mergulhe na história." }}</p>
+        <div class="cta-actions">
+          <a href="/{{ obra_relacionada }}" class="btn solid">Conhecer a obra</a>
+          <a href="/newsletter" class="btn">Assinar a newsletter</a>
+        </div>
+      </div>
+      {% else %}
+      <div class="cta-box">
+        <span class="post-tag">Não perca o próximo</span>
+        <h3>Receba novas curiosidades da saga</h3>
+        <p>Assine a newsletter e acompanhe cada novo post e lançamento.</p>
+        <div class="cta-actions">
+          <a href="/newsletter" class="btn solid">Assinar a newsletter</a>
+        </div>
+      </div>
+      {% endif %}
+
+      {% if adsEnabled %}
+      <div class="ad-slot"><span>Publicidade</span></div>
+      {% endif %}
+    </article>
+  </div>
+</section>
