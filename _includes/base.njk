@@ -59,8 +59,18 @@
   .brand{font-weight:700;font-size:18px;letter-spacing:.1em;color:var(--text);}
   .brand span{color:var(--gold);}
   nav.links{display:flex;gap:26px;align-items:center;flex-wrap:wrap;}
-  nav.links a{font-size:14px;letter-spacing:.03em;color:var(--text-muted);font-family:'EB Garamond',Georgia,serif;}
+  nav.links a{font-size:14px;color:var(--text-muted);font-family:'EB Garamond',Georgia,serif;}
   nav.links a:hover,nav.links a.current{color:var(--gold-bright);}
+  @media (max-width:900px){
+    .nav-inner{flex-wrap:wrap;row-gap:10px;}
+    nav.links{
+      order:3;width:100%;flex-wrap:nowrap;overflow-x:auto;gap:22px;
+      padding:10px 2px 2px;margin-top:2px;border-top:1px solid var(--card-border);
+      -webkit-overflow-scrolling:touch;scrollbar-width:none;
+    }
+    nav.links::-webkit-scrollbar{display:none;}
+    nav.links a{white-space:nowrap;}
+  }
   .btn{
     font-family:Cinzel,Georgia,serif;font-size:12px;letter-spacing:.14em;text-transform:uppercase;
     border:1px solid var(--gold);color:var(--gold-bright);padding:9px 16px;border-radius:2px;white-space:nowrap;
@@ -77,10 +87,10 @@
   .divider{width:56px;height:2px;background:var(--gold);margin:0 auto 18px;}
   .sec-head p{color:var(--text-muted);font-size:18px;margin:0;}
 
-  .post-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px;}
+  .post-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;}
   .post-card{border:1px solid var(--card-border);border-radius:4px;overflow:hidden;background:var(--bg-alt);transition:transform .25s,border-color .25s;display:flex;flex-direction:column;}
   .post-card:hover{transform:translateY(-6px);border-color:var(--gold);}
-  .post-cover{aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 30% 20%,#1c1712,var(--bg-alt));}
+  .post-cover{aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 30% 20%,#1c1712,var(--bg-alt));}
   .post-cover img{width:100%;height:100%;object-fit:cover;}
   .post-body{padding:20px 20px 24px;display:flex;flex-direction:column;gap:10px;flex:1;}
   .post-tag{font-size:11px;letter-spacing:.14em;color:var(--gold);text-transform:uppercase;font-family:Cinzel,serif;}
@@ -88,6 +98,16 @@
   .post-excerpt{color:var(--text-muted);font-size:15px;line-height:1.55;margin:0;flex:1;}
   .post-meta{font-size:12px;color:var(--text-muted);display:flex;justify-content:space-between;letter-spacing:.03em;}
   .post-meta .read-more{color:var(--gold-bright);}
+
+  /* ritmo visual: 1o post (e a cada 3o depois) ocupa a largura toda, os 2 seguintes ficam lado a lado */
+  .post-card:nth-child(3n+1){grid-column:1/-1;}
+  .post-card:nth-child(3n+1) .post-cover{aspect-ratio:21/9;}
+  .post-card:nth-child(3n+1) h3{font-size:26px;}
+  @media (max-width:700px){
+    .post-grid{grid-template-columns:1fr;}
+    .post-card:nth-child(3n+1) .post-cover{aspect-ratio:16/9;}
+    .post-card:nth-child(3n+1) h3{font-size:20px;}
+  }
 
   article.post{max-width:720px;margin:0 auto;}
   .post-hero-meta{text-align:center;margin-bottom:28px;}
@@ -125,7 +145,7 @@
   footer .brand{display:block;margin-bottom:14px;}
   footer p{color:var(--text-muted);font-size:14px;max-width:360px;margin:0 0 8px;}
   .foot-links{display:flex;gap:20px;flex-wrap:wrap;align-self:flex-start;}
-  .foot-links a{font-size:13px;color:var(--text-muted);}
+  .foot-links a{font-size:14px;color:var(--text-muted);}
   .foot-links a:hover,.foot-links a.current{color:var(--gold-bright);}
 
   @media (max-width:640px){
@@ -138,7 +158,7 @@
 <body>
 <header class="nav">
   <div class="nav-inner">
-    <a href="/" class="brand-lockup" aria-label="Domenico Falco — Início">
+    <a href="/" class="brand-lockup" aria-label="Domenico Falco, Início">
       <img src="/logo-mark.png" srcset="/logo-mark.png 1x, /logo-mark@2x.png 2x" alt="" width="30" height="30">
       <div class="brand">DOMENICO <span>FALCO</span></div>
     </a>
@@ -159,7 +179,7 @@
   <div class="wrap footer-grid">
     <div>
       <div class="brand">DOMENICO <span>FALCO</span></div>
-      <p>Ficção histórica que entrelaça fatos reais a personagens inesquecíveis — do Japão imperial aos sete mares.</p>
+      <p>Ficção histórica que entrelaça fatos reais a personagens inesquecíveis, do Japão imperial aos sete mares.</p>
       <p style="font-size:12px;">Arte das capas: Júlio Cesar Falco &nbsp;·&nbsp; Revisão: Marylin Falco</p>
     </div>
     <div class="foot-links">

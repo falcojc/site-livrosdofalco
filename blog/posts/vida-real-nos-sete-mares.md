@@ -1,7 +1,7 @@
 ---
 title: "A Vida Real nos Sete Mares: Mitos, Fatos e a Era de Ouro da Pirataria"
 date: 2026-08-09
-description: "O que separa o mito da realidade na Era de Ouro da Pirataria — cartas de corso, códigos de honra e as rotas que moldaram O Mestre das Tormentas."
+description: "O que separa o mito da realidade na Era de Ouro da Pirataria, cartas de corso, códigos de honra e as rotas que moldaram O Mestre das Tormentas."
 cluster: "Aventura Épica"
 cover: "/blog/media/vida-real-nos-sete-mares/capa-frota-tempestade.jpg"
 obra_relacionada: "o-mestre-das-tormentas"
@@ -29,9 +29,9 @@ No entanto, quando os acordos de paz eram assinados nos confortáveis gabinetes 
 
 Ao contrário da imagem de puro caos, os navios operavam sob regras estritas, frequentemente muito mais democráticas e justas do que a marinha real da qual muitos haviam desertado. Existia um verdadeiro código de conduta:
 
-- **Distribuição de riquezas** — o resultado de qualquer missão era dividido de forma muito mais equitativa entre a tripulação do que nos navios mercantes.
-- **Regras de bordo** — era proibido o roubo entre companheiros, e desavenças deveriam ser resolvidas em terra firme.
-- **Liderança baseada em mérito** — capitães podiam ser depostos pela tripulação caso demonstrassem covardia ou tomassem decisões que prejudicassem a segurança coletiva.
+- **Distribuição de riquezas**: o resultado de qualquer missão era dividido de forma muito mais equitativa entre a tripulação do que nos navios mercantes.
+- **Regras de bordo**: era proibido o roubo entre companheiros, e desavenças deveriam ser resolvidas em terra firme.
+- **Liderança baseada em mérito**: capitães podiam ser depostos pela tripulação caso demonstrassem covardia ou tomassem decisões que prejudicassem a segurança coletiva.
 
 É essa complexa bússola moral que impulsiona personagens inesquecíveis da ficção histórica. Em *O Mestre das Tormentas*, vemos como a jornada de John Storm é guiada não pelo desejo cego de destruição, mas por uma busca por liberdade e sobrevivência diante de governantes corrompidos e dinâmicas geopolíticas desiguais.
 
@@ -41,7 +41,7 @@ Ao contrário da imagem de puro caos, os navios operavam sob regras estritas, fr
 
 O universo naval da época não se resumia apenas às águas do Caribe. Uma das rotas mais vitais e perigosas da Terra envolvia o contorno da África (pelo Cabo da Boa Esperança e o traiçoeiro Canal de Moçambique) rumo ao Oceano Índico e ao Mar da China.
 
-No Oriente, a estrutura de resistência marítima tomava formas colossais. Diferente dos grupos renegados do Ocidente, no Mar da China existiam verdadeiras confederações que desafiavam dinastias imensas, como a Qing. Frotas com centenas de juncos chineses e milhares de marinheiros formavam uma rede impenetrável. Lideranças como a icônica e histórica [Ching Shih](/blog/a-lenda-dos-sete-mares/) — que ecoa na imponente figura ficcional de Feng Long, a "Mulher Dragão" do universo de Domenico Falco — demonstram que o papel da mulher nesse período ia muito além do que as sociedades conservadoras da época gostariam de admitir.
+No Oriente, a estrutura de resistência marítima tomava formas colossais. Diferente dos grupos renegados do Ocidente, no Mar da China existiam verdadeiras confederações que desafiavam dinastias imensas, como a Qing. Frotas com centenas de juncos chineses e milhares de marinheiros formavam uma rede impenetrável. Lideranças como a icônica e histórica [Ching Shih](/blog/a-lenda-dos-sete-mares/), que ecoa na imponente figura ficcional de Feng Long, a "Mulher Dragão" do universo de Domenico Falco, demonstram que o papel da mulher nesse período ia muito além do que as sociedades conservadoras da época gostariam de admitir.
 
 Eram mulheres astutas, guerreiras inabaláveis e estrategistas brilhantes, capazes de colocar frotas imperiais de joelhos.
 

@@ -13,22 +13,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Domenico Falco — Autor de Ficção Histórica</title>
-<meta name="description" content="Domenico Falco escreve romances de ficção histórica que atravessam séculos e continentes — do Japão imperial à Belle Époque parisiense. Conheça o autor e compre seus livros na Amazon.">
+<meta name="description" content="Domenico Falco escreve romances de ficção histórica que atravessam séculos e continentes, do Japão imperial à Belle Époque parisiense. Conheça o autor e compre seus livros na Amazon.">
 <meta name="author" content="Domenico Falco">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.livrosdofalco.com.br/">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Domenico Falco — Livros de Ficção Histórica">
+<meta property="og:site_name" content="Domenico Falco, Livros de Ficção Histórica">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:title" content="Domenico Falco — Autor de Ficção Histórica">
-<meta property="og:description" content="Domenico Falco escreve romances de ficção histórica que atravessam séculos e continentes — do Japão imperial à Belle Époque parisiense. Conheça o autor e compre seus livros na Amazon.">
+<meta property="og:description" content="Domenico Falco escreve romances de ficção histórica que atravessam séculos e continentes, do Japão imperial à Belle Époque parisiense. Conheça o autor e compre seus livros na Amazon.">
 <meta property="og:url" content="https://www.livrosdofalco.com.br/">
 <meta property="og:image" content="https://www.livrosdofalco.com.br/og-image.jpg">
 <meta property="og:image:width" content="928">
 <meta property="og:image:height" content="1152">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Domenico Falco — Autor de Ficção Histórica">
-<meta name="twitter:description" content="Domenico Falco escreve romances de ficção histórica que atravessam séculos e continentes — do Japão imperial à Belle Époque parisiense. Conheça o autor e compre seus livros na Amazon.">
+<meta name="twitter:description" content="Domenico Falco escreve romances de ficção histórica que atravessam séculos e continentes, do Japão imperial à Belle Époque parisiense. Conheça o autor e compre seus livros na Amazon.">
 <meta name="twitter:image" content="https://www.livrosdofalco.com.br/og-image.jpg">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -267,7 +267,15 @@
 
   @media (max-width:860px){
     .about-grid{grid-template-columns:1fr;}
-    nav.links{display:none;}
+    .nav-inner{flex-wrap:wrap;row-gap:10px;}
+    .brand-lockup .brand{display:none;}
+    nav.links{
+      order:3;width:100%;flex-wrap:nowrap;overflow-x:auto;gap:22px;
+      padding:10px 2px 2px;margin-top:2px;border-top:1px solid rgba(201,161,58,.15);
+      -webkit-overflow-scrolling:touch;scrollbar-width:none;
+    }
+    nav.links::-webkit-scrollbar{display:none;}
+    nav.links a{white-space:nowrap;font-size:14px;}
   }
 
   /* CONTACT */
@@ -305,7 +313,7 @@
   "@graph": [
     {
       "@type": "WebSite",
-      "name": "Domenico Falco — Livros de Ficção Histórica",
+      "name": "Domenico Falco, Livros de Ficção Histórica",
       "url": "https://www.livrosdofalco.com.br/",
       "inLanguage": "pt-BR"
     },
@@ -313,7 +321,7 @@
       "@type": "Person",
       "name": "Domenico Falco",
       "jobTitle": "Escritor",
-      "description": "Escritor dedicado à ficção histórica, construindo narrativas que entrelaçam fatos reais a personagens intensos e imaginários, com pesquisa histórica profunda sobre contextos globais — do Japão imperial à Rota da Seda, da Belle Époque parisiense à Corrida do Ouro na Califórnia.",
+      "description": "Escritor dedicado à ficção histórica, construindo narrativas que entrelaçam fatos reais a personagens intensos e imaginários, com pesquisa histórica profunda sobre contextos globais: do Japão imperial à Rota da Seda, da Belle Époque parisiense à Corrida do Ouro na Califórnia.",
       "url": "https://www.livrosdofalco.com.br/#sobre",
       "sameAs": [
         "https://www.amazon.com.br/Livros-DOMENICO-FALCO/s?rh=n%3A6740748011%2Cp_27%3ADOMENICO%2BFALCO"
@@ -327,7 +335,7 @@
         "name": "Domenico Falco"
       },
       "genre": "Ficção Histórica",
-      "description": "No Japão em plena modernização após o fim do xogunato, o jovem Akira troca a vida simples na fazenda da avó pela disciplina do exército imperial. Ferido e condecorado como herói, reconstrói-se como um dos mais poderosos industriais do ramo de armamentos — \"O Senhor das Armas\".",
+      "description": "No Japão em plena modernização após o fim do xogunato, o jovem Akira troca a vida simples na fazenda da avó pela disciplina do exército imperial. Ferido e condecorado como herói, reconstrói-se como um dos mais poderosos industriais do ramo de armamentos, \"O Senhor das Armas\".",
       "url": "https://www.livrosdofalco.com.br/#akira",
       "inLanguage": "pt-BR"
     },
@@ -339,7 +347,7 @@
         "name": "Domenico Falco"
       },
       "genre": "Ficção Histórica",
-      "description": "A história da irreverente Joana — seus familiares, amores e aventuras — durante a primeira metade do século XX, entre a França e o Brasil.",
+      "description": "A história da irreverente Joana, seus familiares, amores e aventuras, durante a primeira metade do século XX, entre a França e o Brasil.",
       "url": "https://www.livrosdofalco.com.br/#joana",
       "inLanguage": "pt-BR"
     },
@@ -363,7 +371,7 @@
         "name": "Domenico Falco"
       },
       "genre": "Ficção Histórica",
-      "description": "O sofrimento e a luta de um homem escravizado desde o nascimento para vencer o preconceito e o ódio impostos à sua condição humana — em meados do século XIX, entre a África e os Estados Unidos.",
+      "description": "O sofrimento e a luta de um homem escravizado desde o nascimento para vencer o preconceito e o ódio impostos à sua condição humana, em meados do século XIX, entre a África e os Estados Unidos.",
       "url": "https://www.livrosdofalco.com.br/#sangue-frio",
       "inLanguage": "pt-BR"
     },
@@ -399,7 +407,7 @@
         "name": "Domenico Falco"
       },
       "genre": "Ficção Histórica",
-      "description": "Uma família que, apesar de sofrer uma grande injustiça, consegue se reerguer aproveitando oportunidades inesperadas que a vida lhe oferece — um romance ambientado no Japão feudal.",
+      "description": "Uma família que, apesar de sofrer uma grande injustiça, consegue se reerguer aproveitando oportunidades inesperadas que a vida lhe oferece, um romance ambientado no Japão feudal.",
       "url": "https://www.livrosdofalco.com.br/#a-casa-dos-prazeres",
       "inLanguage": "pt-BR"
     },
@@ -423,7 +431,7 @@
         "name": "Domenico Falco"
       },
       "genre": "Ficção Histórica",
-      "description": "A história de uma família de italianos em busca de melhores condições de vida na América do Norte e do Sul — uma ficção baseada em fatos reais que atravessa todo o século XX até o início do XXI, retratando os principais eventos históricos do período.",
+      "description": "A história de uma família de italianos em busca de melhores condições de vida na América do Norte e do Sul, uma ficção baseada em fatos reais que atravessa todo o século XX até o início do XXI, retratando os principais eventos históricos do período.",
       "url": "https://www.livrosdofalco.com.br/#os-italianos",
       "inLanguage": "pt-BR"
     },
@@ -468,7 +476,7 @@
       "name": "Os Dois Irmãos",
       "author": { "@type": "Person", "name": "Domenico Falco" },
       "genre": "Ficção Histórica",
-      "description": "Na Campagna dos anos 1860, dois irmãos italianos atravessam provações que testam os laços de sangue — uma história densa e imprevisível sobre redenção e superação.",
+      "description": "Na Campagna dos anos 1860, dois irmãos italianos atravessam provações que testam os laços de sangue, uma história densa e imprevisível sobre redenção e superação.",
       "url": "https://www.livrosdofalco.com.br/#os-dois-irmaos",
       "inLanguage": "pt-BR"
     },
@@ -513,7 +521,7 @@
       "name": "A Teia",
       "author": { "@type": "Person", "name": "Domenico Falco" },
       "genre": "Drama Contemporâneo",
-      "description": "Nascidos na mesma favela carioca, Joca se torna um criminoso poderoso e Helena, promotora pública decidida a desmontar seu império — até seus caminhos se cruzarem de novo.",
+      "description": "Nascidos na mesma favela carioca, Joca se torna um criminoso poderoso e Helena, promotora pública decidida a desmontar seu império, até seus caminhos se cruzarem de novo.",
       "url": "https://www.livrosdofalco.com.br/#a-teia",
       "inLanguage": "pt-BR"
     },
@@ -531,7 +539,7 @@
       "name": "A Viagem",
       "author": { "@type": "Person", "name": "Domenico Falco" },
       "genre": "Drama Contemporâneo",
-      "description": "A bordo do iate de luxo Aurora, três casais jovens e ricos navegam pelo Mediterrâneo — até que o confinamento e o imprevisível coloquem suas crenças e destinos em xeque.",
+      "description": "A bordo do iate de luxo Aurora, três casais jovens e ricos navegam pelo Mediterrâneo, até que o confinamento e o imprevisível coloquem suas crenças e destinos em xeque.",
       "url": "https://www.livrosdofalco.com.br/#a-viagem",
       "inLanguage": "pt-BR"
     },
@@ -558,7 +566,7 @@
       "name": "Destinos Cruzados",
       "author": { "@type": "Person", "name": "Domenico Falco" },
       "genre": "Ficção Histórica",
-      "description": "Uma inglesa, um chinês e um indiano — três jovens amigos cujas vidas são moldadas pelos grandes acontecimentos históricos das décadas de 1940 e 1950.",
+      "description": "Uma inglesa, um chinês e um indiano, três jovens amigos cujas vidas são moldadas pelos grandes acontecimentos históricos das décadas de 1940 e 1950.",
       "url": "https://www.livrosdofalco.com.br/#destinos-cruzados",
       "inLanguage": "pt-BR"
     },
@@ -567,7 +575,7 @@
       "name": "Destinos Cruzados: Parte 2",
       "author": { "@type": "Person", "name": "Domenico Falco" },
       "genre": "Ficção Histórica",
-      "description": "Já agente do MI6, o jovem William parte para a Hong Kong dos anos 1960 em busca de sua mãe desaparecida — uma missão que mistura espionagem e história pessoal.",
+      "description": "Já agente do MI6, o jovem William parte para a Hong Kong dos anos 1960 em busca de sua mãe desaparecida, uma missão que mistura espionagem e história pessoal.",
       "url": "https://www.livrosdofalco.com.br/#destinos-cruzados-parte-2",
       "inLanguage": "pt-BR"
     },
@@ -576,7 +584,7 @@
       "name": "O Que Eu Lembro Deles",
       "author": { "@type": "Person", "name": "Domenico Falco" },
       "genre": "Ficção Histórica",
-      "description": "Kilian e Eileen se apaixonam em Belfast durante os anos mais duros dos conflitos entre católicos e protestantes — um drama sobre amor, tradição e as escolhas que moldam um destino.",
+      "description": "Kilian e Eileen se apaixonam em Belfast durante os anos mais duros dos conflitos entre católicos e protestantes, um drama sobre amor, tradição e as escolhas que moldam um destino.",
       "url": "https://www.livrosdofalco.com.br/#o-que-eu-lembro-deles",
       "inLanguage": "pt-BR"
     },
@@ -594,7 +602,7 @@
       "name": "O Reino",
       "author": { "@type": "Person", "name": "Domenico Falco" },
       "genre": "Ficção",
-      "description": "Homens poderosos, dispostos a tudo para alcançar o que desejam — inclusive viver para sempre.",
+      "description": "Homens poderosos, dispostos a tudo para alcançar o que desejam, inclusive viver para sempre.",
       "url": "https://www.livrosdofalco.com.br/#o-reino",
       "inLanguage": "pt-BR"
     },
@@ -612,7 +620,7 @@
       "name": "Reflexões Sobre a Vida",
       "author": { "@type": "Person", "name": "Domenico Falco" },
       "genre": "Ensaio (exceção no catálogo)",
-      "description": "Reflexões e pensamentos sobre a vida — e também sobre os tempos vividos durante a pandemia.",
+      "description": "Reflexões e pensamentos sobre a vida, e também sobre os tempos vividos durante a pandemia.",
       "url": "https://www.livrosdofalco.com.br/#reflexoes-sobre-a-vida",
       "inLanguage": "pt-BR"
     }
@@ -624,7 +632,7 @@
 
 <header class="nav">
   <div class="nav-inner">
-    <a href="#" class="brand-lockup" aria-label="Domenico Falco — Início">
+    <a href="#" class="brand-lockup" aria-label="Domenico Falco, Início">
       <img src="logo-mark.png" srcset="logo-mark.png 1x, logo-mark@2x.png 2x" alt="" width="34" height="34" class="brand-mark">
       <div class="brand">DOMENICO <span>FALCO</span></div>
     </a>
@@ -657,7 +665,7 @@
   <div class="hero-inner">
     <div class="eyebrow">Ficção Histórica</div>
     <h1>Histórias que atravessam<br><em>séculos e continentes</em></h1>
-    <p class="lede">Do Japão da Era Meiji aos cabarés da Belle Époque parisiense, dos sete mares às plantações do sul dos Estados Unidos — Domenico Falco entrelaça fatos reais a personagens inesquecíveis em narrativas de superação, injustiça e redenção.</p>
+    <p class="lede">Do Japão da Era Meiji aos cabarés da Belle Époque parisiense, dos sete mares às plantações do sul dos Estados Unidos, Domenico Falco entrelaça fatos reais a personagens inesquecíveis em narrativas de superação, injustiça e redenção.</p>
     <div class="cta-row">
       <a class="btn solid" href="#obras">Explorar as Obras</a>
       <a class="btn" href="https://www.amazon.com.br/Livros-DOMENICO-FALCO/s?rh=n%3A6740748011%2Cp_27%3ADOMENICO%2BFALCO" target="_blank" rel="noopener">Comprar na Amazon</a>
@@ -676,9 +684,9 @@
     <div>
       <div class="eyebrow">Sobre o Autor</div>
       <h2 style="font-family:'Cinzel',serif;font-size:34px;margin:12px 0 26px;color:#f6ecd9;">Domenico Falco</h2>
-      <p>Domenico Falco é um escritor dedicado à <strong>ficção histórica</strong>, construindo narrativas ricas que entrelaçam fatos reais a personagens intensos e imaginários. Suas obras nascem de uma pesquisa histórica profunda, com referências que abrangem contextos globais — do Japão imperial à Rota da Seda, da Belle Époque parisiense à Corrida do Ouro na Califórnia.</p>
-      <p>Seus protagonistas enfrentam adversidades extremas — escravidão, guerra, isolamento — e buscam justiça ou um novo propósito de vida. Cada romance é construído com riqueza de detalhes culturais: culinária, arquitetura e costumes de cada época, sempre com um compromisso central — mostrar <strong>respeito pelas diferenças</strong> de credo, religião e origem, sem intenção de ofender, mas de promover a compreensão humana.</p>
-      <p>O trabalho de Falco é também um esforço de família: sua esposa, <strong>Marylin</strong>, atua como incentivadora e revisora de cada obra, enquanto seu filho, <strong>Júlio Cesar Falco</strong>, assina a arte das capas — conferindo identidade visual própria e moderna a cada lançamento.</p>
+      <p>Domenico Falco é um escritor dedicado à <strong>ficção histórica</strong>, construindo narrativas ricas que entrelaçam fatos reais a personagens intensos e imaginários. Suas obras nascem de uma pesquisa histórica profunda, com referências que abrangem contextos globais: do Japão imperial à Rota da Seda, da Belle Époque parisiense à Corrida do Ouro na Califórnia.</p>
+      <p>Seus protagonistas enfrentam adversidades extremas (escravidão, guerra, isolamento) e buscam justiça ou um novo propósito de vida. Cada romance é construído com riqueza de detalhes culturais: culinária, arquitetura e costumes de cada época, sempre com um compromisso central: mostrar <strong>respeito pelas diferenças</strong> de credo, religião e origem, sem intenção de ofender, mas de promover a compreensão humana.</p>
+      <p>O trabalho de Falco é também um esforço de família: sua esposa, <strong>Marylin</strong>, atua como incentivadora e revisora de cada obra, enquanto seu filho, <strong>Júlio Cesar Falco</strong>, assina a arte das capas, conferindo identidade visual própria e moderna a cada lançamento.</p>
     </div>
     <div class="pillars">
       <div class="pillar"><div class="num">01</div><h3>Pesquisa Histórica</h3><p>Contextos reais e verificados dão veracidade a cada trama, do Japão Meiji à Roma Antiga.</p></div>
@@ -695,7 +703,7 @@
       <div class="eyebrow">Catálogo</div>
       <h2>As Obras</h2>
       <div class="divider"></div>
-      <p>Vinte e nove romances, vinte e nove mundos — piratas, samurais, jesuítas, cruzados e sobreviventes atravessando a história.</p>
+      <p>Vinte e nove romances, vinte e nove mundos: piratas, samurais, jesuítas, cruzados e sobreviventes atravessando a história.</p>
     </div>
 
     <div class="books-grid">
@@ -705,7 +713,7 @@
         <div class="book-body">
           <div class="book-tag">Japão Imperial</div>
           <h3>Akira: O Senhor das Armas</h3>
-          <p>No Japão em plena modernização após o fim do xogunato, o jovem Akira troca a vida simples na fazenda da avó pela disciplina do exército imperial. Ferido e condecorado como herói, reconstrói-se como um dos mais poderosos industriais do ramo de armamentos — "O Senhor das Armas".</p>
+          <p>No Japão em plena modernização após o fim do xogunato, o jovem Akira troca a vida simples na fazenda da avó pela disciplina do exército imperial. Ferido e condecorado como herói, reconstrói-se como um dos mais poderosos industriais do ramo de armamentos, "O Senhor das Armas".</p>
           <a class="btn small" href="https://link.amazon/B062ef4xG" target="_blank" rel="noopener">Comprar na Amazon</a>
         </div>
       </div>
@@ -715,7 +723,7 @@
         <div class="book-body">
           <div class="book-tag">Belle Époque</div>
           <h3>Joana: A Dama da Noite</h3>
-          <p>A história da irreverente Joana — seus familiares, amores e aventuras — durante a primeira metade do século XX, entre a França e o Brasil.</p>
+          <p>A história da irreverente Joana, seus familiares, amores e aventuras, durante a primeira metade do século XX, entre a França e o Brasil.</p>
           <a class="btn small" href="https://link.amazon/B08IDAJBy" target="_blank" rel="noopener">Comprar na Amazon</a>
         </div>
       </div>
@@ -738,7 +746,7 @@
         <div class="book-body">
           <div class="book-tag">Faroeste</div>
           <h3>Sangue Frio</h3>
-          <p>O sofrimento e a luta de um homem escravizado desde o nascimento para vencer o preconceito e o ódio impostos à sua condição humana — em meados do século XIX, entre a África e os Estados Unidos.</p>
+          <p>O sofrimento e a luta de um homem escravizado desde o nascimento para vencer o preconceito e o ódio impostos à sua condição humana, em meados do século XIX, entre a África e os Estados Unidos.</p>
           <a class="btn small" href="https://link.amazon/B06W7KyzS" target="_blank" rel="noopener">Comprar na Amazon</a>
         </div>
       </div>
@@ -768,7 +776,7 @@
         <div class="book-body">
           <div class="book-tag">Japão Feudal</div>
           <h3>A Casa dos Prazeres</h3>
-          <p>Uma família que, apesar de sofrer uma grande injustiça, consegue se reerguer aproveitando oportunidades inesperadas que a vida lhe oferece — um romance ambientado no Japão feudal.</p>
+          <p>Uma família que, apesar de sofrer uma grande injustiça, consegue se reerguer aproveitando oportunidades inesperadas que a vida lhe oferece, um romance ambientado no Japão feudal.</p>
           <a class="btn small" href="https://link.amazon/B05HgVbe9" target="_blank" rel="noopener">Comprar na Amazon</a>
         </div>
       </div>
@@ -788,7 +796,7 @@
         <div class="book-body">
           <div class="book-tag">Entreguerras</div>
           <h3>Os Italianos</h3>
-          <p>A história de uma família de italianos em busca de melhores condições de vida na América do Norte e do Sul — uma ficção baseada em fatos reais que atravessa todo o século XX até o início do XXI, retratando os principais eventos históricos do período.</p>
+          <p>A história de uma família de italianos em busca de melhores condições de vida na América do Norte e do Sul, uma ficção baseada em fatos reais que atravessa todo o século XX até o início do XXI, retratando os principais eventos históricos do período.</p>
           <a class="btn small" href="https://link.amazon/B0a17JfGu" target="_blank" rel="noopener">Comprar na Amazon</a>
         </div>
       </div>
@@ -828,7 +836,7 @@
         <div class="book-body">
           <div class="book-tag">Itália, 1860</div>
           <h3>Os Dois Irmãos</h3>
-          <p>Na Campagna dos anos 1860, dois irmãos italianos atravessam provações que testam os laços de sangue — uma história densa e imprevisível sobre redenção e superação.</p>
+          <p>Na Campagna dos anos 1860, dois irmãos italianos atravessam provações que testam os laços de sangue, uma história densa e imprevisível sobre redenção e superação.</p>
           <a class="btn small" href="https://link.amazon/B099y4kAd" target="_blank" rel="noopener">Comprar na Amazon</a>
         </div>
       </div>
@@ -878,7 +886,7 @@
         <div class="book-body">
           <div class="book-tag">Drama Urbano</div>
           <h3>A Teia</h3>
-          <p>Nascidos na mesma favela carioca, Joca se torna um criminoso poderoso e Helena, promotora pública decidida a desmontar seu império — até seus caminhos se cruzarem de novo.</p>
+          <p>Nascidos na mesma favela carioca, Joca se torna um criminoso poderoso e Helena, promotora pública decidida a desmontar seu império, até seus caminhos se cruzarem de novo.</p>
           <a class="btn small" href="https://link.amazon/B06lJ8s2p" target="_blank" rel="noopener">Comprar na Amazon</a>
         </div>
       </div>
@@ -898,7 +906,7 @@
         <div class="book-body">
           <div class="book-tag">Drama no Mediterrâneo</div>
           <h3>A Viagem</h3>
-          <p>A bordo do iate de luxo Aurora, três casais jovens e ricos navegam pelo Mediterrâneo — até que o confinamento e o imprevisível coloquem suas crenças e destinos em xeque.</p>
+          <p>A bordo do iate de luxo Aurora, três casais jovens e ricos navegam pelo Mediterrâneo, até que o confinamento e o imprevisível coloquem suas crenças e destinos em xeque.</p>
           <a class="btn small" href="https://link.amazon/B0gD3RC5M" target="_blank" rel="noopener">Comprar na Amazon</a>
         </div>
       </div>
@@ -928,7 +936,7 @@
         <div class="book-body">
           <div class="book-tag">Amizade &amp; História</div>
           <h3>Destinos Cruzados</h3>
-          <p>Uma inglesa, um chinês e um indiano — três jovens amigos cujas vidas são moldadas pelos grandes acontecimentos históricos das décadas de 1940 e 1950.</p>
+          <p>Uma inglesa, um chinês e um indiano, três jovens amigos cujas vidas são moldadas pelos grandes acontecimentos históricos das décadas de 1940 e 1950.</p>
           <a class="btn small" href="https://link.amazon/B0hDr3Z3s" target="_blank" rel="noopener">Comprar na Amazon</a>
         </div>
       </div>
@@ -938,7 +946,7 @@
         <div class="book-body">
           <div class="book-tag">Espionagem em Hong Kong</div>
           <h3>Destinos Cruzados: Parte 2</h3>
-          <p>Já agente do MI6, o jovem William parte para a Hong Kong dos anos 1960 em busca de sua mãe desaparecida — uma missão que mistura espionagem e história pessoal.</p>
+          <p>Já agente do MI6, o jovem William parte para a Hong Kong dos anos 1960 em busca de sua mãe desaparecida, uma missão que mistura espionagem e história pessoal.</p>
           <a class="btn small" href="https://link.amazon/B0admSdvz" target="_blank" rel="noopener">Comprar na Amazon</a>
         </div>
       </div>
@@ -948,7 +956,7 @@
         <div class="book-body">
           <div class="book-tag">Conflitos na Irlanda do Norte</div>
           <h3>O Que Eu Lembro Deles</h3>
-          <p>Kilian e Eileen se apaixonam em Belfast durante os anos mais duros dos conflitos entre católicos e protestantes — um drama sobre amor, tradição e as escolhas que moldam um destino.</p>
+          <p>Kilian e Eileen se apaixonam em Belfast durante os anos mais duros dos conflitos entre católicos e protestantes, um drama sobre amor, tradição e as escolhas que moldam um destino.</p>
           <a class="btn small" href="https://link.amazon/B03B5r7zc" target="_blank" rel="noopener">Comprar na Amazon</a>
         </div>
       </div>
@@ -968,7 +976,7 @@
         <div class="book-body">
           <div class="book-tag">Poder &amp; Ambição</div>
           <h3>O Reino</h3>
-          <p>Homens poderosos, dispostos a tudo para alcançar o que desejam — inclusive viver para sempre.</p>
+          <p>Homens poderosos, dispostos a tudo para alcançar o que desejam, inclusive viver para sempre.</p>
           <a class="btn small" href="https://link.amazon/B09rWOUcM" target="_blank" rel="noopener">Comprar na Amazon</a>
         </div>
       </div>
@@ -988,7 +996,7 @@
         <div class="book-body">
           <div class="book-tag">Ensaio &amp; Reflexão</div>
           <h3>Reflexões Sobre a Vida</h3>
-          <p>Reflexões e pensamentos sobre a vida — e também sobre os tempos vividos durante a pandemia.</p>
+          <p>Reflexões e pensamentos sobre a vida, e também sobre os tempos vividos durante a pandemia.</p>
           <a class="btn small" href="https://link.amazon/B0b0XZSET" target="_blank" rel="noopener">Comprar na Amazon</a>
         </div>
       </div>
@@ -1042,7 +1050,7 @@
   <div class="wrap footer-grid">
     <div>
       <div class="brand">DOMENICO <span>FALCO</span></div>
-      <p>Ficção histórica que entrelaça fatos reais a personagens inesquecíveis — do Japão imperial aos sete mares.</p>
+      <p>Ficção histórica que entrelaça fatos reais a personagens inesquecíveis, do Japão imperial aos sete mares.</p>
       <p class="credit">Arte das capas: Júlio Cesar Falco &nbsp;·&nbsp; Revisão: Marylin Falco</p>
       <div class="social-links">
         <a href="https://www.instagram.com/livrosdofalco/" target="_blank" rel="noopener" aria-label="Domenico Falco no Instagram">
