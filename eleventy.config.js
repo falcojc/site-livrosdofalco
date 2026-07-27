@@ -28,6 +28,15 @@ module.exports = function (eleventyConfig) {
     return collectionApi.getFilteredByTag("post").filter((item) => !item.data.draft);
   });
 
+  // Carrossel de destaque da home do blog: curadoria manual via "heroOrder"
+  // no front matter (nunca posts com draft:true, mesmo que tenham heroOrder).
+  eleventyConfig.addCollection("hero", function (collectionApi) {
+    return collectionApi
+      .getFilteredByTag("post")
+      .filter((item) => !item.data.draft && item.data.heroOrder)
+      .sort((a, b) => a.data.heroOrder - b.data.heroOrder);
+  });
+
   eleventyConfig.addFilter("readingTime", function (content) {
     const text = String(content).replace(/<[^>]*>/g, " ");
     const words = text.trim().split(/\s+/).filter(Boolean).length;
@@ -38,6 +47,22 @@ module.exports = function (eleventyConfig) {
     return new Date(dateObj).toLocaleDateString("pt-BR", {
       day: "numeric", month: "long", year: "numeric", timeZone: "UTC"
     });
+  });
+
+  eleventyConfig.addFilter("isExternal", function (url) {
+    return typeof url === "string" && url.indexOf("http") === 0;
+  });
+
+  // Imagens do corpo do post viram figure+figcaption (legenda visivel usando
+  // o proprio alt text), em vez de <img> solto dentro de um <p>.
+  eleventyConfig.amendLibrary("md", (mdLib) => {
+    const escapeHtml = mdLib.utils.escapeHtml;
+    mdLib.renderer.rules.image = function (tokens, idx) {
+      const token = tokens[idx];
+      const src = token.attrGet("src");
+      const alt = escapeHtml(token.content);
+      return `<figure class="post-figure"><img src="${src}" alt="${alt}" loading="lazy"><figcaption>${alt}</figcaption></figure>`;
+    };
   });
 
   return {

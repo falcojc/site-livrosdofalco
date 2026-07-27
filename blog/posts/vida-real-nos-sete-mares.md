@@ -1,21 +1,18 @@
 ---
 title: "A Vida Real nos Sete Mares: Mitos, Fatos e a Era de Ouro da Pirataria"
-date: 2026-08-09
+date: 2026-11-22
 description: "O que separa o mito da realidade na Era de Ouro da Pirataria, cartas de corso, códigos de honra e as rotas que moldaram O Mestre das Tormentas."
 cluster: "Aventura Épica"
 cover: "/blog/media/vida-real-nos-sete-mares/capa-frota-tempestade.jpg"
-obra_relacionada: "o-mestre-das-tormentas"
+obra_relacionada: "/o-mestre-das-tormentas"
 obra_relacionada_titulo: "John Storm e a saga completa da família Storm"
 obra_relacionada_cta: "Mergulhe no universo de O Mestre das Tormentas e descubra a saga completa da família Storm."
-draft: true
 ---
 Quando fechamos os olhos e imaginamos o século XVIII, a imagem que frequentemente nos vem à mente é a de grandes galeões singrando oceanos tempestuosos, ilhas caribenhas isoladas e o tilintar de moedas de ouro espanholas. A Era de Ouro da Pirataria fascinou gerações e inspirou o folclore, o cinema e, claro, a grande literatura de ficção histórica.
 
 Mas o que separa o mito da realidade? Como era, de fato, a vida dos marinheiros que deixavam portos enevoados da Europa para desbravar rotas perigosas rumo às Américas e à Ásia?
 
 Descubra como as dinâmicas de poder dos grandes impérios forjaram os "senhores dos mares" e como esse contexto monumental serve de pano de fundo para jornadas épicas, como a vivida na trilogia [O Mestre das Tormentas](/o-mestre-das-tormentas), de Domenico Falco.
-
-![Frota de galeões britânicos navegando em mar revolto sob nuvens pesadas, raios de sol atravessando as nuvens](/blog/media/vida-real-nos-sete-mares/capa-frota-tempestade.jpg)
 
 ## De Marinheiros a Foras da Lei: O Nascimento dos Corsários
 
@@ -24,6 +21,8 @@ A transição da legalidade para a rebeldia raramente acontecia por pura ganânc
 Em tempos de guerra, as coroas europeias emitiam "Cartas de Corso", documentos oficiais que transformavam marinheiros civis em corsários. Eles tinham permissão do governo para capturar e confiscar navios de nações inimigas. Eram, essencialmente, guerreiros legalizados.
 
 No entanto, quando os acordos de paz eram assinados nos confortáveis gabinetes da Europa, milhares de marinheiros altamente treinados viam-se subitamente desempregados e à deriva em portos caribenhos e asiáticos. Rejeitados pelo sistema que ajudaram a erguer, muitos desses homens e mulheres cruzaram a linha da lei. Assumiram o controle de seus próprios destinos e voltaram suas velas contra os mesmos impérios que antes serviam.
+
+![Corsário do século XVIII segurando uma carta de corso real no convés de um navio ao pôr do sol](/blog/media/vida-real-nos-sete-mares/nascimento-corsarios.jpg)
 
 ## A Bússola Moral e o Código de Honra
 
