@@ -7,6 +7,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("newsletter");
   eleventyConfig.addPassthroughCopy("covers");
   eleventyConfig.addPassthroughCopy("personagens");
+  eleventyConfig.addPassthroughCopy("banners");
   eleventyConfig.addPassthroughCopy("*.png");
   eleventyConfig.addPassthroughCopy("*.jpg");
   eleventyConfig.addPassthroughCopy("*.ico");
