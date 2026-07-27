@@ -6,6 +6,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("o-mestre-das-tormentas");
   eleventyConfig.addPassthroughCopy("newsletter");
   eleventyConfig.addPassthroughCopy("covers");
+  eleventyConfig.addPassthroughCopy("personagens");
   eleventyConfig.addPassthroughCopy("*.png");
   eleventyConfig.addPassthroughCopy("*.jpg");
   eleventyConfig.addPassthroughCopy("*.ico");
