@@ -22,17 +22,26 @@ ogType: article
       </div>
 
       {% if obra_relacionada %}
-      <div class="cta-box">
-        <span class="post-tag">Continue a jornada</span>
-        <h3>Conheça {{ obra_relacionada_titulo or "esta obra" }}</h3>
-        <p>{{ obra_relacionada_cta or "Descubra a saga completa e mergulhe na história." }}</p>
-        <div class="cta-actions">
-          {% if obra_relacionada | isExternal %}
-          <a href="{{ obra_relacionada }}" class="btn solid" target="_blank" rel="noopener">Comprar na Amazon</a>
-          {% else %}
-          <a href="{{ obra_relacionada }}" class="btn solid">Conhecer a obra</a>
-          {% endif %}
-          <a href="/newsletter" class="btn">Assinar a newsletter</a>
+      <div class="cta-box{% if obra_relacionada_capas and obra_relacionada_capas.length %} has-cover{% endif %}">
+        {% if obra_relacionada_capas and obra_relacionada_capas.length %}
+        <div class="cta-covers">
+          {% for capa in obra_relacionada_capas %}
+          <div class="cta-cover"><img src="/covers/{{ capa }}.jpg" alt="" loading="lazy"></div>
+          {% endfor %}
+        </div>
+        {% endif %}
+        <div class="cta-text">
+          <span class="post-tag">Continue a jornada</span>
+          <h3>Conheça {{ obra_relacionada_titulo or "esta obra" }}</h3>
+          <p>{{ obra_relacionada_cta or "Descubra a saga completa e mergulhe na história." }}</p>
+          <div class="cta-actions">
+            {% if obra_relacionada | isExternal %}
+            <a href="{{ obra_relacionada }}" class="btn solid" target="_blank" rel="noopener">Comprar na Amazon</a>
+            {% else %}
+            <a href="{{ obra_relacionada }}" class="btn solid">Conhecer a obra</a>
+            {% endif %}
+            <a href="/newsletter" class="btn">Assinar a newsletter</a>
+          </div>
         </div>
       </div>
       {% else %}

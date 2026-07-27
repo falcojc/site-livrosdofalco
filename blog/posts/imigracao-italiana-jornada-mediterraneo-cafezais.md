@@ -6,6 +6,7 @@ cluster: "Raízes, Sacrifício e Herança"
 cover: "/blog/media/imigracao-italiana-jornada-mediterraneo-cafezais/capa-porto-navio-imigrantes.jpg"
 obra_relacionada: "https://www.amazon.com.br/dp/B0D9WS272F"
 obra_relacionada_titulo: "O Siciliano e Os Dois Irmãos"
+obra_relacionada_capas: ["o-siciliano", "os-dois-irmaos"]
 obra_relacionada_cta: "Embarque nas páginas de O Siciliano e Os Dois Irmãos, de Domenico Falco, e descubra o preço e a recompensa de recomeçar em um novo mundo."
 tags: ["cluster-raizes-sacrificio-heranca"]
 ---

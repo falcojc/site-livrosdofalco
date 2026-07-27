@@ -6,6 +6,7 @@ cluster: "Raízes, Sacrifício e Herança"
 cover: "/blog/media/bussola-moral-guerra-vida-comum-europa/capa-casal-neblina-europa.jpg"
 obra_relacionada: "https://www.amazon.com.br/dp/B0D8RTKVB8"
 obra_relacionada_titulo: "A Vila e O Que Eu Lembro Deles"
+obra_relacionada_capas: ["a-vila", "o-que-eu-lembro-deles"]
 obra_relacionada_cta: "Conheça as famílias que transformaram sacrifício em amor e perdão em A Vila e O Que Eu Lembro Deles, de Domenico Falco."
 tags: ["cluster-raizes-sacrificio-heranca"]
 ---

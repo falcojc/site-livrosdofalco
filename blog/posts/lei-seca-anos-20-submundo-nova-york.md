@@ -6,6 +6,7 @@ cluster: "Mistério, Luxo e Sombras"
 cover: "/blog/media/lei-seca-anos-20-submundo-nova-york/capa-rua-little-italy.jpg"
 obra_relacionada: "https://www.amazon.com.br/dp/B0D917Q6XB"
 obra_relacionada_titulo: "A Indústria do Vício"
+obra_relacionada_capas: ["a-industria-do-vicio"]
 obra_relacionada_cta: "Desvende as sombras da Nova York da Lei Seca em A Indústria do Vício, de Domenico Falco."
 tags: ["cluster-misterio-luxo-sombras"]
 ---

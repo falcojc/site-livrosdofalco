@@ -6,6 +6,7 @@ cluster: "Aventura Épica"
 cover: "/blog/media/a-lenda-dos-sete-mares/capa-navio-tempestade.jpg"
 obra_relacionada: "/o-mestre-das-tormentas"
 obra_relacionada_titulo: "John Storm, o pirata que virou lenda"
+obra_relacionada_capas: ["mestre-das-tormentas"]
 obra_relacionada_cta: "Descubra a saga completa em O Mestre das Tormentas, do Caribe à China, a bordo do maior segredo do século XVIII."
 heroOrder: 3
 tags: ["cluster-aventura-epica"]

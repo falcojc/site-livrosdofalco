@@ -6,6 +6,7 @@ cluster: "Empoderamento e Rebeldia"
 cover: "/blog/media/papel-mulher-japao-feudal/capa-mulher-rua-tradicional.jpg"
 obra_relacionada: "https://www.amazon.com.br/dp/B09G1J8GKR"
 obra_relacionada_titulo: "A Casa dos Prazeres"
+obra_relacionada_capas: ["a-casa-dos-prazeres"]
 obra_relacionada_cta: "Descubra a jornada de mulheres que transformam sobrevivência em poder em A Casa dos Prazeres, de Domenico Falco."
 heroOrder: 5
 tags: ["cluster-empoderamento-rebeldia"]
