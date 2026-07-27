@@ -6,6 +6,7 @@ cluster: "Aventura Épica"
 cover: "/blog/media/vida-real-nos-sete-mares/capa-frota-tempestade.jpg"
 obra_relacionada: "/o-mestre-das-tormentas"
 obra_relacionada_titulo: "John Storm e a saga completa da família Storm"
+obra_relacionada_capas: ["mestre-das-tormentas"]
 obra_relacionada_cta: "Mergulhe no universo de O Mestre das Tormentas e descubra a saga completa da família Storm."
 ---
 Quando fechamos os olhos e imaginamos o século XVIII, a imagem que frequentemente nos vem à mente é a de grandes galeões singrando oceanos tempestuosos, ilhas caribenhas isoladas e o tilintar de moedas de ouro espanholas. A Era de Ouro da Pirataria fascinou gerações e inspirou o folclore, o cinema e, claro, a grande literatura de ficção histórica.

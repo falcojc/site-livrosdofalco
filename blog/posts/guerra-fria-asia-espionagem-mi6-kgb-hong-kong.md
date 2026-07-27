@@ -6,6 +6,7 @@ cluster: "Mistério, Luxo e Sombras"
 cover: "/blog/media/guerra-fria-asia-espionagem-mi6-kgb-hong-kong/capa-hong-kong-neon.jpg"
 obra_relacionada: "https://www.amazon.com.br/dp/B0D8M6361T"
 obra_relacionada_titulo: "Destinos Cruzados: Parte 2"
+obra_relacionada_capas: ["destinos-cruzados-parte-2"]
 obra_relacionada_cta: "Mergulhe na teia de espionagem, Tríades e segredos de família em Destinos Cruzados: Parte 2, de Domenico Falco."
 heroOrder: 4
 tags: ["cluster-misterio-luxo-sombras"]

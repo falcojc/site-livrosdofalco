@@ -6,6 +6,7 @@ cluster: "Aventura Épica"
 cover: "/blog/media/desafios-expedicoes-floresta-amazonica/capa-rio-floresta-amazonica.jpg"
 obra_relacionada: "https://www.amazon.com.br/dp/B0DJZG19NX"
 obra_relacionada_titulo: "O Explorador"
+obra_relacionada_capas: ["o-explorador"]
 obra_relacionada_cta: "Aventure-se da Antártida à Amazônia em O Explorador, de Domenico Falco."
 heroOrder: 1
 tags: ["cluster-aventura-epica"]

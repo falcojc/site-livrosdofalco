@@ -6,6 +6,7 @@ cluster: "Aventura Épica"
 cover: "/blog/media/fascinante-perigosa-milenar-rota-da-seda/capa-caravana-deserto.jpg"
 obra_relacionada: "/o-mestre-das-tormentas"
 obra_relacionada_titulo: "O Mestre das Tormentas"
+obra_relacionada_capas: ["mestre-das-tormentas"]
 obra_relacionada_cta: "Acompanhe o desfecho da saga de John Storm, da China à Inglaterra, em O Mestre das Tormentas, de Domenico Falco."
 tags: ["cluster-aventura-epica"]
 ---

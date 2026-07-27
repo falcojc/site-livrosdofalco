@@ -6,6 +6,7 @@ cluster: "Empoderamento e Rebeldia"
 cover: "/blog/media/segredos-cabares-belle-epoque-paris/capa-fachada-cabare.jpg"
 obra_relacionada: "https://www.amazon.com.br/dp/B0BH3KL167"
 obra_relacionada_titulo: "Joana: A Dama da Noite"
+obra_relacionada_capas: ["joana"]
 obra_relacionada_cta: "Mergulhe nos encantos e perigos dos cabarés parisienses em Joana: A Dama da Noite, de Domenico Falco."
 tags: ["cluster-empoderamento-rebeldia"]
 ---

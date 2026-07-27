@@ -6,6 +6,7 @@ cluster: "Aventura Épica"
 cover: "/blog/media/guerra-secessao-corrida-ouro-justica/capa-resistencia-esperanca.jpg"
 obra_relacionada: "https://www.amazon.com.br/dp/B0BH4VJDBN"
 obra_relacionada_titulo: "Sangue Frio"
+obra_relacionada_capas: ["sangue-frio"]
 obra_relacionada_cta: "Embarque nas páginas de Sangue Frio, de Domenico Falco, e descubra o herói sem nome que se recusa a ser esquecido pela história."
 heroOrder: 2
 tags: ["cluster-aventura-epica"]
