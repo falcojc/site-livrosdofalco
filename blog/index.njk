@@ -67,7 +67,16 @@ description: "Pesquisa histórica real, personagens e os bastidores dos livros d
 
     {% if collections.post.length > visibleCount %}
     <div class="load-more-wrap">
-      <button type="button" class="btn" id="loadMoreBtn">Ver mais posts</button>
+      <div class="load-more-peek">
+        {% for post in collections.post | reverse %}
+          {% if loop.index > visibleCount and loop.index <= visibleCount + 3 %}
+          <a href="{{ post.url }}" class="load-more-peek-item" title="{{ post.data.title }}">
+            {% if post.data.cover %}<img src="{{ post.data.cover }}" alt="" loading="lazy">{% endif %}
+          </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+      <button type="button" class="btn solid" id="loadMoreBtn">Ver mais posts</button>
     </div>
     {% endif %}
   </div>
@@ -131,7 +140,8 @@ description: "Pesquisa histórica real, personagens e os bastidores dos livros d
       document.querySelectorAll('#postGrid .post-card.is-more').forEach(function(card){
         card.classList.remove('is-more');
       });
-      loadMoreBtn.remove();
+      var wrap = loadMoreBtn.closest('.load-more-wrap');
+      if (wrap) wrap.remove();
     });
   }
 })();
