@@ -4,9 +4,10 @@ date: 2026-07-26
 description: "De Barba Negra a Ching Shih, as histórias reais que inspiraram a jornada de John Storm em O Mestre das Tormentas."
 cluster: "Aventura Épica"
 cover: "/blog/media/a-lenda-dos-sete-mares/capa-navio-tempestade.jpg"
-obra_relacionada: "o-mestre-das-tormentas"
+obra_relacionada: "/o-mestre-das-tormentas"
 obra_relacionada_titulo: "John Storm, o pirata que virou lenda"
 obra_relacionada_cta: "Descubra a saga completa em O Mestre das Tormentas, do Caribe à China, a bordo do maior segredo do século XVIII."
+heroOrder: 3
 tags: ["cluster-aventura-epica"]
 ---
 Séculos antes de John Storm içar velas rumo ao desconhecido em [O Mestre das Tormentas](/o-mestre-das-tormentas), os mares do mundo já pertenciam a homens e mulheres que reescreveram as próprias regras. Nem todos usavam tapa-olho, nem todos eram vilões, mas todos, à sua maneira, transformaram o medo dos outros em lenda própria.

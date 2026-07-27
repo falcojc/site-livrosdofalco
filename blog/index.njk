@@ -3,6 +3,7 @@ layout: base.njk
 title: "Blog"
 description: "Pesquisa histórica real, personagens e os bastidores dos livros de Domenico Falco."
 ---
+{% set visibleCount = 6 %}
 <section>
   <div class="wrap">
     <div class="sec-head">
@@ -12,9 +13,38 @@ description: "Pesquisa histórica real, personagens e os bastidores dos livros d
       <p>Pesquisa histórica real, personagens e os bastidores dos livros de Domenico Falco.</p>
     </div>
 
-    <div class="post-grid">
+    {% if collections.hero.length %}
+    <div class="hero-carousel" id="heroCarousel" aria-roledescription="carrossel" aria-label="Posts em destaque">
+      <div class="hero-track">
+        {% for post in collections.hero %}
+        <a href="{{ post.url }}" class="hero-slide{% if loop.first %} is-active{% endif %}" aria-hidden="{% if loop.first %}false{% else %}true{% endif %}" tabindex="{% if loop.first %}0{% else %}-1{% endif %}">
+          {% if post.data.cover %}
+          <div class="hero-slide-bg" style="background-image:url('{{ post.data.cover }}')"></div>
+          {% endif %}
+          <div class="hero-slide-body">
+            <span class="post-tag">{{ post.data.cluster }}</span>
+            <h2>{{ post.data.title }}</h2>
+            <p>{{ post.data.description }}</p>
+            <span class="hero-cta">Ler mais →</span>
+          </div>
+        </a>
+        {% endfor %}
+      </div>
+      {% if collections.hero.length > 1 %}
+      <button type="button" class="hero-arrow hero-prev" aria-label="Destaque anterior">‹</button>
+      <button type="button" class="hero-arrow hero-next" aria-label="Próximo destaque">›</button>
+      <div class="hero-dots" role="tablist" aria-label="Selecionar post em destaque">
+        {% for post in collections.hero %}
+        <button type="button" class="hero-dot{% if loop.first %} is-active{% endif %}" role="tab" aria-selected="{% if loop.first %}true{% else %}false{% endif %}" aria-label="Ir para destaque {{ loop.index }}: {{ post.data.title }}"></button>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+    {% endif %}
+
+    <div class="post-grid" id="postGrid">
       {% for post in collections.post | reverse %}
-      <div class="post-card">
+      <div class="post-card{% if loop.index > visibleCount %} is-more{% endif %}">
         <a href="{{ post.url }}">
           <div class="post-cover">
             {% if post.data.cover %}
@@ -34,5 +64,75 @@ description: "Pesquisa histórica real, personagens e os bastidores dos livros d
       </div>
       {% endfor %}
     </div>
+
+    {% if collections.post.length > visibleCount %}
+    <div class="load-more-wrap">
+      <button type="button" class="btn" id="loadMoreBtn">Ver mais posts</button>
+    </div>
+    {% endif %}
   </div>
 </section>
+
+<script>
+(function(){
+  var root = document.getElementById('heroCarousel');
+  if (root) {
+    var slides = Array.prototype.slice.call(root.querySelectorAll('.hero-slide'));
+    var dots = Array.prototype.slice.call(root.querySelectorAll('.hero-dot'));
+    var prevBtn = root.querySelector('.hero-prev');
+    var nextBtn = root.querySelector('.hero-next');
+    var current = 0;
+    var timer = null;
+    var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    function show(index){
+      slides[current].classList.remove('is-active');
+      slides[current].setAttribute('aria-hidden', 'true');
+      slides[current].setAttribute('tabindex', '-1');
+      if (dots[current]) {
+        dots[current].classList.remove('is-active');
+        dots[current].setAttribute('aria-selected', 'false');
+      }
+      current = (index + slides.length) % slides.length;
+      slides[current].classList.add('is-active');
+      slides[current].setAttribute('aria-hidden', 'false');
+      slides[current].setAttribute('tabindex', '0');
+      if (dots[current]) {
+        dots[current].classList.add('is-active');
+        dots[current].setAttribute('aria-selected', 'true');
+      }
+    }
+
+    function next(){ show(current + 1); }
+    function prev(){ show(current - 1); }
+    function stop(){ if (timer) { clearInterval(timer); timer = null; } }
+    function start(){
+      if (reduceMotion || slides.length < 2) return;
+      stop();
+      timer = setInterval(next, 6500);
+    }
+
+    dots.forEach(function(dot, i){
+      dot.addEventListener('click', function(){ show(i); start(); });
+    });
+    if (nextBtn) nextBtn.addEventListener('click', function(){ next(); start(); });
+    if (prevBtn) prevBtn.addEventListener('click', function(){ prev(); start(); });
+    root.addEventListener('mouseenter', stop);
+    root.addEventListener('mouseleave', start);
+    root.addEventListener('focusin', stop);
+    root.addEventListener('focusout', start);
+
+    start();
+  }
+
+  var loadMoreBtn = document.getElementById('loadMoreBtn');
+  if (loadMoreBtn) {
+    loadMoreBtn.addEventListener('click', function(){
+      document.querySelectorAll('#postGrid .post-card.is-more').forEach(function(card){
+        card.classList.remove('is-more');
+      });
+      loadMoreBtn.remove();
+    });
+  }
+})();
+</script>
