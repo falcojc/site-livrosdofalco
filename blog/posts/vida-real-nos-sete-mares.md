@@ -1,6 +1,6 @@
 ---
 title: "A Vida Real nos Sete Mares: Mitos, Fatos e a Era de Ouro da Pirataria"
-date: 2026-11-22
+date: 2026-07-25
 description: "O que separa o mito da realidade na Era de Ouro da Pirataria, cartas de corso, códigos de honra e as rotas que moldaram O Mestre das Tormentas."
 cluster: "Aventura Épica"
 cover: "/blog/media/vida-real-nos-sete-mares/capa-frota-tempestade.jpg"

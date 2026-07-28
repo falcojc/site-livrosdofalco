@@ -1,6 +1,6 @@
 ---
 title: "Vida Comum na Guerra: A Bússola Moral e o Sacrifício"
-date: 2026-10-18
+date: 2026-07-20
 description: "Descubra como famílias comuns enfrentaram dilemas morais e sacrifícios durante os grandes conflitos europeus. Histórias de superação, perdão e resiliência."
 cluster: "Raízes, Sacrifício e Herança"
 cover: "/blog/media/bussola-moral-guerra-vida-comum-europa/capa-casal-neblina-europa.jpg"

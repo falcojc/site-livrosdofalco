@@ -1,6 +1,6 @@
 ---
 title: "Guerra de Secessão e o Velho Oeste: A Busca por Justiça"
-date: 2026-07-01
+date: 2026-07-18
 description: "Descubra o custo humano da Guerra Civil Americana e da Corrida do Ouro. Uma jornada épica de sobrevivência, resistência e justiça na ficção histórica."
 cluster: "Aventura Épica"
 cover: "/blog/media/guerra-secessao-corrida-ouro-justica/capa-resistencia-esperanca.jpg"

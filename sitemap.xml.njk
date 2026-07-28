@@ -1,0 +1,46 @@
+---
+permalink: "sitemap.xml"
+eleventyExcludeFromCollections: true
+---<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.livrosdofalco.com.br/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.livrosdofalco.com.br/o-mestre-das-tormentas</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.livrosdofalco.com.br/categoria/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+{%- for slug in ["mulheres-donas-do-seu-destino", "raizes-sacrificio-familia", "submundo-traicoes-misterios", "jornadas-epicas-sobrevivencia", "fe-misticismo-desconhecido"] %}
+  <url>
+    <loc>https://www.livrosdofalco.com.br/categoria/{{ slug }}/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+{%- endfor %}
+  <url>
+    <loc>https://www.livrosdofalco.com.br/blog/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+{%- for post in collections.post %}
+  <url>
+    <loc>https://www.livrosdofalco.com.br{{ post.url }}</loc>
+    <lastmod>{{ post.date | dateISO }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+{%- endfor %}
+  <url>
+    <loc>https://www.livrosdofalco.com.br/newsletter</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+</urlset>

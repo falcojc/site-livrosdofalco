@@ -1,6 +1,6 @@
 ---
 title: "Imigração Italiana: A Jornada do Mediterrâneo às Américas"
-date: 2026-12-13
+date: 2026-07-28
 description: "Descubra a épica jornada dos imigrantes italianos rumo ao Brasil e Argentina. Uma história de sacrifício, família e esperança que inspira a ficção histórica."
 cluster: "Raízes, Sacrifício e Herança"
 cover: "/blog/media/imigracao-italiana-jornada-mediterraneo-cafezais/capa-porto-navio-imigrantes.jpg"

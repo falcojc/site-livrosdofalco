@@ -13,7 +13,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("*.jpg");
   eleventyConfig.addPassthroughCopy("*.ico");
   eleventyConfig.addPassthroughCopy("SEO.txt");
-  eleventyConfig.addPassthroughCopy("sitemap.xml");
   eleventyConfig.addPassthroughCopy("analytics.js");
 
   // Assets novos do blog (imagens de post, quando existirem)
@@ -51,6 +50,10 @@ module.exports = function (eleventyConfig) {
     return new Date(dateObj).toLocaleDateString("pt-BR", {
       day: "numeric", month: "long", year: "numeric", timeZone: "UTC"
     });
+  });
+
+  eleventyConfig.addFilter("dateISO", function (dateObj) {
+    return new Date(dateObj).toISOString().split("T")[0];
   });
 
   eleventyConfig.addFilter("isExternal", function (url) {

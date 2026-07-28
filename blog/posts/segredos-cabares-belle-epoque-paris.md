@@ -1,6 +1,6 @@
 ---
 title: "Segredos e Glamour dos Cabarés na Belle Époque"
-date: 2026-11-08
+date: 2026-07-23
 description: "Mergulhe no brilho e nos mistérios da Belle Époque parisiense. Conheça a era de ouro dos cabarés e a busca por liberdade feminina nos palcos."
 cluster: "Empoderamento e Rebeldia"
 cover: "/blog/media/segredos-cabares-belle-epoque-paris/capa-fachada-cabare.jpg"

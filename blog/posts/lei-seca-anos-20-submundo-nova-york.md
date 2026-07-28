@@ -1,6 +1,6 @@
 ---
 title: "A Lei Seca nos Anos 20: O Submundo de Nova York"
-date: 2026-12-06
+date: 2026-07-27
 description: "Descubra como a Lei Seca nos anos 20 transformou Nova York. Explore os segredos, o poder dos speakeasies e a inspiração para A Indústria do Vício."
 cluster: "Mistério, Luxo e Sombras"
 cover: "/blog/media/lei-seca-anos-20-submundo-nova-york/capa-rua-little-italy.jpg"
