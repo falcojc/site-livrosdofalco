@@ -140,6 +140,7 @@
     font-weight:900;
     color:#f6ecd9;
     text-shadow:0 4px 24px rgba(0,0,0,.6);
+    text-wrap:balance;
   }
   .hero .lede{
     max-width:640px;margin-top:22px;
@@ -156,11 +157,17 @@
   .hero-prev{left:20px;}
   .hero-next{right:20px;}
   .hero-dots{position:absolute;bottom:28px;right:32px;display:flex;gap:10px;z-index:3;}
-  .hero-dot{width:9px;height:9px;border-radius:50%;border:1px solid var(--gold);background:transparent;padding:0;cursor:pointer;}
+  .hero-dot{width:9px;height:9px;border-radius:50%;border:1px solid var(--gold);background:transparent;padding:0;cursor:pointer;position:relative;}
+  .hero-dot::before{content:"";position:absolute;top:50%;left:50%;width:34px;height:34px;transform:translate(-50%,-50%);}
   .hero-dot.is-active{background:var(--gold);}
   @media (max-width:640px){
     .hero-arrow{display:none;}
-    .hero-dots{bottom:18px;right:18px;}
+    .hero{min-height:calc(100svh - 115px);}
+    .hero-inner{padding:88px 22px 56px;}
+    .hero h1{font-size:clamp(26px,7.5vw,36px);line-height:1.12;}
+    .hero .lede{font-size:16px;margin-top:14px;}
+    .hero .cta-row{margin-top:22px;}
+    .hero-dots{bottom:26px;right:20px;}
   }
 
   /* SECTION HEADERS */
@@ -709,7 +716,7 @@
       <div class="hero-slide-overlay"></div>
       <div class="hero-inner">
         <div class="eyebrow">Ficção Histórica</div>
-        <h1>Histórias que Atravessam<br>Séculos e Continentes</h1>
+        <h1>Histórias que Atravessam Séculos e Continentes</h1>
         <p class="lede">Descubra o universo épico de Domenico Falco. Romances de ficção histórica que unem fatos reais a jornadas inesquecíveis.</p>
         <div class="cta-row">
           <a class="btn solid" href="#obras">Explorar o Universo</a>
@@ -721,7 +728,7 @@
       <div class="hero-slide-overlay"></div>
       <div class="hero-inner">
         <div class="eyebrow">Empoderamento e Rebeldia</div>
-        <h1>Heroínas que Ditam<br>as Próprias Regras</h1>
+        <h1>Heroínas que Ditam as Próprias Regras</h1>
         <p class="lede">Da Belle Époque ao Japão Feudal, conheça mulheres que transformaram as adversidades em poder, sedução e vingança.</p>
         <div class="cta-row">
           <a class="btn solid" href="/blog">Conhecer as Protagonistas</a>
@@ -733,7 +740,7 @@
       <div class="hero-slide-overlay"></div>
       <div class="hero-inner">
         <div class="eyebrow">Mistério, Luxo e Sombras</div>
-        <h1>Segredos, Máfia<br>e Espionagem</h1>
+        <h1>Segredos, Máfia e Espionagem</h1>
         <p class="lede">Adentre o submundo da Lei Seca em Nova York e o perigoso tabuleiro da Guerra Fria no Oriente.</p>
         <div class="cta-row">
           <a class="btn solid" href="/blog/lei-seca-anos-20-submundo-nova-york/">Desvendar os Mistérios</a>
@@ -745,7 +752,7 @@
       <div class="hero-slide-overlay"></div>
       <div class="hero-inner">
         <div class="eyebrow">Aventura Épica</div>
-        <h1>Nascidos nas Tormentas,<br>Forjados na Batalha</h1>
+        <h1>Nascidos nas Tormentas, Forjados na Batalha</h1>
         <p class="lede">Embarque em uma epopeia de sobrevivência e pirataria pelos sete mares. A coragem é a única bússola.</p>
         <div class="cta-row">
           <a class="btn solid" href="/o-mestre-das-tormentas">Embarcar na Saga</a>
@@ -757,7 +764,7 @@
       <div class="hero-slide-overlay"></div>
       <div class="hero-inner">
         <div class="eyebrow">Ficção Histórica</div>
-        <h1>Sua Próxima Grande<br>Leitura Está Aqui</h1>
+        <h1>Sua Próxima Grande Leitura Está Aqui</h1>
         <p class="lede">Dramas familiares, heróis inesquecíveis e recortes precisos da história. Encontre o seu próximo livro favorito.</p>
         <div class="cta-row">
           <a class="btn solid" href="https://link.amazon/B07FTtUJ7" target="_blank" rel="noopener">Comprar na Amazon</a>
@@ -1386,6 +1393,23 @@
   root.addEventListener('mouseleave', start);
   root.addEventListener('focusin', stop);
   root.addEventListener('focusout', start);
+
+  // Swipe pro mobile (as setas ficam escondidas em telas pequenas)
+  var touchStartX = 0;
+  var touchStartY = 0;
+  root.addEventListener('touchstart', function(e){
+    touchStartX = e.changedTouches[0].clientX;
+    touchStartY = e.changedTouches[0].clientY;
+    stop();
+  }, { passive: true });
+  root.addEventListener('touchend', function(e){
+    var dx = e.changedTouches[0].clientX - touchStartX;
+    var dy = e.changedTouches[0].clientY - touchStartY;
+    if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) {
+      if (dx < 0) { next(); } else { prev(); }
+    }
+    start();
+  }, { passive: true });
 
   start();
 
