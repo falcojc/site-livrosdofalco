@@ -37,6 +37,12 @@ document.addEventListener('click', function(e){
     gtag('event', 'click_blog_teaser', { event_category: 'blog', event_label: href });
     return;
   }
+  var personagemCard = link.closest('.character-card');
+  if (personagemCard) {
+    var foto = personagemCard.querySelector('.character-photo img');
+    gtag('event', 'click_personagem', { event_category: 'personagens', event_label: foto && foto.alt ? foto.alt : href });
+    return;
+  }
   if (link.closest('.nav-dropdown-panel')) {
     gtag('event', 'click_nav_categorias', { event_category: 'navegacao', event_label: href });
     return;
