@@ -79,6 +79,13 @@
   .nav-actions .social-links svg{width:15px;height:15px;}
   .nav-actions .btn{height:32px;padding:0 16px;display:inline-flex;align-items:center;justify-content:center;}
   @media (max-width:480px){.nav-actions{gap:8px;}}
+  /* Menu desta pagina tem o item extra "O Mestre das Tormentas" e nao cabe em 1 linha
+     no desktop — links descem pra 2a linha, logo + social + CTA ficam na 1a (padrao das
+     outras categorias) */
+  @media (min-width:861px){
+    .nav-inner{row-gap:6px;}
+    nav.links{order:3;width:100%;justify-content:flex-end;}
+  }
   @media (max-width:860px){
     .nav-inner{flex-wrap:wrap;row-gap:10px;}
     .brand-lockup .brand{display:none;}
