@@ -14,6 +14,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("*.ico");
   eleventyConfig.addPassthroughCopy("SEO.txt");
   eleventyConfig.addPassthroughCopy("sitemap.xml");
+  eleventyConfig.addPassthroughCopy("analytics.js");
 
   // Assets novos do blog (imagens de post, quando existirem)
   eleventyConfig.addPassthroughCopy({ "blog/posts/media": "blog/media" });
