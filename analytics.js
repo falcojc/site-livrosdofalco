@@ -1,7 +1,13 @@
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-R2ZQZ51DEK');
+
+// Mede so no dominio de producao. Previews do Vercel (*.vercel.app) e o servidor
+// local de desenvolvimento nao configuram a medicao, entao nao sujam o GA4.
+// Os eventos continuam sendo empilhados no dataLayer, o que permite testar sem enviar nada.
+if (/(^|\.)livrosdofalco\.com\.br$/.test(location.hostname)) {
+  gtag('config', 'G-R2ZQZ51DEK');
+}
 
 document.addEventListener('click', function(e){
   if (typeof gtag !== 'function') return;
