@@ -61,6 +61,20 @@
   nav.links{display:flex;gap:26px;align-items:center;flex-wrap:wrap;}
   nav.links a{font-size:14px;color:var(--text-muted);font-family:'EB Garamond',Georgia,serif;}
   nav.links a:hover,nav.links a.current{color:var(--gold-bright);}
+  .nav-dropdown{position:relative;display:inline-flex;align-items:center;}
+  .nav-dropdown-panel{
+    position:absolute;top:100%;left:50%;transform:translate(-50%,6px);
+    background:rgba(11,9,8,.97);border:1px solid var(--card-border);border-radius:4px;
+    padding:8px;min-width:260px;display:flex;flex-direction:column;gap:2px;
+    opacity:0;visibility:hidden;transition:opacity .2s,visibility .2s,transform .2s;z-index:60;
+  }
+  .nav-dropdown:hover .nav-dropdown-panel,.nav-dropdown:focus-within .nav-dropdown-panel{
+    opacity:1;visibility:visible;transform:translate(-50%,0);
+  }
+  .nav-dropdown-panel a{padding:9px 12px;border-radius:3px;font-size:14px;white-space:normal;color:var(--text-muted);}
+  .nav-dropdown-panel a:hover{background:rgba(201,161,58,.1);color:var(--gold-bright);}
+  .nav-dropdown-panel a.current{color:var(--gold-bright);}
+  @media (max-width:900px){.nav-dropdown-panel{display:none;}}
   @media (max-width:900px){
     .nav-inner{flex-wrap:wrap;row-gap:10px;}
     nav.links{
@@ -236,7 +250,16 @@
     <nav class="links">
       <a href="/#sobre">Autor</a>
       <a href="/#obras">Obras</a>
-      <a href="/o-mestre-das-tormentas" class="hide-compact">O Mestre das Tormentas</a>
+      <div class="nav-dropdown">
+        <a href="/categoria/">Categorias</a>
+        <div class="nav-dropdown-panel">
+          <a href="/categoria/mulheres-donas-do-seu-destino/">Mulheres Donas de Seus Destinos</a>
+          <a href="/categoria/raizes-sacrificio-familia/">Raízes, Sacrifício e Família</a>
+          <a href="/categoria/submundo-traicoes-misterios/">Submundo, Traições e Mistérios</a>
+          <a href="/categoria/jornadas-epicas-sobrevivencia/">Jornadas Épicas e Sobrevivência</a>
+          <a href="/categoria/fe-misticismo-desconhecido/">Fé, Misticismo e o Desconhecido</a>
+        </div>
+      </div>
       <a href="/blog" {% if page.url == '/blog/' or '/blog/' in page.url %}class="current"{% endif %}>Blog</a>
       <a href="/#contato">Contato</a>
       <a href="/newsletter">Newsletter</a>
