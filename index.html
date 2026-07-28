@@ -267,6 +267,34 @@
   .character-body .btn{align-self:flex-start;}
   @media (max-width:900px){.characters-grid{grid-template-columns:1fr;}}
 
+  /* CARD CAROUSEL (personagens + posts do blog) — sem autoplay, so interacao do usuario */
+  .card-carousel{position:relative;}
+  .cc-viewport{overflow:hidden;}
+  .cc-track{display:flex;gap:28px;transition:transform .5s ease;}
+  .cc-track>*{flex:0 0 calc((100% - 56px)/3);min-width:0;}
+  .cc-arrow{
+    position:absolute;top:38%;transform:translateY(-50%);width:38px;height:38px;border-radius:50%;
+    border:1px solid var(--gold);background:rgba(11,9,8,.72);color:var(--gold-bright);font-size:21px;line-height:1;
+    display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background .2s,color .2s;z-index:3;
+  }
+  .cc-arrow:hover{background:var(--gold);color:var(--bg);}
+  .cc-prev{left:-19px;}
+  .cc-next{right:-19px;}
+  @media (max-width:1260px){.cc-prev{left:6px;}.cc-next{right:6px;}}
+  .cc-dots{display:flex;gap:9px;justify-content:center;margin-top:28px;}
+  .cc-dot{width:9px;height:9px;border-radius:50%;border:1px solid var(--gold);background:transparent;padding:0;cursor:pointer;}
+  .cc-dot.is-active{background:var(--gold);}
+  .cc-dot{box-sizing:content-box;border-width:1px;}
+  .cc-hint{display:none;}
+  @media (max-width:900px){
+    .cc-viewport{overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;}
+    .cc-viewport::-webkit-scrollbar{display:none;}
+    .cc-track{gap:14px;transform:none !important;}
+    .cc-track>*{flex:0 0 82%;scroll-snap-align:start;}
+    .cc-arrow,.cc-dots{display:none;}
+    .cc-hint{display:block;text-align:center;font-family:'Cinzel',serif;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--text-muted);margin:16px 0 0;}
+  }
+
   /* QUOTE BANNER */
   .quote-banner{
     background:linear-gradient(135deg, var(--red) 0%, #2a0e0e 60%, #0b0908 100%);
@@ -808,31 +836,87 @@
       <div class="divider"></div>
       <p>Pesquisa histórica real, personagens e os bastidores por trás das obras, direto do blog.</p>
     </div>
-    <div class="teaser-grid">
-      <a class="teaser-card" href="/blog/imigracao-italiana-jornada-mediterraneo-cafezais/">
-        <div class="teaser-cover"><img src="/blog/media/imigracao-italiana-jornada-mediterraneo-cafezais/capa-porto-navio-imigrantes.jpg" alt="Imigração Italiana: A Jornada do Mediterrâneo às Américas" loading="lazy"></div>
-        <div class="teaser-body">
-          <span class="book-tag">Raízes, Sacrifício e Herança</span>
-          <h3>Imigração Italiana: A Jornada do Mediterrâneo às Américas</h3>
-          <span class="teaser-cta">Ler mais →</span>
+    <div class="card-carousel" id="teasers-carousel">
+      <button class="cc-arrow cc-prev" type="button" aria-label="Posts anteriores">‹</button>
+      <div class="cc-viewport">
+        <div class="cc-track">
+          <a class="teaser-card" href="/blog/imigracao-italiana-jornada-mediterraneo-cafezais/">
+            <div class="teaser-cover"><img src="/blog/media/imigracao-italiana-jornada-mediterraneo-cafezais/capa-porto-navio-imigrantes.jpg" alt="Imigração Italiana: A Jornada do Mediterrâneo às Américas" loading="lazy"></div>
+            <div class="teaser-body">
+              <span class="book-tag">Raízes, Sacrifício e Herança</span>
+              <h3>Imigração Italiana: A Jornada do Mediterrâneo às Américas</h3>
+              <span class="teaser-cta">Ler mais →</span>
+            </div>
+          </a>
+          <a class="teaser-card" href="/blog/lei-seca-anos-20-submundo-nova-york/">
+            <div class="teaser-cover"><img src="/blog/media/lei-seca-anos-20-submundo-nova-york/capa-rua-little-italy.jpg" alt="A Lei Seca nos Anos 20: O Submundo de Nova York" loading="lazy"></div>
+            <div class="teaser-body">
+              <span class="book-tag">Mistério, Luxo e Sombras</span>
+              <h3>A Lei Seca nos Anos 20: O Submundo de Nova York</h3>
+              <span class="teaser-cta">Ler mais →</span>
+            </div>
+          </a>
+          <a class="teaser-card" href="/blog/desafios-expedicoes-floresta-amazonica/">
+            <div class="teaser-cover"><img src="/blog/media/desafios-expedicoes-floresta-amazonica/capa-rio-floresta-amazonica.jpg" alt="Expedições na Amazônia: Desafios e Sobrevivência" loading="lazy"></div>
+            <div class="teaser-body">
+              <span class="book-tag">Aventura Épica</span>
+              <h3>Expedições na Amazônia: Desafios e Sobrevivência</h3>
+              <span class="teaser-cta">Ler mais →</span>
+            </div>
+          </a>
+          <a class="teaser-card" href="/blog/guerra-secessao-corrida-ouro-justica/">
+            <div class="teaser-cover"><img src="/blog/media/guerra-secessao-corrida-ouro-justica/capa-resistencia-esperanca.jpg" alt="Guerra de Secessão e o Velho Oeste: A Busca por Justiça" loading="lazy"></div>
+            <div class="teaser-body">
+              <span class="book-tag">Aventura Épica</span>
+              <h3>Guerra de Secessão e o Velho Oeste: A Busca por Justiça</h3>
+              <span class="teaser-cta">Ler mais →</span>
+            </div>
+          </a>
+          <a class="teaser-card" href="/blog/a-lenda-dos-sete-mares/">
+            <div class="teaser-cover"><img src="/blog/media/a-lenda-dos-sete-mares/capa-navio-tempestade.jpg" alt="A Lenda dos Sete Mares: os piratas mais famosos da história" loading="lazy"></div>
+            <div class="teaser-body">
+              <span class="book-tag">Aventura Épica</span>
+              <h3>A Lenda dos Sete Mares: os piratas mais famosos da história</h3>
+              <span class="teaser-cta">Ler mais →</span>
+            </div>
+          </a>
+          <a class="teaser-card" href="/blog/guerra-fria-asia-espionagem-mi6-kgb-hong-kong/">
+            <div class="teaser-cover"><img src="/blog/media/guerra-fria-asia-espionagem-mi6-kgb-hong-kong/capa-hong-kong-neon.jpg" alt="Guerra Fria na Ásia: Espionagem e o Submundo em Hong Kong" loading="lazy"></div>
+            <div class="teaser-body">
+              <span class="book-tag">Mistério, Luxo e Sombras</span>
+              <h3>Guerra Fria na Ásia: Espionagem e o Submundo em Hong Kong</h3>
+              <span class="teaser-cta">Ler mais →</span>
+            </div>
+          </a>
+          <a class="teaser-card" href="/blog/vida-real-nos-sete-mares/">
+            <div class="teaser-cover"><img src="/blog/media/vida-real-nos-sete-mares/capa-frota-tempestade.jpg" alt="A Vida Real nos Sete Mares: Mitos, Fatos e a Era de Ouro da Pirataria" loading="lazy"></div>
+            <div class="teaser-body">
+              <span class="book-tag">Aventura Épica</span>
+              <h3>A Vida Real nos Sete Mares: Mitos, Fatos e a Era de Ouro da Pirataria</h3>
+              <span class="teaser-cta">Ler mais →</span>
+            </div>
+          </a>
+          <a class="teaser-card" href="/blog/fascinante-perigosa-milenar-rota-da-seda/">
+            <div class="teaser-cover"><img src="/blog/media/fascinante-perigosa-milenar-rota-da-seda/capa-caravana-deserto.jpg" alt="A Rota da Seda: Perigos e Mistérios da Jornada Milenar" loading="lazy"></div>
+            <div class="teaser-body">
+              <span class="book-tag">Aventura Épica</span>
+              <h3>A Rota da Seda: Perigos e Mistérios da Jornada Milenar</h3>
+              <span class="teaser-cta">Ler mais →</span>
+            </div>
+          </a>
+          <a class="teaser-card" href="/blog/bussola-moral-guerra-vida-comum-europa/">
+            <div class="teaser-cover"><img src="/blog/media/bussola-moral-guerra-vida-comum-europa/capa-casal-neblina-europa.jpg" alt="Vida Comum na Guerra: A Bússola Moral e o Sacrifício" loading="lazy"></div>
+            <div class="teaser-body">
+              <span class="book-tag">Raízes, Sacrifício e Herança</span>
+              <h3>Vida Comum na Guerra: A Bússola Moral e o Sacrifício</h3>
+              <span class="teaser-cta">Ler mais →</span>
+            </div>
+          </a>
         </div>
-      </a>
-      <a class="teaser-card" href="/blog/lei-seca-anos-20-submundo-nova-york/">
-        <div class="teaser-cover"><img src="/blog/media/lei-seca-anos-20-submundo-nova-york/capa-rua-little-italy.jpg" alt="A Lei Seca nos Anos 20: O Submundo de Nova York" loading="lazy"></div>
-        <div class="teaser-body">
-          <span class="book-tag">Mistério, Luxo e Sombras</span>
-          <h3>A Lei Seca nos Anos 20: O Submundo de Nova York</h3>
-          <span class="teaser-cta">Ler mais →</span>
-        </div>
-      </a>
-      <a class="teaser-card" href="/blog/desafios-expedicoes-floresta-amazonica/">
-        <div class="teaser-cover"><img src="/blog/media/desafios-expedicoes-floresta-amazonica/capa-rio-floresta-amazonica.jpg" alt="Expedições na Amazônia: Desafios e Sobrevivência" loading="lazy"></div>
-        <div class="teaser-body">
-          <span class="book-tag">Aventura Épica</span>
-          <h3>Expedições na Amazônia: Desafios e Sobrevivência</h3>
-          <span class="teaser-cta">Ler mais →</span>
-        </div>
-      </a>
+      </div>
+      <button class="cc-arrow cc-next" type="button" aria-label="Próximos posts">›</button>
+      <div class="cc-dots"></div>
+      <p class="cc-hint">Arraste para ver mais →</p>
     </div>
     <div class="teaser-more">
       <a class="btn" href="/blog">Ver todos os posts →</a>
@@ -846,33 +930,137 @@
       <div class="eyebrow">Conheça Alguns Personagens</div>
       <h2>Rostos que Atravessam a História</h2>
       <div class="divider"></div>
-      <p>Três protagonistas, três épocas, um mesmo fio narrativo: pessoas comuns que se recusam a aceitar o destino que lhes foi dado.</p>
+      <p>Quinze protagonistas, cinco universos, um mesmo fio narrativo: pessoas comuns que se recusam a aceitar o destino que lhes foi dado.</p>
     </div>
-    <div class="characters-grid">
-      <div class="character-card">
-        <div class="character-photo"><img src="/personagens/joana.jpg" alt="Joana, personagem de Joana: A Dama da Noite" loading="lazy"></div>
-        <div class="character-body">
-          <span class="book-tag">Joana: A Dama da Noite</span>
-          <p>Quem é a Dama da Noite? Na Paris de 1900, a calculista Joana dita as regras no Cabaré Vermelho. Acompanhe sua jornada de pura ambição e poder, cruzando da França ao Brasil!</p>
-          <a class="btn small" href="#joana">Conhecer a obra</a>
+    <div class="card-carousel" id="personagens-carousel">
+      <button class="cc-arrow cc-prev" type="button" aria-label="Personagens anteriores">‹</button>
+      <div class="cc-viewport">
+        <div class="cc-track">
+          <div class="character-card">
+            <div class="character-photo"><img src="/personagens/joana.jpg" alt="Joana, personagem de Joana: A Dama da Noite" loading="lazy" style="object-position:center 15%;"></div>
+            <div class="character-body">
+              <span class="book-tag">Joana: A Dama da Noite</span>
+              <p>Quem é a Dama da Noite? Na Paris de 1900, a calculista Joana dita as regras no Cabaré Vermelho. Acompanhe sua jornada de pura ambição e poder, cruzando da França ao Brasil!</p>
+              <a class="btn small" href="#joana">Conhecer a obra</a>
+            </div>
+          </div>
+          <div class="character-card">
+            <div class="character-photo"><img src="/personagens/john-storm.jpg" alt="John Storm, personagem de O Mestre das Tormentas" loading="lazy"></div>
+            <div class="character-body">
+              <span class="book-tag">O Mestre das Tormentas</span>
+              <p>Nascido nas tormentas, ele desafiou impérios! Acompanhe o corsário John Storm em uma jornada épica por oceanos desconhecidos, amores intensos e vingança implacável.</p>
+              <a class="btn small" href="/o-mestre-das-tormentas">Conhecer a obra</a>
+            </div>
+          </div>
+          <div class="character-card">
+            <div class="character-photo"><img src="/personagens/yoko.jpg" alt="Yoko, personagem de A Casa dos Prazeres" loading="lazy" style="object-position:55% center;"></div>
+            <div class="character-body">
+              <span class="book-tag">A Casa dos Prazeres</span>
+              <p>De prisioneira à mulher mais poderosa do Japão! Yoko transformou a submissão em uma arma letal de sedução e vingança. Até onde ela irá para destruir seus inimigos?</p>
+              <a class="btn small" href="#a-casa-dos-prazeres">Conhecer a obra</a>
+            </div>
+          </div>
+          <div class="character-card">
+            <div class="character-photo"><img src="/personagens/bela.jpg" alt="Bela, personagem de O Siciliano" loading="lazy"></div>
+            <div class="character-body">
+              <span class="book-tag">O Siciliano</span>
+              <p>Visionária e corajosa, Bela desafiou a elite cafeeira e a ditadura para defender o que acreditava. Uma mulher à frente do seu tempo que transformou a sociedade e o campo!</p>
+              <a class="btn small" href="#o-siciliano">Conhecer a obra</a>
+            </div>
+          </div>
+          <div class="character-card">
+            <div class="character-photo"><img src="/personagens/matteo.jpg" alt="Matteo, personagem de O Siciliano" loading="lazy" style="object-position:72% center;"></div>
+            <div class="character-body">
+              <span class="book-tag">O Siciliano</span>
+              <p>Da Sicília aos cafezais do Brasil! Matteo fugiu da morte para construir um império com suor e sangue. Descubra até onde um homem pode ir para proteger o legado de sua família.</p>
+              <a class="btn small" href="#o-siciliano">Conhecer a obra</a>
+            </div>
+          </div>
+          <div class="character-card">
+            <div class="character-photo"><img src="/personagens/katia.jpg" alt="Kátia, personagem de A Teia" loading="lazy"></div>
+            <div class="character-body">
+              <span class="book-tag">A Teia</span>
+              <p>Mãe, guerreira e o escudo de sua família. Na cruel realidade da favela, Kátia sacrificou tudo para proteger os filhos das garras do crime. Uma história de amor e resistência!</p>
+              <a class="btn small" href="#a-teia">Conhecer a obra</a>
+            </div>
+          </div>
+          <div class="character-card">
+            <div class="character-photo"><img src="/personagens/athena.jpg" alt="Athena, personagem de A Vila" loading="lazy" style="object-position:80% center;"></div>
+            <div class="character-body">
+              <span class="book-tag">A Vila</span>
+              <p>O pilar inabalável de uma família grega despedaçada pela guerra. Athena enfrentou a fome, o luto e a ocupação nazista com uma coragem silenciosa. Um exemplo de força e amor!</p>
+              <a class="btn small" href="#a-vila">Conhecer a obra</a>
+            </div>
+          </div>
+          <div class="character-card">
+            <div class="character-photo"><img src="/personagens/joca.jpg" alt="Joca, personagem de A Teia" loading="lazy" style="object-position:75% center;"></div>
+            <div class="character-body">
+              <span class="book-tag">A Teia</span>
+              <p>De herói da favela a magnata do crime. Joca cruzou a linha da moralidade em busca de poder e dinheiro, criando uma perigosa teia. Será que o topo vale a sua própria alma?</p>
+              <a class="btn small" href="#a-teia">Conhecer a obra</a>
+            </div>
+          </div>
+          <div class="character-card">
+            <div class="character-photo"><img src="/personagens/dom-domenico.jpg" alt="Dom Domenico, personagem de A Indústria do Vício" loading="lazy" style="object-position:77% center;"></div>
+            <div class="character-body">
+              <span class="book-tag">A Indústria do Vício</span>
+              <p>Frio, calculista e o verdadeiro rei de Nova Iorque na Lei Seca. Dom Domenico controla a máfia com mãos de ferro e códigos implacáveis. Entre no submundo onde a traição é fatal!</p>
+              <a class="btn small" href="#a-industria-do-vicio">Conhecer a obra</a>
+            </div>
+          </div>
+          <div class="character-card">
+            <div class="character-photo"><img src="/personagens/will.jpg" alt="Will / AE-5, personagem de Destinos Cruzados" loading="lazy" style="object-position:65% center;"></div>
+            <div class="character-body">
+              <span class="book-tag">Destinos Cruzados</span>
+              <p>O letal espião britânico com licença para matar! Will mergulha no submundo de Hong Kong e na Guerra Fria para desmantelar conspirações e vingar o passado. O perigo é sua rotina!</p>
+              <a class="btn small" href="#destinos-cruzados">Conhecer a obra</a>
+            </div>
+          </div>
+          <div class="character-card">
+            <div class="character-photo"><img src="/personagens/james.jpg" alt="James, personagem de O Explorador" loading="lazy" style="object-position:70% center;"></div>
+            <div class="character-body">
+              <span class="book-tag">O Explorador</span>
+              <p>Um sobrevivente sem memória nas águas gélidas da Antártida. Ao lado de Luna, James enfrenta tribos canibais e os segredos mortais da Amazônia. Uma aventura de tirar o fôlego!</p>
+              <a class="btn small" href="#o-explorador">Conhecer a obra</a>
+            </div>
+          </div>
+          <div class="character-card">
+            <div class="character-photo"><img src="/personagens/sem-nome.jpg" alt="O Sem Nome, personagem de Sangue Frio" loading="lazy"></div>
+            <div class="character-body">
+              <span class="book-tag">Sangue Frio</span>
+              <p>De escravo africano a justiceiro implacável na Corrida do Ouro! Despojado de sua identidade, ele forjou seu destino com pólvora e sangue. A lenda do homem da capa preta!</p>
+              <a class="btn small" href="#sangue-frio">Conhecer a obra</a>
+            </div>
+          </div>
+          <div class="character-card">
+            <div class="character-photo"><img src="/personagens/julius.jpg" alt="Julius, personagem de Julius" loading="lazy"></div>
+            <div class="character-body">
+              <span class="book-tag">Julius</span>
+              <p>Um romano dividido entre o poder do Império e a mensagem de um homem chamado Yeshua. Acompanhe Julius em uma jornada épica de transformação espiritual, fé e pura redenção!</p>
+              <a class="btn small" href="#julius">Conhecer a obra</a>
+            </div>
+          </div>
+          <div class="character-card">
+            <div class="character-photo"><img src="/personagens/jesuita.jpg" alt="O Jesuíta, personagem de O Jesuíta" loading="lazy" style="object-position:76% center;"></div>
+            <div class="character-body">
+              <span class="book-tag">O Jesuíta</span>
+              <p>Sob o capuz deste missionário, escondem-se segredos milenares, relíquias e ruínas de impérios. Até onde vai a devoção de um homem atormentado pelas sombras de seu próprio passado?</p>
+              <a class="btn small" href="#o-jesuita">Conhecer a obra</a>
+            </div>
+          </div>
+          <div class="character-card">
+            <div class="character-photo"><img src="/personagens/aruatam.jpg" alt="Aruatam, personagem de O Explorador" loading="lazy" style="object-position:79% center;"></div>
+            <div class="character-body">
+              <span class="book-tag">O Explorador</span>
+              <p>Xamã e guardião dos mistérios da Amazônia! Com profunda sabedoria ancestral, Aruatam conecta o mundo físico aos espíritos implacáveis da floresta. Misticismo e sobrevivência!</p>
+              <a class="btn small" href="#o-explorador">Conhecer a obra</a>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="character-card">
-        <div class="character-photo"><img src="/personagens/john-storm.jpg" alt="John Storm, personagem de O Mestre das Tormentas" loading="lazy"></div>
-        <div class="character-body">
-          <span class="book-tag">O Mestre das Tormentas</span>
-          <p>Nascido nas tormentas, ele desafiou impérios! Acompanhe o corsário John Storm em uma jornada épica por oceanos desconhecidos, amores intensos e vingança implacável.</p>
-          <a class="btn small" href="/o-mestre-das-tormentas">Conhecer a obra</a>
-        </div>
-      </div>
-      <div class="character-card">
-        <div class="character-photo"><img src="/personagens/yoko.jpg" alt="Yoko, personagem de A Casa dos Prazeres" loading="lazy"></div>
-        <div class="character-body">
-          <span class="book-tag">A Casa dos Prazeres</span>
-          <p>De prisioneira à mulher mais poderosa do Japão! Yoko transformou a submissão em uma arma letal de sedução e vingança. Até onde ela irá para destruir seus inimigos?</p>
-          <a class="btn small" href="#a-casa-dos-prazeres">Conhecer a obra</a>
-        </div>
-      </div>
+      <button class="cc-arrow cc-next" type="button" aria-label="Próximos personagens">›</button>
+      <div class="cc-dots"></div>
+      <p class="cc-hint">Arraste para ver mais →</p>
     </div>
   </div>
 </section>
@@ -1429,6 +1617,45 @@
       });
     }
   });
+})();
+</script>
+<script>
+(function(){
+  var mq = window.matchMedia('(max-width:900px)');
+  function initCardCarousel(rootId){
+    var root = document.getElementById(rootId);
+    if (!root) return;
+    var viewport = root.querySelector('.cc-viewport');
+    var track = root.querySelector('.cc-track');
+    var items = track.children.length;
+    var pages = Math.ceil(items / 3);
+    var dotsBox = root.querySelector('.cc-dots');
+    var idx = 0, dots = [];
+    for (var i = 0; i < pages; i++) {
+      (function(n){
+        var d = document.createElement('button');
+        d.type = 'button';
+        d.className = 'cc-dot';
+        d.setAttribute('aria-label', 'Ir para o grupo ' + (n + 1));
+        d.addEventListener('click', function(){ go(n); });
+        dotsBox.appendChild(d);
+        dots.push(d);
+      })(i);
+    }
+    function go(n){
+      idx = (n + pages) % pages;
+      if (mq.matches) { track.style.transform = ''; return; }
+      var gap = 28;
+      track.style.transform = 'translateX(-' + (idx * (viewport.offsetWidth + gap)) + 'px)';
+      for (var i = 0; i < dots.length; i++) dots[i].classList.toggle('is-active', i === idx);
+    }
+    root.querySelector('.cc-prev').addEventListener('click', function(){ go(idx - 1); });
+    root.querySelector('.cc-next').addEventListener('click', function(){ go(idx + 1); });
+    window.addEventListener('resize', function(){ go(idx); });
+    go(0);
+  }
+  initCardCarousel('personagens-carousel');
+  initCardCarousel('teasers-carousel');
 })();
 </script>
 </body>
