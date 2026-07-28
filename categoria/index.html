@@ -58,9 +58,13 @@
   .btn.solid{background:var(--gold);color:#0b0908;}
   .btn.small{padding:9px 18px;font-size:11.5px;}
   .nav-actions{display:flex;align-items:center;gap:12px;}
-  .social-links{display:flex;gap:8px;}
-  .social-links a{width:32px;height:32px;display:flex;align-items:center;justify-content:center;border:1px solid var(--gold);border-radius:4px;color:var(--gold-bright);}
-  .social-links svg{width:15px;height:15px;}
+  .social-links{display:flex;gap:12px;margin-top:22px;}
+  .social-links a{width:38px;height:38px;display:flex;align-items:center;justify-content:center;border:1px solid var(--gold);border-radius:4px;color:var(--gold-bright);transition:background .2s,color .2s,border-color .2s;}
+  .social-links a:hover{background:var(--gold);border-color:var(--gold);color:var(--bg);}
+  .social-links svg{width:18px;height:18px;}
+  .nav-actions .social-links{margin-top:0;gap:8px;}
+  .nav-actions .social-links a{width:32px;height:32px;}
+  .nav-actions .social-links svg{width:15px;height:15px;}
   @media (max-width:860px){
     .nav-inner{flex-wrap:wrap;row-gap:10px;}
     .brand-lockup .brand{display:none;}
@@ -118,6 +122,8 @@
     <div class="nav-actions">
       <div class="social-links">
         <a href="https://www.instagram.com/livrosdofalco/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg></a>
+        <a href="https://www.tiktok.com/@livros_dofalco" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.82c-1.12-1.08-1.67-2.64-1.75-4.17H11.9v14.4c0 1.75-1.42 3.19-3.19 3.19-1.76 0-3.19-1.44-3.19-3.19 0-1.76 1.43-3.2 3.19-3.2.35 0 .68.05 1 .16v-3.5a6.7 6.7 0 0 0-1-.08c-3.68 0-6.66 2.98-6.66 6.66S5.03 22.75 8.71 22.75s6.66-2.98 6.66-6.66V9.31c1.31.94 2.91 1.49 4.63 1.49V7.29c-1.28 0-2.47-.41-3.4-1.11-.03-.02-.06-.05-.09-.07l.09-.29z"></path></svg></a>
+        <a href="https://www.youtube.com/@livrosdofalco" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.55A3.02 3.02 0 0 0 .5 6.19 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.81 3.02 3.02 0 0 0 2.12 2.14C4.5 20.5 12 20.5 12 20.5s7.5 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.81zM9.6 15.6V8.4l6.4 3.6z"></path></svg></a>
       </div>
       <a class="btn small solid" href="https://www.amazon.com.br/Livros-DOMENICO-FALCO/s?rh=n%3A6740748011%2Cp_27%3ADOMENICO%2BFALCO" target="_blank" rel="noopener">Loja Amazon</a>
     </div>
@@ -185,6 +191,17 @@
     <div>
       <div class="brand">DOMENICO <span>FALCO</span></div>
       <p>Ficção histórica que entrelaça fatos reais a personagens inesquecíveis, do Japão imperial aos sete mares.</p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/livrosdofalco/" target="_blank" rel="noopener" aria-label="Domenico Falco no Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg>
+        </a>
+        <a href="https://www.tiktok.com/@livros_dofalco" target="_blank" rel="noopener" aria-label="Domenico Falco no TikTok">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.82c-1.12-1.08-1.67-2.64-1.75-4.17H11.9v14.4c0 1.75-1.42 3.19-3.19 3.19-1.76 0-3.19-1.44-3.19-3.19 0-1.76 1.43-3.2 3.19-3.2.35 0 .68.05 1 .16v-3.5a6.7 6.7 0 0 0-1-.08c-3.68 0-6.66 2.98-6.66 6.66S5.03 22.75 8.71 22.75s6.66-2.98 6.66-6.66V9.31c1.31.94 2.91 1.49 4.63 1.49V7.29c-1.28 0-2.47-.41-3.4-1.11-.03-.02-.06-.05-.09-.07l.09-.29z"></path></svg>
+        </a>
+        <a href="https://www.youtube.com/@livrosdofalco" target="_blank" rel="noopener" aria-label="Domenico Falco no YouTube">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.55A3.02 3.02 0 0 0 .5 6.19 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.81 3.02 3.02 0 0 0 2.12 2.14C4.5 20.5 12 20.5 12 20.5s7.5 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.81zM9.6 15.6V8.4l6.4 3.6z"></path></svg>
+        </a>
+      </div>
     </div>
     <div class="foot-links">
       <a href="https://www.amazon.com.br/Livros-DOMENICO-FALCO/s?rh=n%3A6740748011%2Cp_27%3ADOMENICO%2BFALCO" target="_blank" rel="noopener">Loja na Amazon</a>
