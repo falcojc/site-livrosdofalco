@@ -229,6 +229,15 @@
     .cta-cover{width:84px;}
   }
 
+  /* ---- podcast/audiobook strip (mesmo padrao da PDP O Mestre das Tormentas) ---- */
+  .podcast-strip{margin:40px 0;}
+  .podcast-card{display:grid;grid-template-columns:160px 1fr auto;gap:22px;align-items:center;background:transparent;border:1px solid var(--gold);padding:18px 22px;border-radius:4px;}
+  .podcast-card img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:2px;}
+  .podcast-card .kicker{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-family:Cinzel,serif;}
+  .podcast-card h4{font-family:'Cinzel',serif;font-size:17px;margin:6px 0 4px;font-weight:600;color:var(--text);}
+  .podcast-card p{font-size:14px;color:var(--text-muted);margin:0;}
+  @media (max-width:640px){.podcast-card{grid-template-columns:1fr;text-align:center;}}
+
   footer{padding:56px 0 40px;background:var(--bg-alt);border-top:1px solid var(--card-border);}
   .footer-grid{display:flex;justify-content:space-between;flex-wrap:wrap;gap:32px;}
   footer .brand{display:block;margin-bottom:14px;}

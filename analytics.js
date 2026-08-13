@@ -27,6 +27,14 @@ document.addEventListener('click', function(e){
     gtag('event', 'click_tiktok', { event_category: 'redes_sociais', event_label: link.href });
     return;
   }
+  if (link.href.indexOf('spotify.com') !== -1) {
+    gtag('event', 'click_spotify', { event_category: 'audiobook', event_label: link.href });
+    return;
+  }
+  if (link.closest('.podcast-card')) {
+    gtag('event', 'click_podcast_youtube', { event_category: 'audiobook', event_label: link.href });
+    return;
+  }
   if (href === '#sobre') {
     gtag('event', 'click_nav_sobre', { event_category: 'navegacao', event_label: 'sobre_autor' });
     return;
@@ -62,3 +70,14 @@ document.addEventListener('click', function(e){
     return;
   }
 });
+
+// "play" nao borbulha (bubble) como clique, entao precisa de captura (useCapture=true)
+// pra pegar o play de qualquer <audio> da pagina via um unico listener no document.
+document.addEventListener('play', function(e){
+  if (typeof gtag !== 'function') return;
+  var audio = e.target;
+  if (!audio || audio.tagName !== 'AUDIO') return;
+  var card = audio.closest('.book-card');
+  var label = card ? card.id : (audio.getAttribute('src') || '');
+  gtag('event', 'play_audiobook_sample', { event_category: 'audiobook', event_label: label });
+}, true);

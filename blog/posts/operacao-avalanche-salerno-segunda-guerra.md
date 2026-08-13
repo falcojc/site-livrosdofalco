@@ -9,7 +9,6 @@ obra_relacionada_titulo: "O Comandante"
 obra_relacionada_capas: ["o-comandante"]
 obra_relacionada_cta: "Embarque na saga de Dante e descubra como as ruínas da guerra forjaram um império marítimo, em O Comandante, de Domenico Falco."
 tags: ["cluster-raizes-sacrificio-heranca"]
-draft: true
 ---
 Na madrugada de 9 de setembro de 1943, o Golfo de Salerno, no sul da Itália, estava envolto em um silêncio sepulcral. Mas o que parecia apenas mais uma noite escura à beira-mar escondia, sob a neblina, a aproximação de uma tempestade de fogo e aço que mudaria para sempre o rumo da Segunda Guerra Mundial em território europeu.
 
@@ -46,3 +45,15 @@ A infância do protagonista Dante é vivida sob as sombras da fumaça dos canhõ
 ![Navio cargueiro reconstruído no porto italiano no pós-guerra, símbolo da reconstrução](/blog/media/operacao-avalanche-salerno-segunda-guerra/forca-da-reconstrucao.jpg)
 
 O Comandante narra como a determinação de um homem pode transformar a dor herdada da guerra em um império de integridade, respeito e inteligência global. Até onde a resiliência de uma infância marcada por ruínas pode levar um homem? Embarque nessa jornada histórica de redenção e coragem em <a href="https://link.amazon/B02BbXrEH" target="_blank" rel="noopener">O Comandante</a>, de Domenico Falco.
+
+<div class="podcast-strip">
+  <div class="podcast-card">
+    <img src="/blog/media/operacao-avalanche-salerno-segunda-guerra/podcast-cover.jpg" alt="Audiobook ilustrado de O Comandante no YouTube">
+    <div>
+      <div class="kicker">Conteúdo Extra · Audiobook</div>
+      <h4>Ouça O Comandante narrado, completo, no YouTube</h4>
+      <p>O primeiro audiobook ilustrado do universo Domenico Falco, direto no canal.</p>
+    </div>
+    <a class="btn" href="https://youtu.be/ITqNoc_ZpS4" target="_blank" rel="noopener">Ouvir agora ▶</a>
+  </div>
+</div>
