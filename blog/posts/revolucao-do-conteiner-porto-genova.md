@@ -9,7 +9,6 @@ obra_relacionada_titulo: "O Comandante"
 obra_relacionada_capas: ["o-comandante"]
 obra_relacionada_cta: "Sinta o cheiro de sal e ferro na ascensão de um império marítimo: embarque na saga de Dante em O Comandante, de Domenico Falco."
 tags: ["cluster-raizes-sacrificio-heranca"]
-draft: true
 ---
 Se você olhar para qualquer porto moderno hoje, verá um balé perfeitamente orquestrado. Guindastes colossais erguem caixas metálicas padronizadas e coloridas de navios gigantescos, depositando-as em segundos sobre chassis de caminhões ou vagões de trens. É um processo limpo, rápido e cirúrgico. No entanto, por trás dessa aparente simplicidade técnica, esconde-se uma das transições mais dramáticas, violentas e transformadoras da história da humanidade.
 
