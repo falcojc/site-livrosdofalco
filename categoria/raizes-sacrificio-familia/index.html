@@ -107,9 +107,10 @@
   .divider{width:64px;height:2px;background:var(--gold);margin:18px 0 0;}
 
   .books-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:34px;}
-  .book-card{position:relative;background:var(--card);border:1px solid var(--card-border);border-radius:4px;overflow:hidden;display:flex;flex-direction:column;transition:transform .3s, border-color .3s;}
+  .book-card{background:var(--card);border:1px solid var(--card-border);border-radius:4px;overflow:hidden;display:flex;flex-direction:column;transition:transform .3s, border-color .3s;}
   .book-card:hover{transform:translateY(-6px);border-color:var(--gold);}
-  .book-badge{position:absolute;top:12px;left:12px;z-index:2;background:var(--gold);color:var(--bg);font-family:'Cinzel',serif;font-size:10px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;padding:5px 10px;border-radius:2px;}
+  .book-tags-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+  .book-badge{display:inline-block;background:var(--gold);color:var(--bg);font-family:'Cinzel',serif;font-size:10px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;padding:4px 9px;border-radius:2px;}
   .book-cover{aspect-ratio:733/1100;overflow:hidden;background:#000;}
   .book-cover img{width:100%;height:100%;object-fit:cover;transition:transform .5s;}
   .book-card:hover .book-cover img{transform:scale(1.05);}
@@ -307,10 +308,12 @@
     </div>
     <div class="books-grid">
       <div class="book-card" id="o-comandante">
-        <span class="book-badge">Lançamento</span>
         <div class="book-cover"><img src="/covers/o-comandante.jpg" alt="O Comandante"></div>
         <div class="book-body">
-          <div class="book-tag">Entreguerras</div>
+          <div class="book-tags-row">
+            <span class="book-badge">Lançamento</span>
+            <div class="book-tag">Entreguerras</div>
+          </div>
           <h3>O Comandante</h3>
           <p>Das ruínas da guerra ao topo do império marítimo global, a história de resiliência, perigos no mar e o verdadeiro custo do sucesso de um homem que reconstrói tudo a partir do nada.</p>
           <div class="book-audio">
