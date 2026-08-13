@@ -107,8 +107,9 @@
   .divider{width:64px;height:2px;background:var(--gold);margin:18px 0 0;}
 
   .books-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:34px;}
-  .book-card{background:var(--card);border:1px solid var(--card-border);border-radius:4px;overflow:hidden;display:flex;flex-direction:column;transition:transform .3s, border-color .3s;}
+  .book-card{position:relative;background:var(--card);border:1px solid var(--card-border);border-radius:4px;overflow:hidden;display:flex;flex-direction:column;transition:transform .3s, border-color .3s;}
   .book-card:hover{transform:translateY(-6px);border-color:var(--gold);}
+  .book-badge{position:absolute;top:12px;left:12px;z-index:2;background:var(--gold);color:var(--bg);font-family:'Cinzel',serif;font-size:10px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;padding:5px 10px;border-radius:2px;}
   .book-cover{aspect-ratio:733/1100;overflow:hidden;background:#000;}
   .book-cover img{width:100%;height:100%;object-fit:cover;transition:transform .5s;}
   .book-card:hover .book-cover img{transform:scale(1.05);}
@@ -305,6 +306,20 @@
       <p>Imigração, guerras e a construção de legados familiares de geração em geração.</p>
     </div>
     <div class="books-grid">
+      <div class="book-card" id="o-comandante">
+        <span class="book-badge">Lançamento</span>
+        <div class="book-cover"><img src="/covers/o-comandante.jpg" alt="O Comandante"></div>
+        <div class="book-body">
+          <div class="book-tag">Entreguerras</div>
+          <h3>O Comandante</h3>
+          <p>Das ruínas da guerra ao topo do império marítimo global, a história de resiliência, perigos no mar e o verdadeiro custo do sucesso de um homem que reconstrói tudo a partir do nada.</p>
+          <div class="book-audio">
+            <span class="book-audio-label">🎧 Ouça uma amostra do audiobook</span>
+            <audio controls preload="none" src="/audio/o-comandante-amostra.mp3"></audio>
+          </div>
+          <a class="btn small" href="https://link.amazon/B02BbXrEH" target="_blank" rel="noopener">Comprar na Amazon</a>
+        </div>
+      </div>
       <div class="book-card" id="o-siciliano">
         <div class="book-cover"><img src="/covers/o-siciliano.jpg" alt="O Siciliano"></div>
         <div class="book-body">
@@ -375,19 +390,6 @@
           <h3>Os Refugiados</h3>
           <p>Contada pelos próprios personagens, esta é a história de uma família síria de classe média que atravessa a guerra civil e se torna símbolo de resiliência e esperança.</p>
           <a class="btn small" href="https://link.amazon/B0g7NULvj" target="_blank" rel="noopener">Comprar na Amazon</a>
-        </div>
-      </div>
-      <div class="book-card" id="o-comandante">
-        <div class="book-cover"><img src="/covers/o-comandante.jpg" alt="O Comandante"></div>
-        <div class="book-body">
-          <div class="book-tag">Entreguerras</div>
-          <h3>O Comandante</h3>
-          <p>Das ruínas da guerra ao topo do império marítimo global, a história de resiliência, perigos no mar e o verdadeiro custo do sucesso de um homem que reconstrói tudo a partir do nada.</p>
-          <div class="book-audio">
-            <span class="book-audio-label">🎧 Ouça uma amostra do audiobook</span>
-            <audio controls preload="none" src="/audio/o-comandante-amostra.mp3"></audio>
-          </div>
-          <a class="btn small" href="https://link.amazon/B02BbXrEH" target="_blank" rel="noopener">Comprar na Amazon</a>
         </div>
       </div>
     </div>
