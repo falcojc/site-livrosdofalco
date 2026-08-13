@@ -9,6 +9,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("personagens");
   eleventyConfig.addPassthroughCopy("banners");
   eleventyConfig.addPassthroughCopy("categoria");
+  eleventyConfig.addPassthroughCopy("audio");
   eleventyConfig.addPassthroughCopy("*.png");
   eleventyConfig.addPassthroughCopy("*.jpg");
   eleventyConfig.addPassthroughCopy("*.ico");

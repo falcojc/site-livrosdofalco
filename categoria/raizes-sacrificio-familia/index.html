@@ -109,6 +109,8 @@
   .books-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:34px;}
   .book-card{background:var(--card);border:1px solid var(--card-border);border-radius:4px;overflow:hidden;display:flex;flex-direction:column;transition:transform .3s, border-color .3s;}
   .book-card:hover{transform:translateY(-6px);border-color:var(--gold);}
+  .book-tags-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+  .book-badge{display:inline-block;background:var(--gold);color:var(--bg);font-family:'Cinzel',serif;font-size:10px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;padding:4px 9px;border-radius:2px;}
   .book-cover{aspect-ratio:733/1100;overflow:hidden;background:#000;}
   .book-cover img{width:100%;height:100%;object-fit:cover;transition:transform .5s;}
   .book-card:hover .book-cover img{transform:scale(1.05);}
@@ -117,6 +119,9 @@
   .book-body h3{font-size:21px;margin:8px 0 10px;color:#f2e8d5;line-height:1.2;}
   .book-body p{font-size:15.5px;color:var(--text-muted);flex:1;margin-bottom:18px;}
   .book-body .btn{align-self:flex-start;}
+  .book-audio{margin-bottom:16px;padding-top:14px;border-top:1px solid var(--card-border);}
+  .book-audio-label{display:block;font-size:11px;letter-spacing:.08em;color:var(--gold-bright);margin-bottom:8px;font-family:'Cinzel',serif;text-transform:uppercase;}
+  .book-audio audio{width:100%;height:34px;}
 
   .blog-teaser{background:var(--bg-alt);border-top:1px solid var(--card-border);border-bottom:1px solid var(--card-border);}
   .teaser-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
@@ -227,7 +232,7 @@
       <div class="divider"></div>
       <p>Pesquisa histórica real por trás das obras desta categoria.</p>
     </div>
-    <div class="teaser-grid teaser-2">
+    <div class="teaser-grid">
       <a class="teaser-card" href="/blog/imigracao-italiana-jornada-mediterraneo-cafezais/">
         <div class="teaser-cover"><img src="/blog/media/imigracao-italiana-jornada-mediterraneo-cafezais/capa-porto-navio-imigrantes.jpg" alt="Imigração Italiana: A Jornada do Mediterrâneo às Américas" loading="lazy"></div>
         <div class="teaser-body">
@@ -241,6 +246,14 @@
         <div class="teaser-body">
           <span class="book-tag">Raízes, Sacrifício e Herança</span>
           <h3>Vida Comum na Guerra: A Bússola Moral e o Sacrifício</h3>
+          <span class="teaser-cta">Ler mais →</span>
+        </div>
+      </a>
+      <a class="teaser-card" href="/blog/operacao-avalanche-salerno-segunda-guerra/">
+        <div class="teaser-cover"><img src="/blog/media/operacao-avalanche-salerno-segunda-guerra/capa-operacao-avalanche-salerno.jpg" alt="Operação Avalanche: O Desembarque em Salerno em 1943" loading="lazy"></div>
+        <div class="teaser-body">
+          <span class="book-tag">Raízes, Sacrifício e Herança</span>
+          <h3>Operação Avalanche: O Desembarque em Salerno em 1943</h3>
           <span class="teaser-cta">Ler mais →</span>
         </div>
       </a>
@@ -294,6 +307,22 @@
       <p>Imigração, guerras e a construção de legados familiares de geração em geração.</p>
     </div>
     <div class="books-grid">
+      <div class="book-card" id="o-comandante">
+        <div class="book-cover"><img src="/covers/o-comandante.jpg" alt="O Comandante"></div>
+        <div class="book-body">
+          <div class="book-tags-row">
+            <span class="book-badge">Lançamento</span>
+            <div class="book-tag">Entreguerras</div>
+          </div>
+          <h3>O Comandante</h3>
+          <p>Das ruínas da guerra ao topo do império marítimo global, a história de resiliência, perigos no mar e o verdadeiro custo do sucesso de um homem que reconstrói tudo a partir do nada.</p>
+          <div class="book-audio">
+            <span class="book-audio-label">🎧 Ouça uma amostra do audiobook</span>
+            <audio controls preload="none" src="/audio/o-comandante-amostra.mp3"></audio>
+          </div>
+          <a class="btn small" href="https://link.amazon/B02BbXrEH" target="_blank" rel="noopener">Comprar na Amazon</a>
+        </div>
+      </div>
       <div class="book-card" id="o-siciliano">
         <div class="book-cover"><img src="/covers/o-siciliano.jpg" alt="O Siciliano"></div>
         <div class="book-body">
