@@ -250,7 +250,22 @@
   .book-audio-label{display:block;font-size:11px;letter-spacing:.08em;color:var(--gold-bright);margin-bottom:8px;font-family:'Cinzel',serif;text-transform:uppercase;}
   .book-audio audio{width:100%;height:34px;}
   .book-card--hidden{display:none;}
-  .obras-ver-mais-wrap{text-align:center;margin-top:34px;}
+  .obras-ver-mais-wrap{
+    text-align:center;margin-top:40px;padding:28px 20px;border:1px solid var(--card-border);
+    border-radius:6px;background:linear-gradient(180deg,rgba(201,161,58,.06),transparent);
+  }
+  .obras-ver-mais-peek{display:flex;justify-content:center;gap:10px;margin-bottom:20px;}
+  .obras-ver-mais-peek-item{
+    display:block;width:60px;height:60px;border-radius:8px;overflow:hidden;
+    border:1px solid var(--card-border);background:var(--bg-alt);
+    transition:transform .2s ease,border-color .2s ease;
+  }
+  .obras-ver-mais-peek-item:hover{transform:translateY(-3px);border-color:var(--gold);}
+  .obras-ver-mais-peek-item img{width:100%;height:100%;object-fit:cover;display:block;}
+  @media (max-width:480px){
+    .obras-ver-mais-peek-item{width:48px;height:48px;}
+    .obras-ver-mais-wrap{padding:22px 14px;}
+  }
   .obras-subsecao{margin-top:56px;}
 
   /* BLOG TEASER */
@@ -1361,7 +1376,12 @@
     </div>
 
     <div class="obras-ver-mais-wrap">
-      <button type="button" id="obras-ver-mais" class="btn small">Ver todas as 26 obras</button>
+      <div class="obras-ver-mais-peek">
+        <a href="#a-industria-do-vicio" class="obras-ver-mais-peek-item" title="A Indústria do Vício"><img src="covers/a-industria-do-vicio.jpg" alt="" loading="lazy"></a>
+        <a href="#o-asilo" class="obras-ver-mais-peek-item" title="O Asilo"><img src="covers/o-asilo.jpg" alt="" loading="lazy"></a>
+        <a href="#o-tesouro-maldito" class="obras-ver-mais-peek-item" title="O Tesouro Maldito"><img src="covers/o-tesouro-maldito.jpg" alt="" loading="lazy"></a>
+      </div>
+      <button type="button" id="obras-ver-mais" class="btn solid">Ver todas as 26 obras</button>
     </div>
 
     <div class="eyebrow obras-subsecao">Livros em Série</div>
@@ -1715,6 +1735,11 @@
       }
     });
   }
+  document.querySelectorAll('.obras-ver-mais-peek-item').forEach(function(link){
+    link.addEventListener('click', function(){
+      expandirObrasUnicas();
+    });
+  });
   if (location.hash) {
     var alvo = document.querySelector(location.hash);
     if (alvo && alvo.classList.contains('book-card--hidden')) {
