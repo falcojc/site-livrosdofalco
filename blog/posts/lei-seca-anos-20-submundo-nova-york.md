@@ -4,7 +4,7 @@ date: 2026-07-27
 description: "Descubra como a Lei Seca nos anos 20 transformou Nova York. Explore os segredos, o poder dos speakeasies e a inspiração para A Indústria do Vício."
 cluster: "Mistério, Luxo e Sombras"
 cover: "/blog/media/lei-seca-anos-20-submundo-nova-york/capa-rua-little-italy.jpg"
-obra_relacionada: "https://www.amazon.com.br/dp/B0D917Q6XB"
+obra_relacionada: "https://www.amazon.com.br/dp/B0D917Q6XB?tag=falcojc-20&ascsubtag=blog-cta-a-industria-do-vicio"
 obra_relacionada_titulo: "A Indústria do Vício"
 obra_relacionada_capas: ["a-industria-do-vicio"]
 obra_relacionada_cta: "Desvende as sombras da Nova York da Lei Seca em A Indústria do Vício, de Domenico Falco."
@@ -14,7 +14,7 @@ A década de 1920 é frequentemente lembrada pelo jazz, pelas melindrosas, pelos
 
 Promulgada com o objetivo de purificar a sociedade e combater problemas sociais profundos, a famosa 18ª Emenda acabou gerando exatamente o oposto, abrindo as portas para o florescimento sem precedentes de organizações clandestinas.
 
-A proibição da produção, venda e transporte de bebidas alcoólicas não eliminou o desejo humano pelo escapismo. Pelo contrário, empurrou uma imensa fatia da economia para as sombras, onde alianças, traições e mistérios moldaram um novo império. Descubra como as ruas de Nova York se tornaram o tabuleiro de um perigoso e fascinante jogo de poder que inspira a épica ficção histórica <a href="https://www.amazon.com.br/dp/B0D917Q6XB" target="_blank" rel="noopener">A Indústria do Vício</a>, de Domenico Falco.
+A proibição da produção, venda e transporte de bebidas alcoólicas não eliminou o desejo humano pelo escapismo. Pelo contrário, empurrou uma imensa fatia da economia para as sombras, onde alianças, traições e mistérios moldaram um novo império. Descubra como as ruas de Nova York se tornaram o tabuleiro de um perigoso e fascinante jogo de poder que inspira a épica ficção histórica <a href="https://www.amazon.com.br/dp/B0D917Q6XB?tag=falcojc-20&ascsubtag=blog-a-industria-do-vicio" target="_blank" rel="noopener">A Indústria do Vício</a>, de Domenico Falco.
 
 ## O Berço da Proibição e as Ruas de Little Italy
 
@@ -50,7 +50,7 @@ No entanto, entrar para essa "indústria do vício" cobrava um preço altíssimo
 
 ## O Reflexo na Ficção Histórica
 
-Capturar o espírito duplo desta época, o choque entre a busca por sobrevivência de imigrantes humildes e a magnitude silenciosa das redes criminosas, é a essência do romance <a href="https://www.amazon.com.br/dp/B0D917Q6XB" target="_blank" rel="noopener">A Indústria do Vício</a>.
+Capturar o espírito duplo desta época, o choque entre a busca por sobrevivência de imigrantes humildes e a magnitude silenciosa das redes criminosas, é a essência do romance <a href="https://www.amazon.com.br/dp/B0D917Q6XB?tag=falcojc-20&ascsubtag=blog-a-industria-do-vicio" target="_blank" rel="noopener">A Indústria do Vício</a>.
 
 Na obra de Domenico Falco, somos convidados a mergulhar nas sombras da Nova York da Lei Seca. A narrativa acompanha jovens imigrantes que, seduzidos pelas promessas e encurralados pela escassez de oportunidades, encontram no sindicato do crime a sua chance de ascensão.
 
@@ -58,4 +58,4 @@ Na obra de Domenico Falco, somos convidados a mergulhar nas sombras da Nova York
 
 ![Fichas de cassino e cartas sobre uma mesa luxuosa em iluminação dramática](/blog/media/lei-seca-anos-20-submundo-nova-york/mesa-jogo-industria-vicio.jpg)
 
-Até onde você iria quando as regras do mundo não se aplicam mais? Se você é fascinado por tramas de poder, suspense histórico, jogos de gato e rato e reviravoltas no submundo da alta sociedade, desvende os mistérios de <a href="https://www.amazon.com.br/dp/B0D917Q6XB" target="_blank" rel="noopener">A Indústria do Vício</a>.
+Até onde você iria quando as regras do mundo não se aplicam mais? Se você é fascinado por tramas de poder, suspense histórico, jogos de gato e rato e reviravoltas no submundo da alta sociedade, desvende os mistérios de <a href="https://www.amazon.com.br/dp/B0D917Q6XB?tag=falcojc-20&ascsubtag=blog-a-industria-do-vicio" target="_blank" rel="noopener">A Indústria do Vício</a>.

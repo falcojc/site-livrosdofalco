@@ -4,7 +4,7 @@ date: 2026-08-13
 description: "Entenda o impacto da sangrenta Operação Avalanche em Salerno (1943), marco da Segunda Guerra Mundial que forjou o destino e a infância de Dante em O Comandante."
 cluster: "Raízes, Sacrifício e Herança"
 cover: "/blog/media/operacao-avalanche-salerno-segunda-guerra/capa-operacao-avalanche-salerno.jpg"
-obra_relacionada: "https://link.amazon/B02BbXrEH"
+obra_relacionada: "https://www.amazon.com.br/dp/B0HCGR5YR7?tag=falcojc-20&ascsubtag=blog-o-comandante"
 obra_relacionada_titulo: "O Comandante"
 obra_relacionada_capas: ["o-comandante"]
 obra_relacionada_cta: "Embarque na saga de Dante e descubra como as ruínas da guerra forjaram um império marítimo, em O Comandante, de Domenico Falco."
@@ -12,7 +12,7 @@ tags: ["cluster-raizes-sacrificio-heranca"]
 ---
 Na madrugada de 9 de setembro de 1943, o Golfo de Salerno, no sul da Itália, estava envolto em um silêncio sepulcral. Mas o que parecia apenas mais uma noite escura à beira-mar escondia, sob a neblina, a aproximação de uma tempestade de fogo e aço que mudaria para sempre o rumo da Segunda Guerra Mundial em território europeu.
 
-A [Operação Avalanche](https://www.history.navy.mil/browse-by-topic/wars-conflicts-and-operations/world-war-ii/1943/salerno-landings.html), codinome para o massivo desembarque das forças aliadas nas praias de Salerno, foi uma das manobras mais audaciosas, arriscadas e brutais da campanha de libertação da Itália, deixando marcas profundas que moldaram uma geração inteira de sobreviventes, entre eles Dante, o protagonista de <a href="https://link.amazon/B02BbXrEH" target="_blank" rel="noopener">O Comandante</a>, de Domenico Falco.
+A [Operação Avalanche](https://www.history.navy.mil/browse-by-topic/wars-conflicts-and-operations/world-war-ii/1943/salerno-landings.html), codinome para o massivo desembarque das forças aliadas nas praias de Salerno, foi uma das manobras mais audaciosas, arriscadas e brutais da campanha de libertação da Itália, deixando marcas profundas que moldaram uma geração inteira de sobreviventes, entre eles Dante, o protagonista de <a href="https://www.amazon.com.br/dp/B0HCGR5YR7?tag=falcojc-20&ascsubtag=blog-o-comandante" target="_blank" rel="noopener">O Comandante</a>, de Domenico Falco.
 
 ## O Contexto de um País de Joelhos
 
@@ -36,7 +36,7 @@ Salerno não foi apenas uma vitória militar nos mapas dos generais. Foi uma tra
 
 ## As Ruínas que Forjaram o Caráter de um Homem
 
-É no seio dessa reconstrução dolorosa do pós-guerra em Salerno que Domenico Falco situa o início de sua extraordinária obra de ficção histórica, <a href="https://link.amazon/B02BbXrEH" target="_blank" rel="noopener">O Comandante</a>.
+É no seio dessa reconstrução dolorosa do pós-guerra em Salerno que Domenico Falco situa o início de sua extraordinária obra de ficção histórica, <a href="https://www.amazon.com.br/dp/B0HCGR5YR7?tag=falcojc-20&ascsubtag=blog-o-comandante" target="_blank" rel="noopener">O Comandante</a>.
 
 A infância do protagonista Dante é vivida sob as sombras da fumaça dos canhões da Operação Avalanche. Ele cresce em uma pequena e humilde casa de pescadores, vendo o pai, Gino, encarar o mar diariamente para trazer o sustento em meio à escassez de recursos de uma Itália devastada.
 
@@ -44,7 +44,7 @@ A infância do protagonista Dante é vivida sob as sombras da fumaça dos canhõ
 
 ![Navio cargueiro reconstruído no porto italiano no pós-guerra, símbolo da reconstrução](/blog/media/operacao-avalanche-salerno-segunda-guerra/forca-da-reconstrucao.jpg)
 
-O Comandante narra como a determinação de um homem pode transformar a dor herdada da guerra em um império de integridade, respeito e inteligência global. Até onde a resiliência de uma infância marcada por ruínas pode levar um homem? Embarque nessa jornada histórica de redenção e coragem em <a href="https://link.amazon/B02BbXrEH" target="_blank" rel="noopener">O Comandante</a>, de Domenico Falco.
+O Comandante narra como a determinação de um homem pode transformar a dor herdada da guerra em um império de integridade, respeito e inteligência global. Até onde a resiliência de uma infância marcada por ruínas pode levar um homem? Embarque nessa jornada histórica de redenção e coragem em <a href="https://www.amazon.com.br/dp/B0HCGR5YR7?tag=falcojc-20&ascsubtag=blog-o-comandante" target="_blank" rel="noopener">O Comandante</a>, de Domenico Falco.
 
 <div class="podcast-strip">
   <div class="podcast-card">
