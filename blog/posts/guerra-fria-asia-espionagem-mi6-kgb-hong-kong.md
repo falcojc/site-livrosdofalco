@@ -4,7 +4,7 @@ date: 2026-07-22
 description: "Descubra os bastidores da Guerra Fria na Ásia: o embate invisível entre o MI6, a KGB e as Tríades em Hong Kong que inspirou Destinos Cruzados."
 cluster: "Mistério, Luxo e Sombras"
 cover: "/blog/media/guerra-fria-asia-espionagem-mi6-kgb-hong-kong/capa-hong-kong-neon.jpg"
-obra_relacionada: "https://www.amazon.com.br/dp/B0D8M6361T"
+obra_relacionada: "https://www.amazon.com.br/dp/B0D8M6361T?tag=falcojc-20&ascsubtag=blog-cta-destinos-cruzados-parte-2"
 obra_relacionada_titulo: "Destinos Cruzados: Parte 2"
 obra_relacionada_capas: ["destinos-cruzados-parte-2"]
 obra_relacionada_cta: "Mergulhe na teia de espionagem, Tríades e segredos de família em Destinos Cruzados: Parte 2, de Domenico Falco."
@@ -15,7 +15,7 @@ Quando pensamos na Guerra Fria, as primeiras imagens que nos vêm à mente costu
 
 Após a Segunda Guerra Mundial, o mundo foi polarizado entre o capitalismo e o comunismo, e a Ásia tornou-se um palco vital para o domínio geopolítico. Sem confrontos militares diretos de larga escala entre as superpotências, a guerra tornou-se "fria", travada nas sombras por agentes secretos, espiões infiltrados e alianças inusitadas.
 
-Mergulhe nesse universo de segredos e lealdades testadas que serve de cenário para o eletrizante thriller histórico <a href="https://www.amazon.com.br/dp/B0D8M6361T" target="_blank" rel="noopener">Destinos Cruzados: Parte 2</a>, de Domenico Falco.
+Mergulhe nesse universo de segredos e lealdades testadas que serve de cenário para o eletrizante thriller histórico <a href="https://www.amazon.com.br/dp/B0D8M6361T?tag=falcojc-20&ascsubtag=blog-destinos-cruzados-parte-2" target="_blank" rel="noopener">Destinos Cruzados: Parte 2</a>, de Domenico Falco.
 
 ![Três espiões de sobretudo observando o horizonte iluminado por neon do porto de Hong Kong ao anoitecer](/blog/media/guerra-fria-asia-espionagem-mi6-kgb-hong-kong/visao-dos-espioes-hongkong.jpg)
 
@@ -49,10 +49,10 @@ O embate entre essas duas forças não ocorria em trincheiras, mas através de j
 
 ## A Teia Geopolítica em "Destinos Cruzados"
 
-É essa atmosfera de constante paranoia, dinâmicas de poder e lealdades questionáveis que pulsa em cada página de <a href="https://www.amazon.com.br/dp/B0D8M6361T" target="_blank" rel="noopener">Destinos Cruzados: Parte 2</a>, obra magistral de Domenico Falco.
+É essa atmosfera de constante paranoia, dinâmicas de poder e lealdades questionáveis que pulsa em cada página de <a href="https://www.amazon.com.br/dp/B0D8M6361T?tag=falcojc-20&ascsubtag=blog-destinos-cruzados-parte-2" target="_blank" rel="noopener">Destinos Cruzados: Parte 2</a>, obra magistral de Domenico Falco.
 
 A trama nos conduz pelos olhos do jovem agente britânico Will e do implacável oficial soviético Sergey, enquanto ambos navegam por uma teia mortal envolvendo segredos industriais, as misteriosas Tríades e laços familiares esquecidos pelo tempo. É uma jornada épica que prova que, em tempos de guerra invisível, os inimigos mais mortais podem estar não apenas nas trincheiras opostas, mas ocultos dentro do próprio coração humano.
 
 ![Espião observando o horizonte da cidade de Hong Kong pela janela ao anoitecer](/blog/media/guerra-fria-asia-espionagem-mi6-kgb-hong-kong/espiao-horizonte-hong-kong.jpg)
 
-Até quem você trairia para descobrir a verdade? Se você é fascinado por tramas de poder, espionagem de alto nível e reviravoltas geopolíticas de tirar o fôlego, desvende os mistérios de <a href="https://www.amazon.com.br/dp/B0D8M6361T" target="_blank" rel="noopener">Destinos Cruzados: Parte 2</a>.
+Até quem você trairia para descobrir a verdade? Se você é fascinado por tramas de poder, espionagem de alto nível e reviravoltas geopolíticas de tirar o fôlego, desvende os mistérios de <a href="https://www.amazon.com.br/dp/B0D8M6361T?tag=falcojc-20&ascsubtag=blog-destinos-cruzados-parte-2" target="_blank" rel="noopener">Destinos Cruzados: Parte 2</a>.

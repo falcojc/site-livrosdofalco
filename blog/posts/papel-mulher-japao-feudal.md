@@ -4,7 +4,7 @@ date: 2026-07-26
 description: "Descubra como as mulheres do Japão Feudal transformaram submissão em poder e resiliência, inspirando a ficção histórica A Casa dos Prazeres."
 cluster: "Empoderamento e Rebeldia"
 cover: "/blog/media/papel-mulher-japao-feudal/capa-mulher-rua-tradicional.jpg"
-obra_relacionada: "https://www.amazon.com.br/dp/B09G1J8GKR"
+obra_relacionada: "https://www.amazon.com.br/dp/B09G1J8GKR?tag=falcojc-20&ascsubtag=blog-cta-a-casa-dos-prazeres"
 obra_relacionada_titulo: "A Casa dos Prazeres"
 obra_relacionada_capas: ["a-casa-dos-prazeres"]
 obra_relacionada_cta: "Descubra a jornada de mulheres que transformam sobrevivência em poder em A Casa dos Prazeres, de Domenico Falco."
@@ -41,10 +41,10 @@ Além disso, algumas raras e destemidas jovens ousaram cruzar a linha do conheci
 
 ## A Ficção Histórica como Espelho
 
-É essa complexa teia de sobrevivência, sacrifício e empoderamento que move os personagens da obra <a href="https://www.amazon.com.br/dp/B09G1J8GKR" target="_blank" rel="noopener">A Casa dos Prazeres</a>, de Domenico Falco. A narrativa nos mergulha em um universo onde mulheres, separadas por tragédias e pela ambição dos impérios, precisam redescobrir suas próprias identidades.
+É essa complexa teia de sobrevivência, sacrifício e empoderamento que move os personagens da obra <a href="https://www.amazon.com.br/dp/B09G1J8GKR?tag=falcojc-20&ascsubtag=blog-a-casa-dos-prazeres" target="_blank" rel="noopener">A Casa dos Prazeres</a>, de Domenico Falco. A narrativa nos mergulha em um universo onde mulheres, separadas por tragédias e pela ambição dos impérios, precisam redescobrir suas próprias identidades.
 
-Da altivez de cortesãs que usam os segredos como armas, à resiliência de mães que reconstroem a vida a partir das cinzas, e de jovens que desafiam a sociedade para curar os necessitados, <a href="https://www.amazon.com.br/dp/B09G1J8GKR" target="_blank" rel="noopener">A Casa dos Prazeres</a> é um tributo à inabalável bússola moral feminina.
+Da altivez de cortesãs que usam os segredos como armas, à resiliência de mães que reconstroem a vida a partir das cinzas, e de jovens que desafiam a sociedade para curar os necessitados, <a href="https://www.amazon.com.br/dp/B09G1J8GKR?tag=falcojc-20&ascsubtag=blog-a-casa-dos-prazeres" target="_blank" rel="noopener">A Casa dos Prazeres</a> é um tributo à inabalável bússola moral feminina.
 
 ![Mulher japonesa resiliente cuidando de um jardim de pedras e plantas no pôr do sol](/blog/media/papel-mulher-japao-feudal/resiliencia-no-campo.jpg)
 
-Pronto para quebrar as regras da história? Se você é fascinado por narrativas de superação onde protagonistas femininas não esperam ser salvas, mas forjam seus próprios destinos, descubra o romance histórico <a href="https://www.amazon.com.br/dp/B09G1J8GKR" target="_blank" rel="noopener">A Casa dos Prazeres</a>.
+Pronto para quebrar as regras da história? Se você é fascinado por narrativas de superação onde protagonistas femininas não esperam ser salvas, mas forjam seus próprios destinos, descubra o romance histórico <a href="https://www.amazon.com.br/dp/B09G1J8GKR?tag=falcojc-20&ascsubtag=blog-a-casa-dos-prazeres" target="_blank" rel="noopener">A Casa dos Prazeres</a>.
