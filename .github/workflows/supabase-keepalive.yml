@@ -1,0 +1,47 @@
+# Mantem o projeto do Supabase acordado.
+#
+# Por que existe: o plano free do Supabase pausa o projeto depois de 7 dias sem
+# nenhuma chamada de API. Quando isso acontece, o formulario de contato da home
+# continua parecendo normal para o visitante, mas o insert falha e ele ve
+# "Nao foi possivel enviar agora". Nao chega alerta nenhum, nao aparece no GA4:
+# o lead simplesmente evapora em silencio.
+#
+# O que faz: uma chamada GET por dia no endpoint REST. Basta existir trafego de
+# API, nao importa o que a resposta traz. Com o RLS ligado e sem policy de SELECT
+# para o papel anon, a resposta e 200 com corpo [] , que ja conta como atividade.
+#
+# Sobre a chave: e a publishable (anon), a mesma que ja vai no HTML da home para
+# todo visitante. Nao e segredo e nao da acesso a nada: quem protege a tabela e o
+# RLS. Se um dia quiser tirar daqui, mova para um secret do repositorio e troque
+# por ${{ secrets.SUPABASE_ANON_KEY }}.
+
+name: Supabase keepalive
+
+on:
+  schedule:
+    # 09:00 UTC = 06:00 em Brasilia, todo dia.
+    - cron: "0 9 * * *"
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Acorda o projeto e confere a resposta
+        run: |
+          URL="https://nxyfrctnavkleusiuvsp.supabase.co/rest/v1/contact_messages?select=id&limit=1"
+          KEY="sb_publishable_Pu5RG0UsGTg447l5u7AnvQ_ostSUQ3J"
+
+          CODE=$(curl -sS -o /tmp/resposta.txt -w "%{http_code}" \
+                   --max-time 30 --retry 3 --retry-delay 10 \
+                   "$URL" -H "apikey: $KEY")
+
+          echo "HTTP $CODE"
+          echo "corpo: $(cat /tmp/resposta.txt)"
+
+          if [ "$CODE" != "200" ]; then
+            echo "::error::O Supabase respondeu $CODE em vez de 200. O formulario de contato da home provavelmente esta fora do ar."
+            exit 1
+          fi
+
+          echo "Projeto acordado. O formulario de contato esta respondendo."
