@@ -24,10 +24,14 @@ document.addEventListener('click', function(e){
   // O "(\.|$)" no fim cobre o encurtador oficial "link.amazon", cujo hostname
   // termina no proprio TLD .amazon e nao tem ponto depois.
   if (saidaPara(/(^|\.)(amazon|amzn)(\.|$)/)) {
-    // item_id = ASIN tirado da propria URL. item_name segue tres degraus:
+    // obra_asin = ASIN tirado da propria URL. obra_titulo segue tres degraus:
     // titulo do card que envolve o link, senao o <h1> da pagina (caso da PDP,
     // que nao tem card), senao "(loja Amazon)" pros links de busca de autor,
     // que nao sao produto nenhum e sujariam o relatorio com o titulo da home.
+    // Os nomes NAO sao item_id/item_name de proposito: esses pertencem ao
+    // namespace de e-commerce do GA4 e so populam relatorio de item dentro de
+    // um evento de e-commerce. Aqui e clique de saida, entao viram dimensao
+    // personalizada de escopo de evento com nome proprio.
     var asin = (link.href.match(/\/(?:dp|gp\/product)\/([A-Z0-9]{10})/) || [])[1] || '';
     var card = link.closest('.book-card');
     var titulo = card && card.querySelector('h3');
@@ -35,10 +39,10 @@ document.addEventListener('click', function(e){
     gtag('event', 'click_to_amazon', {
       event_category: 'saida_amazon',
       event_label: link.href,
-      item_id: asin || '(sem asin)',
-      item_name: titulo ? titulo.textContent.trim()
-               : (asin && h1) ? h1.textContent.trim()
-               : '(loja Amazon)'
+      obra_asin: asin || '(sem asin)',
+      obra_titulo: titulo ? titulo.textContent.trim()
+                 : (asin && h1) ? h1.textContent.trim()
+                 : '(loja Amazon)'
     });
     return;
   }
