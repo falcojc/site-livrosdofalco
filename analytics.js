@@ -21,7 +21,9 @@ document.addEventListener('click', function(e){
   // evento de teaser/nav do blog, porque o ramo faz "return".
   var saidaPara = function (re) { return re.test(link.hostname); };
 
-  if (saidaPara(/(^|\.)(amazon\.|amzn\.)/)) {
+  // O "(\.|$)" no fim cobre o encurtador oficial "link.amazon", cujo hostname
+  // termina no proprio TLD .amazon e nao tem ponto depois.
+  if (saidaPara(/(^|\.)(amazon|amzn)(\.|$)/)) {
     // item_id = ASIN tirado da propria URL. item_name segue tres degraus:
     // titulo do card que envolve o link, senao o <h1> da pagina (caso da PDP,
     // que nao tem card), senao "(loja Amazon)" pros links de busca de autor,
