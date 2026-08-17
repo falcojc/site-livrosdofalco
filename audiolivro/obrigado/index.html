@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R2ZQZ51DEK"></script>
+<script src="/analytics.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seu audiolivro de O Comandante · Domenico Falco</title>
+<meta name="description" content="Baixe os 22 capítulos do audiolivro de O Comandante em MP3.">
+<!-- noindex protege a isca: sem ele o Google indexa esta pagina e qualquer um
+     baixa os 22 capitulos sem deixar e-mail, e a LP perde a razao de existir. -->
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0b0908; --bg-alt:#141110; --card:#191512; --card-border:#2b241d;
+    --gold:#c9a13a; --gold-bright:#e6c467; --text:#efe6d6; --text-muted:#a99c85;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{background:var(--bg);color:var(--text);font-family:'EB Garamond',serif;font-size:19px;line-height:1.62;-webkit-font-smoothing:antialiased;}
+  img{max-width:100%;display:block;}
+  a{color:var(--gold-bright);}
+
+  .lp-top{padding:16px clamp(20px,4vw,56px);border-bottom:1px solid var(--card-border);}
+  .lp-top .lockup{display:flex;align-items:center;gap:10px;max-width:900px;margin:0 auto;}
+  .lp-top .brand{font-family:'Cinzel',serif;font-weight:700;font-size:16px;letter-spacing:.12em;}
+  .lp-top .brand span{color:var(--gold);}
+
+  main{padding:clamp(34px,5vw,60px) clamp(20px,4vw,56px) clamp(56px,7vw,88px);}
+  .wrap{max-width:900px;margin:0 auto;}
+
+  .entrega{text-align:center;}
+  .selo{font-family:'Cinzel',serif;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:14px;}
+  h1{font-family:'Cinzel',serif;font-weight:700;font-size:clamp(27px,5.4vw,40px);line-height:1.18;}
+  .entrega p{color:var(--text-muted);margin-top:14px;font-size:clamp(17px,2.2vw,19px);}
+  .btn{display:inline-block;font-family:'Cinzel',serif;font-size:13px;letter-spacing:.14em;text-transform:uppercase;padding:15px 30px;border-radius:2px;border:1px solid var(--gold);color:var(--gold-bright);text-decoration:none;background:transparent;cursor:pointer;transition:background .15s,color .15s;}
+  .btn:hover{background:var(--gold);color:#0b0908;}
+  .btn.solid{background:var(--gold);color:#0b0908;font-weight:600;}
+  .btn.solid:hover{background:var(--gold-bright);}
+  .baixar-tudo{margin-top:26px;display:inline-block;}
+  .peso{display:block;margin-top:10px;font-size:14px;color:#6f6552;}
+
+  .aviso{background:var(--bg-alt);border:1px solid var(--card-border);border-left:2px solid var(--gold);padding:18px 22px;margin-top:clamp(34px,5vw,48px);font-size:17px;color:var(--text-muted);}
+  .aviso strong{color:var(--text);}
+
+  .secao{margin-top:clamp(44px,6vw,72px);}
+  .secao h2{font-family:'Cinzel',serif;font-size:clamp(20px,3vw,26px);margin-bottom:6px;}
+  .secao .sub{color:var(--text-muted);font-size:17px;margin-bottom:20px;}
+
+  .cap-list{list-style:none;border-top:1px solid var(--card-border);}
+  .cap-list li{border-bottom:1px solid var(--card-border);padding:14px 0;display:grid;grid-template-columns:auto 1fr auto;grid-template-areas:"num nome dur" "player player baixar";gap:10px 12px;align-items:center;}
+  @media (min-width:760px){
+    .cap-list li{grid-template-columns:auto minmax(150px,1fr) auto minmax(220px,300px) auto;grid-template-areas:"num nome dur player baixar";gap:16px;}
+  }
+  .cap-num{grid-area:num;font-family:'Cinzel',serif;font-size:13px;color:var(--gold);letter-spacing:.06em;min-width:2.2em;}
+  .cap-nome{grid-area:nome;font-size:18px;}
+  .cap-dur{grid-area:dur;font-size:14px;color:#6f6552;font-variant-numeric:tabular-nums;}
+  .cap-list audio{grid-area:player;width:100%;height:34px;}
+  .cap-baixar{grid-area:baixar;font-family:'Cinzel',serif;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--text-muted);text-decoration:none;border:1px solid var(--card-border);padding:7px 12px;border-radius:2px;white-space:nowrap;transition:color .15s,border-color .15s;}
+  .cap-baixar:hover{color:var(--gold-bright);border-color:var(--gold);}
+
+  /* a classe book-card nao e decorativa: e o gancho que faz o analytics.js
+     mandar obra_titulo="O Comandante" no click_to_amazon, em vez do <h1> da pagina */
+  .book-card.amazon{display:flex;gap:22px;align-items:center;flex-wrap:wrap;background:var(--card);border:1px solid var(--card-border);padding:clamp(20px,3vw,28px);}
+  .book-card.amazon img{width:104px;height:156px;object-fit:cover;flex-shrink:0;border:1px solid var(--card-border);}
+  .book-card.amazon h3{font-family:'Cinzel',serif;font-size:20px;font-weight:600;margin-bottom:8px;}
+  .book-card.amazon p{color:var(--text-muted);font-size:17px;margin-bottom:16px;max-width:46ch;}
+  .amazon-corpo{flex:1;min-width:250px;}
+
+  footer{padding:26px clamp(20px,4vw,56px) 40px;border-top:1px solid var(--card-border);text-align:center;color:#6f6552;font-size:14px;line-height:1.6;}
+  footer .afiliado{font-size:12.5px;margin-top:12px;max-width:70ch;margin-left:auto;margin-right:auto;}
+
+  @media (prefers-reduced-motion:reduce){*{transition:none !important;animation:none !important;}}
+</style>
+</head>
+<body>
+
+<div class="lp-top">
+  <div class="lockup">
+    <img src="/logo-mark.png" srcset="/logo-mark.png 1x, /logo-mark@2x.png 2x" alt="" width="30" height="30">
+    <div class="brand">DOMENICO <span>FALCO</span></div>
+  </div>
+</div>
+
+<main>
+  <div class="wrap">
+
+    <section class="entrega">
+      <p class="selo">Pronto</p>
+      <h1>Seu audiolivro está aqui embaixo</h1>
+      <p>Baixe agora, no seu tempo. Não precisa esperar e-mail nenhum para isso.</p>
+      <a class="btn solid baixar-tudo" href="/audio/o-comandante/o-comandante-audiolivro.zip" download>
+        Baixar os 22 capítulos
+      </a>
+      <span class="peso">Arquivo único de 53 MB. No celular, prefira o wi-fi.</span>
+    </section>
+
+    <section class="aviso">
+      <p><strong>Guarde este endereço.</strong> Enviamos ele também por e-mail, então você pode
+      voltar aqui quando quiser, de qualquer aparelho. Se a mensagem não aparecer em alguns
+      minutos, vale olhar no spam.</p>
+    </section>
+
+    <section class="secao">
+      <h2>Ou ouça capítulo por capítulo</h2>
+      <p class="sub">Toque para ouvir aqui mesmo, ou baixe só os capítulos que quiser.</p>
+      <ol class="cap-list">
+        <li>
+          <span class="cap-num">01</span>
+          <span class="cap-nome">Lembranças</span>
+          <span class="cap-dur">8:04</span>
+          <audio controls preload="none" src="/audio/o-comandante/01-lembrancas.mp3"></audio>
+          <a class="cap-baixar" href="/audio/o-comandante/01-lembrancas.mp3" download aria-label="Baixar o capítulo 1, Lembranças">Baixar</a>
+        </li>
+        <li>
+          <span class="cap-num">02</span>
+          <span class="cap-nome">Pai e Filho</span>
+          <span class="cap-dur">4:39</span>
+          <audio controls preload="none" src="/audio/o-comandante/02-pai-e-filho.mp3"></audio>
+          <a class="cap-baixar" href="/audio/o-comandante/02-pai-e-filho.mp3" download aria-label="Baixar o capítulo 2, Pai e Filho">Baixar</a>
+        </li>
+        <li>
+          <span class="cap-num">03</span>
+          <span class="cap-nome">A Libertação</span>
+          <span class="cap-dur">3:58</span>
+          <audio controls preload="none" src="/audio/o-comandante/03-a-libertacao.mp3"></audio>
+          <a class="cap-baixar" href="/audio/o-comandante/03-a-libertacao.mp3" download aria-label="Baixar o capítulo 3, A Libertação">Baixar</a>
+        </li>
+        <li>
+          <span class="cap-num">04</span>
+          <span class="cap-nome">O Renascimento</span>
+          <span class="cap-dur">6:57</span>
+          <audio controls preload="none" src="/audio/o-comandante/04-o-renascimento.mp3"></audio>
+          <a class="cap-baixar" href="/audio/o-comandante/04-o-renascimento.mp3" download aria-label="Baixar o capítulo 4, O Renascimento">Baixar</a>
+        </li>
+        <li>
+          <span class="cap-num">05</span>
+          <span class="cap-nome">Helga</span>
+          <span class="cap-dur">6:21</span>
+          <audio controls preload="none" src="/audio/o-comandante/05-helga.mp3"></audio>
+          <a class="cap-baixar" href="/audio/o-comandante/05-helga.mp3" download aria-label="Baixar o capítulo 5, Helga">Baixar</a>
+        </li>
+        <li>
+          <span class="cap-num">06</span>
+          <span class="cap-nome">Caráter</span>
+          <span class="cap-dur">6:09</span>
+          <audio controls preload="none" src="/audio/o-comandante/06-carater.mp3"></audio>
+          <a class="cap-baixar" href="/audio/o-comandante/06-carater.mp3" download aria-label="Baixar o capítulo 6, Caráter">Baixar</a>
+        </li>
+        <li>
+          <span class="cap-num">07</span>
+          <span class="cap-nome">A Oportunidade</span>
+          <span class="cap-dur">5:23</span>
+          <audio controls preload="none" src="/audio/o-comandante/07-a-oportunidade.mp3"></audio>
+          <a class="cap-baixar" href="/audio/o-comandante/07-a-oportunidade.mp3" download aria-label="Baixar o capítulo 7, A Oportunidade">Baixar</a>
+        </li>
+        <li>
+          <span class="cap-num">08</span>
+          <span class="cap-nome">A Proposta</span>
+          <span class="cap-dur">6:05</span>
+          <audio controls preload="none" src="/audio/o-comandante/08-a-proposta.mp3"></audio>
+          <a class="cap-baixar" href="/audio/o-comandante/08-a-proposta.mp3" download aria-label="Baixar o capítulo 8, A Proposta">Baixar</a>
+        </li>
+        <li>
+          <span class="cap-num">09</span>
+          <span class="cap-nome">A Fatalidade</span>
+          <span class="cap-dur">5:46</span>
+          <audio controls preload="none" src="/audio/o-comandante/09-a-fatalidade.mp3"></audio>
+          <a class="cap-baixar" href="/audio/o-comandante/09-a-fatalidade.mp3" download aria-label="Baixar o capítulo 9, A Fatalidade">Baixar</a>
+        </li>
+        <li>
+          <span class="cap-num">10</span>
+          <span class="cap-nome">O Recomeço</span>
+          <span class="cap-dur">4:51</span>
+          <audio controls preload="none" src="/audio/o-comandante/10-o-recomeco.mp3"></audio>
+          <a class="cap-baixar" href="/audio/o-comandante/10-o-recomeco.mp3" download aria-label="Baixar o capítulo 10, O Recomeço">Baixar</a>
+        </li>
+        <li>
+          <span class="cap-num">11</span>
+          <span class="cap-nome">O Empréstimo</span>
+          <span class="cap-dur">4:53</span>
+          <audio controls preload="none" src="/audio/o-comandante/11-o-emprestimo.mp3"></audio>
+          <a class="cap-baixar" href="/audio/o-comandante/11-o-emprestimo.mp3" download aria-label="Baixar o capítulo 11, O Empréstimo">Baixar</a>
+        </li>
+        <li>
+          <span class="cap-num">12</span>
+          <span class="cap-nome">Novo Choque</span>
+          <span class="cap-dur">5:33</span>
+          <audio controls preload="none" src="/audio/o-comandante/12-novo-choque.mp3"></audio>
+          <a class="cap-baixar" href="/audio/o-comandante/12-novo-choque.mp3" download aria-label="Baixar o capítulo 12, Novo Choque">Baixar</a>
+        </li>
+        <li>
+          <span class="cap-num">13</span>
+          <span class="cap-nome">Gênova</span>
+          <span class="cap-dur">4:23</span>
+          <audio controls preload="none" src="/audio/o-comandante/13-genova.mp3"></audio>
+          <a class="cap-baixar" href="/audio/o-comandante/13-genova.mp3" download aria-label="Baixar o capítulo 13, Gênova">Baixar</a>
+        </li>
+        <li>
+          <span class="cap-num">14</span>
+          <span class="cap-nome">Anos de Chumbo</span>
+          <span class="cap-dur">5:59</span>
+          <audio controls preload="none" src="/audio/o-comandante/14-anos-de-chumbo.mp3"></audio>
+          <a class="cap-baixar" href="/audio/o-comandante/14-anos-de-chumbo.mp3" download aria-label="Baixar o capítulo 14, Anos de Chumbo">Baixar</a>
+        </li>
+        <li>
+          <span class="cap-num">15</span>
+          <span class="cap-nome">Sem Lar</span>
+          <span class="cap-dur">3:14</span>
+          <audio controls preload="none" src="/audio/o-comandante/15-sem-lar.mp3"></audio>
+          <a class="cap-baixar" href="/audio/o-comandante/15-sem-lar.mp3" download aria-label="Baixar o capítulo 15, Sem Lar">Baixar</a>
+        </li>
+        <li>
+          <span class="cap-num">16</span>
+          <span class="cap-nome">Redenção</span>
+          <span class="cap-dur">5:30</span>
+          <audio controls preload="none" src="/audio/o-comandante/16-redencao.mp3"></audio>
+          <a class="cap-baixar" href="/audio/o-comandante/16-redencao.mp3" download aria-label="Baixar o capítulo 16, Redenção">Baixar</a>
+        </li>
+        <li>
+          <span class="cap-num">17</span>
+          <span class="cap-nome">Os Tigres</span>
+          <span class="cap-dur">4:36</span>
+          <audio controls preload="none" src="/audio/o-comandante/17-os-tigres.mp3"></audio>
+          <a class="cap-baixar" href="/audio/o-comandante/17-os-tigres.mp3" download aria-label="Baixar o capítulo 17, Os Tigres">Baixar</a>
+        </li>
+        <li>
+          <span class="cap-num">18</span>
+          <span class="cap-nome">Silêncio</span>
+          <span class="cap-dur">2:34</span>
+          <audio controls preload="none" src="/audio/o-comandante/18-silencio.mp3"></audio>
+          <a class="cap-baixar" href="/audio/o-comandante/18-silencio.mp3" download aria-label="Baixar o capítulo 18, Silêncio">Baixar</a>
+        </li>
+        <li>
+          <span class="cap-num">19</span>
+          <span class="cap-nome">Os Piratas</span>
+          <span class="cap-dur">6:17</span>
+          <audio controls preload="none" src="/audio/o-comandante/19-os-piratas.mp3"></audio>
+          <a class="cap-baixar" href="/audio/o-comandante/19-os-piratas.mp3" download aria-label="Baixar o capítulo 19, Os Piratas">Baixar</a>
+        </li>
+        <li>
+          <span class="cap-num">20</span>
+          <span class="cap-nome">Obsessão</span>
+          <span class="cap-dur">3:15</span>
+          <audio controls preload="none" src="/audio/o-comandante/20-obsessao.mp3"></audio>
+          <a class="cap-baixar" href="/audio/o-comandante/20-obsessao.mp3" download aria-label="Baixar o capítulo 20, Obsessão">Baixar</a>
+        </li>
+        <li>
+          <span class="cap-num">21</span>
+          <span class="cap-nome">Silêncio</span>
+          <span class="cap-dur">4:10</span>
+          <audio controls preload="none" src="/audio/o-comandante/21-silencio.mp3"></audio>
+          <a class="cap-baixar" href="/audio/o-comandante/21-silencio.mp3" download aria-label="Baixar o capítulo 21, Silêncio">Baixar</a>
+        </li>
+        <li>
+          <span class="cap-num">22</span>
+          <span class="cap-nome">Epílogo</span>
+          <span class="cap-dur">2:56</span>
+          <audio controls preload="none" src="/audio/o-comandante/22-epilogo.mp3"></audio>
+          <a class="cap-baixar" href="/audio/o-comandante/22-epilogo.mp3" download aria-label="Baixar o capítulo 22, Epílogo">Baixar</a>
+        </li>
+      </ol>
+    </section>
+
+    <section class="secao">
+      <h2>Prefere ler?</h2>
+      <p class="sub">A mesma história, na sua estante.</p>
+      <!-- CTA da Amazon: hoje aponta para a edicao Kindle (ASIN B0HCGR5YR7, o
+           canonico do mapa .claude/asins-catalogo.json). TROCAR PELA EDICAO
+           IMPRESSA quando ela sair do KDP: trocar o ASIN no href, o texto do
+           paragrafo e o rotulo do botao. O ascsubtag identifica esta pagina
+           no relatorio de afiliado da Amazon. -->
+      <div class="book-card amazon">
+        <img src="/covers/o-comandante.jpg" alt="Capa de O Comandante, de Domenico Falco" width="104" height="156">
+        <div class="amazon-corpo">
+          <h3>O Comandante</h3>
+          <p>Está na Amazon em Kindle e Kindle Unlimited. É a mesma história que você acabou
+          de receber, para ler no seu ritmo.</p>
+          <a class="btn" href="https://www.amazon.com.br/dp/B0HCGR5YR7?tag=falcojc-20&amp;ascsubtag=lp-audiolivro-obrigado" target="_blank" rel="noopener">
+            Ver na Amazon
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  Livros do Falco · Obrigado por ouvir.
+  <p class="afiliado">Como Associado da Amazon, eu ganho com compras qualificadas. Os links para a Amazon nesta página são links de afiliado.</p>
+</footer>
+
+<script>
+  // generate_lead so na primeira chegada deste navegador. O e-mail da Brevo traz
+  // o endereco desta pagina, entao sem essa trava cada revisita contaria uma
+  // conversao nova e inflaria a meta do Google Ads.
+  window.addEventListener('load', function () {
+    try {
+      if (localStorage.getItem('lead_audiolivro')) return;
+      localStorage.setItem('lead_audiolivro', '1');
+    } catch (e) { /* navegador sem storage: mede assim mesmo, melhor que nao medir */ }
+    if (typeof gtag === 'function') {
+      gtag('event', 'generate_lead', {
+        event_category: 'captura',
+        event_label: 'audiolivro'
+      });
+    }
+  });
+</script>
+
+</body>
+</html>
