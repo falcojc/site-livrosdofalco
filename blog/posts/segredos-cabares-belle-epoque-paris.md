@@ -4,7 +4,7 @@ date: 2026-07-23
 description: "Mergulhe no brilho e nos mistérios da Belle Époque parisiense. Conheça a era de ouro dos cabarés e a busca por liberdade feminina nos palcos."
 cluster: "Empoderamento e Rebeldia"
 cover: "/blog/media/segredos-cabares-belle-epoque-paris/capa-fachada-cabare.jpg"
-obra_relacionada: "https://www.amazon.com.br/dp/B0BH3KL167?tag=falcojc-20&ascsubtag=blog-cta-joana-a-dama-da-noite"
+obra_relacionada: "https://www.amazon.com.br/dp/B0BH3KL167?tag=falcoblog-20&ascsubtag=blog-cta-joana-a-dama-da-noite"
 obra_relacionada_titulo: "Joana: A Dama da Noite"
 obra_relacionada_capas: ["joana"]
 obra_relacionada_cta: "Mergulhe nos encantos e perigos dos cabarés parisienses em Joana: A Dama da Noite, de Domenico Falco."
@@ -40,8 +40,8 @@ As artistas e frequentadoras dessas casas noturnas passaram a ditar tendências 
 
 Entretanto, o glamour inegável escondia segredos e desafios monumentais. Viver à margem das regras da sociedade tradicional exigia uma coragem ímpar. Muitas dessas mulheres enfrentaram o abandono de suas famílias, os julgamentos implacáveis e a dura realidade de um mundo que ainda lutava para aceitar mulheres que não precisavam ser salvas por ninguém.
 
-É essa busca apaixonante e perigosa por identidade e liberdade que guia a protagonista de <a href="https://www.amazon.com.br/dp/B0BH3KL167?tag=falcojc-20&ascsubtag=blog-joana-a-dama-da-noite" target="_blank" rel="noopener">Joana: A Dama da Noite</a>. A obra magistral de Domenico Falco captura a essência crua e bela de Paris no alvorecer do século XX. Acompanhar a jornada de Joana é mergulhar nos encantos e perigos dos cabarés parisienses, vivenciando as glórias e os sacrifícios de uma mulher que ousou quebrar todas as regras para ser, irrevogavelmente, dona de si mesma.
+É essa busca apaixonante e perigosa por identidade e liberdade que guia a protagonista de <a href="https://www.amazon.com.br/dp/B0BH3KL167?tag=falcoblog-20&ascsubtag=blog-joana-a-dama-da-noite" target="_blank" rel="noopener">Joana: A Dama da Noite</a>. A obra magistral de Domenico Falco captura a essência crua e bela de Paris no alvorecer do século XX. Acompanhar a jornada de Joana é mergulhar nos encantos e perigos dos cabarés parisienses, vivenciando as glórias e os sacrifícios de uma mulher que ousou quebrar todas as regras para ser, irrevogavelmente, dona de si mesma.
 
 ![Mulher elegante da Belle Époque com chapéu cloche em um café de Paris](/blog/media/segredos-cabares-belle-epoque-paris/independencia-joana-belle-epoque.jpg)
 
-Até onde você iria para conquistar sua liberdade? Se você se apaixona por histórias de empoderamento, glamour, mistério e personagens femininas inesquecíveis, descubra os segredos de <a href="https://www.amazon.com.br/dp/B0BH3KL167?tag=falcojc-20&ascsubtag=blog-joana-a-dama-da-noite" target="_blank" rel="noopener">Joana: A Dama da Noite</a>.
+Até onde você iria para conquistar sua liberdade? Se você se apaixona por histórias de empoderamento, glamour, mistério e personagens femininas inesquecíveis, descubra os segredos de <a href="https://www.amazon.com.br/dp/B0BH3KL167?tag=falcoblog-20&ascsubtag=blog-joana-a-dama-da-noite" target="_blank" rel="noopener">Joana: A Dama da Noite</a>.
