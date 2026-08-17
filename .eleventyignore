@@ -1,0 +1,4 @@
+# Documentacao interna (planos, specs, notas de agente). Fica no repositorio,
+# mas NUNCA vira pagina publica: o input do Eleventy e a raiz do projeto, entao
+# todo .md solto seria construido em _site/ e serviria em producao.
+docs/

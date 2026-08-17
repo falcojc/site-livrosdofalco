@@ -15,19 +15,46 @@ document.addEventListener('click', function(e){
   if (!link) return;
   var href = link.getAttribute('href') || '';
 
-  if (link.href.indexOf('amazon') !== -1) {
-    gtag('event', 'click_to_amazon', { event_category: 'saida_amazon', event_label: link.href });
+  // Casa pelo DOMINIO do link, nunca pelo href inteiro. Procurar "amazon" no
+  // href contava o post /blog/desafios-expedicoes-floresta-amazonica/ como
+  // saida para a loja (7 links internos apontam pra ele) e ainda engolia o
+  // evento de teaser/nav do blog, porque o ramo faz "return".
+  var saidaPara = function (re) { return re.test(link.hostname); };
+
+  // O "(\.|$)" no fim cobre o encurtador oficial "link.amazon", cujo hostname
+  // termina no proprio TLD .amazon e nao tem ponto depois.
+  if (saidaPara(/(^|\.)(amazon|amzn)(\.|$)/)) {
+    // obra_asin = ASIN tirado da propria URL. obra_titulo segue tres degraus:
+    // titulo do card que envolve o link, senao o <h1> da pagina (caso da PDP,
+    // que nao tem card), senao "(loja Amazon)" pros links de busca de autor,
+    // que nao sao produto nenhum e sujariam o relatorio com o titulo da home.
+    // Os nomes NAO sao item_id/item_name de proposito: esses pertencem ao
+    // namespace de e-commerce do GA4 e so populam relatorio de item dentro de
+    // um evento de e-commerce. Aqui e clique de saida, entao viram dimensao
+    // personalizada de escopo de evento com nome proprio.
+    var asin = (link.href.match(/\/(?:dp|gp\/product)\/([A-Z0-9]{10})/) || [])[1] || '';
+    var card = link.closest('.book-card');
+    var titulo = card && card.querySelector('h3');
+    var h1 = document.querySelector('h1');
+    gtag('event', 'click_to_amazon', {
+      event_category: 'saida_amazon',
+      event_label: link.href,
+      obra_asin: asin || '(sem asin)',
+      obra_titulo: titulo ? titulo.textContent.trim()
+                 : (asin && h1) ? h1.textContent.trim()
+                 : '(loja Amazon)'
+    });
     return;
   }
-  if (link.href.indexOf('instagram.com') !== -1) {
+  if (saidaPara(/(^|\.)instagram\.com$/)) {
     gtag('event', 'click_instagram', { event_category: 'redes_sociais', event_label: link.href });
     return;
   }
-  if (link.href.indexOf('tiktok.com') !== -1) {
+  if (saidaPara(/(^|\.)tiktok\.com$/)) {
     gtag('event', 'click_tiktok', { event_category: 'redes_sociais', event_label: link.href });
     return;
   }
-  if (link.href.indexOf('spotify.com') !== -1) {
+  if (saidaPara(/(^|\.)spotify\.com$/)) {
     gtag('event', 'click_spotify', { event_category: 'audiobook', event_label: link.href });
     return;
   }
