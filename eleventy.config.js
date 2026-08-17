@@ -10,6 +10,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("banners");
   eleventyConfig.addPassthroughCopy("categoria");
   eleventyConfig.addPassthroughCopy("audio");
+  // Imagens usadas nos e-mails da Brevo: elas precisam ter URL publica no
+  // dominio, porque cliente de e-mail nao le arquivo local.
+  eleventyConfig.addPassthroughCopy("email");
   eleventyConfig.addPassthroughCopy("*.png");
   eleventyConfig.addPassthroughCopy("*.jpg");
   eleventyConfig.addPassthroughCopy("*.ico");
