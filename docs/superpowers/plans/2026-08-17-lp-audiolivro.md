@@ -462,16 +462,22 @@ git add audiolivro/obrigado/index.html && git commit -m "Pagina de obrigado com 
 
 ## Task 4: Ligar o formulário da Brevo
 
-**Bloqueada** até o Julio criar a lista e o formulário no painel e informar a action URL
-(passo a passo na seção 9 do spec). Nada aqui é executável antes disso.
+**DESBLOQUEADA em 17/08.** Julio criou a lista e o formulário e passou a action URL.
 
 **Arquivos:**
 - Modificar: `audiolivro/index.html` (o atributo `action` do `<form id="lp-form">`)
 
 - [ ] **Passo 1: Substituir a action provisória**
 
-Trocar `BREVO_ACTION_URL_PENDENTE` pela URL real, no formato
-`https://<id>.sibforms.com/serve/<hash>`.
+Trocar `BREVO_ACTION_URL_PENDENTE` por esta URL, que é a real do formulário da LP:
+
+```
+https://b432dfa1.sibforms.com/serve/MUIFAGw-hv8rWLAAWQ0fQx6mrMZEP3CKhYI2Adhwu_ebw4WTbs1LwGbrYG7CPZvhR67YCKRfy94nh-sqwqh6uUsoJF4Lr84PKI-RryJ8kUa5ZLKHJ7RxOMwTB8hOVqIajhCTnJyIVgrYz8FmzkYleK18fjkiU3fFzchFXq_7qnPMTISNKdpXY_zTXZa2ICmNK0wChBKTEQ8GEDEBmA==
+```
+
+O `b432dfa1` é o mesmo subdomínio do formulário da newsletter, o que confirma que é a
+mesma conta. O que muda é o hash depois de `/serve/`, que identifica este formulário e a
+lista dele.
 
 - [ ] **Passo 2: Confirmar que não sobrou placeholder**
 
