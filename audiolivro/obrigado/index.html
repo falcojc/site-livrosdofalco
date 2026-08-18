@@ -81,6 +81,7 @@
   .book-card.amazon img{width:104px;height:156px;object-fit:cover;flex-shrink:0;border:1px solid var(--card-border);}
   .book-card.amazon h3{font-family:'Cinzel',serif;font-size:20px;font-weight:600;margin-bottom:8px;}
   .book-card.amazon p{color:var(--text-muted);font-size:17px;margin-bottom:16px;max-width:46ch;}
+  .book-card.amazon .nota-formato{font-size:16px;margin-top:-8px;}
   .amazon-corpo{flex:1;min-width:250px;}
   .amazon-corpo .btn+.btn{margin-left:10px;}
   @media (max-width:560px){.amazon-corpo .btn{display:block;text-align:center;}.amazon-corpo .btn+.btn{margin:10px 0 0;}}
@@ -297,12 +298,13 @@
            O Kindle e o botao principal: o impresso e a quarta opcao do leitor,
            depois de YouTube, audiolivro e ebook. -->
       <div class="book-card amazon">
-        <img src="/covers/o-comandante.jpg" alt="Capa de O Comandante, de Domenico Falco" width="104" height="156" loading="lazy" decoding="async">
+        <img src="/covers/o-comandante.jpg" alt="Capa de O Comandante, de Domenico Falco" width="104" height="156" decoding="async">
         <div class="amazon-corpo">
           <h3>O Comandante</h3>
           <p>É a mesma história que você acabou de ouvir, para ler no seu ritmo. No Kindle
-          e no Kindle Unlimited, com leitura imediata. A edição em papel existe, mas sai
-          da loja dos Estados Unidos, com entrega internacional.</p>
+          e no Kindle Unlimited, com leitura imediata.</p>
+          <p class="nota-formato">A edição em papel sai da loja dos Estados Unidos, com
+          entrega internacional.</p>
           <a class="btn solid" href="https://www.amazon.com.br/dp/B0HCGR5YR7?tag=falcojc-20&amp;ascsubtag=lp-audiolivro-obrigado" target="_blank" rel="noopener">
             Ler no Kindle
           </a>
