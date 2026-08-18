@@ -82,6 +82,8 @@
   .book-card.amazon h3{font-family:'Cinzel',serif;font-size:20px;font-weight:600;margin-bottom:8px;}
   .book-card.amazon p{color:var(--text-muted);font-size:17px;margin-bottom:16px;max-width:46ch;}
   .amazon-corpo{flex:1;min-width:250px;}
+  .amazon-corpo .btn+.btn{margin-left:10px;}
+  @media (max-width:560px){.amazon-corpo .btn{display:block;text-align:center;}.amazon-corpo .btn+.btn{margin:10px 0 0;}}
 
   footer{padding:26px clamp(20px,4vw,56px) 40px;border-top:1px solid var(--card-border);text-align:center;color:var(--text-muted);font-size:14px;line-height:1.6;}
   footer .afiliado{font-size:12.5px;margin-top:12px;max-width:70ch;margin-left:auto;margin-right:auto;}
@@ -288,11 +290,13 @@
     <section class="secao">
       <h2>Prefere ler?</h2>
       <p class="sub">A mesma história, na sua estante.</p>
-      <!-- CTA da Amazon: hoje aponta para a edicao Kindle (ASIN B0HCGR5YR7, o
-           canonico do mapa .claude/asins-catalogo.json). TROCAR PELA EDICAO
-           IMPRESSA quando ela sair do KDP: trocar o ASIN no href, o texto do
-           paragrafo e o rotulo do botao. O ascsubtag identifica esta pagina
-           no relatorio de afiliado da Amazon. -->
+      <!-- CTA da Amazon. O ascsubtag identifica esta pagina no relatorio de afiliado.
+           EDICAO IMPRESSA: o ASIN e B0HFLNKGGZ e a URL sera
+           https://www.amazon.com.br/dp/B0HFLNKGGZ?tag=falcojc-20&ascsubtag=lp-audiolivro-obrigado
+           Em 17/08/2026 ela ainda respondia 404, ou seja, o KDP nao tinha aprovado.
+           Quando responder 200, descomentar o botao "Comprar em papel" abaixo e
+           trocar o texto do paragrafo. Conferir antes com:
+           curl -s -o /dev/null -w "%{http_code}" -L https://www.amazon.com.br/dp/B0HFLNKGGZ -->
       <div class="book-card amazon">
         <img src="/covers/o-comandante.jpg" alt="Capa de O Comandante, de Domenico Falco" width="104" height="156" loading="lazy" decoding="async">
         <div class="amazon-corpo">
@@ -300,8 +304,13 @@
           <p>Está na Amazon em Kindle e Kindle Unlimited. É a mesma história que você acabou
           de receber, para ler no seu ritmo.</p>
           <a class="btn" href="https://www.amazon.com.br/dp/B0HCGR5YR7?tag=falcojc-20&amp;ascsubtag=lp-audiolivro-obrigado" target="_blank" rel="noopener">
-            Ver na Amazon
+            Ler no Kindle
           </a>
+          <!-- ATIVAR QUANDO A IMPRESSA SAIR DO KDP (ver nota acima)
+          <a class="btn solid" href="https://www.amazon.com.br/dp/B0HFLNKGGZ?tag=falcojc-20&amp;ascsubtag=lp-audiolivro-obrigado-impresso" target="_blank" rel="noopener">
+            Comprar em papel
+          </a>
+          -->
         </div>
       </div>
     </section>
