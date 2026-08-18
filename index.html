@@ -267,6 +267,38 @@
     .obras-ver-mais-wrap{padding:22px 14px;}
   }
   .obras-subsecao{margin-top:56px;}
+  /* OMNIBUS EM DESTAQUE */
+  .omnibus{
+    display:grid;grid-template-columns:270px 1fr;gap:36px;align-items:start;
+    background:linear-gradient(135deg,rgba(201,161,58,.10),rgba(201,161,58,0) 58%),var(--card);
+    border:1px solid var(--gold);border-radius:6px;padding:32px;margin-bottom:48px;
+  }
+  .omnibus-cover{display:block;border-radius:4px;overflow:hidden;border:1px solid var(--card-border);background:#000;}
+  .omnibus-cover img{width:100%;height:auto;display:block;transition:transform .5s;}
+  .omnibus-cover:hover img{transform:scale(1.04);}
+  .omnibus-body{display:flex;flex-direction:column;}
+  .omnibus-tags{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px;}
+  .book-badge.ghost{background:transparent;color:var(--gold-bright);border:1px solid var(--gold);}
+  .omnibus h3{font-family:'Cinzel',serif;font-size:clamp(26px,3.4vw,34px);color:#f6ecd9;margin:0 0 8px;line-height:1.15;}
+  .omnibus-sub{font-family:'Cinzel',serif;font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;}
+  .omnibus-lede{font-size:17px;color:var(--text-muted);margin-bottom:18px;}
+  .omnibus-list{list-style:none;margin:0 0 18px;padding:0;display:grid;gap:10px;}
+  .omnibus-list li{font-size:15.5px;color:var(--text-muted);padding-left:16px;position:relative;line-height:1.4;}
+  .omnibus-list li::before{content:"";position:absolute;left:0;top:10px;width:6px;height:6px;background:var(--gold);border-radius:50%;}
+  .omnibus-list strong{color:#f2e8d5;font-weight:600;}
+  .omnibus-list span{display:block;font-size:14.5px;color:#8d8270;}
+  .omnibus-extra{font-size:15.5px;color:var(--text-muted);border-left:2px solid rgba(201,161,58,.45);padding-left:14px;margin-bottom:20px;}
+  .omnibus .book-audio{margin-bottom:20px;border-top-color:rgba(201,161,58,.28);}
+  .omnibus-ctas{display:flex;gap:12px;flex-wrap:wrap;}
+  .omnibus-blog{font-size:14.5px;color:#8d8270;margin-top:18px;}
+  .omnibus-blog a{color:var(--gold-bright);border-bottom:1px solid rgba(201,161,58,.4);}
+  .omnibus-blog a:hover{color:#f0dda0;}
+  @media (max-width:760px){
+    .omnibus{grid-template-columns:1fr;gap:22px;padding:22px;}
+    .omnibus-cover{max-width:210px;margin:0 auto;}
+    .omnibus-body{text-align:left;}
+  }
+
 
   /* BLOG TEASER */
   .blog-teaser{background:var(--bg-alt);border-top:1px solid var(--card-border);border-bottom:1px solid var(--card-border);}
@@ -1101,6 +1133,37 @@
       <div class="divider"></div>
       <p>Trinta romances, trinta mundos: piratas, samurais, jesuítas, cruzados e sobreviventes atravessando a história.</p>
     </div>
+
+      <div class="omnibus" id="a-saga-italiana">
+        <a class="omnibus-cover" href="https://www.amazon.com.br/dp/B0HFPS4K6R?tag=falcojc-20&ascsubtag=home-a-saga-italiana" target="_blank" rel="noopener" aria-label="A Saga Italiana na Amazon">
+          <img src="covers/a-saga-italiana.jpg" alt="A Saga Italiana, trilogia da imigração italiana" width="480" height="718">
+        </a>
+        <div class="omnibus-body">
+          <div class="omnibus-tags">
+            <span class="book-badge">Trilogia</span>
+            <span class="book-badge ghost">Mais Vendido</span>
+            <span class="book-badge ghost">Leve 3 Pague 2</span>
+          </div>
+          <h3>A Saga Italiana</h3>
+          <div class="omnibus-sub">Os Dois Irmãos &middot; O Siciliano &middot; Os Italianos</div>
+          <p class="omnibus-lede">Três romances completos da imigração italiana reunidos em um único volume, em ordem cronológica. Três famílias que nunca se cruzam, unidas pela mesma pergunta: ficar ou partir?</p>
+          <ul class="omnibus-list">
+            <li><strong>Os Dois Irmãos</strong> <span>Campânia, 1860 &rsaquo; os vinhedos de Mendoza</span></li>
+            <li><strong>O Siciliano</strong> <span>Sicília, 1880 &rsaquo; os cafezais brasileiros</span></li>
+            <li><strong>Os Italianos</strong> <span>Calábria, 1892 &rsaquo; Nova York e São Paulo</span></li>
+          </ul>
+          <p class="omnibus-extra">Edição especial com material inédito: prefácio do autor, linha do tempo do século e a comparação entre as três famílias. 417 páginas, 109 capítulos, por menos que o preço de dois romances avulsos.</p>
+          <div class="book-audio">
+            <span class="book-audio-label">🎧 Ouça o podcast sobre a saga</span>
+            <audio controls preload="none" src="audio/a-saga-italiana-podcast.mp3"></audio>
+          </div>
+          <div class="omnibus-ctas">
+            <a class="btn small solid" href="https://www.amazon.com.br/dp/B0HFPS4K6R?tag=falcojc-20&ascsubtag=home-a-saga-italiana" target="_blank" rel="noopener">Comprar na Amazon</a>
+            <a class="btn small" href="https://youtu.be/XySlFoavmhc" target="_blank" rel="noopener">Ver o podcast no YouTube</a>
+          </div>
+          <p class="omnibus-blog">Antes de ler: <a href="/blog/imigracao-italiana-jornada-mediterraneo-cafezais/">Imigração Italiana, a jornada do Mediterrâneo às Américas</a></p>
+        </div>
+      </div>
 
     <div class="books-grid" id="obras-unicas">
 
