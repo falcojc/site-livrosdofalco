@@ -3,7 +3,7 @@ title: "História do Contêiner: A Revolução que Mudou os Oceanos"
 date: 2026-08-14
 description: "Descubra como a revolução do contêiner e o transporte marítimo encolheram o mundo nos anos 60 e 70, e inspire-se com a saga dramática de O Comandante."
 cluster: "Raízes, Sacrifício e Herança"
-cover: "/blog/media/revolucao-do-conteiner-porto-genova/capa-caos-do-cais.jpg"
+cover: "/blog/media/revolucao-do-conteiner-porto-genova/capa-caos-do-cais.webp"
 obra_relacionada: "https://www.amazon.com.br/dp/B0HCGR5YR7?tag=falcoblog-20&ascsubtag=blog-o-comandante"
 obra_relacionada_titulo: "O Comandante"
 obra_relacionada_capas: ["o-comandante"]

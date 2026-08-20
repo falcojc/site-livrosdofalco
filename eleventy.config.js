@@ -17,6 +17,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("email");
   eleventyConfig.addPassthroughCopy("*.png");
   eleventyConfig.addPassthroughCopy("*.jpg");
+  eleventyConfig.addPassthroughCopy("*.webp");
   eleventyConfig.addPassthroughCopy("*.ico");
   eleventyConfig.addPassthroughCopy("SEO.txt");
   eleventyConfig.addPassthroughCopy("analytics.js");

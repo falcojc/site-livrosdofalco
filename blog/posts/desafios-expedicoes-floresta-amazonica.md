@@ -3,7 +3,7 @@ title: "Expedições na Amazônia: Desafios e Sobrevivência"
 date: 2026-07-21
 description: "Descubra os perigos extremos enfrentados pelos primeiros aventureiros na vastidão da Floresta Amazônica, cenário real por trás de O Explorador."
 cluster: "Aventura Épica"
-cover: "/blog/media/desafios-expedicoes-floresta-amazonica/capa-rio-floresta-amazonica.jpg"
+cover: "/blog/media/desafios-expedicoes-floresta-amazonica/capa-rio-floresta-amazonica.webp"
 obra_relacionada: "https://www.amazon.com.br/dp/B0DKCDG3LS?tag=falcoblog-20&ascsubtag=blog-cta-o-explorador-ii-em-busca-do-desconhecido"
 obra_relacionada_titulo: "O Explorador"
 obra_relacionada_capas: ["o-explorador"]

@@ -3,7 +3,7 @@ title: "A Vida Real nos Sete Mares: Mitos, Fatos e a Era de Ouro da Pirataria"
 date: 2026-07-25
 description: "O que separa o mito da realidade na Era de Ouro da Pirataria, cartas de corso, códigos de honra e as rotas que moldaram O Mestre das Tormentas."
 cluster: "Aventura Épica"
-cover: "/blog/media/vida-real-nos-sete-mares/capa-frota-tempestade.jpg"
+cover: "/blog/media/vida-real-nos-sete-mares/capa-frota-tempestade.webp"
 obra_relacionada: "/o-mestre-das-tormentas"
 obra_relacionada_titulo: "John Storm e a saga completa da família Storm"
 obra_relacionada_capas: ["mestre-das-tormentas"]

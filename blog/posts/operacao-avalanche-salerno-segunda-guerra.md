@@ -3,7 +3,7 @@ title: "Operação Avalanche: O Desembarque em Salerno em 1943"
 date: 2026-08-13
 description: "Entenda o impacto da sangrenta Operação Avalanche em Salerno (1943), marco da Segunda Guerra Mundial que forjou o destino e a infância de Dante em O Comandante."
 cluster: "Raízes, Sacrifício e Herança"
-cover: "/blog/media/operacao-avalanche-salerno-segunda-guerra/capa-operacao-avalanche-salerno.jpg"
+cover: "/blog/media/operacao-avalanche-salerno-segunda-guerra/capa-operacao-avalanche-salerno.webp"
 obra_relacionada: "https://www.amazon.com.br/dp/B0HCGR5YR7?tag=falcoblog-20&ascsubtag=blog-o-comandante"
 obra_relacionada_titulo: "O Comandante"
 obra_relacionada_capas: ["o-comandante"]
