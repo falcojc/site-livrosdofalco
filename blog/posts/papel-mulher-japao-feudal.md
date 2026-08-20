@@ -3,7 +3,7 @@ title: "A Força da Mulher no Japão Feudal: Honra e Sobrevivência"
 date: 2026-07-26
 description: "Descubra como as mulheres do Japão Feudal transformaram submissão em poder e resiliência, inspirando a ficção histórica A Casa dos Prazeres."
 cluster: "Empoderamento e Rebeldia"
-cover: "/blog/media/papel-mulher-japao-feudal/capa-mulher-rua-tradicional.jpg"
+cover: "/blog/media/papel-mulher-japao-feudal/capa-mulher-rua-tradicional.webp"
 obra_relacionada: "https://www.amazon.com.br/dp/B09G1J8GKR?tag=falcoblog-20&ascsubtag=blog-cta-a-casa-dos-prazeres"
 obra_relacionada_titulo: "A Casa dos Prazeres"
 obra_relacionada_capas: ["a-casa-dos-prazeres"]

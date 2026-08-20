@@ -3,7 +3,7 @@ title: "A Lenda dos Sete Mares: os piratas mais famosos da história"
 date: 2026-07-19
 description: "De Barba Negra a Ching Shih, as histórias reais que inspiraram a jornada de John Storm em O Mestre das Tormentas."
 cluster: "Aventura Épica"
-cover: "/blog/media/a-lenda-dos-sete-mares/capa-navio-tempestade.jpg"
+cover: "/blog/media/a-lenda-dos-sete-mares/capa-navio-tempestade.webp"
 obra_relacionada: "/o-mestre-das-tormentas"
 obra_relacionada_titulo: "John Storm, o pirata que virou lenda"
 obra_relacionada_capas: ["mestre-das-tormentas"]

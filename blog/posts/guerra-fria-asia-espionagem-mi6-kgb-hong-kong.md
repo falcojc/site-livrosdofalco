@@ -3,7 +3,7 @@ title: "Guerra Fria na Ásia: Espionagem e o Submundo em Hong Kong"
 date: 2026-07-22
 description: "Descubra os bastidores da Guerra Fria na Ásia: o embate invisível entre o MI6, a KGB e as Tríades em Hong Kong que inspirou Destinos Cruzados."
 cluster: "Mistério, Luxo e Sombras"
-cover: "/blog/media/guerra-fria-asia-espionagem-mi6-kgb-hong-kong/capa-hong-kong-neon.jpg"
+cover: "/blog/media/guerra-fria-asia-espionagem-mi6-kgb-hong-kong/capa-hong-kong-neon.webp"
 obra_relacionada: "https://www.amazon.com.br/dp/B0D8M6361T?tag=falcoblog-20&ascsubtag=blog-cta-destinos-cruzados-parte-2"
 obra_relacionada_titulo: "Destinos Cruzados: Parte 2"
 obra_relacionada_capas: ["destinos-cruzados-parte-2"]

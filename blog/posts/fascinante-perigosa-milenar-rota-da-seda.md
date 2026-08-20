@@ -3,7 +3,7 @@ title: "A Rota da Seda: Perigos e Mistérios da Jornada Milenar"
 date: 2026-07-24
 description: "Descubra os mistérios, as belezas e os perigos extremos da Rota da Seda. Uma jornada épica que inspirou o desfecho da saga O Mestre das Tormentas."
 cluster: "Aventura Épica"
-cover: "/blog/media/fascinante-perigosa-milenar-rota-da-seda/capa-caravana-deserto.jpg"
+cover: "/blog/media/fascinante-perigosa-milenar-rota-da-seda/capa-caravana-deserto.webp"
 obra_relacionada: "/o-mestre-das-tormentas"
 obra_relacionada_titulo: "O Mestre das Tormentas"
 obra_relacionada_capas: ["mestre-das-tormentas"]

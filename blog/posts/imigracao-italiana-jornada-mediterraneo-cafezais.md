@@ -3,7 +3,7 @@ title: "Imigração Italiana: A Jornada do Mediterrâneo às Américas"
 date: 2026-07-28
 description: "Descubra a épica jornada dos imigrantes italianos rumo ao Brasil e Argentina. Uma história de sacrifício, família e esperança que inspira a ficção histórica."
 cluster: "Raízes, Sacrifício e Herança"
-cover: "/blog/media/imigracao-italiana-jornada-mediterraneo-cafezais/capa-porto-navio-imigrantes.jpg"
+cover: "/blog/media/imigracao-italiana-jornada-mediterraneo-cafezais/capa-porto-navio-imigrantes.webp"
 obra_relacionada: "https://www.amazon.com.br/dp/B0D9WS272F?tag=falcoblog-20&ascsubtag=blog-cta-o-siciliano"
 obra_relacionada_titulo: "O Siciliano e Os Dois Irmãos"
 obra_relacionada_capas: ["o-siciliano", "os-dois-irmaos"]

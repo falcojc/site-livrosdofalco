@@ -3,7 +3,7 @@ title: "Segredos e Glamour dos Cabarés na Belle Époque"
 date: 2026-07-23
 description: "Mergulhe no brilho e nos mistérios da Belle Époque parisiense. Conheça a era de ouro dos cabarés e a busca por liberdade feminina nos palcos."
 cluster: "Empoderamento e Rebeldia"
-cover: "/blog/media/segredos-cabares-belle-epoque-paris/capa-fachada-cabare.jpg"
+cover: "/blog/media/segredos-cabares-belle-epoque-paris/capa-fachada-cabare.webp"
 obra_relacionada: "https://www.amazon.com.br/dp/B0BH3KL167?tag=falcoblog-20&ascsubtag=blog-cta-joana-a-dama-da-noite"
 obra_relacionada_titulo: "Joana: A Dama da Noite"
 obra_relacionada_capas: ["joana"]

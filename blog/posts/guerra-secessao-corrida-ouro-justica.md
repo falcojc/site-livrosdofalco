@@ -3,7 +3,7 @@ title: "Guerra de Secessão e o Velho Oeste: A Busca por Justiça"
 date: 2026-07-18
 description: "Descubra o custo humano da Guerra Civil Americana e da Corrida do Ouro. Uma jornada épica de sobrevivência, resistência e justiça na ficção histórica."
 cluster: "Aventura Épica"
-cover: "/blog/media/guerra-secessao-corrida-ouro-justica/capa-resistencia-esperanca.jpg"
+cover: "/blog/media/guerra-secessao-corrida-ouro-justica/capa-resistencia-esperanca.webp"
 obra_relacionada: "https://www.amazon.com.br/dp/B0BH4VJDBN?tag=falcoblog-20&ascsubtag=blog-cta-sangue-frio"
 obra_relacionada_titulo: "Sangue Frio"
 obra_relacionada_capas: ["sangue-frio"]

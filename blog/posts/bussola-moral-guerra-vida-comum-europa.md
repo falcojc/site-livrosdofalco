@@ -3,7 +3,7 @@ title: "Vida Comum na Guerra: A Bússola Moral e o Sacrifício"
 date: 2026-07-20
 description: "Descubra como famílias comuns enfrentaram dilemas morais e sacrifícios durante os grandes conflitos europeus. Histórias de superação, perdão e resiliência."
 cluster: "Raízes, Sacrifício e Herança"
-cover: "/blog/media/bussola-moral-guerra-vida-comum-europa/capa-casal-neblina-europa.jpg"
+cover: "/blog/media/bussola-moral-guerra-vida-comum-europa/capa-casal-neblina-europa.webp"
 obra_relacionada: "https://www.amazon.com.br/dp/B0D8RTKVB8?tag=falcoblog-20&ascsubtag=blog-cta-a-vila"
 obra_relacionada_titulo: "A Vila e O Que Eu Lembro Deles"
 obra_relacionada_capas: ["a-vila", "o-que-eu-lembro-deles"]
