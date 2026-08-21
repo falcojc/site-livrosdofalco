@@ -207,6 +207,8 @@
   .audio-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;}
   .audio-grid h2{font-size:clamp(24px,3vw,34px);color:#f6ecd9;margin-top:12px;}
   .audio-grid p{color:var(--text-muted);margin:18px 0 26px;}
+  .audio-ctas{display:flex;gap:12px;flex-wrap:wrap;}
+  .audio-grid .audio-nota{font-size:14.5px;color:#8d8270;margin:18px 0 0;}
   .audio-art{border:1px solid var(--card-border);border-radius:4px;overflow:hidden;}
   .audio-art img{width:100%;aspect-ratio:16/9;object-fit:cover;}
   @media (max-width:860px){.audio-grid{grid-template-columns:1fr;gap:28px;}.audio-art{order:-1;}}
@@ -217,9 +219,10 @@
   footer p{color:var(--text-muted);font-size:16px;max-width:420px;margin-top:12px;}
   footer .credit{font-size:14px;color:#8a7f68;margin-top:10px;}
   footer .social-links{margin-top:18px;}
-  .foot-links{display:flex;flex-direction:column;gap:10px;}
-  .foot-links a{font-size:15px;color:var(--text-muted);transition:color .2s;}
+  .foot-links{display:flex;gap:22px;flex-wrap:wrap;}
+  .foot-links a{font-size:14px;color:var(--text-muted);transition:color .2s;}
   .foot-links a:hover{color:var(--gold-bright);}
+  .foot-links a.current{color:var(--gold-bright);}
   footer .affiliate-note{font-size:12.5px;color:#8a7f68;line-height:1.55;margin:26px auto 0;padding-top:18px;border-top:1px solid rgba(111,101,82,.28);max-width:1180px;text-align:center;}
 
   /* MOTION
@@ -405,7 +408,7 @@
           <a class="btn small ghost" href="https://youtu.be/PsJ8tbKzWzA" target="_blank" rel="noopener">Ouvir o podcast</a>
         </div>
       </div>
-      <figure class="arq-fig"><img src="/arquetipos/media/o-marciano.webp" alt="Paisagem do planeta Tanaris sob o céu vermelho, em O Marciano" width="1100" height="614" loading="lazy" decoding="async"></figure>
+      <figure class="arq-fig"><img src="/arquetipos/media/o-marciano.webp" alt="A paisagem exótica e indômita do planeta Tanaris, em O Marciano" width="1100" height="600" loading="lazy" decoding="async"></figure>
     </article>
 
     <div class="prompt reveal">
@@ -498,7 +501,11 @@
       <div class="eyebrow">Dante, na íntegra</div>
       <h2>O Comandante em áudio, para ouvir sem tela</h2>
       <p>A história completa de Dante em 23 faixas de MP3, capítulo por capítulo, para baixar e ouvir offline: no carro, na cozinha, andando. Sem anúncio e sem precisar estar online.</p>
-      <a class="btn solid" href="/audiolivro">Baixar o audiolivro</a>
+      <div class="audio-ctas">
+        <a class="btn solid" href="/audiolivro">Baixar o audiolivro</a>
+        <a class="btn" id="cta-audio-yt" href="https://youtu.be/78ImwumD6OI?utm_source=livrosdofalco&amp;utm_medium=lp-arquetipos&amp;utm_campaign=audiolivro-o-comandante" target="_blank" rel="noopener">Assistir no YouTube</a>
+      </div>
+      <p class="audio-nota">O vídeo ilustrado toca na hora, sem cadastro. O pacote de MP3 é para ouvir offline, sem tela e sem anúncio.</p>
     </div>
     <div class="audio-art">
       <img src="/arquetipos/media/dante.webp" alt="O cais do porto em O Comandante" width="1100" height="614" loading="lazy" decoding="async">
@@ -531,6 +538,7 @@
       <a href="/#sobre">Sobre o Autor</a>
       <a href="/#obras">Obras</a>
       <a href="/categoria/">Categorias</a>
+      <a href="/arquetipos/" class="current">Arquétipos</a>
       <a href="/blog">Blog</a>
       <a href="/newsletter">Newsletter</a>
     </div>
@@ -555,6 +563,19 @@
       box.appendChild(f);
       if (typeof gtag === 'function') {
         gtag('event', 'play_video_arquetipos', { event_category: 'youtube', event_label: 'top5-arquetipos' });
+      }
+    });
+  }
+
+  // O analytics.js compartilhado nao tem ramo generico pra youtube.com (so o de
+  // .podcast-card), entao a saida pro audiolivro em video e medida aqui. O UTM na
+  // URL nao chega a lugar nenhum: o YouTube descarta. Quem mede do outro lado e o
+  // relatorio "Fonte de trafego > Externo" do YouTube Studio.
+  var ctaYT = document.getElementById('cta-audio-yt');
+  if (ctaYT) {
+    ctaYT.addEventListener('click', function(){
+      if (typeof gtag === 'function') {
+        gtag('event', 'click_audiolivro_youtube', { event_category: 'audiobook', event_label: 'arquetipos-o-comandante' });
       }
     });
   }
