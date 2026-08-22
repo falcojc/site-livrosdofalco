@@ -32,7 +32,7 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="preload" as="font" type="font/woff2" href="/fonts/eb-garamond-143e88.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="/fonts/cinzel-63551c.woff2" crossorigin>
-<link rel="preload" as="image" fetchpriority="high" href="/arquetipos/media/video-poster.webp">
+<link rel="preload" as="image" fetchpriority="high" href="/arquetipos/media/video-poster.webp" imagesrcset="/arquetipos/media/video-poster-640.webp 640w, /arquetipos/media/video-poster.webp 1280w" imagesizes="(min-width:1180px) 1124px, calc(100vw - 56px)">
 <style>
   @font-face{font-family:'EB Garamond';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/eb-garamond-143e88.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
   @font-face{font-family:'EB Garamond';font-style:normal;font-weight:500;font-display:swap;src:url('/fonts/eb-garamond-143e88.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
@@ -83,12 +83,16 @@
   .nav-dropdown:hover .nav-dropdown-panel,.nav-dropdown:focus-within .nav-dropdown-panel{opacity:1;visibility:visible;transform:translate(-50%,0);}
   .nav-dropdown-panel a{padding:9px 12px;border-radius:3px;font-size:14px;white-space:normal;color:var(--text-muted);}
   .nav-dropdown-panel a:hover{background:rgba(201,161,58,.1);color:var(--gold-bright);}
-  @media (max-width:860px){.nav-dropdown-panel{display:none;}}
   .nav-actions{display:flex;align-items:center;gap:12px;}
-  .social-links{display:flex;gap:8px;}
-  .social-links a{width:32px;height:32px;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--card-border);border-radius:50%;color:var(--text-muted);transition:color .2s,border-color .2s;}
-  .social-links a:hover{color:var(--gold-bright);border-color:var(--gold);}
-  .social-links svg{width:15px;height:15px;}
+  /* Mesmo icone (quadrado dourado) que home/categoria/blog usam, tanto no
+     header (via .nav-actions, menor) quanto no rodape (regra base, 38px). */
+  .social-links{display:flex;gap:12px;}
+  .social-links a{width:38px;height:38px;display:flex;align-items:center;justify-content:center;border:1px solid var(--gold);border-radius:4px;color:var(--gold-bright);transition:background .2s,color .2s,border-color .2s;}
+  .social-links a:hover{background:var(--gold);border-color:var(--gold);color:var(--bg);}
+  .social-links svg{width:18px;height:18px;}
+  .nav-actions .social-links{gap:8px;}
+  .nav-actions .social-links a{width:32px;height:32px;}
+  .nav-actions .social-links svg{width:15px;height:15px;}
   .btn{display:inline-block;font-family:'Cinzel',serif;font-size:13px;letter-spacing:.14em;text-transform:uppercase;padding:12px 26px;border-radius:2px;border:1px solid var(--gold);color:var(--gold-bright);transition:all .25s;}
   .btn:hover{background:var(--gold);color:#0b0908;}
   .btn.solid{background:var(--gold);color:#0b0908;}
@@ -97,15 +101,43 @@
   .btn.ghost{border-color:var(--card-border);color:var(--text-muted);}
   .btn.ghost:hover{border-color:var(--gold);color:var(--gold-bright);background:transparent;}
   .nav-actions .btn{height:32px;padding:0 16px;display:inline-flex;align-items:center;justify-content:center;}
+  /* Mesmo padrao de colapso do resto do site (home/categoria/blog): some o
+     nome por extenso, os links viram uma segunda linha com rolagem
+     horizontal (nunca quebra em varias linhas soltas). */
   @media (max-width:900px){
-    nav.links{gap:20px;font-size:14px;order:3;width:100%;justify-content:flex-start;flex-wrap:wrap;}
-    .nav-actions{gap:8px;}
+    .nav-dropdown-panel{display:none;}
+    .nav-inner{flex-wrap:wrap;row-gap:10px;}
+    .brand-lockup .brand{display:none;}
+    nav.links{
+      order:3;width:100%;flex-wrap:nowrap;overflow-x:auto;gap:22px;
+      padding:10px 2px 2px;margin-top:2px;border-top:1px solid rgba(201,161,58,.15);
+      -webkit-overflow-scrolling:touch;scrollbar-width:none;
+    }
+    nav.links::-webkit-scrollbar{display:none;}
+    nav.links a{white-space:nowrap;font-size:14px;}
   }
   @media (max-width:480px){
     .brand-lockup{gap:7px;}
     .brand-mark{height:26px;}
-    .nav-inner{gap:10px;row-gap:12px;padding:14px 20px;}
-    .nav-actions .btn{font-size:10.5px;letter-spacing:.1em;}
+    .nav-inner{gap:10px;row-gap:12px;}
+    .nav-actions{gap:8px;}
+  }
+
+  /* BACK TO TOP (mesmo padrao do resto do site) */
+  .back-to-top{
+    position:fixed;right:26px;bottom:26px;z-index:60;
+    width:46px;height:46px;border-radius:50%;
+    border:1px solid var(--gold);background:rgba(11,9,8,.92);color:var(--gold-bright);
+    display:flex;align-items:center;justify-content:center;cursor:pointer;
+    opacity:0;visibility:hidden;transform:translateY(12px);
+    transition:opacity .3s,transform .3s,visibility .3s,background .2s,color .2s;
+  }
+  .back-to-top.visible{opacity:1;visibility:visible;transform:translateY(0);}
+  .back-to-top:hover{background:var(--gold);color:var(--bg);}
+  .back-to-top svg{width:19px;height:19px;}
+  @media (max-width:480px){
+    .back-to-top{right:16px;bottom:16px;width:40px;height:40px;}
+    .back-to-top svg{width:17px;height:17px;}
   }
 
   /* HERO */
@@ -116,16 +148,33 @@
   .hero-lede{color:var(--text-muted);font-size:clamp(18px,2vw,21px);margin-top:22px;max-width:640px;}
   /* Friso de elenco: os nomes sao a coisa mais caracteristica deste mundo,
      entao entram como tipografia, nao como cards. */
-  .roster{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;margin:38px 0 34px;padding:18px 0;border-top:1px solid var(--card-border);border-bottom:1px solid var(--card-border);}
-  .roster a{font-family:'Cinzel',serif;font-weight:600;font-size:clamp(15px,1.9vw,21px);letter-spacing:.1em;text-transform:uppercase;color:var(--text);transition:color .2s;}
-  .roster a:hover{color:var(--gold-bright);}
+  .roster-hint{display:flex;align-items:center;gap:16px;font-family:'Cinzel',serif;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-top:34px;}
+  .roster-hint::before,.roster-hint::after{content:'';flex:1;height:1px;background:var(--card-border);}
+  .roster{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px 18px;margin:18px 0 34px;padding:18px 0;border-top:1px solid var(--card-border);border-bottom:1px solid var(--card-border);}
+  .roster-item{display:inline-flex;align-items:center;gap:18px;}
+  .roster a{font-family:'Cinzel',serif;font-weight:600;font-size:clamp(15px,1.9vw,21px);letter-spacing:.1em;text-transform:uppercase;color:var(--text);border-bottom:1px dotted rgba(201,161,58,.5);padding-bottom:3px;transition:color .2s,border-color .2s;}
+  .roster a:hover{color:var(--gold-bright);border-bottom-color:var(--gold-bright);}
   .roster .sep{color:var(--gold);opacity:.55;font-size:14px;}
+  /* No celular a fileira em uma linha so vira 2 colunas: nome ocupando a
+     largura toda (sublinhado de ponta a ponta) com a estrela alinhada na
+     borda direita, igual ao print de referencia. */
+  @media (max-width:640px){
+    .roster{display:grid;grid-template-columns:1fr 1fr;column-gap:22px;row-gap:16px;padding:22px 0;}
+    .roster-item{width:100%;justify-content:space-between;gap:10px;}
+    .roster a{flex:1;padding-bottom:8px;}
+  }
 
   /* PLAYER (facade: o iframe do YouTube so entra depois do clique) */
   .player{position:relative;aspect-ratio:16/9;border:1px solid var(--card-border);border-radius:4px;overflow:hidden;background:#000;margin-bottom:16px;}
-  .player img{width:100%;height:100%;object-fit:cover;opacity:.72;transition:opacity .35s,transform .6s;}
+  /* A imagem e absoluta e fora do fluxo do botao de proposito: antes ela era
+     filha do .player-btn (que e display:flex), entao competia por espaco com
+     o disco de play e o texto na mesma coluna flex -- o play ficava espremido
+     no rodape e o texto chegava a vazar pra fora da caixa. Como irma
+     absoluta, ela so preenche o fundo e o botao (tambem absoluto, pintado
+     depois dela no DOM) fica livre pra centralizar so o play+texto. */
+  .player img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.72;transition:opacity .35s,transform .6s;}
   .player-btn{position:absolute;inset:0;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;background:linear-gradient(180deg,rgba(11,9,8,.15),rgba(11,9,8,.72));border:0;cursor:pointer;color:var(--text);font-family:'Cinzel',serif;font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;}
-  .player-btn:hover img,.player:hover img{opacity:.9;transform:scale(1.02);}
+  .player:hover img{opacity:.9;transform:scale(1.02);}
   .player-disc{width:66px;height:66px;border-radius:50%;border:1px solid var(--gold);display:flex;align-items:center;justify-content:center;background:rgba(11,9,8,.55);transition:background .25s,transform .25s;}
   .player-btn:hover .player-disc{background:var(--gold);transform:scale(1.06);}
   .player-disc svg{width:22px;height:22px;fill:var(--gold-bright);margin-left:3px;transition:fill .25s;}
@@ -144,7 +193,12 @@
   .arq{display:grid;grid-template-columns:1.05fr 1fr;gap:52px;align-items:center;padding:52px 0;border-top:1px solid var(--card-border);}
   .arq:first-of-type{border-top:0;padding-top:0;}
   .arq-fig{margin:0;border:1px solid var(--card-border);border-radius:4px;overflow:hidden;background:#000;}
-  .arq-fig img{width:100%;aspect-ratio:16/9;object-fit:cover;transition:transform .6s;}
+  /* height:auto e essencial aqui: sem isso, o atributo height do HTML (herdado
+     da imagem original) vira a altura "usada" da caixa e o aspect-ratio abaixo
+     e ignorado pelo navegador (so entra em jogo quando um dos dois eixos e
+     auto). Bug real que a pagina tinha desde o lancamento -- so aparece ao
+     medir largura x altura renderizada, nao no código em si. */
+  .arq-fig img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;transition:transform .6s;}
   .arq:hover .arq-fig img{transform:scale(1.03);}
   .arq h3{font-size:clamp(28px,3.6vw,42px);color:#f6ecd9;margin:12px 0 6px;}
   .arq-obra{font-size:15px;letter-spacing:.06em;color:var(--text-muted);margin-bottom:20px;}
@@ -162,12 +216,28 @@
   .ledger .cost dd{color:var(--cost);}
   .arq-ctas{display:flex;align-items:center;gap:14px;flex-wrap:wrap;}
   .arq-cover{width:58px;flex-shrink:0;border:1px solid var(--card-border);border-radius:2px;overflow:hidden;}
-  .arq-cover img{width:100%;height:auto;}
+  .arq-cover img{width:100%;height:auto;display:block;}
+  /* Por padrao (desktop) o grupo de botoes e so mais um item da fileira, lado a
+     lado com a capa -- igual ja era antes de existir esse wrapper. */
+  .arq-cta-buttons{display:flex;align-items:center;gap:14px;flex-wrap:wrap;}
   @media (max-width:900px){
     .arq{grid-template-columns:1fr;gap:26px;padding:44px 0;}
     .arq-fig{order:-1;}
-    .ledger{grid-template-columns:1fr;}
+    /* Em 16:9 largo, a faixa fica baixa demais no celular e o personagem vira
+       uma tira fina. Um enquadramento mais alto aproxima o rosto sem cortar
+       verticalmente (as 5 fotos sao mais largas que 4:3, entao o corte fica
+       só nas laterais, que aqui é fundo/ambiente, não rosto). */
+    .arq-fig img{aspect-ratio:4/3;}
+    .ledger{grid-template-columns:1fr;margin-bottom:18px;}
     .ledger>div+div{border-left:0;border-top:1px solid rgba(201,161,58,.32);}
+    /* Os 2 botoes ficavam soltos abaixo da capa depois que a fileira quebrava
+       linha. Aqui viram 2 colunas: capa maior de um lado, botoes empilhados do
+       outro, com o mesmo respiro (18px) entre capa/botoes, entre botao/botao e
+       acima da fileira inteira. */
+    .arq-cover{width:92px;}
+    .arq-ctas{display:grid;grid-template-columns:92px 1fr;column-gap:18px;align-items:stretch;}
+    .arq-cta-buttons{flex-direction:column;justify-content:center;gap:18px;}
+    .arq-cta-buttons .btn{width:100%;text-align:center;}
   }
 
   /* PERGUNTA AO LEITOR */
@@ -210,7 +280,11 @@
   .audio-ctas{display:flex;gap:12px;flex-wrap:wrap;}
   .audio-grid .audio-nota{font-size:14.5px;color:#8d8270;margin:18px 0 0;}
   .audio-art{border:1px solid var(--card-border);border-radius:4px;overflow:hidden;}
-  .audio-art img{width:100%;aspect-ratio:16/9;object-fit:cover;}
+  .audio-art img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;}
+  /* O post de lancamento (audiolivro+e-book) e quadrado e cheio de texto: aqui
+     nao cortamos pra 16:9, senao perde titulo ou selo do Kindle em qualquer
+     enquadramento possivel. */
+  .audio-art--square img{aspect-ratio:1/1;object-fit:contain;}
   @media (max-width:860px){.audio-grid{grid-template-columns:1fr;gap:28px;}.audio-art{order:-1;}}
 
   /* FOOTER */
@@ -260,14 +334,17 @@
           <a href="/categoria/fe-misticismo-desconhecido/">Fé, Misticismo e o Desconhecido</a>
         </div>
       </div>
-      <a href="/arquetipos/" class="current" aria-current="page">Arquétipos</a>
       <a href="/blog">Blog</a>
+      <a href="/#contato">Contato</a>
       <a href="/newsletter">Newsletter</a>
     </nav>
     <div class="nav-actions">
       <div class="social-links">
         <a href="https://www.instagram.com/livrosdofalco/" target="_blank" rel="noopener" aria-label="Domenico Falco no Instagram">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg>
+        </a>
+        <a href="https://www.tiktok.com/@livros_dofalco" target="_blank" rel="noopener" aria-label="Domenico Falco no TikTok">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.82c-1.12-1.08-1.67-2.64-1.75-4.17H11.9v14.4c0 1.75-1.42 3.19-3.19 3.19-1.76 0-3.19-1.44-3.19-3.19 0-1.76 1.43-3.2 3.19-3.2.35 0 .68.05 1 .16v-3.5a6.7 6.7 0 0 0-1-.08c-3.68 0-6.66 2.98-6.66 6.66S5.03 22.75 8.71 22.75s6.66-2.98 6.66-6.66V9.31c1.31.94 2.91 1.49 4.63 1.49V7.29c-1.28 0-2.47-.41-3.4-1.11-.03-.02-.06-.05-.09-.07l.09-.29z"></path></svg>
         </a>
         <a href="https://www.youtube.com/@livrosdofalco" target="_blank" rel="noopener" aria-label="Domenico Falco no YouTube">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.55A3.02 3.02 0 0 0 .5 6.19 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.81 3.02 3.02 0 0 0 2.12 2.14C4.5 20.5 12 20.5 12 20.5s7.5 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.81zM9.6 15.6V8.4l6.4 3.6z"></path></svg>
@@ -288,17 +365,18 @@
       <p class="hero-lede">Uma pergunta atravessa os trinta romances de Domenico Falco: até onde você vai pela sua família, e o que isso te custa? Estes cinco personagens responderam de formas diferentes. Nenhum saiu ileso.</p>
     </div>
 
+    <p class="roster-hint">Escolha um nome</p>
     <div class="roster" aria-label="Os cinco personagens">
-      <a href="#john-storm">John Storm</a><span class="sep" aria-hidden="true">✦</span>
-      <a href="#akira">Akira</a><span class="sep" aria-hidden="true">✦</span>
-      <a href="#dr-carlos">Dr. Carlos</a><span class="sep" aria-hidden="true">✦</span>
-      <a href="#dante">Dante</a><span class="sep" aria-hidden="true">✦</span>
-      <a href="#o-marciano">O Marciano</a>
+      <span class="roster-item"><a href="#john-storm">John Storm</a><span class="sep" aria-hidden="true">✦</span></span>
+      <span class="roster-item"><a href="#akira">Akira</a><span class="sep" aria-hidden="true">✦</span></span>
+      <span class="roster-item"><a href="#dr-carlos">Dr. Carlos</a><span class="sep" aria-hidden="true">✦</span></span>
+      <span class="roster-item"><a href="#dante">Dante</a><span class="sep" aria-hidden="true">✦</span></span>
+      <span class="roster-item"><a href="#o-marciano">O Marciano</a><span class="sep" aria-hidden="true">✦</span></span>
     </div>
 
     <div class="player" id="player">
+      <img src="/arquetipos/media/video-poster.webp" srcset="/arquetipos/media/video-poster-640.webp 640w, /arquetipos/media/video-poster.webp 1280w" sizes="(min-width:1180px) 1124px, calc(100vw - 56px)" alt="" width="1280" height="720" fetchpriority="high" decoding="async">
       <button class="player-btn" type="button" aria-label="Assistir ao vídeo Os 5 livros mais arrebatadores de Domenico Falco">
-        <img src="/arquetipos/media/video-poster.webp" alt="" width="1280" height="720" fetchpriority="high" decoding="async">
         <span class="player-disc" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg></span>
         <span>Assistir, 1 min 20</span>
       </button>
@@ -328,8 +406,10 @@
         </dl>
         <div class="arq-ctas">
           <a class="arq-cover" href="/o-mestre-das-tormentas/" aria-label="Página de O Mestre das Tormentas"><img src="/covers/mestre-das-tormentas.webp" alt="Capa de O Mestre das Tormentas" width="58" height="87" loading="lazy" decoding="async"></a>
-          <a class="btn small solid" href="https://www.amazon.com.br/dp/B08XYL4QZY?tag=falcojc-20&amp;ascsubtag=arquetipos-o-mestre-das-tormentas" target="_blank" rel="noopener">Ler na Amazon</a>
-          <a class="btn small ghost" href="/o-mestre-das-tormentas/">Conhecer a saga</a>
+          <div class="arq-cta-buttons">
+            <a class="btn small solid" href="https://www.amazon.com.br/dp/B08XYL4QZY?tag=falcojc-20&amp;ascsubtag=arquetipos-o-mestre-das-tormentas" target="_blank" rel="noopener">Ler na Amazon</a>
+            <a class="btn small ghost" href="/o-mestre-das-tormentas/">Conhecer a saga</a>
+          </div>
         </div>
       </div>
       <figure class="arq-fig"><img src="/arquetipos/media/john-storm.webp" alt="John Storm no convés durante a tempestade, em O Mestre das Tormentas" width="1100" height="619" loading="lazy" decoding="async"></figure>
@@ -348,8 +428,10 @@
         </dl>
         <div class="arq-ctas">
           <a class="arq-cover" href="/categoria/jornadas-epicas-sobrevivencia/" aria-label="Categoria Jornadas Épicas e Sobrevivência"><img src="/covers/akira.webp" alt="Capa de Akira, O Senhor das Armas" width="58" height="87" loading="lazy" decoding="async"></a>
-          <a class="btn small solid" href="https://www.amazon.com.br/dp/B0BH89HQH6?tag=falcojc-20&amp;ascsubtag=arquetipos-akira" target="_blank" rel="noopener">Ler na Amazon</a>
-          <a class="btn small ghost" href="/categoria/jornadas-epicas-sobrevivencia/">Jornadas épicas</a>
+          <div class="arq-cta-buttons">
+            <a class="btn small solid" href="https://www.amazon.com.br/dp/B0BH89HQH6?tag=falcojc-20&amp;ascsubtag=arquetipos-akira" target="_blank" rel="noopener">Ler na Amazon</a>
+            <a class="btn small ghost" href="/categoria/jornadas-epicas-sobrevivencia/">Jornadas épicas</a>
+          </div>
         </div>
       </div>
     </article>
@@ -366,8 +448,10 @@
         </dl>
         <div class="arq-ctas">
           <a class="arq-cover" href="/categoria/submundo-traicoes-misterios/" aria-label="Categoria Submundo, Traições e Mistérios"><img src="/covers/o-asilo.webp" alt="Capa de O Asilo" width="58" height="87" loading="lazy" decoding="async"></a>
-          <a class="btn small solid" href="https://www.amazon.com.br/dp/B0DDHZZCS1?tag=falcojc-20&amp;ascsubtag=arquetipos-o-asilo" target="_blank" rel="noopener">Ler na Amazon</a>
-          <a class="btn small ghost" href="/categoria/submundo-traicoes-misterios/">Submundo e traições</a>
+          <div class="arq-cta-buttons">
+            <a class="btn small solid" href="https://www.amazon.com.br/dp/B0DDHZZCS1?tag=falcojc-20&amp;ascsubtag=arquetipos-o-asilo" target="_blank" rel="noopener">Ler na Amazon</a>
+            <a class="btn small ghost" href="/categoria/submundo-traicoes-misterios/">Submundo e traições</a>
+          </div>
         </div>
       </div>
       <figure class="arq-fig"><img src="/arquetipos/media/dr-carlos.webp" alt="Dr. Carlos no corredor do Asilo São Pedro, em O Asilo" width="1100" height="600" loading="lazy" decoding="async"></figure>
@@ -386,8 +470,10 @@
         </dl>
         <div class="arq-ctas">
           <a class="arq-cover" href="/audiolivro" aria-label="Audiolivro de O Comandante"><img src="/covers/o-comandante.webp" alt="Capa de O Comandante" width="58" height="87" loading="lazy" decoding="async"></a>
-          <a class="btn small solid" href="https://www.amazon.com.br/dp/B0HCGR5YR7?tag=falcojc-20&amp;ascsubtag=arquetipos-o-comandante" target="_blank" rel="noopener">Ler na Amazon</a>
-          <a class="btn small ghost" href="/audiolivro">Ouvir o audiolivro</a>
+          <div class="arq-cta-buttons">
+            <a class="btn small solid" href="https://www.amazon.com.br/dp/B0HCGR5YR7?tag=falcojc-20&amp;ascsubtag=arquetipos-o-comandante" target="_blank" rel="noopener">Ler na Amazon</a>
+            <a class="btn small ghost" href="/audiolivro">Ouvir o audiolivro</a>
+          </div>
         </div>
       </div>
     </article>
@@ -404,8 +490,10 @@
         </dl>
         <div class="arq-ctas">
           <a class="arq-cover" href="/categoria/fe-misticismo-desconhecido/" aria-label="Categoria Fé, Misticismo e o Desconhecido"><img src="/covers/o-marciano.webp" alt="Capa de O Marciano" width="58" height="87" loading="lazy" decoding="async"></a>
-          <a class="btn small solid" href="https://www.amazon.com.br/dp/B07R9KRZTJ?tag=falcojc-20&amp;ascsubtag=arquetipos-o-marciano" target="_blank" rel="noopener">Ler na Amazon</a>
-          <a class="btn small ghost" href="https://youtu.be/PsJ8tbKzWzA" target="_blank" rel="noopener">Ouvir o podcast</a>
+          <div class="arq-cta-buttons">
+            <a class="btn small solid" href="https://www.amazon.com.br/dp/B07R9KRZTJ?tag=falcojc-20&amp;ascsubtag=arquetipos-o-marciano" target="_blank" rel="noopener">Ler na Amazon</a>
+            <a class="btn small ghost" href="https://youtu.be/PsJ8tbKzWzA" target="_blank" rel="noopener">Ouvir o podcast</a>
+          </div>
         </div>
       </div>
       <figure class="arq-fig"><img src="/arquetipos/media/o-marciano.webp" alt="A paisagem exótica e indômita do planeta Tanaris, em O Marciano" width="1100" height="600" loading="lazy" decoding="async"></figure>
@@ -420,13 +508,31 @@
   </div>
 </section>
 
+<section class="audio-cta">
+  <div class="wrap audio-grid">
+    <div>
+      <div class="eyebrow">Dante, na íntegra</div>
+      <h2>O Comandante em áudio, para ouvir sem tela</h2>
+      <p>A história completa de Dante em 23 faixas de MP3, capítulo por capítulo, para baixar e ouvir offline: no carro, na cozinha, andando. Sem anúncio e sem precisar estar online.</p>
+      <div class="audio-ctas">
+        <a class="btn solid" href="/audiolivro">Baixar o audiolivro</a>
+        <a class="btn" id="cta-audio-yt" href="https://youtu.be/78ImwumD6OI?utm_source=livrosdofalco&amp;utm_medium=lp-arquetipos&amp;utm_campaign=audiolivro-o-comandante" target="_blank" rel="noopener">Assistir no YouTube</a>
+      </div>
+      <p class="audio-nota">O vídeo ilustrado toca na hora, sem cadastro. O pacote de MP3 é para ouvir offline, sem tela e sem anúncio.</p>
+    </div>
+    <div class="audio-art audio-art--square">
+      <img src="/arquetipos/media/dante-audiolivro.webp" alt="Post de lançamento do audiolivro e do e-book de O Comandante, disponível grátis no Kindle Unlimited" width="920" height="920" loading="lazy" decoding="async">
+    </div>
+  </div>
+</section>
+
 <section class="more">
   <div class="wrap">
     <div class="sec-head">
       <div class="eyebrow">O mapa completo</div>
-      <h2>Há outros cinco arquétipos</h2>
+      <h2>Conheça mais Arquétipos</h2>
       <div class="divider"></div>
-      <p>O vídeo mostra cinco. O catálogo tem dez, e metade deles é de mulheres que decidiram sozinhas.</p>
+      <p>Explore mais universos que formam o inconsciente coletivo da humanidade.</p>
     </div>
     <div class="more-grid">
       <a class="more-card" href="/categoria/mulheres-donas-do-seu-destino/">
@@ -465,6 +571,25 @@
 
 <section>
   <div class="wrap">
+    <div class="omni reveal">
+      <a class="omni-cover" href="https://www.amazon.com.br/dp/B0HFPS4K6R?tag=falcojc-20&amp;ascsubtag=arquetipos-a-saga-italiana" target="_blank" rel="noopener" aria-label="A Saga Italiana na Amazon">
+        <img src="/covers/a-saga-italiana.webp" alt="Capa de A Saga Italiana, trilogia da imigração italiana" width="200" height="299" loading="lazy" decoding="async">
+      </a>
+      <div>
+        <h3>A Saga Italiana</h3>
+        <div class="omni-sub">Os Dois Irmãos · O Siciliano · Os Italianos</div>
+        <p>Três romances completos da imigração italiana reunidos em um único volume, em ordem cronológica. Três famílias que nunca se cruzam, unidas pela mesma pergunta: ficar ou partir?</p>
+        <div class="omni-ctas">
+          <a class="btn small solid" href="https://www.amazon.com.br/dp/B0HFPS4K6R?tag=falcojc-20&amp;ascsubtag=arquetipos-a-saga-italiana" target="_blank" rel="noopener">Ver na Amazon</a>
+          <a class="btn small ghost" href="https://youtu.be/XySlFoavmhc" target="_blank" rel="noopener">Ouvir o podcast</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
     <div class="sec-head">
       <div class="eyebrow">Por onde entrar</div>
       <h2>Cinco caminhos pelo catálogo</h2>
@@ -477,39 +602,6 @@
       <a class="cat-card" href="/categoria/jornadas-epicas-sobrevivencia/">Jornadas Épicas e Sobrevivência</a>
       <a class="cat-card" href="/categoria/fe-misticismo-desconhecido/">Fé, Misticismo e o Desconhecido</a>
     </nav>
-
-    <div class="omni reveal">
-      <a class="omni-cover" href="https://www.amazon.com.br/dp/B0HFPS4K6R?tag=falcojc-20&amp;ascsubtag=arquetipos-a-saga-italiana" target="_blank" rel="noopener" aria-label="A Saga Italiana na Amazon">
-        <img src="/covers/a-saga-italiana.webp" alt="Capa de A Saga Italiana, trilogia da imigração italiana" width="200" height="299" loading="lazy" decoding="async">
-      </a>
-      <div>
-        <h3>A Saga Italiana</h3>
-        <div class="omni-sub">Os Dois Irmãos · O Siciliano · Os Italianos</div>
-        <p>Três romances completos da imigração italiana em um volume, em ordem cronológica. Três famílias que nunca se cruzam, unidas pela mesma pergunta: ficar ou partir?</p>
-        <div class="omni-ctas">
-          <a class="btn small solid" href="https://www.amazon.com.br/dp/B0HFPS4K6R?tag=falcojc-20&amp;ascsubtag=arquetipos-a-saga-italiana" target="_blank" rel="noopener">Ver na Amazon</a>
-          <a class="btn small ghost" href="https://youtu.be/XySlFoavmhc" target="_blank" rel="noopener">Ouvir o podcast</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="audio-cta">
-  <div class="wrap audio-grid">
-    <div>
-      <div class="eyebrow">Dante, na íntegra</div>
-      <h2>O Comandante em áudio, para ouvir sem tela</h2>
-      <p>A história completa de Dante em 23 faixas de MP3, capítulo por capítulo, para baixar e ouvir offline: no carro, na cozinha, andando. Sem anúncio e sem precisar estar online.</p>
-      <div class="audio-ctas">
-        <a class="btn solid" href="/audiolivro">Baixar o audiolivro</a>
-        <a class="btn" id="cta-audio-yt" href="https://youtu.be/78ImwumD6OI?utm_source=livrosdofalco&amp;utm_medium=lp-arquetipos&amp;utm_campaign=audiolivro-o-comandante" target="_blank" rel="noopener">Assistir no YouTube</a>
-      </div>
-      <p class="audio-nota">O vídeo ilustrado toca na hora, sem cadastro. O pacote de MP3 é para ouvir offline, sem tela e sem anúncio.</p>
-    </div>
-    <div class="audio-art">
-      <img src="/arquetipos/media/dante.webp" alt="O cais do porto em O Comandante" width="1100" height="614" loading="lazy" decoding="async">
-    </div>
   </div>
 </section>
 
@@ -546,6 +638,20 @@
   <p class="affiliate-note">Como Associado da Amazon, eu ganho com compras qualificadas. Os links para a Amazon nesta página são links de afiliado.</p>
 </footer>
 
+<button type="button" class="back-to-top" id="back-to-top" aria-label="Voltar ao topo">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+</button>
+<script>
+  (function(){
+    var btn = document.getElementById('back-to-top');
+    window.addEventListener('scroll', function(){
+      btn.classList.toggle('visible', window.scrollY > 600);
+    }, { passive: true });
+    btn.addEventListener('click', function(){
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  })();
+</script>
 <script>
 (function(){
   // Facade do player: o iframe do YouTube (500 KB+) so entra depois do clique,
