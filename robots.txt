@@ -1,4 +1,46 @@
+# Livros do Falco - politica de rastreamento
+# https://www.livrosdofalco.com.br
+
+# Buscadores e crawlers em geral: liberado.
 User-agent: *
 Allow: /
+
+# Crawlers de IA: liberados de proposito, decisao de 22/08/2026.
+# O site e pequeno e desconhecido: aparecer citado numa resposta de assistente
+# vale mais do que o conteudo raspado custa. Bloquear crawler de IA e estrategia
+# de quem tem trafego organico a proteger, que nao e o caso aqui.
+# Revisar se o organico passar a ser fatia relevante do trafego.
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# Resumo do site em texto, para leitura por modelo de linguagem:
+# https://www.livrosdofalco.com.br/llms.txt
 
 Sitemap: https://www.livrosdofalco.com.br/sitemap.xml
