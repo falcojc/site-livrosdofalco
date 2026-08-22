@@ -108,3 +108,19 @@ document.addEventListener('play', function(e){
   var label = card ? card.id : (audio.getAttribute('src') || '');
   gtag('event', 'play_audiobook_sample', { event_category: 'audiobook', event_label: label });
 }, true);
+
+// "toggle" do <details> tambem nao borbulha, mesma tecnica de captura do play acima.
+// Registra so a ABERTURA: o que interessa e qual duvida a pessoa foi buscar.
+// Fechar nao diz nada, e contar os dois inflaria o numero pela metade.
+// Nao dispara no carregamento: o <details> que ja nasce aberto nao emite toggle.
+document.addEventListener('toggle', function(e){
+  if (typeof gtag !== 'function') return;
+  var d = e.target;
+  if (!d || d.tagName !== 'DETAILS' || !d.classList || !d.classList.contains('faq-item')) return;
+  if (!d.open) return;
+  var s = d.querySelector('summary');
+  gtag('event', 'faq_open', {
+    event_category: 'faq',
+    event_label: s ? s.textContent.trim().slice(0, 100) : ''
+  });
+}, true);
