@@ -20,7 +20,7 @@ from pathlib import Path
 RAIZ = Path(__file__).resolve().parent.parent
 LINK = ('<p class="credit" style="font-size:12px;">Produzido por '
         '<a href="https://falcostrategy.com.br" target="_blank" rel="noopener" '
-        'style="text-decoration:underline;text-underline-offset:2px;">'
+        'style="color:var(--gold-bright,#e6c467);text-decoration:underline;text-underline-offset:2px;">'
         'FalcoStrategy.com.br</a></p>')
 
 ANCORAS = [
