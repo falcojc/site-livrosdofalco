@@ -460,6 +460,28 @@
     .contact-card{padding:30px 22px;}
   }
   footer .affiliate-note{font-size:12.5px;color:#8a7f68;line-height:1.55;margin:26px auto 0;padding-top:18px;border-top:1px solid rgba(111,101,82,.28);max-width:1180px;text-align:center;}
+
+  /* Perguntas frequentes: texto visivel que sustenta o FAQPage do JSON-LD */
+  .faq-section{background:var(--bg);border-top:1px solid var(--card-border);}
+  .faq-section .sec-head{max-width:680px;margin:0 auto 44px;text-align:center;}
+  .faq-section .eyebrow{justify-content:center;}
+  .faq-section .divider{margin:18px auto 0;}
+  .faq-list{max-width:820px;margin:0 auto;display:grid;gap:14px;}
+  .faq-item{background:var(--card);border:1px solid var(--card-border);border-radius:10px;}
+  .faq-item summary{cursor:pointer;list-style:none;padding:18px 22px;display:flex;
+    justify-content:space-between;align-items:center;gap:18px;
+    font-family:'Cinzel',serif;font-size:16px;letter-spacing:.01em;color:var(--text);}
+  .faq-item summary::-webkit-details-marker{display:none;}
+  .faq-item summary::after{content:'+';color:var(--gold);font-size:22px;line-height:1;flex:none;}
+  .faq-item[open] summary::after{content:'\2013';}
+  .faq-item summary:hover{color:var(--gold-bright);}
+  .faq-item summary:focus-visible{outline:2px solid var(--gold);outline-offset:2px;}
+  .faq-answer{padding:0 22px 20px;color:var(--text-muted);font-size:17px;line-height:1.75;}
+  .faq-answer a{color:var(--gold-bright);}
+  @media(max-width:620px){
+    .faq-item summary{font-size:15px;padding:16px 18px;}
+    .faq-answer{padding:0 18px 18px;font-size:16px;}
+  }
 </style>
 <script type="application/ld+json">
 {
@@ -469,7 +491,11 @@
       "@type": "WebSite",
       "name": "Domenico Falco, Livros de Ficção Histórica",
       "url": "https://www.livrosdofalco.com.br/",
-      "inLanguage": "pt-BR"
+      "inLanguage": "pt-BR",
+      "@id": "https://www.livrosdofalco.com.br/#website",
+      "publisher": {
+        "@id": "https://www.livrosdofalco.com.br/#domenico-falco"
+      }
     },
     {
       "@type": "Person",
@@ -1353,6 +1379,101 @@
           "name": "Amazon"
         }
       }
+    },
+    {
+      "@type": "Book",
+      "name": "A Saga Italiana",
+      "author": {
+        "@id": "https://www.livrosdofalco.com.br/#domenico-falco"
+      },
+      "genre": "Ficção Histórica",
+      "description": "Três romances completos da imigração italiana reunidos em um único volume, em ordem cronológica. Três famílias que nunca se cruzam, unidas pela mesma pergunta: ficar ou partir?",
+      "url": "https://www.livrosdofalco.com.br/#a-saga-italiana",
+      "inLanguage": "pt-BR",
+      "@id": "https://www.livrosdofalco.com.br/#a-saga-italiana",
+      "image": "https://www.livrosdofalco.com.br/covers/a-saga-italiana.webp",
+      "keywords": "Imigração italiana",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ASIN",
+        "value": "B0HFPS4K6R"
+      },
+      "sameAs": "https://www.amazon.com.br/dp/B0HFPS4K6R",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.amazon.com.br/dp/B0HFPS4K6R",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "Amazon"
+        }
+      },
+      "hasPart": [
+        {
+          "@id": "https://www.livrosdofalco.com.br/#os-dois-irmaos"
+        },
+        {
+          "@id": "https://www.livrosdofalco.com.br/#o-siciliano"
+        },
+        {
+          "@id": "https://www.livrosdofalco.com.br/#os-italianos"
+        }
+      ],
+      "bookEdition": "Edição omnibus"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.livrosdofalco.com.br/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quem é Domenico Falco?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Escritor brasileiro de romance histórico, autor de trinta romances ambientados em seis países e quatro séculos. Do Japão imperial à Belle Époque, da Rota da Seda à corrida do ouro, os livros partem sempre da mesma pergunta: até onde você vai pela sua família, e o que isso te custa?"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Por qual livro de Domenico Falco começar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Depende do que te move. Para família e sacrifício, Os Dois Irmãos. Para uma protagonista que decide o próprio destino, Joana: A Dama da Noite. Para aventura no mar, O Mestre das Tormentas. Para começar pelo mais recente, O Comandante."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Os romances são baseados em fatos reais?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Os personagens são ficção, o cenário não. Cada livro parte de pesquisa histórica sobre eventos, lugares e costumes reais do período: a imigração italiana, a ocupação nazista na Grécia, o fim do xogunato, a revolução do contêiner no porto de Gênova."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Existe uma ordem de leitura?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A maioria é independente e pode ser lida em qualquer ordem. Três formam um arco cronológico da diáspora italiana: Os Dois Irmãos (1860), O Siciliano (início do século XX) e Os Italianos (pós-guerra), reunidos também na edição A Saga Italiana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Existe audiolivro?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. O Comandante tem audiolivro completo em MP3, capítulo por capítulo, para ouvir offline. É gratuito: você informa o e-mail e recebe os arquivos para baixar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Onde comprar os livros?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Todos os romances estão na Amazon, em Kindle e capa comum, e vários no Kindle Unlimited. O catálogo completo, com sinopse e link de cada obra, está na seção Obras."
+          }
+        }
+      ]
     }
   ]
 }
@@ -2118,6 +2239,43 @@
     <div class="tags">#FicçãoHistórica&nbsp; #DomenicoFalco&nbsp; #Leitura&nbsp; #Livros</div>
     <div class="cta-row">
       <a class="btn solid" href="https://www.amazon.com.br/Livros-DOMENICO-FALCO/s?rh=n%3A6740748011%2Cp_27%3ADOMENICO%2BFALCO&tag=falcojc-20&ascsubtag=home-cta-jornada" target="_blank" rel="noopener">Garanta sua Jornada Literária</a>
+    </div>
+  </div>
+</section>
+
+<section class="faq-section" id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Perguntas Frequentes</div>
+      <h2>O que os leitores costumam perguntar</h2>
+      <div class="divider"></div>
+      <p>Por onde começar, o que é fato e o que é ficção, e onde encontrar cada obra.</p>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item" open>
+        <summary>Quem é Domenico Falco?</summary>
+        <div class="faq-answer"><p>Escritor brasileiro de romance histórico, autor de trinta romances ambientados em seis países e quatro séculos. Do Japão imperial à Belle Époque, da Rota da Seda à corrida do ouro, os livros partem sempre da mesma pergunta: até onde você vai pela sua família, e o que isso te custa?</p></div>
+      </details>
+      <details class="faq-item">
+        <summary>Por qual livro de Domenico Falco começar?</summary>
+        <div class="faq-answer"><p>Depende do que te move. Para família e sacrifício, <em>Os Dois Irmãos</em>. Para uma protagonista que decide o próprio destino, <em>Joana: A Dama da Noite</em>. Para aventura no mar, <em>O Mestre das Tormentas</em>. Para começar pelo mais recente, <em>O Comandante</em>.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary>Os romances são baseados em fatos reais?</summary>
+        <div class="faq-answer"><p>Os personagens são ficção, o cenário não. Cada livro parte de pesquisa histórica sobre eventos, lugares e costumes reais do período: a imigração italiana, a ocupação nazista na Grécia, o fim do xogunato, a revolução do contêiner no porto de Gênova.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary>Existe uma ordem de leitura?</summary>
+        <div class="faq-answer"><p>A maioria é independente e pode ser lida em qualquer ordem. Três formam um arco cronológico da diáspora italiana: <em>Os Dois Irmãos</em> (1860), <em>O Siciliano</em> (início do século XX) e <em>Os Italianos</em> (pós-guerra), reunidos também na edição <a href="#a-saga-italiana">A Saga Italiana</a>.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary>Existe audiolivro?</summary>
+        <div class="faq-answer"><p>Sim. <em>O Comandante</em> tem audiolivro completo em MP3, capítulo por capítulo, para ouvir offline. É gratuito: você informa o e-mail e <a href="/audiolivro">recebe os arquivos para baixar</a>.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary>Onde comprar os livros?</summary>
+        <div class="faq-answer"><p>Todos os romances estão na Amazon, em Kindle e capa comum, e vários no Kindle Unlimited. O catálogo completo, com sinopse e link de cada obra, está <a href="#obras">na seção Obras</a>.</p></div>
+      </details>
     </div>
   </div>
 </section>

@@ -50,6 +50,27 @@ for m in re.finditer(
         "desc": re.sub(r"\s+", " ", desc.group(1)).strip() if desc else None,
     }
 
+# --- 1b. O omnibus usa outra estrutura de card e ficava de fora -------------
+omni = re.search(r'<div class="omnibus" id="([^"]+)">(.*?)(?=<div class="book-card|</section>)',
+                 html, re.S)
+partes_omnibus = []
+if omni:
+    slug, corpo = omni.group(1), omni.group(2)
+    img = re.search(r'<img src="([^"]+)"', corpo)
+    asin = re.search(r'amazon\.com\.br/dp/([A-Z0-9]{10})', corpo)
+    h3 = re.search(r"<h3>(.*?)</h3>", corpo, re.S)
+    lede = re.search(r'<p class="omnibus-lede">(.*?)</p>', corpo, re.S)
+    partes_omnibus = [re.sub(r"<[^>]+>", "", s).strip()
+                      for s in re.findall(r"<li><strong>(.*?)</strong>", corpo, re.S)]
+    cards[slug] = {
+        "slug": slug,
+        "titulo": h3.group(1).strip() if h3 else None,
+        "image": BASE + "/" + img.group(1).lstrip("/") if img else None,
+        "asin": asin.group(1) if asin else None,
+        "tag": "Imigração italiana",
+        "desc": re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", lede.group(1))).strip() if lede else None,
+    }
+
 # --- 2. Isolar e parsear o bloco JSON-LD ------------------------------------
 bloco = re.search(
     r'(<script type="application/ld\+json">\s*)(\{.*?\})(\s*</script>)', html, re.S)
@@ -58,7 +79,16 @@ if not bloco:
 dados = json.loads(bloco.group(2))
 grafo = dados["@graph"]
 
-# --- 3. Person --------------------------------------------------------------
+# --- 3. WebSite e Person ----------------------------------------------------
+# O @id do WebSite e o alvo do isPartOf das paginas internas
+# (ver .claude/schema_paginas_internas.py). Sem ele, aquelas paginas
+# apontariam para uma entidade que nao existe.
+site = next((n for n in grafo if n.get("@type") == "WebSite"), None)
+if site is not None:
+    site["@id"] = BASE + "/#website"
+    site["publisher"] = {"@id": AUTOR_ID}
+
+
 REDES = ["https://www.instagram.com/livrosdofalco/",
          "https://www.tiktok.com/@livros_dofalco"]
 autor = next((n for n in grafo if n.get("@type") == "Person"
@@ -113,6 +143,43 @@ for card in cards.values():
     ultimo += 1
     grafo.insert(ultimo, novo)
     criados.append(card["titulo"])
+
+# --- 5b. Omnibus: ligar as partes ao todo -----------------------------------
+# hasPart e o que permite a uma maquina responder "qual a ordem de leitura da
+# saga italiana", que hoje nao tem resposta pronta em lugar nenhum da web.
+if partes_omnibus:
+    por_nome = {n.get("name"): n for n in grafo if n.get("@type") == "Book"}
+    no_omni = next((n for n in grafo if n.get("@type") == "Book"
+                    and n.get("name") == cards[omni.group(1)]["titulo"]), None)
+    if no_omni:
+        ids = [{"@id": por_nome[t]["@id"]} for t in partes_omnibus if t in por_nome]
+        if ids:
+            no_omni["hasPart"] = ids
+        no_omni["bookEdition"] = "Edição omnibus"
+        print(f"Omnibus '{no_omni['name']}' com {len(ids)} partes ligadas: {partes_omnibus}")
+
+# --- 5c. FAQPage gerado a partir do texto visivel na pagina -----------------
+# Gerado do HTML, nunca escrito a mao: garante que o markup nunca divirja do
+# que o leitor ve, que e a exigencia do Google para FAQPage.
+faq = [(re.sub(r"<[^>]+>", "", p).strip(),
+        re.sub(r"\s+([.,;:!?])", r"\1",
+               re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", r))).strip())
+       for p, r in re.findall(
+           r'<details class="faq-item"[^>]*>\s*<summary>(.*?)</summary>\s*'
+           r'<div class="faq-answer">(.*?)</div>', html, re.S)]
+grafo[:] = [n for n in grafo if n.get("@type") != "FAQPage"]
+if faq:
+    grafo.append({
+        "@type": "FAQPage",
+        "@id": BASE + "/#faq",
+        "mainEntity": [
+            {"@type": "Question", "name": p,
+             "acceptedAnswer": {"@type": "Answer", "text": r}} for p, r in faq
+        ],
+    })
+    print(f"FAQPage: {len(faq)} perguntas extraidas do HTML visivel")
+else:
+    print("FAQPage: nenhuma secao .faq-item na pagina, markup nao gerado")
 
 # --- 6. Reescrever ----------------------------------------------------------
 novo_json = json.dumps(dados, ensure_ascii=False, indent=2)
