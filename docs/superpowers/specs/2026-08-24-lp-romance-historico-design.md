@@ -101,15 +101,59 @@ em 18/08. **Regra desta página: nenhum detalhe de enredo entra sem sair de
 `.claude/catalogo.json`, da ficha do KDP (`Relatórios/ficha-kdp-a-saga-italiana-17-08-2026.md`)
 ou de uma PDP já publicada.**
 
-### 2.6. O Asilo não é thriller psicológico, é nazista foragido no Brasil
+**Auditoria do site feita em 24/08, atrás dessa mesma família de erro.** O site está limpo
+de "Etna", de "mais vendido" e de contagem de páginas inflada, e a home descreve O Siciliano
+como "Sicília, 1880 › os cafezais brasileiros", que é preciso sem se comprometer com a
+cidade errada. **Dois erros reais estavam publicados no blog e foram corrigidos:**
 
-Sinopse oficial: *"Por trás das paredes de um asilo, escondem-se criminosos nazistas,
-fraudes e fantasmas."*
+| Arquivo | Era | Virou |
+|---|---|---|
+| `blog/posts/guerra-secessao-corrida-ouro-justica.md` | "a **aclamada** obra Sangue Frio" | "o **romance histórico** Sangue Frio" |
+| `blog/posts/revolucao-do-conteiner-porto-genova.md` | "O Comandante, **obra-prima** do autor" | "O Comandante, **romance** de Domenico Falco" |
 
-Vendido como "suspense psicológico", ele desalinha com quem buscou romance histórico.
-Vendido como o que aconteceu com os nazistas que fugiram para a América do Sul, ele é
-romance histórico de linhagem conhecida e com demanda própria. Muda o enquadramento, não a
-obra.
+Sangue Frio e O Comandante têm **zero avaliações** na Amazon. "Aclamada" e "obra-prima" são
+prova social que não existe, escritas em material publicado. A troca por "romance histórico"
+no primeiro caso ainda devolve o bigrama da keyword de maior volume da conta para dentro de
+um post indexado.
+
+### 2.6. Por que a porta 3 é Amor e Ódio, e não O Asilo
+
+O Asilo era a escolha inicial, com o plano de reenquadrá-lo de "suspense psicológico" para
+"nazista foragido no Brasil dos anos 1950". **O reenquadramento não resolve o problema, e o
+motivo é que a LP não controla a loja.** A sinopse oficial na Amazon diz, com estas
+palavras: *"Um thriller psicológico de tirar o fôlego disfarçado de um tranquilo lar para
+idosos."* O leitor clica na ficha, chega na PDP e lê "thriller psicológico".
+
+Isso cria uma **contradição interna**: a seção 4 desta página define romance histórico por
+oposição ao passado usado como cenário, e a loja desmente a definição dois cliques depois.
+Numa página cuja autoridade depende justamente dessa definição (é o bloco que a IA cita), a
+contradição custa mais do que a obra rende.
+
+O segundo motivo é o H1. Comparando as sinopses oficiais:
+
+- **Amor e Ódio:** *"Famílias da Andaluzia dilaceradas pelo poder e escolhas implacáveis
+  durante a ascensão de um ditador."*
+- **O Asilo:** *"criminosos nazistas, fraudes e fantasmas."*
+
+O H1 da página é "até onde você iria pela sua família, e o que essa escolha lhe custaria".
+Uma das duas é esse H1 em forma de livro. A outra não menciona família.
+
+| | O Asilo | Amor e Ódio |
+|---|---|---|
+| Encaixe no H1 | não aparece | é a própria sinopse |
+| Romance histórico sem asterisco? | não, a loja chama de thriller | sim |
+| Keyword tier A | "suspense psicológico brasileiro" (outro gênero) | "segunda guerra mundial ficção" |
+| Persona mulher 35+ | thriller de asilo | paixão proibida em tempo de guerra |
+| Páginas | 122 | **87** |
+
+**O que se perde com a troca, registrado de propósito:** substância (87 páginas contra 122,
+a mais curta do trio, num gênero de calhamaço) e território ("nazista foragido no Brasil" é
+o gancho mais raro do catálogo, enquanto Guerra Civil Espanhola é a avenida mais lotada do
+gênero). O segundo argumento foi pesado e descartado: competição de categoria decide BSR e
+also-bought na Amazon, não decide qual ficha converte dentro da própria LP, onde o visitante
+escolhe entre três livros do mesmo autor.
+
+O Asilo não sai do site. Continua em `/categoria/submundo-traicoes-misterios/`.
 
 ---
 
@@ -120,7 +164,7 @@ obra.
 | Ação principal | Captura de e-mail (audiolivro de O Comandante) | Única conversão que o site já produziu. Alimenta a lista que pede avaliação |
 | Amazon | Saída secundária, nas fichas | 57 e 68 cliques já converteram 0% |
 | Eixo das portas | Perfil de leitor, com sobrelinha de ambientação | Decisão do Julio. A sobrelinha compensa o custo de autoclassificação num tráfego de 4s |
-| As 3 obras | O Siciliano · O Mestre das Tormentas · O Asilo | Decisão do Julio |
+| As 3 obras | O Siciliano · O Mestre das Tormentas · Amor e Ódio | Amor e Ódio entrou no lugar de O Asilo em 24/08, ver 2.6 |
 | Saga Italiana | Seção própria, degrau de ticket, não porta | Se o omnibus vira porta, o degrau morre: não sobra para onde subir |
 | Selo de estrelas | Não, na v1 | 1 avaliação por obra. Reavaliar depois da colheita da promoção |
 | Definição do gênero | Desce para depois das portas | Obstáculo para o pago de 4s. Indiferente para a IA, que lê a página inteira |
@@ -171,12 +215,15 @@ o que o Google indexa) → **rótulo de perfil** → **título da obra** → gan
 > Pacífico Sul, ressurge nas águas asiáticas e atravessa a Rota da Seda atrás do único
 > caminho de volta que ainda importa: para casa, e para quem ele deixou para trás.
 
-**Brasil, anos 1950** · *O Suspense de Sombras* · **O Asilo**
-> Atrás das paredes de um lar tranquilo para idosos, criminosos nazistas, fraudes e
-> fantasmas. O que a Europa não julgou, o Brasil hospedou.
+**Andaluzia, anos 1930** · *O Amor em Tempo de Guerra* · **Amor e Ódio**
+> Uma paixão proibida em famílias que a Guerra Civil Espanhola vai dilacerar. Enquanto um
+> ditador sobe ao poder, cada escolha custa alguém, e ninguém escolhe sem pagar.
 
-Fontes: `catalogo.json` (O Siciliano, O Asilo), PDP publicada `/o-mestre-das-tormentas`
+Fontes: `catalogo.json` (O Siciliano, Amor e Ódio), PDP publicada `/o-mestre-das-tormentas`
 (John Storm, texto já validado), ficha do KDP do omnibus (Vassouras).
+
+Com essa composição a vitrine cobre **família e imigração, aventura e mar, amor e guerra**,
+que é recorte melhor para a persona medida (mulher 35+) do que família, mar e thriller.
 
 ### Seção 3 · A Saga Italiana, degrau de ticket
 
@@ -275,7 +322,7 @@ confirmar que a trava não suprime a conversão de quem já veio pela `/audioliv
   `click_to_amazon` sem tocar em código.
 - Links de saída no padrão `amazon.com.br/dp/<ASIN>?tag=falcojc-20&ascsubtag=romance-historico-<obra>`.
 - ASINs Kindle conferidos: O Siciliano `B0D9WS272F`, O Mestre das Tormentas `B08XYL4QZY`,
-  O Asilo `B0DDHZZCS1`, A Saga Italiana `B0HFPS4K6R` (conferido no JSON-LD da home).
+  Amor e Ódio `B0D8RTCPNP`, A Saga Italiana `B0HFPS4K6R` (conferido no JSON-LD da home).
 - **URL longa, não link curto:** o `analytics.js` extrai o ASIN do padrão `/dp/XXXXXXXXXX`,
   e link curto chega ao GA4 como `(sem asin)`.
 
@@ -290,6 +337,11 @@ resto do site é pelo rodapé e pelo sitemap, igual à `/arquetipos`.
 - **Grade com as 30 obras.** É o que a página existe para não ser.
 - **Os Templários**, em qualquer papel. 2,7★ com 66% das notas em 1 e 2, fora de conteúdo e
   de promoção até a média subir.
+- **O Asilo**, como porta de entrada. Ver 2.6. Continua vivo em
+  `/categoria/submundo-traicoes-misterios/`.
+- **Adjetivo de prova social** em qualquer lugar da página: "aclamado", "obra-prima",
+  "sucesso", "mais vendido". Com 5 avaliações no catálogo inteiro, nenhum deles é
+  verificável, e dois já tiveram que ser removidos do blog em 24/08.
 - **Link para a `/audiolivro`.** Ela é captura pura, sem link de saída. Esta página tem a
   mesma oferta embutida, então mandar para lá seria um salto desnecessário.
 - **Vídeo.** Peso sem função nesta página.
@@ -303,7 +355,7 @@ resto do site é pelo rodapé e pelo sitemap, igual à `/arquetipos`.
 | Perfil de leitor exige autoclassificação, e o pago fica 4s | Taxa de clique nas três fichas fica achatada e igual | Testar troca dos rótulos de perfil por cenário histórico puro |
 | Página sem data vira limbo | Passar a colheita da promoção sem a página existir | O gatilho combinado destrava: colheita medida, página entra |
 | A promoção não gera avaliação | Contagem de avaliações não sobe até 05/09 | A v2 não ganha selo, e a prova social tem que vir de outro lugar (Skoob, grupos de Kindle) |
-| O Asilo desalinha mesmo reposicionado | Cliques na porta 3 com rejeição alta na Amazon | Trocar por A Vila, que é 5,0★ e ancora "segunda guerra mundial romance", tier A |
+| Amor e Ódio é curto demais para o gênero (87p) | Porta 3 recebe clique e a PDP não segura | Trocar por A Vila (101p, 5,0★, ancora "segunda guerra mundial romance", tier A), aceitando que ela se aproxima do tema da porta 1 |
 | Conversão continua 0% na PDP | Leads sobem, vendas seguem em zero | Confirma que o gargalo é a PDP, não o site. Nada na LP resolve isso |
 
 **O que esta página não resolve, e é importante estar escrito:** a PDP da Amazon converte
