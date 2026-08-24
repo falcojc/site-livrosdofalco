@@ -118,8 +118,104 @@
   body.promo-on .preco{display:none;}
   body.promo-on .cta-normal{display:none;}
   body.promo-on .cta-promo{display:inline;}
+
+  /* GENERO */
+  .genero{padding:64px 0;background:var(--bg-alt);border-top:1px solid var(--card-border);}
+  .genero h2{font-size:clamp(26px,3.2vw,38px);margin:12px 0 32px;}
+  .grid-genero{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-bottom:34px;}
+  .col-genero{background:var(--card);border:1px solid var(--card-border);border-radius:3px;padding:26px 24px;}
+  .col-genero.destaque{border-color:var(--gold);}
+  .col-genero h3{font-size:21px;margin-bottom:12px;color:var(--text-muted);}
+  .col-genero.destaque h3{color:var(--gold-bright);}
+  .col-genero p{font-size:17px;color:var(--text-muted);}
+  .fecho{font-family:'Cinzel',serif;font-size:clamp(19px,2.4vw,26px);line-height:1.4;color:var(--gold-bright);max-width:24em;}
+  @media (max-width:900px){
+    .genero{padding:44px 0;}
+    .grid-genero{grid-template-columns:1fr;gap:16px;}
+  }
 </style>
 <script>document.documentElement.classList.add('js');</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "O que é romance histórico?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Romance histórico é a ficção em que o período histórico funciona como pressão sobre os personagens, e não como cenário. Guerra, fome, exílio, ocupação e perseguição são o que força as escolhas da trama: retirado o contexto histórico, a história deixa de existir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual a diferença entre romance histórico e romance de época?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O romance de época usa o passado como cenário decorativo e idealizado, com foco em bailes, rituais de corte e tramas românticas leves; o período é moldura e pode ser trocado sem que a história mude. O romance histórico usa o passado como causa: o período é o que produz o conflito e determina o custo das decisões dos personagens."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Por qual romance histórico de Domenico Falco começar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Depende do cenário histórico de interesse. Para imigração italiana e drama de família, O Siciliano, ambientado entre a Sicília e as fazendas de café do Brasil de 1880 a 1943. Para aventura marítima, O Mestre das Tormentas, sobre John Storm, dos becos de Londres à Rota da Seda a partir de 1700. Para guerra e paixão proibida, Amor e Ódio, ambientado na Andaluzia dos anos 1930 durante a Guerra Civil Espanhola."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "name": "Romances históricos de Domenico Falco: por onde começar",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Book",
+            "name": "O Siciliano",
+            "author": {"@type": "Person", "name": "Domenico Falco"},
+            "inLanguage": "pt-BR",
+            "genre": "Romance histórico",
+            "identifier": {"@type": "PropertyValue", "propertyID": "ASIN", "value": "B0D9WS272F"},
+            "url": "https://www.amazon.com.br/dp/B0D9WS272F"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Book",
+            "name": "O Mestre das Tormentas",
+            "author": {"@type": "Person", "name": "Domenico Falco"},
+            "inLanguage": "pt-BR",
+            "genre": "Romance histórico",
+            "identifier": {"@type": "PropertyValue", "propertyID": "ASIN", "value": "B08XYL4QZY"},
+            "url": "https://www.amazon.com.br/dp/B08XYL4QZY"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "Book",
+            "name": "Amor e Ódio",
+            "author": {"@type": "Person", "name": "Domenico Falco"},
+            "inLanguage": "pt-BR",
+            "genre": "Romance histórico",
+            "identifier": {"@type": "PropertyValue", "propertyID": "ASIN", "value": "B0D8RTCPNP"},
+            "url": "https://www.amazon.com.br/dp/B0D8RTCPNP"
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <a class="skip" href="#conteudo">Pular para o conteúdo</a>
@@ -220,6 +316,26 @@
         <span class="cta-promo">Baixar grátis e, se gostar, avaliar</span>
       </a>
     </div>
+  </div>
+</section>
+
+<section class="genero">
+  <div class="wrap">
+    <p class="eyebrow">Antes de escolher</p>
+    <h2>O que é romance histórico, e o que não é</h2>
+
+    <div class="grid-genero">
+      <div class="col-genero">
+        <h3>Romance de época</h3>
+        <p>Usa o passado como cenário decorativo e idealizado. Bailes, rituais de corte, salões, uma trama romântica leve por cima. O período é moldura: troque o século e a história continua de pé.</p>
+      </div>
+      <div class="col-genero destaque">
+        <h3>Romance histórico</h3>
+        <p>Usa o passado como pressão. O período é justamente o que força a escolha: guerra, fome, exílio, ocupação, perseguição. Troque o século e a história desaparece, porque ela só existe por causa daquilo.</p>
+      </div>
+    </div>
+
+    <p class="fecho">Não escrevemos sobre bailes de porcelana. Escrevemos sobre o preço que se paga para manter os seus vivos.</p>
   </div>
 </section>
 
