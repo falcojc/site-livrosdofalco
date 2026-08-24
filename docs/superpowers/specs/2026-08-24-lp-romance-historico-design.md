@@ -390,8 +390,11 @@ site, não a Amazon, porque ali o Julio controla a entrega. Fora do escopo desta
 **Performance**, herdando as decisões da `/arquetipos`:
 
 - Alvo de peso na faixa da `/arquetipos` (52 KB de HTML), nunca da home (138 KB).
-- Três capas apenas, com `srcset` e `width`/`height` **mais `height:auto`** (sem isso o
-  atributo HTML vira o "usado" de `height` e o `aspect-ratio` é ignorado).
+- Três capas apenas, com `width`/`height` explícitos **mais `height:auto` no CSS** (sem isso
+  o atributo HTML vira o valor usado de `height` e qualquer `aspect-ratio` é ignorado).
+  **Sem `srcset`:** medidas em 24/08, as capas do catálogo são 289x436 ou 400x600 e pesam
+  19 a 34 KB. Não existem variantes de tamanho no repositório, e um `srcset` com uma fonte
+  só é teatro. Se um dia houver variantes, aí sim.
 - Nenhuma `<img>` como filha comum de um `display:flex` que também centraliza outro
   conteúdo na mesma linha.
 - `reveal` on scroll com rede de segurança de 2s além da classe `.js`, senão a página abre
