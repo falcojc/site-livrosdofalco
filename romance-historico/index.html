@@ -76,6 +76,25 @@
     .hero{padding:40px 0 36px;}
     .hero-inner{grid-template-columns:1fr;gap:34px;}
   }
+
+  /* PORTAS */
+  .portas{padding:64px 0;background:var(--bg-alt);}
+  .portas h2{font-size:clamp(26px,3.2vw,38px);margin:12px 0 16px;}
+  .sec-lead{font-size:18px;color:var(--text-muted);max-width:52em;margin-bottom:38px;}
+  .grid-portas{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
+  .porta{background:var(--card);border:1px solid var(--card-border);border-radius:3px;padding:28px 24px;display:flex;flex-direction:column;}
+  .capa{width:132px;height:auto;border:1px solid var(--card-border);border-radius:2px;margin-bottom:20px;}
+  /* Cena: largura total do card, sangrando ate a borda interna do padding */
+  .cena{width:calc(100% + 48px);margin:-28px -24px 20px;height:auto;border-radius:3px 3px 0 0;}
+  .ambient{font-family:'Cinzel',serif;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;}
+  .perfil{font-size:15px;color:var(--cost);font-style:italic;margin-bottom:4px;}
+  .porta h3{font-size:24px;margin-bottom:14px;}
+  .gancho{font-size:17px;color:var(--text-muted);margin-bottom:24px;flex-grow:1;}
+  .porta .btn{align-self:flex-start;}
+  @media (max-width:900px){
+    .portas{padding:44px 0;}
+    .grid-portas{grid-template-columns:1fr;gap:18px;}
+  }
 </style>
 <script>document.documentElement.classList.add('js');</script>
 </head>
@@ -115,6 +134,46 @@
     </div>
   </div>
 </section>
+
+<section class="portas" id="portas">
+  <div class="wrap">
+    <p class="eyebrow">Três portas, não trinta</p>
+    <h2>Por onde começar</h2>
+    <p class="sec-lead">Trinta títulos paralisam. Escolha o chão histórico que te interessa e comece por ele: cada um destes três abre um caminho diferente dentro do mesmo catálogo.</p>
+
+    <div class="grid-portas">
+
+      <article class="book-card porta">
+        <img class="cena" src="/romance-historico/media/o-siciliano-cafezal.webp" alt="Colheita de café numa fazenda brasileira do início do século XX" width="800" height="436" loading="lazy" decoding="async">
+        <p class="ambient">Sicília e Brasil, 1880 a 1943</p>
+        <p class="perfil">O épico de família</p>
+        <h3>O Siciliano</h3>
+        <p class="gancho">Uma disputa de terras custa o pai de Matteo. Ele cruza o Atlântico e recomeça do zero nas fazendas de café de Vassouras, no Rio de Janeiro, antes de a família se mudar para São Paulo. Décadas depois, volta à Sicília para acertar o que deixou por resolver.</p>
+        <a class="btn" href="https://www.amazon.com.br/dp/B0D9WS272F?tag=falcojc-20&amp;ascsubtag=romance-historico-o-siciliano" target="_blank" rel="noopener">Ler O Siciliano</a>
+      </article>
+
+      <article class="book-card porta">
+        <img class="cena" src="/romance-historico/media/mestre-das-tormentas-naufragio.webp" alt="Navio naufragando em tempestade, com um bote salva-vidas ao lado" width="800" height="446" loading="lazy" decoding="async">
+        <p class="ambient">Sete mares, a partir de 1700</p>
+        <p class="perfil">A aventura do desconhecido</p>
+        <h3>O Mestre das Tormentas</h3>
+        <p class="gancho">Filho de uma cozinheira, criado nos becos de Londres. Dado como morto num naufrágio no Pacífico Sul, John Storm ressurge nas águas asiáticas e atravessa a Rota da Seda atrás do único caminho de volta que ainda importa: para casa, e para quem ele deixou para trás.</p>
+        <a class="btn" href="https://www.amazon.com.br/dp/B08XYL4QZY?tag=falcojc-20&amp;ascsubtag=romance-historico-mestre-das-tormentas" target="_blank" rel="noopener">Ler O Mestre das Tormentas</a>
+      </article>
+
+      <article class="book-card porta">
+        <img class="cena" src="/romance-historico/media/amor-e-odio-clandestino.webp" alt="Casal abraçado sob a chuva, ele em uniforme militar, sob um arco de pedra" width="800" height="436" loading="lazy" decoding="async">
+        <p class="ambient">Andaluzia, anos 1930</p>
+        <p class="perfil">O amor em tempo de guerra</p>
+        <h3>Amor e Ódio</h3>
+        <p class="gancho">Uma paixão proibida em famílias que a Guerra Civil Espanhola vai dilacerar. Enquanto um ditador sobe ao poder, cada escolha custa alguém, e ninguém escolhe sem pagar.</p>
+        <a class="btn" href="https://www.amazon.com.br/dp/B0D8RTCPNP?tag=falcojc-20&amp;ascsubtag=romance-historico-amor-e-odio" target="_blank" rel="noopener">Ler Amor e Ódio</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
 </main>
 </body>
 </html>
