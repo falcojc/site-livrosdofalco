@@ -48,12 +48,73 @@
   :focus-visible{outline:2px solid var(--gold-bright);outline-offset:3px;}
   .skip{position:absolute;left:-9999px;}
   .skip:focus{left:16px;top:12px;z-index:99;background:var(--gold);color:#0b0908;padding:10px 16px;border-radius:2px;}
+
+  /* HERO */
+  .hero{padding:64px 0 56px;border-bottom:1px solid var(--card-border);}
+  .hero-inner{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:start;}
+  .hero h1{font-size:clamp(30px,4.4vw,52px);line-height:1.15;margin:14px 0 22px;}
+  .hero h1 em{font-style:normal;color:var(--gold);}
+  .lead{font-size:20px;color:var(--text);max-width:34em;}
+  .lead-sub{margin-top:14px;font-size:17px;color:var(--text-muted);}
+  .lead-sub a{color:var(--gold-bright);border-bottom:1px solid rgba(201,161,58,.4);}
+  .hero-form{background:var(--card);border:1px solid var(--card-border);border-radius:3px;padding:28px 26px;}
+  .form-title{font-family:'Cinzel',serif;font-size:21px;color:var(--gold-bright);margin-bottom:10px;}
+  .form-sub{font-size:16px;color:var(--text-muted);margin-bottom:20px;}
+  .campo{margin-bottom:14px;}
+  .campo label{display:block;font-size:14px;color:var(--text-muted);margin-bottom:6px;}
+  .input{width:100%;padding:12px 14px;background:var(--bg);border:1px solid var(--card-border);border-radius:2px;color:var(--text);font-family:inherit;font-size:17px;}
+  .optin{display:flex;gap:10px;align-items:flex-start;font-size:15px;color:var(--text-muted);margin:16px 0 18px;cursor:pointer;}
+  .optin input{margin-top:5px;flex-shrink:0;}
+  .btn{display:inline-block;font-family:'Cinzel',serif;font-size:16px;letter-spacing:.08em;padding:14px 26px;border-radius:2px;border:1px solid var(--gold);color:var(--gold-bright);background:transparent;cursor:pointer;transition:background .2s,color .2s;}
+  .btn:hover{background:var(--gold);color:#0b0908;}
+  .btn.solid{background:var(--gold);color:#0b0908;font-weight:600;}
+  .btn.solid:hover{background:var(--gold-bright);}
+  .btn.full{width:100%;}
+  .lp-privacy{font-size:13px;color:var(--text-muted);margin-top:14px;line-height:1.45;}
+  .input--hidden{display:none;}
+  @media (max-width:900px){
+    .hero{padding:40px 0 36px;}
+    .hero-inner{grid-template-columns:1fr;gap:34px;}
+  }
 </style>
 <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
 <a class="skip" href="#conteudo">Pular para o conteúdo</a>
 <main id="conteudo">
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow">Romance histórico brasileiro · 30 obras de Domenico Falco</p>
+      <h1>Até onde você iria pela sua <em>família</em>?<br>E o que essa escolha lhe custaria?</h1>
+      <p class="lead">Romance histórico de alta imersão, em que o passado não é cenário decorativo: é o que força pessoas comuns a decisões impossíveis. Guerra, exílio, fome, ocupação. Ninguém sai ileso.</p>
+      <p class="lead-sub">Não sabe por onde começar? <a href="#portas">Veja as três portas de entrada</a>.</p>
+    </div>
+    <div class="hero-form" id="comecar">
+      <p class="form-title">Ouça um romance completo, de graça</p>
+      <p class="form-sub">O audiolivro de <strong>O Comandante</strong>, 1h51 de narração em 23 faixas MP3 para baixar e ouvir offline: no carro, na cozinha, na caminhada. Sem tela, sem anúncio e sem depender de sinal.</p>
+      <form id="lp-form" method="POST" action="https://b432dfa1.sibforms.com/serve/MUIFAGw-hv8rWLAAWQ0fQx6mrMZEP3CKhYI2Adhwu_ebw4WTbs1LwGbrYG7CPZvhR67YCKRfy94nh-sqwqh6uUsoJF4Lr84PKI-RryJ8kUa5ZLKHJ7RxOMwTB8hOVqIajhCTnJyIVgrYz8FmzkYleK18fjkiU3fFzchFXq_7qnPMTISNKdpXY_zTXZa2ICmNK0wChBKTEQ8GEDEBmA==" data-type="subscription">
+        <div class="campo">
+          <label for="JOB_TITLE">Seu nome</label>
+          <input class="input" type="text" id="JOB_TITLE" name="JOB_TITLE" maxlength="200" autocomplete="given-name" placeholder="Como quer ser chamada" required>
+        </div>
+        <div class="campo">
+          <label for="EMAIL">Seu e-mail</label>
+          <input class="input" type="email" id="EMAIL" name="EMAIL" autocomplete="email" placeholder="voce@exemplo.com" required>
+        </div>
+        <label class="optin">
+          <input type="checkbox" value="1" id="OPT_IN" name="OPT_IN" required>
+          <span>Quero receber o audiolivro e as novidades do autor por e-mail.</span>
+        </label>
+        <button type="submit" class="btn solid full">Receber o audiolivro grátis</button>
+        <input type="text" name="email_address_check" value="" class="input--hidden" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <input type="hidden" name="locale" value="pt">
+        <p class="lp-privacy">Seu e-mail não é compartilhado com ninguém e você sai da lista quando quiser, em um clique.</p>
+        <input type="hidden" name="ORIGEM" value="romance-historico">
+      </form>
+    </div>
+  </div>
+</section>
 </main>
 </body>
 </html>
