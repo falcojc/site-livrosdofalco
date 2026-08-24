@@ -7,6 +7,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("newsletter");
   eleventyConfig.addPassthroughCopy("audiolivro");
   eleventyConfig.addPassthroughCopy("arquetipos");
+  eleventyConfig.addPassthroughCopy("romance-historico");
   eleventyConfig.addPassthroughCopy("fonts");
   eleventyConfig.addPassthroughCopy("covers");
   eleventyConfig.addPassthroughCopy("personagens");
