@@ -133,6 +133,37 @@
     .genero{padding:44px 0;}
     .grid-genero{grid-template-columns:1fr;gap:16px;}
   }
+
+  /* FECHO */
+  .cena-solta{width:min(100%,620px);margin:0 auto 26px;border-radius:3px;}
+  .fecho-cta{padding:64px 0 72px;text-align:center;border-top:1px solid var(--card-border);}
+  .fecho-cta h2{font-size:clamp(24px,3vw,34px);margin-bottom:14px;}
+  .fecho-cta .sec-lead{margin:0 auto 28px;}
+
+  /* FOOTER */
+  .brand{font-family:'Cinzel',serif;font-weight:700;font-size:19px;letter-spacing:.12em;color:var(--text);}
+  .brand span{color:var(--gold);}
+  .social-links{display:flex;gap:12px;}
+  .social-links a{width:38px;height:38px;display:flex;align-items:center;justify-content:center;border:1px solid var(--gold);border-radius:4px;color:var(--gold-bright);transition:background .2s,color .2s,border-color .2s;}
+  .social-links a:hover{background:var(--gold);border-color:var(--gold);color:var(--bg);}
+  .social-links svg{width:18px;height:18px;}
+  footer{padding:56px 0 40px;background:var(--bg-alt);border-top:1px solid var(--card-border);}
+  .footer-grid{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:28px;}
+  footer p{color:var(--text-muted);font-size:16px;max-width:420px;margin-top:12px;}
+  footer .credit{font-size:14px;color:#8a7f68;margin-top:10px;}
+  footer .social-links{margin-top:18px;}
+  .foot-links{display:flex;gap:22px;flex-wrap:wrap;}
+  .foot-links a{font-size:14px;color:var(--text-muted);transition:color .2s;}
+  .foot-links a:hover{color:var(--gold-bright);}
+  .foot-links a.current{color:var(--gold-bright);}
+  footer .affiliate-note{font-size:12.5px;color:#8a7f68;line-height:1.55;margin:26px auto 0;padding-top:18px;border-top:1px solid rgba(111,101,82,.28);max-width:1180px;text-align:center;}
+
+  /* MOTION */
+  .js .porta,.js .omni-card,.js .col-genero{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease;}
+  .js .porta.is-visible,.js .omni-card.is-visible,.js .col-genero.is-visible{opacity:1;transform:none;}
+  @media (prefers-reduced-motion:reduce){
+    .js .porta,.js .omni-card,.js .col-genero{opacity:1;transform:none;transition:none;}
+  }
 </style>
 <script>document.documentElement.classList.add('js');</script>
 <script type="application/ld+json">
@@ -339,7 +370,63 @@
   </div>
 </section>
 
+<section class="fecho-cta">
+  <div class="wrap">
+    <!-- CENA DO AUDIOLIVRO: ver nota abaixo. Enquanto o arquivo nao existir,
+         deixar a secao sem imagem. Nunca cair no original de 2816px. -->
+    <h2>Comece ouvindo, sem pagar nada</h2>
+    <p class="sec-lead">O audiolivro de O Comandante inteiro, 1h51 em 23 faixas para baixar. Se a história te pegar, os outros trinta títulos estão a um clique.</p>
+    <a class="btn solid" href="#comecar">Receber o audiolivro grátis</a>
+  </div>
+</section>
+
 </main>
+<footer>
+  <div class="wrap footer-grid">
+    <div>
+      <div class="brand">DOMENICO <span>FALCO</span></div>
+      <p>Ficção histórica que entrelaça fatos reais a personagens inesquecíveis, do Japão imperial aos sete mares.</p>
+      <p class="credit">Arte das capas: Júlio Cesar Falco &nbsp;·&nbsp; Revisão: Marylin Falco</p>
+      <p class="credit" style="font-size:12px;">Produzido por <a href="https://falcostrategy.com.br/?utm_source=livrosdofalco&amp;utm_medium=referral&amp;utm_campaign=rodape-credito&amp;utm_content=romance-historico" target="_blank" rel="noopener" style="color:var(--gold-bright,#e6c467);text-decoration:underline;text-underline-offset:2px;">FalcoStrategy.com.br</a></p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/livrosdofalco/" target="_blank" rel="noopener" aria-label="Domenico Falco no Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg>
+        </a>
+        <a href="https://www.tiktok.com/@livros_dofalco" target="_blank" rel="noopener" aria-label="Domenico Falco no TikTok">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.82c-1.12-1.08-1.67-2.64-1.75-4.17H11.9v14.4c0 1.75-1.42 3.19-3.19 3.19-1.76 0-3.19-1.44-3.19-3.19 0-1.76 1.43-3.2 3.19-3.2.35 0 .68.05 1 .16v-3.5a6.7 6.7 0 0 0-1-.08c-3.68 0-6.66 2.98-6.66 6.66S5.03 22.75 8.71 22.75s6.66-2.98 6.66-6.66V9.31c1.31.94 2.91 1.49 4.63 1.49V7.29c-1.28 0-2.47-.41-3.4-1.11-.03-.02-.06-.05-.09-.07l.09-.29z"></path></svg>
+        </a>
+        <a href="https://www.youtube.com/@livrosdofalco" target="_blank" rel="noopener" aria-label="Domenico Falco no YouTube">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.55A3.02 3.02 0 0 0 .5 6.19 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.81 3.02 3.02 0 0 0 2.12 2.14C4.5 20.5 12 20.5 12 20.5s7.5 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.81zM9.6 15.6V8.4l6.4 3.6z"></path></svg>
+        </a>
+      </div>
+    </div>
+    <div class="foot-links">
+      <a href="https://www.amazon.com.br/Livros-DOMENICO-FALCO/s?rh=n%3A6740748011%2Cp_27%3ADOMENICO%2BFALCO&amp;tag=falcojc-20&amp;ascsubtag=romance-historico-rodape-loja" target="_blank" rel="noopener">Loja na Amazon</a>
+      <a href="/#sobre">Sobre o Autor</a>
+      <a href="/#obras">Obras</a>
+      <a href="/o-mestre-das-tormentas">O Mestre das Tormentas</a>
+      <a href="/arquetipos/">Arquétipos</a>
+      <a href="/romance-historico/" class="current">Romance histórico</a>
+      <a href="/blog">Blog</a>
+      <a href="/newsletter">Newsletter</a>
+    </div>
+  </div>
+  <p class="affiliate-note">Como Associado da Amazon, eu ganho com compras qualificadas. Os links para a Amazon nesta página são links de afiliado.</p>
+</footer>
+<script>
+(function(){
+  var alvos = document.querySelectorAll('.porta, .omni-card, .col-genero');
+  function mostrarTudo(){ alvos.forEach(function(el){ el.classList.add('is-visible'); }); }
+  if (!('IntersectionObserver' in window)) { mostrarTudo(); return; }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); } });
+  }, {rootMargin: '0px 0px -10% 0px'});
+  alvos.forEach(function(el){ io.observe(el); });
+  // Rede de seguranca: aba em segundo plano nao compoe frames, entao o
+  // IntersectionObserver pode nunca disparar e a pagina abriria vazia.
+  setTimeout(mostrarTudo, 2000);
+})();
+</script>
 <!-- PROMOCAO GRATIS: para ligar, trocar <body> por <body class="promo-on"> e
      ajustar a data dentro de [data-promo-fim] e o ASIN do CTA se o titulo em
      promocao nao for a Saga Italiana.
