@@ -263,6 +263,29 @@ git commit -m "LP /romance-historico: heroi e formulario de captura"
 - Consumes: `.btn` e as variáveis de cor da Task 2.
 - Produces: a âncora `#portas` (referenciada no herói) e a classe `.book-card`, que o `analytics.js` usa para disparar `click_to_amazon`.
 
+**Sobre as imagens destas fichas, decidido em 24/08:** cada porta leva uma **cena**, não a
+capa do livro. A tese da página é "não pode ser catálogo", e capa de livro é a linguagem de
+catálogo; cena é linguagem editorial. A capa continua aparecendo na seção do omnibus e na
+própria PDP da Amazon, então o produto não fica sem rosto.
+
+As três cenas **já estão geradas** em `romance-historico/media/`, convertidas por
+`.claude/perf/gera_cenas_romance_historico.py` a partir das artes originais em
+`2. Produto/StoryTelling/Romance Histórico`. Os originais são PNG e JPG de 2816x1536 pesando
+de 3 a 9 MB; a saída é WebP de 800px:
+
+| Cena | Origem | Peso final |
+|---|---|---|
+| `o-siciliano-cafezal.webp` | Imagem 2 (O Trabalho e a Terra Cafezal) | 78 KB |
+| `mestre-das-tormentas-naufragio.webp` | Cap 9.3 O Silêncio do Mar | 44 KB |
+| `amor-e-odio-clandestino.webp` | O Romance Clandestino (Paco e Carmen) | 32 KB |
+
+154 KB no total, contra 20,8 MB de origem. **Não usar os originais em hipótese alguma**, e não
+regerar com largura maior que 800px: a ficha renderiza a 367px numa grade de 3 colunas, e 800
+já é o dobro, o suficiente para tela retina.
+
+O `vercel.json` ganhou a regra de cache de um ano para `/romance-historico/media/`, no mesmo
+padrão de `/o-mestre-das-tormentas/media/`.
+
 **Contexto que o implementador precisa:** a classe `book-card` não é decorativa. O `analytics.js` (linha 36) faz `link.closest('.book-card')` para descobrir de qual obra veio o clique. Sem essa classe no elemento que envolve o link, o evento vai para o GA4 sem identificar a obra. E como o `h3` de cada ficha é o nome do livro, o relatório passa a mostrar qual porta converte.
 
 - [ ] **Step 1: Escrever o markup das três portas**
@@ -279,7 +302,7 @@ Os textos abaixo já foram conferidos contra as fontes autorizadas. **Não reesc
     <div class="grid-portas">
 
       <article class="book-card porta">
-        <img class="capa" src="/covers/o-siciliano.webp" alt="Capa de O Siciliano" width="289" height="436" loading="lazy" decoding="async">
+        <img class="cena" src="/romance-historico/media/o-siciliano-cafezal.webp" alt="Colheita de café numa fazenda brasileira do início do século XX" width="800" height="436" loading="lazy" decoding="async">
         <p class="ambient">Sicília e Brasil, 1880 a 1943</p>
         <p class="perfil">O épico de família</p>
         <h3>O Siciliano</h3>
@@ -288,7 +311,7 @@ Os textos abaixo já foram conferidos contra as fontes autorizadas. **Não reesc
       </article>
 
       <article class="book-card porta">
-        <img class="capa" src="/covers/mestre-das-tormentas.webp" alt="Capa de O Mestre das Tormentas" width="400" height="600" loading="lazy" decoding="async">
+        <img class="cena" src="/romance-historico/media/mestre-das-tormentas-naufragio.webp" alt="Navio naufragando em tempestade, com um bote salva-vidas ao lado" width="800" height="446" loading="lazy" decoding="async">
         <p class="ambient">Sete mares, a partir de 1700</p>
         <p class="perfil">A aventura do desconhecido</p>
         <h3>O Mestre das Tormentas</h3>
@@ -297,7 +320,7 @@ Os textos abaixo já foram conferidos contra as fontes autorizadas. **Não reesc
       </article>
 
       <article class="book-card porta">
-        <img class="capa" src="/covers/amor-e-odio.webp" alt="Capa de Amor e Ódio" width="289" height="436" loading="lazy" decoding="async">
+        <img class="cena" src="/romance-historico/media/amor-e-odio-clandestino.webp" alt="Casal abraçado sob a chuva, ele em uniforme militar, sob um arco de pedra" width="800" height="436" loading="lazy" decoding="async">
         <p class="ambient">Andaluzia, anos 1930</p>
         <p class="perfil">O amor em tempo de guerra</p>
         <h3>Amor e Ódio</h3>
@@ -322,6 +345,8 @@ A sobrelinha de ambientação (`.ambient`) vem **antes** do rótulo de perfil de
   .grid-portas{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
   .porta{background:var(--card);border:1px solid var(--card-border);border-radius:3px;padding:28px 24px;display:flex;flex-direction:column;}
   .capa{width:132px;height:auto;border:1px solid var(--card-border);border-radius:2px;margin-bottom:20px;}
+  /* Cena: largura total do card, sangrando ate a borda interna do padding */
+  .cena{width:calc(100% + 48px);margin:-28px -24px 20px;height:auto;border-radius:3px 3px 0 0;}
   .ambient{font-family:'Cinzel',serif;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;}
   .perfil{font-size:15px;color:var(--cost);font-style:italic;margin-bottom:4px;}
   .porta h3{font-size:24px;margin-bottom:14px;}
@@ -653,11 +678,36 @@ Ela não repete o formulário: rola de volta para o único que existe.
 ```html
 <section class="fecho-cta">
   <div class="wrap">
+    <!-- CENA DO AUDIOLIVRO: ver nota abaixo. Enquanto o arquivo nao existir,
+         deixar a secao sem imagem. Nunca cair no original de 2816px. -->
     <h2>Comece ouvindo, sem pagar nada</h2>
     <p class="sec-lead">O audiolivro de O Comandante inteiro, 1h51 em 23 faixas para baixar. Se a história te pegar, os outros trinta títulos estão a um clique.</p>
     <a class="btn solid" href="#comecar">Receber o audiolivro grátis</a>
   </div>
 </section>
+```
+
+**Cena do audiolivro, pendência com dono definido.** O Julio vai colocar em
+`2. Produto/StoryTelling/Romance Histórico` as artes do podcast de O Comandante, do romance de
+Dante com Helga. Em 24/08 elas ainda não tinham chegado ao disco. Quando chegarem:
+
+1. Acrescentar a entrada ao dicionário `CENAS` em
+   `.claude/perf/gera_cenas_romance_historico.py`, com o slug `o-comandante-dante-helga`.
+2. Rodar o script. Ele é idempotente e não toca nos originais.
+3. Inserir a imagem no lugar do comentário acima:
+
+```html
+    <img class="cena cena-solta" src="/romance-historico/media/o-comandante-dante-helga.webp" alt="Dante e Helga, personagens do romance O Comandante" width="800" height="436" loading="lazy" decoding="async">
+```
+
+**Ela vai aqui, no fechamento, e nunca no herói.** O elemento LCP desta página é texto, que
+chega junto com o HTML. Pôr uma cena acima da dobra transfere o LCP para uma imagem e reabre a
+armadilha do preload que já custou uma rodada de correção na home em 24/08.
+
+CSS da variante solta (sem sangria, porque não está dentro de um card):
+
+```css
+  .cena-solta{width:min(100%,620px);margin:0 auto 26px;border-radius:3px;}
 ```
 
 - [ ] **Step 2: CSS do fechamento**
