@@ -20,11 +20,20 @@ import sys
 LARGURA = 800
 QUALIDADE = 80  # escala do libwebp: 0 a 100
 
-# arquivo de origem -> nome de saida (slug da obra)
+# arquivo de origem -> (slug da obra, crop opcional "w:h:x:y" na resolucao original)
+# Troca de 24/08 (segunda rodada): as tres cenas originais nao tinham estilo em
+# comum (ilustracao quente, CGI escuro de naufragio, still cinematografico) e
+# duas delas nao mostravam pessoa nenhuma. Trocadas por arte com personagem em
+# cena, mais parecido com o padrao retrato do /arquetipos.
 CENAS = {
-    "Imagem 2 (O Trabalho e a Terra  Cafezal).png": "o-siciliano-cafezal",
-    "Cap 9.3 - O Silêncio do Mar.png":              "mestre-das-tormentas-naufragio",
-    "O Romance Clandestino (Paco e Carmen sob a Tempestade).jpg": "amor-e-odio-clandestino",
+    # Matteo mora em 2. Produto/Personagens, nao em StoryTelling/Romance Historico
+    # (unico caso: fica em pasta diferente das outras tres) -- sobe 2 niveis
+    "../../Personagens/Matteo, O Patriarca (O Siciliano).png": ("o-siciliano-matteo", None),
+    # Original e retrato (1536x2730). Crop pre-scale pra paisagem 1536x1050
+    # (cabeca ate a coxa + fogueira + mar), testado visualmente antes de entrar.
+    "3 - Adulto 3 - John Storm.png": ("mestre-das-tormentas-fogueira", "1536:1050:0:830"),
+    "O Romance Clandestino (Paco e Carmen sob a Tempestade).jpg": ("amor-e-odio-clandestino", None),
+    "Dante e Helga - O Passeio e a Conexão no Mar.png": ("o-comandante-dante-helga", None),
 }
 
 
@@ -49,7 +58,7 @@ def main():
         sys.exit(f"pasta de origem nao encontrada: {origem}")
 
     total_antes = total_depois = 0
-    for arquivo, slug in CENAS.items():
+    for arquivo, (slug, crop) in CENAS.items():
         entrada = os.path.join(origem, arquivo)
         if not os.path.isfile(entrada):
             print(f"  AUSENTE, pulando: {arquivo}")
@@ -57,10 +66,14 @@ def main():
         saida = os.path.join(destino, f"{slug}.webp")
         # -vf scale: altura -2 mantem a proporcao e forca numero par
         # -compression_level 6: mais lento na geracao, menor no resultado
+        # crop opcional roda ANTES do scale, pra nao pagar peso de pixel que
+        # nunca aparece na tela (o original fica intocado de qualquer jeito)
+        filtro = f"crop={crop}," if crop else ""
+        filtro += f"scale={LARGURA}:-2:flags=lanczos"
         cmd = [
             "ffmpeg", "-y", "-loglevel", "error",
             "-i", entrada,
-            "-vf", f"scale={LARGURA}:-2:flags=lanczos",
+            "-vf", filtro,
             "-c:v", "libwebp", "-quality", str(QUALIDADE), "-compression_level", "6",
             saida,
         ]
