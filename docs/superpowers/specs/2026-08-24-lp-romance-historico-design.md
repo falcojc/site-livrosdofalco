@@ -1,8 +1,9 @@
 # LP /romance-historico · Design
 
 Data: 24/08/2026
-Status: aguardando revisão do Julio
+Status: **aprovado pelo Julio em 24/08**, pronto para virar plano de implementação
 Rota: `/romance-historico/`
+Prazo: sobe assim que ficar pronta. Referências de calendário: promoção 31/08, Bienal 07/09
 
 ---
 
@@ -75,15 +76,38 @@ esperando outro resultado.
 **Decisão: a captura de e-mail é a ação principal da página. A Amazon é a saída secundária,
 para quem já decidiu.**
 
-### 2.4. A Saga Italiana estará grátis de 26 a 30/08
+### 2.4. Calendário de promoção, fechado em 24/08
 
-A ficha do KDP é explícita: o omnibus foi montado *para* a promoção grátis de 26 a 30/08. O
-produto que a seção do degrau de ticket vende a R$ 19,90 custa R$ 0,00 nessa janela. A seção
-precisa de dois estados.
+O KDP Select dá, por período de 90 dias e **por título**, uma escolha entre Promoção de
+Livro Grátis (até **5 dias**) ou Oferta Relâmpago (até 7 dias, desconto e não grátis). As
+duas são mutuamente exclusivas no mesmo ciclo, e **a Oferta Relâmpago não existe na
+`amazon.com.br`**: ela só roda em `amazon.com` e `amazon.co.uk`. No Brasil, a única
+ferramenta disponível é a promoção grátis de 5 dias.
 
-O objetivo da promoção é **avaliação**, não receita (grátis não paga royalty). Se a página,
+Como o ciclo é por título e não por conta, dois títulos cobrem dois objetivos que um só não
+cobriria:
+
+| Título | Janela | Dias | Serve para |
+|---|---|---|---|
+| **A Saga Italiana** | 31/08 (seg) a 04/09 (sex) | 5 | Colher avaliação e gerar número antes das reuniões com editoras |
+| **O Siciliano** | 05/09 (sáb) a 09/09 (qua) | 5 | Cobrir o dia da Bienal (07/09) e ser o que o Julio aponta na feira |
+
+Ao agendar no KDP, **a data de término é exclusiva**: para a Saga terminar em 04/09, digitar
+05/09. Conferir antes o ciclo de Select de cada título, porque dias não usados evaporam na
+virada do período, e os dois títulos entraram no Select em datas diferentes (a Saga em
+agosto de 2026, O Siciliano desde 2024).
+
+O Siciliano grátis na feira também deixa a value ladder redonda: pega grátis, gosta, sobe
+para o omnibus a R$ 19,90. E ele é a única obra do catálogo com 4,0★, então avaliação nova
+ali compõe sobre o que já existe em vez de começar do zero.
+
+**O objetivo da promoção é avaliação, não receita** (grátis não paga royalty). Se a página,
 o post e o e-mail terminarem em "baixe grátis" em vez de "baixe e, se gostar, avalie", o
 único ativo de prova social construível sem dinheiro é queimado.
+
+**Consequência para a página:** a seção do degrau de ticket precisa de dois estados, e ao
+contrário do que a v1 deste spec dizia, **o estado de promoção vai ser usado**, duas vezes,
+já na primeira quinzena de vida da página.
 
 ### 2.5. Seis erros factuais no rascunho de origem, que não podem entrar na página
 
@@ -169,7 +193,7 @@ O Asilo não sai do site. Continua em `/categoria/submundo-traicoes-misterios/`.
 | Selo de estrelas | Não, na v1 | 1 avaliação por obra. Reavaliar depois da colheita da promoção |
 | Definição do gênero | Desce para depois das portas | Obstáculo para o pago de 4s. Indiferente para a IA, que lê a página inteira |
 | Tag de afiliado | Sim, `falcojc-20` mais `ascsubtag` | Padrão do site. Divulgação já está no rodapé desde 16/08 |
-| Data de publicação | Sem data. Gatilho: quando a colheita de avaliações da promoção for medida | Decisão do Julio. O gatilho existe para a página não virar limbo |
+| Data de publicação | Sobe assim que ficar pronta, sem esperar avaliação | Assimetria de reversibilidade: o selo de estrelas entra depois com um edit de uma linha, o tempo de indexação no Search Console não se recupera. A página precisa já estar indexada quando a promoção rodar (31/08) e na Bienal (07/09) |
 | Enquanto ela não existe | Trocar a URL final do Ads de `#obras` para `/categoria/raizes-sacrificio-familia/` | Ganho parcial, custo zero, dois cliques no painel |
 
 ---
@@ -238,16 +262,24 @@ século, comparação entre as três famílias.
 
 Ancoragem: **R$ 29,70 comprados avulsos (3 × R$ 9,90), R$ 19,90 na edição especial.**
 
-**Dois estados.** Como a página só entra depois da promoção de 26 a 30/08 (ver a decisão de
-timing na seção 3), o estado "promoção ativa" **não serve para essa janela**: ele existe
-para os ciclos seguintes, já que o KDP Select libera 5 dias grátis a cada 90 dias. A v1 nasce
-no estado normal, com o estado de promoção construído e desligado, para ser ligado por
-edição de uma linha quando o próximo ciclo for agendado.
+**Dois estados, e os dois vão ser usados já na primeira quinzena** (ver 2.4). O estado de
+promoção precisa ser uma troca de uma linha, não uma reescrita, porque ele liga e desliga
+quatro vezes em dez dias:
 
-- *Estado normal (v1, no ar):* CTA `Quero a Edição Especial`, com a ancoragem de preço.
-- *Estado de promoção (construído, desligado):* selo "grátis até \<data\>", e o CTA vira
-  `Baixar grátis e, se gostar, avaliar`. O pedido de avaliação é parte do CTA, não um
-  rodapé.
+| Data | Estado | Título grátis |
+|---|---|---|
+| até 30/08 | normal | |
+| 31/08 a 04/09 | promoção | A Saga Italiana (esta seção) |
+| 05 a 09/09 | promoção | O Siciliano (a porta 1, seção 2) |
+| a partir de 10/09 | normal | |
+
+- *Estado normal:* CTA `Quero a Edição Especial`, com a ancoragem de preço (R$ 29,70 avulsos
+  contra R$ 19,90).
+- *Estado de promoção:* selo "grátis até \<data\>", e o CTA vira `Baixar grátis e, se
+  gostar, avaliar`. **O pedido de avaliação é parte do CTA, não um rodapé.**
+
+Note que a segunda janela liga o estado de promoção na **porta 1** (O Siciliano), não nesta
+seção. A implementação precisa suportar o selo nos dois lugares.
 
 Nota de conferência: a contagem de 417 páginas é a paginação do KDP, que é inflada (a
 contagem por palavras dá ~295). Usar 417 na página é coerente com o que a loja mostra, mas
@@ -290,7 +322,57 @@ confirmar que a trava não suprime a conversão de quem já veio pela `/audioliv
 
 ---
 
-## 5. SEO e técnico
+## 5. O terceiro público: Bienal do Livro, 07/09
+
+Até aqui a página tinha dois públicos: tráfego pago de busca e orgânico. A Bienal cria um
+terceiro, com comportamento diferente dos dois: **pessoa de pé no Anhembi, celular na mão,
+que acabou de conversar com o Julio.**
+
+**Dimensionamento: nenhum.** É o primeiro evento, sem stand, só circulação e boca a boca.
+Não há base para estimar leads, e a página não deve ser redesenhada em cima de um número
+que não existe. A Bienal **ganha uma porta de entrada na página, não um redesenho dela.**
+
+**O QR aponta para a LP, não para a Amazon.** Se ele levasse direto à loja, o evento não
+deixaria nada: sem e-mail, sem medição própria e com o clique dissolvido num relatório de
+afiliado que já mostrou 68 cliques e 0 pedidos. Apontando para a LP, a conversa presencial
+vira lead, e a Amazon continua a um clique de distância dentro da página.
+
+**URL do QR:**
+`https://www.livrosdofalco.com.br/romance-historico/?utm_source=bienal&utm_medium=qrcode&utm_campaign=bienal2026`
+
+Sem UTM, o tráfego da feira entra no GA4 como direto e se mistura com o resto, e não há como
+saber o que o evento rendeu.
+
+**A arte salva na galeria de fotos do celular é a decisão certa** (rede do Anhembi em dia de
+Bienal é péssima) e resolve o problema de *mostrar* o QR. Mas ela não resolve o do outro
+lado: quem escaneia ainda depende da própria rede para abrir a página. Duas consequências de
+projeto:
+
+1. O peso da página deixa de ser desejável e vira requisito. Reforça o padrão `/arquetipos`
+   e mata qualquer ideia de vídeo nesta LP.
+2. **A LP precisa funcionar como destino frio.** Em feira é normal a pessoa escanear, o
+   celular guardar o link e ela abrir só à noite, em casa, fora do contexto da conversa. A
+   página não pode pressupor que o visitante lembra quem é Domenico Falco.
+
+### Sobre o promocode "Bienal10off"
+
+**Não é possível, e não é limitação do plano: é limitação da plataforma.** O KDP não oferece
+cupom nem código promocional para autor de eBook (cupons existem no Seller Central, para
+produto físico, que é outro programa). E a Oferta Relâmpago, que seria o mecanismo de
+desconto mais próximo, **não existe na `amazon.com.br`**: roda só em `amazon.com` e
+`amazon.co.uk`.
+
+**A boa notícia é que o desconto da Bienal já existe e é maior que 10%: é 100%.** O Siciliano
+estará grátis de 05 a 09/09, e o dia 07/09 cai dentro. Quem o Julio encontrar na feira pega
+o livro de graça, sem código, sem fricção e sem depender de nada além do QR. O material
+impresso deve dizer exatamente isso.
+
+Se em algum momento fizer sentido dar algo que **só** o público da feira tem, o lugar é o
+site, não a Amazon, porque ali o Julio controla a entrega. Fora do escopo desta v1.
+
+---
+
+## 6. SEO e técnico
 
 **Head**
 
@@ -331,7 +413,7 @@ resto do site é pelo rodapé e pelo sitemap, igual à `/arquetipos`.
 
 ---
 
-## 6. O que fica de fora, de propósito
+## 7. O que fica de fora, de propósito
 
 - **Selo de estrelas e contagem de avaliações.** Ver 2.1. Reavaliar na v2.
 - **Grade com as 30 obras.** É o que a página existe para não ser.
@@ -348,12 +430,13 @@ resto do site é pelo rodapé e pelo sitemap, igual à `/arquetipos`.
 
 ---
 
-## 7. Riscos, e o que reavaliar depois
+## 8. Riscos, e o que reavaliar depois
 
 | Risco | Sinal de que aconteceu | O que fazer |
 |---|---|---|
 | Perfil de leitor exige autoclassificação, e o pago fica 4s | Taxa de clique nas três fichas fica achatada e igual | Testar troca dos rótulos de perfil por cenário histórico puro |
-| Página sem data vira limbo | Passar a colheita da promoção sem a página existir | O gatilho combinado destrava: colheita medida, página entra |
+| A página não fica pronta antes de 31/08 e perde a janela de indexação | Search Console sem a URL quando a promoção começa | Publicar mesmo incompleta é preferível a publicar tarde: o que falta entra por edição, o tempo de indexação não volta |
+| Bienal não gera volume nenhum | Zero sessões com `utm_source=bienal` em 07/09 | Custo já é baixo (uma arte e um QR). Não redesenhar a página em cima disso, ver seção 5 |
 | A promoção não gera avaliação | Contagem de avaliações não sobe até 05/09 | A v2 não ganha selo, e a prova social tem que vir de outro lugar (Skoob, grupos de Kindle) |
 | Amor e Ódio é curto demais para o gênero (87p) | Porta 3 recebe clique e a PDP não segura | Trocar por A Vila (101p, 5,0★, ancora "segunda guerra mundial romance", tier A), aceitando que ela se aproxima do tema da porta 1 |
 | Conversão continua 0% na PDP | Leads sobem, vendas seguem em zero | Confirma que o gargalo é a PDP, não o site. Nada na LP resolve isso |
