@@ -95,6 +95,29 @@
     .portas{padding:44px 0;}
     .grid-portas{grid-template-columns:1fr;gap:18px;}
   }
+
+  /* OMNIBUS */
+  .omnibus{padding:64px 0;}
+  .omnibus h2{font-size:clamp(26px,3.2vw,38px);margin:12px 0 16px;}
+  .omni-card{background:var(--card);border:1px solid var(--card-border);border-radius:3px;padding:32px 28px;max-width:760px;}
+  .capa-omni{width:168px;}
+  .omni-livros{list-style:none;margin-bottom:22px;}
+  .omni-livros li{padding:10px 0;border-bottom:1px solid var(--card-border);}
+  .omni-livros li:last-child{border-bottom:0;}
+  .omni-livros strong{font-family:'Cinzel',serif;font-size:18px;color:var(--gold-bright);}
+  .omni-livros span{display:block;font-size:15px;color:var(--text-muted);margin-top:2px;}
+  .omni-extra{font-size:16px;color:var(--text-muted);margin-bottom:24px;}
+  .preco{font-size:18px;margin-bottom:22px;}
+  .preco .de{color:var(--text-muted);text-decoration:line-through;margin-right:10px;}
+  .preco .por{color:var(--gold-bright);font-size:22px;}
+
+  /* Estado de promocao: desligado por padrao, ligado por .promo-on no body */
+  .selo-promo{display:none;}
+  .cta-promo{display:none;}
+  body.promo-on .selo-promo{display:inline-block;background:var(--gold);color:#0b0908;font-family:'Cinzel',serif;font-size:14px;letter-spacing:.08em;padding:8px 14px;border-radius:2px;margin-bottom:20px;}
+  body.promo-on .preco{display:none;}
+  body.promo-on .cta-normal{display:none;}
+  body.promo-on .cta-promo{display:inline;}
 </style>
 <script>document.documentElement.classList.add('js');</script>
 </head>
@@ -174,6 +197,39 @@
   </div>
 </section>
 
+<section class="omnibus">
+  <div class="wrap">
+    <p class="eyebrow">O passo seguinte</p>
+    <h2>A Saga Italiana</h2>
+    <p class="sec-lead">Se O Siciliano te pegou, ele é um terço de uma história maior. A edição especial reúne três romances completos, de três famílias que não se cruzam, cobrindo quase um século da imigração italiana para as Américas.</p>
+
+    <div class="book-card omni-card">
+      <img class="capa capa-omni" src="/covers/a-saga-italiana.webp" alt="Capa de A Saga Italiana, edição especial da trilogia" width="400" height="598" loading="lazy" decoding="async">
+      <ul class="omni-livros">
+        <li><strong>Os Dois Irmãos</strong> <span>Campânia a Mendoza, a partir de 1860</span></li>
+        <li><strong>O Siciliano</strong> <span>Sicília e Brasil, 1880 a 1943</span></li>
+        <li><strong>Os Italianos</strong> <span>Calábria, Nova York e São Paulo, 1892 ao século XXI</span></li>
+      </ul>
+      <p class="omni-extra">A edição traz conteúdo que não está nos volumes avulsos: prefácio do autor, uma linha do tempo que encaixa as três histórias no mesmo século e uma comparação entre as três famílias.</p>
+
+      <p class="preco"><span class="de">R$ 29,70 comprados avulsos</span> <strong class="por">R$ 19,90 na edição especial</strong></p>
+      <p class="selo-promo">Grátis na Amazon até <span data-promo-fim>04 de setembro</span></p>
+
+      <a class="btn solid" href="https://www.amazon.com.br/dp/B0HFPS4K6R?tag=falcojc-20&amp;ascsubtag=romance-historico-saga-italiana" target="_blank" rel="noopener">
+        <span class="cta-normal">Quero a Edição Especial</span>
+        <span class="cta-promo">Baixar grátis e, se gostar, avaliar</span>
+      </a>
+    </div>
+  </div>
+</section>
+
 </main>
+<!-- PROMOCAO GRATIS: para ligar, trocar <body> por <body class="promo-on"> e
+     ajustar a data dentro de [data-promo-fim] e o ASIN do CTA se o titulo em
+     promocao nao for a Saga Italiana.
+     Calendario acordado em 24/08:
+       31/08 a 04/09  A Saga Italiana (B0HFPS4K6R), fim "04 de setembro"
+       05/09 a 09/09  O Siciliano     (B0D9WS272F), fim "09 de setembro"
+     Fora dessas janelas o body fica sem a classe. -->
 </body>
 </html>
