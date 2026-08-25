@@ -7,6 +7,15 @@ gtag('js', new Date());
 // Os eventos continuam sendo empilhados no dataLayer, o que permite testar sem enviar nada.
 if (/(^|\.)livrosdofalco\.com\.br$/.test(location.hostname)) {
   gtag('config', 'G-R2ZQZ51DEK');
+
+  // Microsoft Clarity: heatmap, rolagem e gravacao de sessao. Fica DENTRO do
+  // mesmo guard do GA4 de proposito: preview e dev local nao podem gerar
+  // sessao gravada, senao o heatmap conta os nossos proprios cliques de teste.
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "y7n2in2vy0");
 }
 
 document.addEventListener('click', function(e){
