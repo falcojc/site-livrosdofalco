@@ -180,10 +180,18 @@
   .portas h2{font-size:clamp(26px,3.2vw,38px);margin:12px 0 16px;}
   .sec-lead{font-size:18px;color:var(--text-muted);max-width:52em;margin-bottom:38px;}
   .grid-portas{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;align-items:start;}
-  .porta{background:var(--card);border:1px solid var(--card-border);border-radius:3px;padding:28px 24px;display:flex;flex-direction:column;}
+  .porta{background:var(--card);border:1px solid var(--card-border);border-radius:3px;display:flex;flex-direction:column;overflow:hidden;}
   .capa{width:132px;height:auto;border:1px solid var(--card-border);border-radius:2px;margin-bottom:20px;}
-  /* Cena: largura total do card, sangrando ate a borda interna do padding */
-  .cena{width:calc(100% + 48px);margin:-28px -24px 20px;height:auto;border-radius:3px 3px 0 0;}
+  /* Cena: mesmo padrao dos covers da home/categoria (.book-cover) -- caixa com
+     aspect-ratio fixo e overflow:hidden, img em object-fit:cover. Antes era
+     img direto com margem negativa pra sangrar o padding do card, mas o
+     max-width:100% global (regra "img" no :root) trava a largura de volta e
+     sobra uma faixa sem imagem na borda. A caixa evita essa classe de bug e
+     garante a mesma proporcao (3:2) nas tres cenas, nao a proporcao nativa de
+     cada foto (que variava de 1.46 a 1.83). */
+  .cena-wrap{aspect-ratio:3/2;overflow:hidden;background:#000;}
+  .cena{width:100%;height:100%;object-fit:cover;display:block;}
+  .porta-body{padding:24px;display:flex;flex-direction:column;flex:1;}
   .ambient{font-family:'Cinzel',serif;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;}
   .perfil{font-size:15px;color:var(--cost);font-style:italic;margin-bottom:4px;}
   .porta h3{font-size:24px;margin-bottom:14px;}
@@ -240,6 +248,12 @@
   @media (max-width:900px){
     .genero{padding:44px 0;}
     .grid-genero{grid-template-columns:1fr;gap:16px;}
+    /* No mobile empilhado, "Romance historico" (a caixa em destaque, o nosso
+       catalogo) vem primeiro que "Romance de epoca" (a comparacao). No
+       desktop lado a lado a ordem de leitura esquerda->direita continua a
+       mesma do HTML (epoca, depois historico) -- so a pilha muda. */
+    .col-genero{order:2;}
+    .col-genero.destaque{order:1;}
   }
   .fecho{font-family:'Cinzel',serif;font-size:clamp(19px,2.4vw,26px);line-height:1.4;color:var(--gold-bright);max-width:24em;}
 
@@ -432,7 +446,7 @@
 <section class="hero">
   <div class="wrap hero-inner">
     <div class="hero-copy">
-      <p class="eyebrow">Romance histórico brasileiro · Obras de Domenico Falco</p>
+      <p class="eyebrow">Romance histórico · Obras de Domenico Falco</p>
       <h1>Até onde você iria pela sua <em>família</em>?<br>E o que essa escolha lhe custaria?</h1>
       <p class="lead">Romance histórico de alta imersão, em que o passado não é cenário decorativo: é o que força pessoas comuns a decisões impossíveis. Guerra, exílio, fome, ocupação. Ninguém sai ileso.</p>
       <a class="quick-nav" href="#portas">Não sabe por onde começar? <strong>Veja as três portas de entrada</strong> <span class="seta" aria-hidden="true">→</span></a>
@@ -512,35 +526,41 @@
   <div class="wrap">
     <p class="eyebrow">Catálogo</p>
     <h2>Por onde começar</h2>
-    <p class="sec-lead">Trinta títulos paralisam. Escolha o chão histórico que te interessa e comece por ele: cada um destes três abre um caminho diferente dentro do mesmo catálogo.</p>
+    <p class="sec-lead">Muitos títulos paralisam. Escolha o chão histórico que te interessa e comece por ele: cada um destes três abre um caminho diferente dentro do mesmo catálogo.</p>
 
     <div class="grid-portas">
 
       <article class="book-card porta">
-        <img class="cena" src="/romance-historico/media/o-siciliano-matteo.webp" alt="Matteo, personagem de O Siciliano, num cafezal ao amanhecer" width="800" height="446" loading="lazy" decoding="async">
+        <div class="cena-wrap"><img class="cena" src="/romance-historico/media/o-siciliano-matteo.webp" alt="Matteo, personagem de O Siciliano, num cafezal ao amanhecer" width="720" height="480" loading="lazy" decoding="async"></div>
+        <div class="porta-body">
         <p class="ambient">Sicília e Brasil, 1880 a 1943</p>
         <p class="perfil">O épico de família</p>
         <h3>O Siciliano</h3>
         <p class="gancho">Uma disputa de terras custa o pai de Matteo. Ele cruza o Atlântico e recomeça do zero nas fazendas de café de Vassouras, no Rio de Janeiro, antes de a família se mudar para São Paulo. Décadas depois, volta à Sicília para acertar o que deixou por resolver.</p>
         <a class="btn" href="https://www.amazon.com.br/dp/B0D9WS272F?tag=falcojc-20&amp;ascsubtag=romance-historico-o-siciliano" target="_blank" rel="noopener">Ler O Siciliano</a>
+        </div>
       </article>
 
       <article class="book-card porta">
-        <img class="cena" src="/romance-historico/media/mestre-das-tormentas-fogueira.webp" alt="John Storm e Marisol numa praia à noite, junto a uma fogueira" width="800" height="546" loading="lazy" decoding="async">
+        <div class="cena-wrap"><img class="cena" src="/romance-historico/media/mestre-das-tormentas-fogueira.webp" alt="John Storm e Marisol numa praia à noite, junto a uma fogueira" width="720" height="480" loading="lazy" decoding="async"></div>
+        <div class="porta-body">
         <p class="ambient">Sete mares, a partir de 1700</p>
         <p class="perfil">A aventura do desconhecido</p>
         <h3>O Mestre das Tormentas</h3>
         <p class="gancho">Filho de uma cozinheira, criado nos becos de Londres. Dado como morto num naufrágio no Pacífico Sul, John Storm ressurge nas águas asiáticas e atravessa a Rota da Seda atrás do único caminho de volta que ainda importa: para casa, e para quem ele deixou para trás.</p>
         <a class="btn" href="https://www.amazon.com.br/dp/B08XYL4QZY?tag=falcojc-20&amp;ascsubtag=romance-historico-mestre-das-tormentas" target="_blank" rel="noopener">Ler O Mestre das Tormentas</a>
+        </div>
       </article>
 
       <article class="book-card porta">
-        <img class="cena" src="/romance-historico/media/amor-e-odio-clandestino.webp" alt="Casal abraçado sob a chuva, ele em uniforme militar, sob um arco de pedra" width="800" height="436" loading="lazy" decoding="async">
+        <div class="cena-wrap"><img class="cena" src="/romance-historico/media/amor-e-odio-clandestino.webp" alt="Casal abraçado sob a chuva, ele em uniforme militar, sob um arco de pedra" width="720" height="480" loading="lazy" decoding="async"></div>
+        <div class="porta-body">
         <p class="ambient">Andaluzia, anos 1930</p>
         <p class="perfil">O amor em tempo de guerra</p>
         <h3>Amor e Ódio</h3>
         <p class="gancho">Uma paixão proibida em famílias que a Guerra Civil Espanhola vai dilacerar. Enquanto um ditador sobe ao poder, cada escolha custa alguém, e ninguém escolhe sem pagar.</p>
         <a class="btn" href="https://www.amazon.com.br/dp/B0D8RTCPNP?tag=falcojc-20&amp;ascsubtag=romance-historico-amor-e-odio" target="_blank" rel="noopener">Ler Amor e Ódio</a>
+        </div>
       </article>
 
     </div>
