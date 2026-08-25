@@ -168,7 +168,10 @@
   .cx-cta{margin-top:26px;}
   @media (max-width:900px){
     .cx-card{grid-template-columns:1fr;}
-    .cx-img{min-height:0;aspect-ratio:800/436;}
+    /* Proporção 4:5 (retrato), nao a 800:436 herdada da cena de paisagem:
+       essa imagem e um cartaz composto (titulo + mockup do player + CTA em
+       coluna), e o corte largo cortava o botao de play ao meio. */
+    .cx-img{min-height:0;aspect-ratio:4/5;}
     .cx-body{padding:26px 24px 30px;}
   }
 
@@ -429,14 +432,14 @@
 <section class="hero">
   <div class="wrap hero-inner">
     <div class="hero-copy">
-      <p class="eyebrow">Romance histórico brasileiro · 30 obras de Domenico Falco</p>
+      <p class="eyebrow">Romance histórico brasileiro · Obras de Domenico Falco</p>
       <h1>Até onde você iria pela sua <em>família</em>?<br>E o que essa escolha lhe custaria?</h1>
       <p class="lead">Romance histórico de alta imersão, em que o passado não é cenário decorativo: é o que força pessoas comuns a decisões impossíveis. Guerra, exílio, fome, ocupação. Ninguém sai ileso.</p>
       <a class="quick-nav" href="#portas">Não sabe por onde começar? <strong>Veja as três portas de entrada</strong> <span class="seta" aria-hidden="true">→</span></a>
     </div>
     <div class="hero-form" id="comecar">
       <p class="form-title">Feche os olhos e viaje no tempo: temos um presente para você</p>
-      <p class="form-sub">Quer sentir o peso das narrativas de Domenico Falco antes do seu próximo livro? Transformamos o romance <strong>O Comandante</strong> numa experiência de áudio imersiva, com narração profissional e sem cortes: 1h51 de drama histórico para baixar e ouvir quando quiser, sem depender de tela, internet ou interrupção.</p>
+      <p class="form-sub">Quer sentir o peso das narrativas de Domenico Falco antes do seu próximo livro? Transformamos o romance <strong>O Comandante</strong> numa experiência de áudio imersiva, com narração, sem cortes, sem propaganda, 22 capítulos de drama histórico para baixar e ouvir quando quiser, sem depender de tela, internet ou interrupção.</p>
       <form id="lp-form" method="POST" action="https://b432dfa1.sibforms.com/serve/MUIFAGw-hv8rWLAAWQ0fQx6mrMZEP3CKhYI2Adhwu_ebw4WTbs1LwGbrYG7CPZvhR67YCKRfy94nh-sqwqh6uUsoJF4Lr84PKI-RryJ8kUa5ZLKHJ7RxOMwTB8hOVqIajhCTnJyIVgrYz8FmzkYleK18fjkiU3fFzchFXq_7qnPMTISNKdpXY_zTXZa2ICmNK0wChBKTEQ8GEDEBmA==" data-type="subscription">
         <div class="campo">
           <label for="JOB_TITLE">Seu nome</label>
@@ -463,16 +466,16 @@
 <section class="captura-extra">
   <div class="wrap">
     <div class="cx-card book-card">
-      <img class="cx-img" src="/romance-historico/media/o-comandante-capitao-porto.webp" alt="Cartaz de lançamento de O Comandante: o capitão Dante observando o porto ao entardecer" width="800" height="686" loading="lazy" decoding="async">
+      <img class="cx-img" src="/romance-historico/media/o-comandante-audiobook-player.webp" alt="Peça de lançamento do audiolivro O Comandante: capa do audiobook e player com os controles de reprodução" width="900" height="900" loading="lazy" decoding="async">
       <div class="cx-body">
         <p class="eyebrow">O que você vai vivenciar</p>
-        <h2>Sua nova companhia para momentos de silêncio</h2>
-        <p class="cx-intro">Não é um resumo, nem um podcast. É o romance integral de Domenico Falco, interpretado para despertar emoção através do som:</p>
+        <h2>O Que Está Incluso no Seu Presente Literário</h2>
+        <p class="cx-intro">Troque o cansaço das telas por uma jornada sonora inesquecível. Veja o que você vai receber de forma <strong>100% gratuita</strong>:</p>
         <ul class="cx-recebe">
-          <li><strong>Narração com alma.</strong> Interpretação profissional e limpa, que dá voz às decisões arriscadas e aos segredos do capitão Dante no pós-guerra de Salerno e Nápoles.</li>
-          <li><strong>Capítulos sob medida.</strong> 22 episódios curtos, de 2 a 8 minutos, no ritmo certo pro trânsito, a caminhada ou antes de dormir.</li>
-          <li><strong>Totalmente offline.</strong> Baixe uma vez, guarde no celular, no computador ou no som do carro. Sem dado móvel, sem depender de sinal.</li>
-          <li><strong>Livre de distração.</strong> Sem anúncio no meio da história, sem banner, sem o cansaço da tela. Só você e a literatura.</li>
+          <li><strong>História Completa, Sem Cortes e Sem Propagandas.</strong> Imersão absoluta dividida em 22 capítulos curtos, de 2 a 8 minutos.</li>
+          <li><strong>Sua Biblioteca Offline.</strong> Baixe para o seu celular ou computador com um clique e escute sem consumir seus dados ou depender de internet.</li>
+          <li><strong>Companhia Perfeita para a Rotina.</strong> Transforme momentos ociosos, no trânsito, no treino ou em tarefas domésticas, em momentos de puro lazer literário.</li>
+          <li><strong>Produção de Estúdio.</strong> Esqueça vozes pacatas ou superficiais. Narração que te envolve e cativa, para dar vida e drama real a cada cena.</li>
         </ul>
         <div class="regua-bars" role="img" aria-label="Os 22 capítulos do audiolivro, o mais curto com 2 minutos e o mais longo com 8 minutos">
           <span style="height:100%" title="1. Lembranças, 8:04"></span>
@@ -507,7 +510,7 @@
 
 <section class="portas" id="portas">
   <div class="wrap">
-    <p class="eyebrow">Três portas, não trinta</p>
+    <p class="eyebrow">Catálogo</p>
     <h2>Por onde começar</h2>
     <p class="sec-lead">Trinta títulos paralisam. Escolha o chão histórico que te interessa e comece por ele: cada um destes três abre um caminho diferente dentro do mesmo catálogo.</p>
 
@@ -608,7 +611,7 @@
   <div class="wrap">
     <img class="cena cena-solta" src="/romance-historico/media/o-comandante-dante-helga.webp" alt="Dante e Helga, personagens de O Comandante, num passeio de barco à beira-mar" width="800" height="436" loading="lazy" decoding="async">
     <h2>Comece ouvindo, sem pagar nada</h2>
-    <p class="sec-lead">O audiolivro de O Comandante inteiro, 1h51 em 23 faixas para baixar. Se a história te pegar, os outros trinta títulos estão a um clique.</p>
+    <p class="sec-lead">Das ruínas da guerra ao topo do império marítimo global, a história de resiliência, perigos no mar e o verdadeiro custo do sucesso de um homem que reconstrói tudo a partir do nada.</p>
     <a class="btn solid" href="#comecar">Receber o audiolivro grátis</a>
   </div>
 </section>
