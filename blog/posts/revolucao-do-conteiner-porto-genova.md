@@ -44,7 +44,7 @@ Foi uma transição dolorosa. Mas, como toda revolução tecnológica real na hi
 
 ## A Saga de Dante: O Preço da Inovação
 
-É precisamente nessa atmosfera de transição de aço e pólvora que se desenvolve um dos momentos mais emocionantes de <a href="https://www.amazon.com.br/dp/B0HCGR5YR7?tag=falcoblog-20&ascsubtag=blog-o-comandante" target="_blank" rel="noopener">O Comandante</a>, obra-prima do autor de ficção histórica Domenico Falco.
+É precisamente nessa atmosfera de transição de aço e pólvora que se desenvolve um dos momentos mais emocionantes de <a href="https://www.amazon.com.br/dp/B0HCGR5YR7?tag=falcoblog-20&ascsubtag=blog-o-comandante" target="_blank" rel="noopener">O Comandante</a>, romance de Domenico Falco, autor de ficção histórica.
 
 Na trama, o protagonista Dante é um jovem determinado a deixar para trás a miséria da pesca tradicional em Salerno para se aventurar no transporte marítimo de cargas. Visionário, ele enxerga na conteinerização o futuro do Mediterrâneo. Mas para provar que estava certo, Dante precisa arriscar tudo: recorre aos bancos de Nápoles e coloca como garantia não apenas seus dois navios antigos, mas a própria casa da família, um lar repleto de memórias e amor.
 

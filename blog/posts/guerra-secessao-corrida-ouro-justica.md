@@ -13,7 +13,7 @@ tags: ["cluster-aventura-epica"]
 ---
 A metade do século XIX nos Estados Unidos foi marcada por contrastes profundos que moldariam o futuro de toda uma nação. De um lado, a riqueza das imensas plantações de algodão no Sul, sustentada pelo peso desumano da escravidão. Do outro, a promessa de um recomeço brilhante no Oeste bravio, impulsionada pela febre da Corrida do Ouro. No meio desse abismo ideológico e econômico, o país caminhava a passos largos para o conflito mais sangrento de sua história: a Guerra Civil Americana (Guerra de Secessão).
 
-Mas, longe das estratégias de generais e dos gabinetes políticos, como era a vida daqueles que suportavam o peso dessas transformações nas próprias costas? Como as cicatrizes da opressão forjaram lendas em territórios sem lei? Descubra a fascinante jornada de sobrevivência e busca por liberdade que serve de alicerce para a aclamada obra <a href="https://www.amazon.com.br/dp/B0BH4VJDBN?tag=falcoblog-20&ascsubtag=blog-sangue-frio" target="_blank" rel="noopener">Sangue Frio</a>, de Domenico Falco.
+Mas, longe das estratégias de generais e dos gabinetes políticos, como era a vida daqueles que suportavam o peso dessas transformações nas próprias costas? Como as cicatrizes da opressão forjaram lendas em territórios sem lei? Descubra a fascinante jornada de sobrevivência e busca por liberdade que serve de alicerce para o romance histórico <a href="https://www.amazon.com.br/dp/B0BH4VJDBN?tag=falcoblog-20&ascsubtag=blog-sangue-frio" target="_blank" rel="noopener">Sangue Frio</a>, de Domenico Falco.
 
 ## As Amarras do Sul e a Bússola da Resistência
 
