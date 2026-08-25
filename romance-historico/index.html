@@ -124,8 +124,14 @@
   .hero h1{font-size:clamp(30px,4.4vw,52px);line-height:1.15;margin:14px 0 22px;}
   .hero h1 em{font-style:normal;color:var(--gold);}
   .lead{font-size:20px;color:var(--text);max-width:34em;}
-  .lead-sub{margin-top:14px;font-size:17px;color:var(--text-muted);}
-  .lead-sub a{color:var(--gold-bright);border-bottom:1px solid rgba(201,161,58,.4);}
+  /* CTA de navegacao interna: era um link de texto perdido no fim de um
+     paragrafo apagado, sem peso nenhum. Virou pilula com borda, mesmo
+     tratamento visual de um botao ghost, pra puxar o olho de quem rolou. */
+  .quick-nav{display:inline-flex;align-items:center;gap:9px;margin-top:22px;padding:13px 22px;border:1px solid var(--gold);border-radius:32px;color:var(--text-muted);font-size:15.5px;transition:background .2s,border-color .2s;}
+  .quick-nav strong{color:var(--gold-bright);font-weight:600;}
+  .quick-nav .seta{color:var(--gold);display:inline-block;transition:transform .2s;}
+  .quick-nav:hover{background:rgba(201,161,58,.1);border-color:var(--gold-bright);}
+  .quick-nav:hover .seta{transform:translateX(4px);}
   .hero-form{background:var(--card);border:1px solid var(--card-border);border-radius:3px;padding:28px 26px;}
   .form-title{font-family:'Cinzel',serif;font-size:21px;color:var(--gold-bright);margin-bottom:10px;}
   .form-sub{font-size:16px;color:var(--text-muted);margin-bottom:20px;}
@@ -148,11 +154,13 @@
   .cx-card{display:grid;grid-template-columns:.86fr 1.14fr;gap:44px;align-items:center;background:var(--card);border:1px solid var(--card-border);border-radius:3px;overflow:hidden;}
   .cx-img{width:100%;height:100%;object-fit:cover;min-height:280px;}
   .cx-body{padding:8px 32px 8px 0;}
-  .cx-body h2{font-size:clamp(22px,2.8vw,30px);margin:10px 0 20px;}
+  .cx-body h2{font-size:clamp(22px,2.8vw,30px);margin:10px 0 16px;}
+  .cx-intro{font-size:17px;color:var(--text-muted);margin-bottom:22px;}
   .cx-recebe{list-style:none;margin-bottom:28px;}
   .cx-recebe li{display:flex;gap:12px;padding:10px 0;border-bottom:1px solid var(--card-border);font-size:16.5px;color:var(--text-muted);}
   .cx-recebe li:last-child{border-bottom:0;}
   .cx-recebe li::before{content:'✦';color:var(--gold);flex-shrink:0;}
+  .cx-recebe li strong{color:var(--text);font-weight:600;}
   .regua-bars{display:flex;align-items:flex-end;gap:3px;height:56px;border-bottom:1px solid var(--gold);}
   .regua-bars span{flex:1;background:rgba(201,161,58,.40);border-top:2px solid var(--gold);min-width:4px;}
   .regua-leg{margin-top:10px;font-size:14.5px;color:var(--text-muted);}
@@ -424,11 +432,11 @@
       <p class="eyebrow">Romance histórico brasileiro · 30 obras de Domenico Falco</p>
       <h1>Até onde você iria pela sua <em>família</em>?<br>E o que essa escolha lhe custaria?</h1>
       <p class="lead">Romance histórico de alta imersão, em que o passado não é cenário decorativo: é o que força pessoas comuns a decisões impossíveis. Guerra, exílio, fome, ocupação. Ninguém sai ileso.</p>
-      <p class="lead-sub">Não sabe por onde começar? <a href="#portas">Veja as três portas de entrada</a>.</p>
+      <a class="quick-nav" href="#portas">Não sabe por onde começar? <strong>Veja as três portas de entrada</strong> <span class="seta" aria-hidden="true">→</span></a>
     </div>
     <div class="hero-form" id="comecar">
-      <p class="form-title">Ouça um romance completo, de graça</p>
-      <p class="form-sub">O audiolivro de <strong>O Comandante</strong>, 1h51 de narração em 23 faixas MP3 para baixar e ouvir offline: no carro, na cozinha, na caminhada. Sem tela, sem anúncio e sem depender de sinal.</p>
+      <p class="form-title">Feche os olhos e viaje no tempo: temos um presente para você</p>
+      <p class="form-sub">Quer sentir o peso das narrativas de Domenico Falco antes do seu próximo livro? Transformamos o romance <strong>O Comandante</strong> numa experiência de áudio imersiva, com narração profissional e sem cortes: 1h51 de drama histórico para baixar e ouvir quando quiser, sem depender de tela, internet ou interrupção.</p>
       <form id="lp-form" method="POST" action="https://b432dfa1.sibforms.com/serve/MUIFAGw-hv8rWLAAWQ0fQx6mrMZEP3CKhYI2Adhwu_ebw4WTbs1LwGbrYG7CPZvhR67YCKRfy94nh-sqwqh6uUsoJF4Lr84PKI-RryJ8kUa5ZLKHJ7RxOMwTB8hOVqIajhCTnJyIVgrYz8FmzkYleK18fjkiU3fFzchFXq_7qnPMTISNKdpXY_zTXZa2ICmNK0wChBKTEQ8GEDEBmA==" data-type="subscription">
         <div class="campo">
           <label for="JOB_TITLE">Seu nome</label>
@@ -455,15 +463,16 @@
 <section class="captura-extra">
   <div class="wrap">
     <div class="cx-card book-card">
-      <img class="cx-img" src="/romance-historico/media/o-comandante-capitao-porto.webp" alt="Dante, capitão de O Comandante, observando o porto ao entardecer" width="800" height="436" loading="lazy" decoding="async">
+      <img class="cx-img" src="/romance-historico/media/o-comandante-capitao-porto.webp" alt="Cartaz de lançamento de O Comandante: o capitão Dante observando o porto ao entardecer" width="800" height="686" loading="lazy" decoding="async">
       <div class="cx-body">
-        <p class="eyebrow">O que vem no pacote</p>
-        <h2>Confira tudo que você vai receber</h2>
+        <p class="eyebrow">O que você vai vivenciar</p>
+        <h2>Sua nova companhia para momentos de silêncio</h2>
+        <p class="cx-intro">Não é um resumo, nem um podcast. É o romance integral de Domenico Falco, interpretado para despertar emoção através do som:</p>
         <ul class="cx-recebe">
-          <li>Áudio de altíssima qualidade, narração profissional, sem cortes.</li>
-          <li>1h51 da história completa de O Comandante, em 23 faixas MP3.</li>
-          <li>Funciona offline depois de baixado: sem internet, sem gastar dados. Ideal pro carro, a academia, o deslocamento.</li>
-          <li>Ouça onde estiver: no celular, no computador ou no som do carro.</li>
+          <li><strong>Narração com alma.</strong> Interpretação profissional e limpa, que dá voz às decisões arriscadas e aos segredos do capitão Dante no pós-guerra de Salerno e Nápoles.</li>
+          <li><strong>Capítulos sob medida.</strong> 22 episódios curtos, de 2 a 8 minutos, no ritmo certo pro trânsito, a caminhada ou antes de dormir.</li>
+          <li><strong>Totalmente offline.</strong> Baixe uma vez, guarde no celular, no computador ou no som do carro. Sem dado móvel, sem depender de sinal.</li>
+          <li><strong>Livre de distração.</strong> Sem anúncio no meio da história, sem banner, sem o cansaço da tela. Só você e a literatura.</li>
         </ul>
         <div class="regua-bars" role="img" aria-label="Os 22 capítulos do audiolivro, o mais curto com 2 minutos e o mais longo com 8 minutos">
           <span style="height:100%" title="1. Lembranças, 8:04"></span>
@@ -489,7 +498,7 @@
           <span style="height:53%" title="21. Silêncio, 4:10"></span>
           <span style="height:38%" title="22. Epílogo, 2:56"></span>
         </div>
-        <p class="regua-leg"><b>22 capítulos</b>, de 2 a 8 minutos cada. Você ouve um por vez, no tempo que tiver.</p>
+        <p class="regua-leg">Cada barra é um capítulo. Você escolhe quanto ouvir a cada vez.</p>
         <p class="cx-cta"><a class="btn solid" href="#comecar">Receber o audiolivro grátis</a></p>
       </div>
     </div>
@@ -569,7 +578,7 @@
     <div class="grid-genero">
       <div class="col-genero">
         <h3>Romance de época</h3>
-        <p>Usa o passado como cenário decorativo e idealizado. Bailes, rituais de corte, salões, uma trama romântica leve por cima. O período é moldura: troque o século e a história continua de pé.</p>
+        <p>No romance de época, o passado é apenas cenário decorativo e idealizado: uma moldura de bailes imperiais, rituais de corte e salões de chá, por onde passa uma trama romântica leve. Troque o século, e a história continua de pé.</p>
         <details class="genero-links">
           <summary>Não é este catálogo</summary>
           <div class="genero-panel-inner">
@@ -579,7 +588,7 @@
       </div>
       <div class="col-genero destaque">
         <h3>Romance histórico</h3>
-        <p>Usa o passado como pressão. O período é justamente o que força a escolha: guerra, fome, exílio, ocupação, perseguição. Troque o século e a história desaparece, porque ela só existe por causa daquilo.</p>
+        <p>Nas obras de Domenico Falco, o passado não é moldura: é uma prensa moral. O período histórico é o que força as escolhas difíceis: a guerra, o exílio, a perseguição, a fome. Escrevemos sobre o preço implacável que homens e mulheres pagaram para manter os seus vivos.</p>
         <details class="genero-links" open>
           <summary>Comece por aqui</summary>
           <div class="genero-panel-inner">
@@ -591,7 +600,7 @@
       </div>
     </div>
 
-    <p class="fecho">Não escrevemos sobre bailes de porcelana. Escrevemos sobre o preço que se paga para manter os seus vivos.</p>
+    <p class="fecho">Não escrevemos sobre bailes de porcelana. Troque o século, e a história desaparece: ela só existe pela força da verdade daquele tempo.</p>
   </div>
 </section>
 
