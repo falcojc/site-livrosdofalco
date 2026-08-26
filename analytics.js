@@ -2,21 +2,109 @@ window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
+// ---------------------------------------------------------------------------
+// Trafego interno: nao contar as nossas proprias visitas.
+//
+// A definicao por IP no admin do GA4 continua valendo, mas ela so cobre o
+// escritorio. IP residencial e dinamico, o 4G do celular troca o tempo todo e o
+// wi-fi da Bienal nao e nosso: toda visita fora daquele IP volta a ser contada
+// como se fosse leitor. Esta marcacao resolve pelo navegador, que anda junto
+// com a gente em vez de ficar preso a um endereco de rede.
+//
+// Ligar:    https://www.livrosdofalco.com.br/?interno=1
+// Desligar: https://www.livrosdofalco.com.br/?interno=0
+//
+// Uma vez por navegador E por aparelho: a marca vive no localStorage, que nao
+// atravessa janela anonima, outro navegador, outro celular, nem limpeza de
+// dados do site. Depois de marcar, o parametro sai da URL sozinho, porque um
+// link com "?interno=1" repassado por engano marcaria o leitor como se fosse a
+// gente, e aquela pessoa sumiria do relatorio para sempre.
+//
+// O nome do parametro enviado e "traffic_type: internal", exatamente o mesmo
+// que a definicao por IP usa. Assim o filtro de dados que ja existe no admin do
+// GA4 pega os dois casos, sem configuracao nova.
+// ---------------------------------------------------------------------------
+var CHAVE_INTERNO = 'ldf_trafego_interno';
+
+// localStorage estoura em navegador com dados de site bloqueados. O try/catch
+// trata a falha como visitante normal: melhor contar uma visita nossa a mais do
+// que derrubar a medicao de todo mundo por causa de uma excecao no topo do
+// arquivo, que mataria tambem os eventos de clique la embaixo.
+function marcaInterna(ligar) {
+  try {
+    if (ligar === undefined) return localStorage.getItem(CHAVE_INTERNO) === '1';
+    if (ligar) localStorage.setItem(CHAVE_INTERNO, '1');
+    else localStorage.removeItem(CHAVE_INTERNO);
+    return ligar;
+  } catch (e) { return false; }
+}
+
+var _pedido = (location.search.match(/[?&]interno=([^&#]*)/) || [])[1];
+var trafegoMudou = _pedido !== undefined;
+if (trafegoMudou) {
+  marcaInterna(_pedido === '1' || _pedido === 'sim' || _pedido === 'true');
+  // Limpa o ?interno= da barra de enderecos sem recarregar. Alem do link
+  // repassado por engano, isso impede o GA4 de registrar "/?interno=1" como se
+  // fosse uma pagina diferente da home.
+  if (history.replaceState) {
+    var _limpa = location.pathname +
+      location.search.replace(/([?&])interno=[^&#]*(&|$)/, '$1').replace(/[?&]$/, '') +
+      location.hash;
+    history.replaceState(null, '', _limpa);
+  }
+}
+var trafegoInterno = marcaInterna();
+
 // Mede so no dominio de producao. Previews do Vercel (*.vercel.app) e o servidor
 // local de desenvolvimento nao configuram a medicao, entao nao sujam o GA4.
 // Os eventos continuam sendo empilhados no dataLayer, o que permite testar sem enviar nada.
 if (/(^|\.)livrosdofalco\.com\.br$/.test(location.hostname)) {
-  gtag('config', 'G-R2ZQZ51DEK');
+  // O traffic_type vai no config, e nao num evento avulso: assim ele gruda em
+  // TODOS os eventos da sessao, page_view incluido. Marcado so no clique, o GA4
+  // continuaria contando a sessao e a pagina vista como se fossem de leitor.
+  gtag('config', 'G-R2ZQZ51DEK', trafegoInterno ? { traffic_type: 'internal' } : {});
 
   // Microsoft Clarity: heatmap, rolagem e gravacao de sessao. Fica DENTRO do
   // mesmo guard do GA4 de proposito: preview e dev local nao podem gerar
   // sessao gravada, senao o heatmap conta os nossos proprios cliques de teste.
-  (function(c,l,a,r,i,t,y){
-      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-  })(window, document, "clarity", "script", "y7n2in2vy0");
+  // Visita marcada como interna fica de fora pela mesma razao.
+  if (!trafegoInterno) {
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "y7n2in2vy0");
+  }
 }
+
+// Confirmacao visivel de que a marca pegou. Sem ela da pra marcar o celular,
+// achar que funcionou, e so descobrir semanas depois que o numero continuou
+// sujo, que e exatamente o problema que esta marcacao existe pra resolver.
+// Aparece por 6 segundos, some sozinha, nao empurra layout (position:fixed) e e
+// invisivel pra leitor de tela (aria-hidden), pra nao mexer na acessibilidade.
+// Pra ver o aviso SO quando liga ou desliga, e nao em toda pagina, trocar a
+// condicao abaixo por "if (!trafegoMudou) return;".
+function avisaTrafegoInterno() {
+  if (!trafegoInterno && !trafegoMudou) return;
+  if (!document.body) return;
+  var aviso = document.createElement('div');
+  aviso.setAttribute('aria-hidden', 'true');
+  aviso.textContent = trafegoInterno
+    ? 'Tráfego interno LIGADO: esta visita não entra no GA4'
+    : 'Tráfego interno DESLIGADO: esta visita volta a contar';
+  aviso.style.cssText = 'position:fixed;left:12px;bottom:12px;z-index:2147483647;' +
+    'max-width:80vw;padding:8px 12px;border-radius:6px;pointer-events:none;' +
+    'font:600 12px/1.35 system-ui,-apple-system,sans-serif;color:#fff;' +
+    'background:' + (trafegoInterno ? 'rgba(150,32,32,.93)' : 'rgba(28,92,54,.93)') + ';' +
+    'box-shadow:0 2px 10px rgba(0,0,0,.35);transition:opacity .5s;';
+  document.body.appendChild(aviso);
+  setTimeout(function(){ aviso.style.opacity = '0'; }, 5500);
+  setTimeout(function(){ if (aviso.parentNode) aviso.parentNode.removeChild(aviso); }, 6100);
+}
+// As duas paginas de /audiolivro/ carregam este arquivo sem defer, dentro do
+// <head>, entao ali o body ainda nao existe quando o script roda.
+if (document.body) avisaTrafegoInterno();
+else document.addEventListener('DOMContentLoaded', avisaTrafegoInterno);
 
 var RE_ASIN = /\/(?:dp|gp\/product)\/([A-Z0-9]{10})/;
 
