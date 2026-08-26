@@ -20,52 +20,77 @@ if (/(^|\.)livrosdofalco\.com\.br$/.test(location.hostname)) {
 
 var RE_ASIN = /\/(?:dp|gp\/product)\/([A-Z0-9]{10})/;
 
-// A pagina inteira aponta pra um unico ASIN? Se sim, ela e uma PDP e o <h1>
-// dela E o titulo da obra. Se aponta pra varios (home, categoria, LP), o <h1>
-// e o titulo DA PAGINA e nao serve. Calculado uma vez e guardado, porque nao
-// muda depois que o DOM carrega.
-var _umaObraSo = null;
-function paginaDeUmaObraSo() {
-  if (_umaObraSo !== null) return _umaObraSo;
-  var vistos = {}, n = 0;
-  var links = document.querySelectorAll('a[href*="/dp/"], a[href*="/gp/product/"]');
-  for (var i = 0; i < links.length; i++) {
-    var m = links[i].href.match(RE_ASIN);
-    if (m && !vistos[m[1]]) { vistos[m[1]] = 1; n++; }
+// Titulo do JSON-LD do tipo Book. So a PDP declara Book; post de blog declara
+// Article e a home nao declara nada. Esse e o unico jeito seguro de afirmar
+// "a pagina INTEIRA e sobre esta obra", porque e o proprio site declarando.
+// A versao anterior tentava adivinhar isso contando ASIN distinto na pagina, e
+// errava no post de blog, que tambem aponta pra uma obra so: os 5 links de
+// /blog/desafios-expedicoes-floresta-amazonica/ virariam uma "obra" chamada
+// "Expedicoes na Amazonia: Desafios e Sobrevivencia". Sao 21 posts nessa
+// situacao, ou seja, o bug da home so tinha mudado de endereco.
+// Calculado uma vez e guardado: JSON-LD nao muda depois que a pagina carrega.
+var _tituloBook;
+function tituloDoBookSchema() {
+  if (_tituloBook !== undefined) return _tituloBook;
+  _tituloBook = '';
+  var blocos = document.querySelectorAll('script[type="application/ld+json"]');
+  for (var i = 0; i < blocos.length; i++) {
+    var dados;
+    try { dados = JSON.parse(blocos[i].textContent); } catch (e) { continue; }
+    // Fila em vez de recursao: o schema pode vir como objeto, como array ou
+    // embrulhado em @graph, e as tres formas aparecem no site.
+    var fila = [].concat(dados);
+    while (fila.length) {
+      var no = fila.shift();
+      if (!no || typeof no !== 'object') continue;
+      if (no['@graph']) { fila = fila.concat(no['@graph']); continue; }
+      if (no['@type'] === 'Book' && no.name) {
+        _tituloBook = String(no.name).trim();
+        return _tituloBook;
+      }
+    }
   }
-  _umaObraSo = (n === 1);
-  return _umaObraSo;
+  return _tituloBook;
 }
 
 // Titulo da obra em degraus, do mais especifico pro mais generico:
-//   1. h3 do card que envolve o link
-//   2. aria-label do proprio link ("Comprar A Vila na Amazon" -> "A Vila")
+//   1. aria-label do proprio link ("Comprar A Vila na Amazon" -> "A Vila")
+//   2. h3 do card que envolve o link
 //   3. alt da imagem dentro do link, cortado na 1a virgula
-//   4. h1 da pagina, SO numa PDP (ver paginaDeUmaObraSo)
-//   5. sem ASIN = link de busca do autor, nao e produto nenhum
+//   4. name do JSON-LD Book, ou seja, a pagina e a PDP daquela obra
+//   5. texto do proprio link, quando ele nomeia a obra
+//   6. "(sem titulo)": o link nao carrega identidade nenhuma. Fica sem nome de
+//      proposito. O obra_asin continua certo, entao o relatorio resolve o nome
+//      pelo ASIN em vez de receber um titulo inventado, que foi exatamente o
+//      erro que este arquivo esta consertando.
 //
-// O degrau 4 antes era incondicional, e por isso a home mandava o proprio
-// titulo dela ("Historias que Atravessam Seculos e Continentes") como se fosse
-// obra: 18 de 96 cliques do mes, 18,8%, medido em 26/08/2026. O link do
+// O degrau do h1 da pagina saiu de vez. Era ele que fazia a home mandar o
+// proprio titulo ("Historias que Atravessam Seculos e Continentes") como se
+// fosse obra: 18 de 96 cliques do mes, 18,8%, medido em 26/08/2026. O link do
 // omnibus na home usa .omnibus-cover e nao .book-card, entao escapava do
-// degrau 1 e caia direto no h1.
+// degrau do card e caia direto no h1.
 function tituloDaObra(link, asin) {
   // Sem ASIN nao e produto, e link de busca/loja do autor. Tem que sair antes
   // dos degraus de texto: o botao do catalogo tem aria-label "Ver catalogo
   // completo na Amazon", que viraria a "obra" chamada "catalogo completo".
   if (!asin) return '(loja Amazon)';
 
-  var card = link.closest('.book-card');
-  var h3 = card && card.querySelector('h3');
-  if (h3 && h3.textContent.trim()) return h3.textContent.trim();
-
+  // O aria-label vem antes do card de proposito: ele esta NO link, o h3 esta na
+  // caixa em volta, e nem toda caixa fala da obra. Em /arquetipos/ os cards de
+  // personagem reusam a classe .book-card e tem h3 com o nome do personagem,
+  // entao o degrau do card mandava "John Storm", "Akira", "Dr. Carlos" e
+  // "Dante" como se fossem titulos de obra desde que a LP subiu, em 21/08/2026.
   var aria = link.getAttribute('aria-label');
   if (aria) {
-    var limpo = aria.replace(/^\s*(?:comprar|ver|leia|conheça)\s+/i, '')
+    var limpo = aria.replace(/^\s*(?:comprar|ver|ler|leia|conheça)\s+/i, '')
                     .replace(/\s+na\s+amazon\s*$/i, '')
                     .trim();
     if (limpo) return limpo;
   }
+
+  var card = link.closest('.book-card');
+  var h3 = card && card.querySelector('h3');
+  if (h3 && h3.textContent.trim()) return h3.textContent.trim();
 
   var img = link.querySelector('img[alt]');
   if (img) {
@@ -73,8 +98,21 @@ function tituloDaObra(link, asin) {
     if (alt) return alt;
   }
 
-  var h1 = document.querySelector('h1');
-  if (h1 && paginaDeUmaObraSo() && h1.textContent.trim()) return h1.textContent.trim();
+  var book = tituloDoBookSchema();
+  if (book) return book;
+
+  // Texto do proprio link. E o caso dos 21 posts do blog, que citam a obra no
+  // meio da frase: "...serve de cenario para a epica obra <a>O Explorador</a>".
+  // Vem depois do schema Book de proposito: na PDP o botao diz "Comece a lenda
+  // agora", que nao e titulo de nada, e o schema resolve antes de chegar aqui.
+  // O filtro de "amazon" derruba texto generico: "Ler na Amazon" perde o verbo
+  // e o sufixo, mas se ainda sobrar "amazon" no meio, nao era titulo.
+  var texto = (link.textContent || '').replace(/\s+/g, ' ').trim()
+                 .replace(/^(?:comprar|ver|ler|leia|conheça)\s+/i, '')
+                 .replace(/\s+na\s+amazon\s*$/i, '')
+                 .replace(/[\s→>»·|-]+$/, '')
+                 .trim();
+  if (texto && texto.length <= 80 && !/amazon/i.test(texto)) return texto;
 
   return '(sem titulo)';
 }
