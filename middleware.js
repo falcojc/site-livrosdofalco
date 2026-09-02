@@ -71,6 +71,23 @@ const REFERRERS = [
   ['duckduckgo.com/aichat', 'duckduckgo'],
 ];
 
+// ---------------------------------------------------------------------------
+// Rota /gratis: link curto e medido para a promocao gratuita da Amazon.
+//
+//   /gratis?c=wpp       -> WhatsApp
+//   /gratis?c=fb-grupo  -> grupo do Facebook
+//   /gratis?c=ig        -> Instagram
+//   /gratis?c=skoob     -> Skoob
+//
+// Grava kind='promo' na mesma tabela do crawl-to-refer (agent = canal) e
+// devolve 302 na hora. A medicao e server-side: nao depende de JS na pagina
+// nem morre em bloqueador de anuncio, e nao existe tela intermediaria.
+//
+// Na proxima onda gratuita, trocar so o ASIN e o rotulo abaixo.
+const PROMO_ASIN = 'B0HFPS4K6R';           // A Saga Italiana - Edicao Especial
+const PROMO_ROTULO = 'saga-italiana';
+const PROMO_DESTINO = 'https://www.amazon.com.br/dp/' + PROMO_ASIN;
+
 function detectar(ua, referer, utm) {
   const uaLower = ua.toLowerCase();
   for (let i = 0; i < CRAWLERS.length; i++) {
@@ -97,11 +114,60 @@ export const config = {
   ],
 };
 
+
+// Registra o clique da promocao e manda para a Amazon. Robo nao entra na conta,
+// mas continua sendo redirecionado normalmente.
+function redirecionarPromo(request, context, u, ua, referer) {
+  const resposta = new Response(null, {
+    status: 302,
+    headers: { Location: PROMO_DESTINO, 'Cache-Control': 'no-store' },
+  });
+
+  try {
+    if (detectar(ua, '', '')) return resposta; // e crawler: redireciona sem logar
+
+    const canal = (u.searchParams.get('c') || 'direto')
+      .toLowerCase()
+      .replace(/[^a-z0-9-]/g, '')
+      .slice(0, 40) || 'direto';
+
+    const envio = fetch(SUPABASE_URL + '/rest/v1/ai_traffic_log', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        apikey: SUPABASE_KEY,
+        Authorization: 'Bearer ' + SUPABASE_KEY,
+        Prefer: 'return=minimal',
+      },
+      body: JSON.stringify({
+        kind: 'promo',
+        agent: canal,
+        vendor: PROMO_ROTULO,
+        path: u.pathname.slice(0, 300),
+        ua: ua.slice(0, 400),
+        referer: referer.slice(0, 300) || null,
+        country: request.headers.get('x-vercel-ip-country') || null,
+      }),
+    }).catch(function () {});
+
+    if (context && typeof context.waitUntil === 'function') context.waitUntil(envio);
+  } catch (e) {
+    // Medicao e acessoria: o leitor chega na Amazon de qualquer jeito.
+  }
+
+  return resposta;
+}
+
 export default async function middleware(request, context) {
   try {
     const ua = request.headers.get('user-agent') || '';
     const referer = request.headers.get('referer') || '';
     const u = new URL(request.url);
+
+    if (u.pathname === '/gratis' || u.pathname === '/gratis/') {
+      return redirecionarPromo(request, context, u, ua, referer);
+    }
+
     const utm =
       (u.searchParams.get('utm_source') || '') + ' ' + (u.searchParams.get('ref') || '');
 
