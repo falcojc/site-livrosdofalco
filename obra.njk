@@ -1,0 +1,237 @@
+---
+pagination:
+  data: pdps
+  size: 1
+  alias: obra
+permalink: "/{{ obra.slug_url }}/index.html"
+layout: pdp.njk
+---
+{# A pagina de obra, uma so para as 30. Cada bloco existe sob condicao: obra sem
+   volumes nao mostra volumes, obra sem podcast nao mostra midia, obra sem post
+   de blog nao mostra "o contexto real". O que decide e o manifesto
+   (_data/obras.json), nunca o template.
+
+   A ordem dos blocos segue quem chega de anuncio no celular: 96,9% do trafego
+   pago do site e smartphone, entao capa, titulo, gancho e botao vem antes de
+   qualquer coisa que exija rolagem. #}
+
+{% set linkCompra = obra | linkAmazon %}
+{% set temMidia = obra.midia.audiobook or obra.midia.youtube_podcast or obra.midia.youtube_trailer %}
+
+<div class="pdp-wrap">
+  <nav class="pdp-crumb" aria-label="Você está em">
+    <a href="/">Início</a>
+    {% if obra.silo %}<span>›</span><a href="/categoria/{{ obra.silo }}/">{{ obra.silo_nome }}</a>{% endif %}
+    <span>›</span>{{ obra.titulo }}
+  </nav>
+</div>
+
+<section class="pdp-hero">
+  {% if obra.heroi and obra.heroi.video %}
+  <video id="pdp-hero-video" class="pdp-hero-video" muted loop playsinline aria-hidden="true" poster="{{ obra.heroi.poster }}">
+    <source data-src="{{ obra.heroi.video }}" type="video/mp4">
+  </video>
+  <div class="pdp-hero-scrim"></div>
+  {% endif %}
+  <div class="pdp-wrap">
+    <div class="pdp-hero-grid">
+      <div class="pdp-capa">
+        <img src="{{ obra.capa_pdp }}-400w.webp"
+             srcset="{{ obra.capa_pdp }}-240w.webp 240w, {{ obra.capa_pdp }}-400w.webp 400w, {{ obra.capa_pdp }}-800w.webp 800w"
+             sizes="(max-width: 759px) 118px, 260px"
+             width="{{ obra.capa_pdp_w }}" height="{{ obra.capa_pdp_h }}"
+             fetchpriority="high" decoding="async"
+             alt="Capa de {{ obra.titulo }}, de Domenico Falco">
+      </div>
+      <div class="pdp-hero-id">
+        {% if obra.silo_nome %}<p class="pdp-kicker">{{ obra.silo_nome }}</p>{% endif %}
+        <h1>{{ obra.titulo }}</h1>
+        {% if obra.heroi and obra.heroi.tagline %}<p class="pdp-tagline">{{ obra.heroi.tagline }}</p>{% endif %}
+        {% if obra.subtitulo %}<p class="pdp-sub">{{ obra.subtitulo }}</p>{% endif %}
+      </div>
+
+      <div class="pdp-hero-acao">
+        {% if obra.gancho %}<p class="pdp-gancho">{{ obra.gancho }}</p>{% endif %}
+
+        <dl class="pdp-coord">
+          {% if obra.epoca %}<div><dt>Época</dt><dd>{{ obra.epoca }}</dd></div>{% endif %}
+          {% if obra.local %}<div><dt>Cenário</dt><dd>{{ obra.local }}</dd></div>{% endif %}
+          {% if obra.paginas %}<div><dt>Páginas</dt><dd>{{ obra.paginas }}</dd></div>{% endif %}
+          <div><dt>Formato</dt><dd>eBook Kindle</dd></div>
+        </dl>
+
+        <div class="pdp-ctas">
+          <a class="btn solid" href="{{ linkCompra }}" target="_blank" rel="noopener"
+             aria-label="Ler {{ obra.titulo }} na Amazon">Ler na Amazon</a>
+          {% if temMidia %}<a class="btn" href="#ouvir">Ouvir um trecho</a>{% endif %}
+          {% if obra.ku %}<span class="pdp-selo">★ Grátis no Kindle Unlimited</span>{% endif %}
+        </div>
+        {% if obra.preco %}<p class="pdp-nota">Preço de lista R$ {{ obra.preco }} na Loja Kindle. O valor cobrado é o que aparecer na Amazon no momento da compra.</p>{% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pdp-sec alt">
+  <div class="pdp-wrap">
+    <p class="pdp-kicker">A história</p>
+    <h2>{% if obra.volumes %}O que você vai ler{% else %}Sobre {{ obra.titulo }}{% endif %}</h2>
+    <div class="pdp-sinopse pdp-texto">
+      {% for p in obra.sinopse %}<p>{{ p }}</p>{% endfor %}
+    </div>
+
+    {% if obra.volumes %}
+    <div class="pdp-vols">
+      {% for v in obra.volumes %}
+      <article class="pdp-vol">
+        <div class="num">{{ loop.index }} de {{ obra.volumes | length }}</div>
+        <h3>{{ v.titulo }}</h3>
+        <p class="linha">{{ v.linha }}</p>
+        <p>{{ v.desc }}</p>
+      </article>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+{% if temMidia %}
+<section class="pdp-sec" id="ouvir">
+  <div class="pdp-wrap">
+    <p class="pdp-kicker">Antes de ler</p>
+    <h2>Ouça um trecho</h2>
+    <div class="pdp-midia">
+      {% if obra.midia.audiobook %}
+      <div class="pdp-audio">
+        <span class="rot">🎧 Amostra do audiolivro</span>
+        <audio controls preload="none" src="{{ obra.midia.audiobook }}"></audio>
+      </div>
+      {% endif %}
+      {% if obra.midia.youtube_podcast %}
+      <div>
+        <button type="button" class="pdp-yt" data-yt="{{ obra.midia.youtube_podcast }}" data-titulo="Podcast sobre {{ obra.titulo }}" aria-label="Assistir ao podcast sobre {{ obra.titulo }} no YouTube">
+          <img src="https://i.ytimg.com/vi/{{ obra.midia.youtube_podcast }}/hqdefault.jpg" alt="" width="480" height="270" loading="lazy" decoding="async">
+          <span class="play"><span>▶</span></span>
+        </button>
+        <p class="pdp-legenda">O podcast sobre {{ obra.titulo }}, no canal de Domenico Falco. O vídeo só carrega quando você clica.</p>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if obra.extras %}{% include "pdp/extras-" + obra.extras + ".njk" %}{% endif %}
+
+<section class="pdp-sec alt">
+  <div class="pdp-wrap">
+    <p class="pdp-kicker">Neste livro você encontra</p>
+    <h2>Os temas da obra</h2>
+    <div class="pdp-chips">
+      {% for t in obra.temas %}<span class="pdp-chip gold">{{ t }}</span>{% endfor %}
+      {% if obra.epoca %}<span class="pdp-chip">{{ obra.epoca }}</span>{% endif %}
+    </div>
+    {% if obra.leia_se_voce %}
+    <ul class="pdp-lista pdp-texto">
+      {% for l in obra.leia_se_voce %}<li>Leia se você {{ l }}.</li>{% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+</section>
+
+{% if obra.personagens %}
+<section class="pdp-sec">
+  <div class="pdp-wrap">
+    <p class="pdp-kicker">Quem você vai conhecer</p>
+    <h2>Personagens</h2>
+    <div class="pdp-pers pdp-texto">
+      {% for p in obra.personagens %}
+      <div><strong>{{ p.nome }}</strong><p>{{ p.papel }}</p></div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if obra.posts %}
+<section class="pdp-sec alt">
+  <div class="pdp-wrap">
+    <p class="pdp-kicker">O contexto real</p>
+    <h2>A história por trás da história</h2>
+    <div class="pdp-cards{% if obra.posts | length > 1 %} duplo{% endif %}">
+      {% for slug in obra.posts %}
+      {% set post = collections.post | postPorSlug(slug) %}
+      {% if post %}
+      <a class="pdp-card" href="{{ post.url }}">
+        {% if post.data.cover %}<img src="{{ post.data.cover }}" alt="" width="112" height="74" loading="lazy" decoding="async">{% endif %}
+        <div>
+          <p class="tit">{{ post.data.title }}</p>
+          <p class="sub">{{ post.data.cluster }} · leitura de {{ post.templateContent | readingTime }} min</p>
+        </div>
+      </a>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if obra.relacionadas %}
+<section class="pdp-sec">
+  <div class="pdp-wrap">
+    <p class="pdp-kicker">Se você gostou deste</p>
+    <h2>Continue no mesmo mundo</h2>
+    <div class="pdp-rel">
+      {% for slug in obra.relacionadas %}
+      {% set r = slug | obraPorSlug %}
+      {% if r %}
+      <a href="{{ slug | urlObra }}" aria-label="Conhecer {{ r.titulo }}">
+        <img src="/covers/{{ r.slug }}.webp" alt="Capa de {{ r.titulo }}" width="400" height="598" loading="lazy" decoding="async">
+        <p class="tit">{{ r.titulo }}</p>
+      </a>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if obra.faq %}
+<section class="pdp-sec alt">
+  <div class="pdp-wrap">
+    <p class="pdp-kicker">Antes de decidir</p>
+    <h2>Perguntas frequentes</h2>
+    <div class="pdp-faq">
+      {% for f in obra.faq %}
+      <details{% if loop.first %} open{% endif %}>
+        <summary>{{ f.p }}</summary>
+        <p>{{ f.r }}</p>
+      </details>
+      {% endfor %}
+      <details>
+        <summary>Está no Kindle Unlimited?</summary>
+        <p>{% if obra.ku %}Sim. Quem assina o Kindle Unlimited lê {{ obra.titulo }} sem pagar a mais: o botão “Leia gratuitamente” empresta o livro enquanto a assinatura estiver ativa. O botão de compra é o que deixa o livro na sua biblioteca para sempre.{% else %}Hoje não. {{ obra.titulo }} está disponível para compra na Loja Kindle.{% endif %}</p>
+      </details>
+      <details>
+        <summary>Tem versão impressa?</summary>
+        <p>Ainda não. Todo o catálogo de Domenico Falco está em eBook Kindle e em audiolivro no YouTube; a edição impressa está em preparação.</p>
+      </details>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<section class="pdp-sec">
+  <div class="pdp-wrap">
+    <div class="pdp-final">
+      <p class="pdp-kicker">Comece agora</p>
+      <h2>{{ obra.titulo }} espera por você</h2>
+      <p>{{ obra.gancho }}</p>
+      <div class="pdp-ctas">
+        <a class="btn solid" href="{{ obra | linkAmazon('rodape') }}" target="_blank" rel="noopener"
+           aria-label="Ler {{ obra.titulo }} na Amazon">Ler na Amazon</a>
+        <a class="btn" href="/newsletter">Receber os próximos lançamentos</a>
+      </div>
+    </div>
+  </div>
+</section>

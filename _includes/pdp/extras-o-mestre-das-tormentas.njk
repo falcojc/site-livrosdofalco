@@ -1,0 +1,194 @@
+{# Blocos extras de O Mestre das Tormentas: a materia-prima artesanal que ja
+   existia na pagina antiga (linha do tempo, mapa interativo, curiosidades,
+   personagens ilustrados, momentos, trailer e o bloco da familia).
+   Migrado sem reescrita em 05/09/2026, quando a pagina passou a ser gerada
+   pelo motor. Nenhuma outra obra tem esse material hoje: quando tiver, este
+   arquivo vira o modelo. #}
+<section class="timeline-section" style="background:var(--bg-alt);border-top:1px solid var(--card-border);border-bottom:1px solid var(--card-border);">
+  <div class="pdp-wrap">
+    <div class="eyebrow">A Jornada de um Homem</div>
+    <h2>As quatro fases de John Storm</h2>
+    <div class="timeline">
+      <div class="stage">
+        <img src="/o-mestre-das-tormentas/media/timeline-infancia-360w.webp" srcset="/o-mestre-das-tormentas/media/timeline-infancia-360w.webp 360w, /o-mestre-das-tormentas/media/timeline-infancia-560w.webp 560w, /o-mestre-das-tormentas/media/timeline-infancia.webp 800w" sizes="(max-width: 759px) 164px, 250px" alt="John Storm menino, no porto de Londres" loading="lazy" decoding="async">
+        <div class="stage-body">
+          <div class="num">I</div>
+          <h3>Infância, Londres</h3>
+          <p>A dureza dos fundos de uma estalagem no porto, e a fascinação pelo horizonte que um dia levaria o menino embora.</p>
+        </div>
+      </div>
+      <div class="stage">
+        <img src="/o-mestre-das-tormentas/media/timeline-juventude-360w.webp" srcset="/o-mestre-das-tormentas/media/timeline-juventude-360w.webp 360w, /o-mestre-das-tormentas/media/timeline-juventude-560w.webp 560w, /o-mestre-das-tormentas/media/timeline-juventude.webp 800w" sizes="(max-width: 759px) 164px, 250px" alt="John Storm jovem grumete, durante tempestade no Estreito de Moçambique" loading="lazy" decoding="async">
+        <div class="stage-body">
+          <div class="num">II</div>
+          <h3>Juventude, O Batismo</h3>
+          <p>No Estreito de Moçambique, o grumete enfrenta sua primeira grande tempestade e recebe do capitão Anderson o nome que o seguiria pelos sete mares: "Storm".</p>
+        </div>
+      </div>
+      <div class="stage">
+        <img src="/o-mestre-das-tormentas/media/timeline-ascensao-360w.webp" srcset="/o-mestre-das-tormentas/media/timeline-ascensao-360w.webp 360w, /o-mestre-das-tormentas/media/timeline-ascensao-560w.webp 560w, /o-mestre-das-tormentas/media/timeline-ascensao.webp 800w" sizes="(max-width: 759px) 164px, 250px" alt="John Storm adulto, corsário a bordo do Garras Afiadas" style="transform:scaleX(-1);" loading="lazy" decoding="async">
+        <div class="stage-body">
+          <div class="num">III</div>
+          <h3>Ascensão, O Corsário</h3>
+          <p>No comando do Garras Afiadas, sob a figura de um gavião de cabeça e garras brancas na proa, John se torna o nome que a coroa inglesa preferia esquecer.</p>
+        </div>
+      </div>
+      <div class="stage">
+        <img src="/o-mestre-das-tormentas/media/timeline-lenda-360w.webp" srcset="/o-mestre-das-tormentas/media/timeline-lenda-360w.webp 360w, /o-mestre-das-tormentas/media/timeline-lenda-560w.webp 560w, /o-mestre-das-tormentas/media/timeline-lenda.webp 800w" sizes="(max-width: 759px) 164px, 250px" alt="John Storm, o Mestre das Tormentas, na Rota da Seda" style="transform:scaleX(-1);" loading="lazy" decoding="async">
+        <div class="stage-body">
+          <div class="num">IV</div>
+          <h3>Lenda, O Mestre</h3>
+          <p>A figura mística que atravessa a Rota da Seda e retorna a Londres não mais como fugitivo, mas como dono do próprio destino.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mapa">
+  <div class="pdp-wrap">
+    <div class="eyebrow">O Roteiro</div>
+    <h2>Mapa da Jornada</h2>
+    <p style="color:var(--text-muted);max-width:620px;margin-top:14px;">Oito paradas que atravessam três livros, clique em cada ponto para ver o que aconteceu ali.</p>
+    <div class="map-wrap" id="mapWrap">
+      <img class="map-bg" src="/o-mestre-das-tormentas/media/mapa-mundi-700w.webp" srcset="/o-mestre-das-tormentas/media/mapa-mundi-700w.webp 700w, /o-mestre-das-tormentas/media/mapa-mundi-1200w.webp 1200w, /o-mestre-das-tormentas/media/mapa-mundi.webp 1600w" sizes="(max-width: 759px) 329px, 1080px" alt="Mapa ilustrado da jornada de John Storm ao redor do mundo" loading="lazy" decoding="async">
+      <div class="map-popup" id="mapPopup">
+        <button class="close" onclick="document.getElementById('mapPopup').classList.remove('open')" aria-label="Fechar">✕</button>
+        <div class="loc" id="popLoc">Local</div>
+        <div id="popText">Texto</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="curiosidades">
+  <div class="pdp-wrap">
+    <div class="eyebrow">Rigor Histórico</div>
+    <h2>Curiosidades por trás da saga</h2>
+    <div class="facts">
+      <div class="fact">
+        <div class="loc">Londres, séc. XVIII</div>
+        <p>O rio <strong>Tâmisa</strong> era tão poluído que o cheiro causava enjoo até em marinheiros experientes, o cenário real por trás dos primeiros capítulos de John.</p>
+      </div>
+      <div class="fact">
+        <div class="loc">Mar da China</div>
+        <p>Os <strong>juncos</strong> chineses eram até duas vezes maiores que os maiores navios europeus, com casco duplo e porões estanques, décadas à frente da engenharia naval do Ocidente.</p>
+      </div>
+      <div class="fact">
+        <div class="loc">Norte da África</div>
+        <p>Os <strong>piratas berberes</strong> eram tão temidos que sobreviventes de seus ataques costumavam ser escravizados e levados para o interior do continente.</p>
+      </div>
+      <div class="fact">
+        <div class="loc">Brasil Colonial</div>
+        <p>O <strong>Dobrão</strong>, moeda de ouro cunhada em Vila Rica (Minas Gerais) entre 1724 e 1727, é o que John carrega aos barris nas negociações em Belém e Laguna.</p>
+      </div>
+      <div class="fact">
+        <div class="loc">Rota da Seda</div>
+        <p>A travessia do deserto de <strong>Taklamakan</strong>, 1.000 km de extensão, conhecido como "o lugar de onde não se volta", é o cenário do capítulo final da saga.</p>
+      </div>
+      <div class="fact">
+        <div class="loc">Índia, Companhia das Índias</div>
+        <p>A <strong>Companhia Britânica das Índias Orientais</strong>, fundada em 1600, detinha o monopólio do comércio de chá e especiarias, pano de fundo comercial de boa parte da primeira metade da saga.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="personagens">
+  <div class="pdp-wrap">
+    <div class="eyebrow">Quem Navega Essa História</div>
+    <h2>Personagens</h2>
+    <div class="chars">
+      <div class="char">
+        <img src="/o-mestre-das-tormentas/media/personagem-john-storm-360w.webp" srcset="/o-mestre-das-tormentas/media/personagem-john-storm-360w.webp 360w, /o-mestre-das-tormentas/media/personagem-john-storm-700w.webp 700w, /o-mestre-das-tormentas/media/personagem-john-storm.webp 800w" sizes="(max-width: 759px) 331px, 340px" alt="John Storm nas quatro fases da vida" loading="lazy" decoding="async">
+        <h3>John Storm</h3>
+        <div class="role">O Mestre das Tormentas</div>
+        <p>Órfão de pai, forjado pelo mar. Sobe de grumete a corsário lendário, atravessando quatro fases de vida: do menino que sonha em fugir da pobreza ao homem que os inimigos temem antes mesmo de vê-lo chegar.</p>
+      </div>
+      <div class="char">
+        <img src="/o-mestre-das-tormentas/media/personagem-marisol-360w.webp" srcset="/o-mestre-das-tormentas/media/personagem-marisol-360w.webp 360w, /o-mestre-das-tormentas/media/personagem-marisol-700w.webp 700w, /o-mestre-das-tormentas/media/personagem-marisol.webp 800w" sizes="(max-width: 759px) 331px, 340px" alt="Marisol" loading="lazy" decoding="async">
+        <h3>Marisol</h3>
+        <div class="role">O primeiro amor</div>
+        <p>Uma paixão nascida onde menos se esperava, entre prisioneiros e capturas em alto-mar. Seu destino é o que transforma o rapaz destemido no homem de nervos de aço que a lenda vai celebrar.</p>
+      </div>
+      <div class="char">
+        <img src="/o-mestre-das-tormentas/media/personagem-feng-long-360w.webp" srcset="/o-mestre-das-tormentas/media/personagem-feng-long-360w.webp 360w, /o-mestre-das-tormentas/media/personagem-feng-long-700w.webp 700w, /o-mestre-das-tormentas/media/personagem-feng-long.webp 800w" sizes="(max-width: 759px) 331px, 340px" alt="Feng Long, a Mulher Dragão, em túnica vermelha e dourada" loading="lazy" decoding="async">
+        <h3>Feng Long</h3>
+        <div class="role">A Mulher Dragão</div>
+        <p>Não nasceu líder: construiu esse lugar sozinha, num mundo que não fazia concessão a mulheres. Comanda uma frota de centenas de navios. Desde o dia em que tomou o comando, veste sempre vermelho.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="momentos" style="background:var(--bg-alt);border-top:1px solid var(--card-border);border-bottom:1px solid var(--card-border);">
+  <div class="pdp-wrap">
+    <div class="eyebrow">Cenas que Definem a Saga</div>
+    <h2>Momentos épicos</h2>
+    <div class="moments">
+      <div class="moment">
+        <img src="/o-mestre-das-tormentas/media/momento-batismo-360w.webp" srcset="/o-mestre-das-tormentas/media/momento-batismo-360w.webp 360w, /o-mestre-das-tormentas/media/momento-batismo-700w.webp 700w, /o-mestre-das-tormentas/media/momento-batismo.webp 1200w" sizes="(max-width: 759px) 329px, 520px" alt="O batismo de John Storm no Estreito de Moçambique" loading="lazy" decoding="async">
+        <div class="moment-body">
+          <h3>O Batismo no Estreito de Moçambique</h3>
+          <p>John enfrenta sua primeira grande tempestade ao lado do capitão Anderson, o momento em que o grumete deixa de ser menino.</p>
+        </div>
+      </div>
+      <div class="moment">
+        <img src="/o-mestre-das-tormentas/media/momento-duelo-360w.webp" srcset="/o-mestre-das-tormentas/media/momento-duelo-360w.webp 360w, /o-mestre-das-tormentas/media/momento-duelo-700w.webp 700w, /o-mestre-das-tormentas/media/momento-duelo.webp 1200w" sizes="(max-width: 759px) 329px, 520px" alt="Duelo com o corsário francês Jean Pierre" loading="lazy" decoding="async">
+        <div class="moment-body">
+          <h3>O Duelo com o Corsário Francês</h3>
+          <p>Jean Pierre captura o navio de John na costa africana, o confronto que muda o rumo de tudo o que viria depois.</p>
+        </div>
+      </div>
+      <div class="moment">
+        <img src="/o-mestre-das-tormentas/media/momento-furacao-360w.webp" srcset="/o-mestre-das-tormentas/media/momento-furacao-360w.webp 360w, /o-mestre-das-tormentas/media/momento-furacao-700w.webp 700w, /o-mestre-das-tormentas/media/momento-furacao.webp 1200w" sizes="(max-width: 759px) 329px, 520px" alt="Furacão nas Bahamas" loading="lazy" decoding="async">
+        <div class="moment-body">
+          <h3>O Furacão nas Bahamas</h3>
+          <p>Uma batalha naval travada sob um dos maiores fenômenos da natureza, com John assumindo o comando após o capitão ser ferido.</p>
+        </div>
+      </div>
+      <div class="moment">
+        <img src="/o-mestre-das-tormentas/media/momento-malaca-360w.webp" srcset="/o-mestre-das-tormentas/media/momento-malaca-360w.webp 360w, /o-mestre-das-tormentas/media/momento-malaca-700w.webp 700w, /o-mestre-das-tormentas/media/momento-malaca.webp 1200w" sizes="(max-width: 759px) 329px, 520px" alt="Reencontro trágico com o Capitão Anderson em Malaca" loading="lazy" decoding="async">
+        <div class="moment-body">
+          <h3>O Ataque em Malaca</h3>
+          <p>Uma missão de infiltração termina no reencontro mais doloroso de John: seu antigo mentor, o Capitão Anderson.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="trailer" id="trailer">
+  <div class="pdp-wrap" style="display:contents;">
+    <video controls preload="none" poster="/o-mestre-das-tormentas/media/trailer-cover.webp">
+      <source src="/o-mestre-das-tormentas/media/trailer-completo.mp4" type="video/mp4">
+      <track kind="captions" src="/o-mestre-das-tormentas/media/trailer-legenda.vtt" srclang="pt" label="Português" default>
+    </video>
+    <div>
+      <div class="eyebrow">Veja Antes de Ler</div>
+      <h3>O trailer completo</h3>
+      <p>Cinquenta segundos que resumem a jornada de John Storm, dos becos de Londres ao comando dos sete mares.</p>
+      <p class="cap-note">Legendado em português · reproduzir com som</p>
+    </div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="pdp-wrap">
+    <div class="eyebrow">Por Que Ler</div>
+    <h2>Por que ler O Mestre das Tormentas</h2>
+    <div class="why">
+      <div class="why-item"><div class="mark">—</div><p>Uma saga de três livros — não um romance histórico qualquer, mas uma epopeia com décadas de pesquisa histórica por trás de cada porto, cada batalha, cada rota comercial.</p></div>
+      <div class="why-item"><div class="mark">—</div><p>Duas protagonistas femininas que não esperam ser salvas: Marisol enfrenta seu próprio destino de frente; Feng Long constrói um império sozinha, num mundo feito para não deixá-la vencer.</p></div>
+      <div class="why-item"><div class="mark">—</div><p>Um herói construído pela perda — não o pirata romantizado de sempre, mas um homem cuja lenda nasce exatamente daquilo que ele teve que sobreviver.</p></div>
+      <div class="why-item"><div class="mark">—</div><p>Ambientação real e verificável: da Companhia das Índias aos juncos chineses, cada pano de fundo histórico da saga é fiel ao período.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="family">
+  <div class="pdp-wrap">
+    <div class="eyebrow" style="justify-content:center;">Um Projeto de Família</div>
+    <p><strong>Domenico Falco</strong> pesquisa e escreve. <strong>Marylin</strong> revisa e incentiva. <strong>Júlio Cesar Falco</strong> assina a identidade visual, capa e universo visual da saga. Um projeto de família, construído livro a livro.</p>
+  </div>
+</section>

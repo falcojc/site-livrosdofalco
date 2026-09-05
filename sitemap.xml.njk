@@ -8,11 +8,13 @@ eleventyExcludeFromCollections: true
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
+{%- for obra in pdps %}
   <url>
-    <loc>https://www.livrosdofalco.com.br/o-mestre-das-tormentas</loc>
+    <loc>https://www.livrosdofalco.com.br/{{ obra.slug_url }}/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+{%- endfor %}
   <url>
     <loc>https://www.livrosdofalco.com.br/arquetipos/</loc>
     <changefreq>monthly</changefreq>

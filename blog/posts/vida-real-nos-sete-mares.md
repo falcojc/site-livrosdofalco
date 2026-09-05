@@ -13,7 +13,7 @@ Quando fechamos os olhos e imaginamos o século XVIII, a imagem que frequentemen
 
 Mas o que separa o mito da realidade? Como era, de fato, a vida dos marinheiros que deixavam portos enevoados da Europa para desbravar rotas perigosas rumo às Américas e à Ásia?
 
-Descubra como as dinâmicas de poder dos grandes impérios forjaram os "senhores dos mares" e como esse contexto monumental serve de pano de fundo para jornadas épicas, como a vivida na trilogia [O Mestre das Tormentas](/o-mestre-das-tormentas), de Domenico Falco.
+Descubra como as dinâmicas de poder dos grandes impérios forjaram os "senhores dos mares" e como esse contexto monumental serve de pano de fundo para jornadas épicas, como a vivida na trilogia [O Mestre das Tormentas](/o-mestre-das-tormentas/), de Domenico Falco.
 
 ## De Marinheiros a Foras da Lei: O Nascimento dos Corsários
 
