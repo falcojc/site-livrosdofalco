@@ -49,7 +49,9 @@
   .pdp-coord dd{margin:0;font-size:15px;color:var(--text);}
 
   .pdp-ctas{display:flex;gap:12px;flex-wrap:wrap;align-items:center;}
-  .pdp-ctas .btn{padding:12px 22px;font-size:13px;}
+  /* o .btn do nucleo e white-space:nowrap, feito para rotulo curto de menu.
+     Num CTA de PDP o rotulo e uma frase, e sem isto ele estoura a caixa. */
+  .pdp-ctas .btn{padding:12px 22px;font-size:13px;white-space:normal;max-width:100%;line-height:1.4;}
   .pdp-selo{display:inline-flex;align-items:center;gap:7px;font-family:Cinzel,serif;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-bright);border:1px dashed rgba(201,161,58,.55);border-radius:2px;padding:8px 12px;}
   .pdp-nota{font-size:13px;color:var(--text-muted);margin:14px 0 0;}
 
@@ -143,7 +145,9 @@
     .pdp-coord div:nth-child(2n){border-right:0;padding-right:0;}
     .pdp-coord div:nth-child(2n+1){padding-left:0;}
     .pdp-coord div:nth-last-child(-n+2){border-bottom:0;}
-    .pdp-ctas .btn{flex:1 1 100%;text-align:center;}
+    /* no celular os dois CTAs ficam empilhados e do mesmo tamanho. O rotulo
+       maior cabe em uma linha com o espacamento um pouco mais fechado. */
+    .pdp-ctas .btn{flex:1 1 100%;text-align:center;letter-spacing:.08em;padding:12px 14px;}
     .pdp-selo{flex:1 1 100%;justify-content:center;}
     .pdp-rel{grid-template-columns:repeat(3,1fr);gap:10px;}
     .pdp-rel .tit{font-size:12px;}

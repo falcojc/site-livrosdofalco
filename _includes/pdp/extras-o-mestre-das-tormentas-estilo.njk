@@ -2,6 +2,10 @@
    mapa, curiosidades, personagens ilustrados, momentos e trailer). Recortado
    do HTML artesanal que estava no ar ate 05/09/2026, sem mudar um valor.
    So carrega nesta pagina: as outras PDPs nao pagam por este CSS. #}
+  /* Duas cores que existiam no :root da pagina artesanal e nao fazem parte do
+     nucleo do site. Sem elas o popup do mapa nascia transparente (fundo
+     var(--card) invalido) e o pino de parada secundaria perdia o vermelho. */
+  .pdp{--card:#191512;--red:#7a1f1f;}
   .eyebrow{font-family:'Cinzel',serif;font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:12px;margin-bottom:18px;}
   .eyebrow::before{content:'';width:34px;height:1px;background:var(--gold);}
   .timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--card-border);margin-top:40px;border:1px solid var(--card-border);}
@@ -18,10 +22,12 @@
   .pin:hover::before,.pin:focus-visible::before{background:var(--gold-bright);transform:translate(-50%,-50%) scale(1.15);}
   .pin.pin-extra::before{background:var(--red);box-shadow:0 0 0 3px rgba(122,31,31,.35);}
   .pin.pin-extra:hover::before,.pin.pin-extra:focus-visible::before{background:#a83030;}
-  .pin .num{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;width:100%;height:100%;font-family:'Cinzel',serif;font-size:10px;color:#1a1208;font-weight:700;}
-  .map-popup{position:absolute;max-width:280px;background:var(--card);border:1px solid var(--gold);padding:16px 18px;font-size:14px;color:var(--text);box-shadow:0 12px 30px rgba(0,0,0,.5);display:none;z-index:5;}
+  .pin .num{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;width:100%;height:100%;font-family:'Cinzel',serif;font-size:11px;color:#1a1208;font-weight:700;}
+  .pin.pin-extra .num{color:#f3e6c8;}
+  .map-popup{position:absolute;width:min(280px,72%);background:#191512;border:1px solid var(--gold);border-radius:3px;padding:16px 18px 16px;font-size:14px;line-height:1.5;color:var(--text);box-shadow:0 12px 30px rgba(0,0,0,.65);display:none;z-index:5;}
   .map-popup.open{display:block;}
-  .map-popup .close{position:absolute;top:6px;right:10px;cursor:pointer;color:var(--text-muted);font-size:14px;background:none;border:none;}
+  .map-popup .close{position:absolute;top:4px;right:6px;cursor:pointer;color:var(--text-muted);font-size:16px;line-height:1;background:none;border:none;padding:6px 8px;}
+  .map-popup .close:hover{color:var(--gold-bright);}
   .map-popup .loc{font-family:'Cinzel',serif;color:var(--gold-bright);font-size:12px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:6px;}
   .facts{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--card-border);margin-top:36px;border:1px solid var(--card-border);}
   .fact{background:var(--bg);padding:26px 28px;}
@@ -65,3 +71,9 @@
      (contain-intrinsic-size) nao bate com a real e a barra de rolagem passa
      a saltar no meio da leitura. Numa pagina de 15 mil pixels isso e pior
      que o ganho, que a medicao nao confirmou. #}
+
+  @media (max-width:640px){
+    .map-popup{left:8px !important;right:8px;top:auto !important;bottom:8px;width:auto;font-size:13px;padding:14px 14px 14px;}
+    .pin{width:38px;height:38px;}
+    .pin::before{width:20px;height:20px;}
+  }
