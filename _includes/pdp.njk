@@ -1,0 +1,116 @@
+{# Layout das paginas de obra (PDP). O conteudo vem de obra.njk; aqui ficam so
+   o cabecalho do documento, o dado estruturado e o esqueleto compartilhado.
+
+   Duas decisoes de performance que valem para as 30 paginas:
+   - a capa NAO tem <link rel=preload>. Preload sem imagesrcset baixa a imagem
+     duas vezes quando existe srcset, armadilha ja documentada neste projeto.
+     Quem cuida da prioridade e o fetchpriority="high" na propria <img>.
+   - o iframe do YouTube nunca carrega junto com a pagina: o bloco de midia usa
+     fachada (thumbnail + botao) e so injeta o iframe no clique. #}
+{% set tituloBase = obra.titulo_seo or obra.titulo %}
+{% set tituloPagina = tituloBase + " | Domenico Falco" if (tituloBase | length) <= 43 else tituloBase %}
+{% set descricao = obra.descricao_seo or obra.gancho %}
+{% set urlAbsoluta = "https://www.livrosdofalco.com.br/" + obra.slug_url + "/" %}
+{% set capaOG = "https://www.livrosdofalco.com.br" + obra.capa_pdp + "-800w.jpg" %}
+{% set siloAtual = obra.silo %}
+{% set amzTag = "falcojc-20" %}
+{% set amzCtx = "pdp" %}
+<!doctype html>
+<html lang="pt-BR">
+<head>
+{# Testado e descartado em 05/09/2026: adiar o gtag.js para o evento load
+   derrubou o LCP de 3,3 s para 1,9 s, mas jogou os 192 KB de JavaScript do
+   GA4 para dentro da janela de medicao: o bloqueio da thread saltou de 215
+   para 1.682 ms e a nota caiu de 88 para 71. O custo nao some, so muda de
+   lugar. Fica o padrao do resto do site. #}
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R2ZQZ51DEK"></script>
+<script src="/analytics.js" defer></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ tituloPagina }}</title>
+<meta name="description" content="{{ descricao }}">
+<meta name="author" content="Domenico Falco">
+<link rel="canonical" href="{{ urlAbsoluta }}">
+<meta property="og:type" content="book">
+<meta property="og:site_name" content="Domenico Falco, Livros de Ficção Histórica">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="{{ tituloBase }}">
+<meta property="og:description" content="{{ descricao }}">
+<meta property="og:url" content="{{ urlAbsoluta }}">
+<meta property="og:image" content="{{ capaOG }}">
+<meta property="og:image:width" content="{{ obra.capa_pdp_w }}">
+<meta property="og:image:height" content="{{ obra.capa_pdp_h }}">
+{# capa de livro e vertical: summary mostra a imagem inteira, summary_large_image cortaria #}
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{{ tituloBase }}">
+<meta name="twitter:description" content="{{ descricao }}">
+<meta name="twitter:image" content="{{ capaOG }}">
+<link rel="icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" as="font" type="font/woff2" href="/fonts/eb-garamond-143e88.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/fonts/cinzel-63551c.woff2" crossorigin>
+<script type="application/ld+json">{{ obra | jsonldObra | safe }}</script>
+<style>
+{% include "parts/css-nucleo.njk" %}
+{% include "pdp/estilo.njk" %}
+{% if obra.extras %}{% include "pdp/extras-" + obra.extras + "-estilo.njk" %}{% endif %}
+</style>
+</head>
+<body class="pdp">
+{% include "parts/header.njk" %}
+
+<main>
+{{ content | safe }}
+</main>
+
+{% include "parts/footer.njk" %}
+
+<button id="back-to-top" aria-label="Voltar ao topo">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+</button>
+
+<script>
+(function(){
+  var btn = document.getElementById('back-to-top');
+  window.addEventListener('scroll', function(){
+    btn.classList.toggle('visible', window.scrollY > 600);
+  }, { passive: true });
+  btn.addEventListener('click', function(){ window.scrollTo({ top: 0, behavior: 'smooth' }); });
+
+  // Fachada do YouTube: o iframe (cerca de 500 KB) so nasce quando a leitora
+  // pede para ver. Antes disso a pagina carrega so uma thumbnail.
+  document.querySelectorAll('.pdp-yt').forEach(function(alvo){
+    alvo.addEventListener('click', function(){
+      var id = alvo.getAttribute('data-yt');
+      var f = document.createElement('iframe');
+      f.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1';
+      f.title = alvo.getAttribute('data-titulo') || 'Vídeo no YouTube';
+      f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture';
+      f.allowFullscreen = true;
+      alvo.replaceWith(f);
+    });
+  });
+
+  // Video de atmosfera do heroi, quando a obra tem um: o poster aparece na
+  // hora e o mp4 so entra depois que a pagina terminou de desenhar, para nao
+  // competir com o LCP. Quem pediu menos movimento nunca baixa o video.
+  var hv = document.getElementById('pdp-hero-video');
+  if (hv && window.matchMedia('(min-width: 900px)').matches
+         && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    var comeca = function(){
+      var s = hv.querySelector('source[data-src]');
+      if (!s) return;
+      if (hv.dataset.poster) { hv.poster = hv.dataset.poster; }
+      s.src = s.getAttribute('data-src');
+      s.removeAttribute('data-src');
+      hv.load();
+      hv.play().catch(function(){});
+    };
+    if ('requestIdleCallback' in window) { requestIdleCallback(comeca, { timeout: 2500 }); }
+    else { window.addEventListener('load', comeca); }
+  }
+})();
+</script>
+{% if obra.extras %}{% include "pdp/extras-" + obra.extras + "-script.njk" ignore missing %}{% endif %}
+</body>
+</html>

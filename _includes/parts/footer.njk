@@ -1,0 +1,23 @@
+{# Rodape unico do site. Ver o comentario de parts/header.njk. #}
+{% set amzTag = amzTag or "falcoblog-20" %}{% set amzCtx = amzCtx or "blog" %}
+<footer>
+  <div class="wrap footer-grid">
+    <div>
+      <div class="brand">DOMENICO <span>FALCO</span></div>
+      <p>Ficção histórica que entrelaça fatos reais a personagens inesquecíveis, do Japão imperial aos sete mares.</p>
+      <p style="font-size:12px;">Arte das capas: Júlio Cesar Falco &nbsp;·&nbsp; Revisão: Marylin Falco</p>
+      <p class="credit" style="font-size:12px;">Produzido por <a href="https://falcostrategy.com.br/?utm_source=livrosdofalco&amp;utm_medium=referral&amp;utm_campaign=rodape-credito&amp;utm_content={{ amzCtx }}" target="_blank" rel="noopener" style="color:var(--gold-bright,#e6c467);text-decoration:underline;text-underline-offset:2px;">FalcoStrategy.com.br</a></p>
+    </div>
+    <div class="foot-links">
+      <a href="https://www.amazon.com.br/Livros-DOMENICO-FALCO/s?rh=n%3A6740748011%2Cp_27%3ADOMENICO%2BFALCO&tag={{ amzTag }}&ascsubtag={{ amzCtx }}-rodape-loja" target="_blank" rel="noopener">Loja na Amazon</a>
+      <a href="/#sobre">Sobre o Autor</a>
+      <a href="/#obras">Obras</a>
+      <a href="/o-mestre-das-tormentas/">O Mestre das Tormentas</a>
+      <a href="/arquetipos/">Arquétipos</a>
+      <a href="/romance-historico/">Romance histórico</a>
+      <a href="/blog">Blog</a>
+      <a href="/newsletter">Newsletter</a>
+    </div>
+  </div>
+    <p class="affiliate-note">Como Associado da Amazon, eu ganho com compras qualificadas. Os links para a Amazon nesta página são links de afiliado.</p>
+</footer>

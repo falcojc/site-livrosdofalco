@@ -12,7 +12,7 @@ tags: ["cluster-aventura-epica"]
 ---
 Por muitos séculos, as vastas extensões da Ásia abrigaram um dos maiores e mais perigosos corredores comerciais e culturais da história da humanidade. Muito antes dos grandes navios cruzarem os oceanos, povos de diferentes etnias traçaram rotas que ligavam o oeste da China à Índia, ao Nepal, ao Tibete e, através do Oriente Próximo, alcançavam os portos do Mar Mediterrâneo e a Europa.
 
-Essa complexa teia de caminhos ficou eternizada como a Rota da Seda. Longe de ser uma viagem turística, atravessar esses territórios exigia uma resiliência sobre-humana para enfrentar desertos mortais, montanhas intransponíveis e a imprevisibilidade da natureza. Descubra os desafios dessa travessia monumental que serve de cenário para a emocionante jornada final da saga [O Mestre das Tormentas](/o-mestre-das-tormentas), de Domenico Falco.
+Essa complexa teia de caminhos ficou eternizada como a Rota da Seda. Longe de ser uma viagem turística, atravessar esses territórios exigia uma resiliência sobre-humana para enfrentar desertos mortais, montanhas intransponíveis e a imprevisibilidade da natureza. Descubra os desafios dessa travessia monumental que serve de cenário para a emocionante jornada final da saga [O Mestre das Tormentas](/o-mestre-das-tormentas/), de Domenico Falco.
 
 ## Mais que Seda: O Intercâmbio do Mundo
 

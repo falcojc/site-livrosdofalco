@@ -1,0 +1,43 @@
+{# Cabecalho unico do site. Usado pelo blog (base.njk) e pelas PDPs (pdp.njk).
+   amzTag/amzCtx trocam a tag de afiliado e o rastro do link da loja conforme
+   a pagina; siloAtual marca a categoria da obra no menu. #}
+{% set amzTag = amzTag or "falcoblog-20" %}{% set amzCtx = amzCtx or "blog" %}
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/" class="brand-lockup" aria-label="Domenico Falco, Início">
+      <img src="/pictograma-livrosdofalco.webp" alt="" width="42" height="30">
+      <div class="brand">DOMENICO <span>FALCO</span></div>
+    </a>
+    <nav class="links">
+      <a href="/#sobre">Autor</a>
+      <a href="/#obras">Obras</a>
+      <div class="nav-dropdown">
+        <a href="/categoria/">Categorias</a>
+        <div class="nav-dropdown-panel">
+          <a href="/categoria/mulheres-donas-do-seu-destino/"{% if siloAtual == "mulheres-donas-do-seu-destino" %} class="current"{% endif %}>Mulheres Donas de Seus Destinos</a>
+          <a href="/categoria/raizes-sacrificio-familia/"{% if siloAtual == "raizes-sacrificio-familia" %} class="current"{% endif %}>Raízes, Sacrifício e Família</a>
+          <a href="/categoria/submundo-traicoes-misterios/"{% if siloAtual == "submundo-traicoes-misterios" %} class="current"{% endif %}>Submundo, Traições e Mistérios</a>
+          <a href="/categoria/jornadas-epicas-sobrevivencia/"{% if siloAtual == "jornadas-epicas-sobrevivencia" %} class="current"{% endif %}>Jornadas Épicas e Sobrevivência</a>
+          <a href="/categoria/fe-misticismo-desconhecido/"{% if siloAtual == "fe-misticismo-desconhecido" %} class="current"{% endif %}>Fé, Misticismo e o Desconhecido</a>
+        </div>
+      </div>
+      <a href="/blog" {% if page.url == '/blog/' or '/blog/' in page.url %}class="current"{% endif %}>Blog</a>
+      <a href="/#contato">Contato</a>
+      <a href="/newsletter">Newsletter</a>
+    </nav>
+    <div class="nav-actions">
+      <div class="social-links">
+        <a href="https://www.instagram.com/livrosdofalco/" target="_blank" rel="noopener" aria-label="Domenico Falco no Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg>
+        </a>
+        <a href="https://www.tiktok.com/@livros_dofalco" target="_blank" rel="noopener" aria-label="Domenico Falco no TikTok">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.82c-1.12-1.08-1.67-2.64-1.75-4.17H11.9v14.4c0 1.75-1.42 3.19-3.19 3.19-1.76 0-3.19-1.44-3.19-3.19 0-1.76 1.43-3.2 3.19-3.2.35 0 .68.05 1 .16v-3.5a6.7 6.7 0 0 0-1-.08c-3.68 0-6.66 2.98-6.66 6.66S5.03 22.75 8.71 22.75s6.66-2.98 6.66-6.66V9.31c1.31.94 2.91 1.49 4.63 1.49V7.29c-1.28 0-2.47-.41-3.4-1.11-.03-.02-.06-.05-.09-.07l.09-.29z"></path></svg>
+        </a>
+        <a href="https://www.youtube.com/@livrosdofalco" target="_blank" rel="noopener" aria-label="Domenico Falco no YouTube">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.55A3.02 3.02 0 0 0 .5 6.19 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.81 3.02 3.02 0 0 0 2.12 2.14C4.5 20.5 12 20.5 12 20.5s7.5 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.81zM9.6 15.6V8.4l6.4 3.6z"></path></svg>
+        </a>
+      </div>
+      <a class="btn solid" href="https://www.amazon.com.br/Livros-DOMENICO-FALCO/s?rh=n%3A6740748011%2Cp_27%3ADOMENICO%2BFALCO&tag={{ amzTag }}&ascsubtag={{ amzCtx }}-nav-loja" target="_blank" rel="noopener">Loja Amazon</a>
+    </div>
+  </div>
+</header>

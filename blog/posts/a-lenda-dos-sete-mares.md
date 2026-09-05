@@ -11,7 +11,7 @@ obra_relacionada_cta: "Descubra a saga completa em O Mestre das Tormentas, do Ca
 heroOrder: 3
 tags: ["cluster-aventura-epica"]
 ---
-Séculos antes de John Storm içar velas rumo ao desconhecido em [O Mestre das Tormentas](/o-mestre-das-tormentas), os mares do mundo já pertenciam a homens e mulheres que reescreveram as próprias regras. Nem todos usavam tapa-olho, nem todos eram vilões, mas todos, à sua maneira, transformaram o medo dos outros em lenda própria.
+Séculos antes de John Storm içar velas rumo ao desconhecido em [O Mestre das Tormentas](/o-mestre-das-tormentas/), os mares do mundo já pertenciam a homens e mulheres que reescreveram as próprias regras. Nem todos usavam tapa-olho, nem todos eram vilões, mas todos, à sua maneira, transformaram o medo dos outros em lenda própria.
 
 ## 1. Os nomes que o tempo não apagou
 

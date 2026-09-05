@@ -1,0 +1,51 @@
+{# Mapa interativo de O Mestre das Tormentas. So esta pagina carrega este JS. #}
+<script>
+(function(){
+  // O poster de um <video> e baixado mesmo com preload="none". Aqui ele so
+  // entra quando o trailer se aproxima da tela: 45 KB fora do carregamento.
+  document.querySelectorAll('video[data-poster]').forEach(function(v){
+    var poe = function(){ v.poster = v.dataset.poster; delete v.dataset.poster; };
+    if ('IntersectionObserver' in window) {
+      var o = new IntersectionObserver(function(e){ if (e[0].isIntersecting) { poe(); o.disconnect(); } }, { rootMargin: '300px' });
+      o.observe(v);
+    } else { poe(); }
+  });
+// mapa interativo
+  var waypoints = [
+    {x:44, y:19, loc:'Londres', text:'O porto de nascimento, a infância de John nos fundos de uma estalagem.'},
+    {x:49, y:58, loc:'África', text:'A rota dos temidos piratas berberes.'},
+    {x:64, y:52, loc:'Índia (Bombaim, Calcutá)', text:'As viagens da Companhia Britânica das Índias Orientais.', extra:true},
+    {x:24, y:48, loc:'Caribe', text:'O domínio como corsário e o encontro com Marisol.'},
+    {x:11, y:65, loc:'Polinésia', text:'O refúgio após o naufrágio.'},
+    {x:90, y:55, loc:'Mar da China', text:'O império de Feng Long, a Mulher Dragão.'},
+    {x:68, y:18, loc:'Rota da Seda', text:'Jornada pelo Tibete, Pérsia e Turquia, a longa volta para casa.'},
+    {x:52, y:24, loc:'Londres, o retorno', text:'O menino que virou lenda, de volta ao lugar onde tudo começou.', extra:true}
+  ];
+  var wrap = document.getElementById('mapWrap');
+  // Os pinos so nascem quando o mapa se aproxima da tela. Antes disso eles
+  // custavam trabalho de layout no carregamento, numa secao que fica a mais de
+  // 3 mil pixels do topo.
+  var montaPinos = function(){ waypoints.forEach(function(w, i){
+    var btn2 = document.createElement('button');
+    btn2.className = 'pin' + (w.extra ? ' pin-extra' : '');
+    btn2.style.left = w.x + '%'; btn2.style.top = w.y + '%';
+    btn2.setAttribute('aria-label', (i+1) + '. ' + w.loc);
+    btn2.innerHTML = '<span class="num">' + (i+1) + '</span>';
+    btn2.addEventListener('click', function(){
+      document.getElementById('popLoc').textContent = (i+1) + '. ' + w.loc;
+      document.getElementById('popText').textContent = w.text;
+      var pop = document.getElementById('mapPopup');
+      pop.style.left = Math.min(Math.max(w.x, 10), 64) + '%';
+      pop.style.top = Math.min(Math.max(w.y, 6), 64) + '%';
+      pop.classList.add('open');
+    });
+    wrap.appendChild(btn2);
+  }); };
+  if ('IntersectionObserver' in window) {
+    var obs = new IntersectionObserver(function(e){
+      if (e[0].isIntersecting) { montaPinos(); obs.disconnect(); }
+    }, { rootMargin: '400px' });
+    obs.observe(wrap);
+  } else { montaPinos(); }
+})();
+</script>
