@@ -8,6 +8,7 @@
     if ('IntersectionObserver' in window) {
       var o = new IntersectionObserver(function(e){ if (e[0].isIntersecting) { poe(); o.disconnect(); } }, { rootMargin: '300px' });
       o.observe(v);
+      addEventListener('load', function(){ setTimeout(poe, 3000); });
     } else { poe(); }
   });
 // mapa interativo
@@ -22,10 +23,11 @@
     {x:52, y:24, loc:'Londres, o retorno', text:'O menino que virou lenda, de volta ao lugar onde tudo começou.', extra:true}
   ];
   var wrap = document.getElementById('mapWrap');
-  // Os pinos so nascem quando o mapa se aproxima da tela. Antes disso eles
-  // custavam trabalho de layout no carregamento, numa secao que fica a mais de
-  // 3 mil pixels do topo.
-  var montaPinos = function(){ waypoints.forEach(function(w, i){
+  // Os 8 pinos nascem junto com a pagina, de proposito. Adia-los por
+  // IntersectionObserver economizava um trabalho de layout irrisorio e criava
+  // um risco real: em aba oculta o observer nao dispara e o mapa fica sem pino
+  // nenhum, sem erro no console. Funcionalidade ganha de micro-otimizacao.
+  waypoints.forEach(function(w, i){
     var btn2 = document.createElement('button');
     btn2.className = 'pin' + (w.extra ? ' pin-extra' : '');
     btn2.style.left = w.x + '%'; btn2.style.top = w.y + '%';
@@ -35,17 +37,14 @@
       document.getElementById('popLoc').textContent = (i+1) + '. ' + w.loc;
       document.getElementById('popText').textContent = w.text;
       var pop = document.getElementById('mapPopup');
-      pop.style.left = Math.min(Math.max(w.x, 10), 64) + '%';
-      pop.style.top = Math.min(Math.max(w.y, 6), 64) + '%';
       pop.classList.add('open');
+      // limite calculado: onde o popup ainda cabe inteiro dentro do mapa.
+      var limiteX = 100 - (pop.offsetWidth / wrap.clientWidth) * 100 - 2;
+      var limiteY = 100 - (pop.offsetHeight / wrap.clientHeight) * 100 - 2;
+      pop.style.left = Math.min(Math.max(w.x, 2), Math.max(2, limiteX)) + '%';
+      pop.style.top = Math.min(Math.max(w.y, 2), Math.max(2, limiteY)) + '%';
     });
     wrap.appendChild(btn2);
-  }); };
-  if ('IntersectionObserver' in window) {
-    var obs = new IntersectionObserver(function(e){
-      if (e[0].isIntersecting) { montaPinos(); obs.disconnect(); }
-    }, { rootMargin: '400px' });
-    obs.observe(wrap);
-  } else { montaPinos(); }
+  });
 })();
 </script>

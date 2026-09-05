@@ -15,6 +15,14 @@
 {% set siloAtual = obra.silo %}
 {% set amzTag = "falcojc-20" %}
 {% set amzCtx = "pdp" %}
+{# font-display: optional em vez de swap. Medido pelo PageSpeed em 05/09: o
+   elemento de LCP das PDPs e um paragrafo de texto, com TBT baixo e nada
+   bloqueando a renderizacao. O que atrasa o LCP e a repintura do texto quando
+   a EB Garamond (44 KB) chega na rede lenta. Com "optional" o navegador
+   desiste da fonte que nao chegou a tempo em vez de repintar: quem entra pela
+   primeira vez numa rede ruim le em Georgia, que e o proprio fallback da
+   familia, e na visita seguinte ja ve a fonte do site, que fica em cache. #}
+{% set fontDisplay = "optional" %}
 <!doctype html>
 <html lang="pt-BR">
 <head>
