@@ -1,6 +1,15 @@
 {# Mapa interativo de O Mestre das Tormentas. So esta pagina carrega este JS. #}
 <script>
 (function(){
+  // O poster de um <video> e baixado mesmo com preload="none". Aqui ele so
+  // entra quando o trailer se aproxima da tela: 45 KB fora do carregamento.
+  document.querySelectorAll('video[data-poster]').forEach(function(v){
+    var poe = function(){ v.poster = v.dataset.poster; delete v.dataset.poster; };
+    if ('IntersectionObserver' in window) {
+      var o = new IntersectionObserver(function(e){ if (e[0].isIntersecting) { poe(); o.disconnect(); } }, { rootMargin: '300px' });
+      o.observe(v);
+    } else { poe(); }
+  });
 // mapa interativo
   var waypoints = [
     {x:44, y:19, loc:'Londres', text:'O porto de nascimento, a infância de John nos fundos de uma estalagem.'},
@@ -13,7 +22,10 @@
     {x:52, y:24, loc:'Londres, o retorno', text:'O menino que virou lenda, de volta ao lugar onde tudo começou.', extra:true}
   ];
   var wrap = document.getElementById('mapWrap');
-  waypoints.forEach(function(w, i){
+  // Os pinos so nascem quando o mapa se aproxima da tela. Antes disso eles
+  // custavam trabalho de layout no carregamento, numa secao que fica a mais de
+  // 3 mil pixels do topo.
+  var montaPinos = function(){ waypoints.forEach(function(w, i){
     var btn2 = document.createElement('button');
     btn2.className = 'pin' + (w.extra ? ' pin-extra' : '');
     btn2.style.left = w.x + '%'; btn2.style.top = w.y + '%';
@@ -28,6 +40,12 @@
       pop.classList.add('open');
     });
     wrap.appendChild(btn2);
-  });
+  }); };
+  if ('IntersectionObserver' in window) {
+    var obs = new IntersectionObserver(function(e){
+      if (e[0].isIntersecting) { montaPinos(); obs.disconnect(); }
+    }, { rootMargin: '400px' });
+    obs.observe(wrap);
+  } else { montaPinos(); }
 })();
 </script>

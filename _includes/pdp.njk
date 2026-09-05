@@ -18,6 +18,11 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
+{# Testado e descartado em 05/09/2026: adiar o gtag.js para o evento load
+   derrubou o LCP de 3,3 s para 1,9 s, mas jogou os 192 KB de JavaScript do
+   GA4 para dentro da janela de medicao: o bloqueio da thread saltou de 215
+   para 1.682 ms e a nota caiu de 88 para 71. O custo nao some, so muda de
+   lugar. Fica o padrao do resto do site. #}
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-R2ZQZ51DEK"></script>
 <script src="/analytics.js" defer></script>
 <meta charset="UTF-8">
@@ -95,6 +100,7 @@
     var comeca = function(){
       var s = hv.querySelector('source[data-src]');
       if (!s) return;
+      if (hv.dataset.poster) { hv.poster = hv.dataset.poster; }
       s.src = s.getAttribute('data-src');
       s.removeAttribute('data-src');
       hv.load();

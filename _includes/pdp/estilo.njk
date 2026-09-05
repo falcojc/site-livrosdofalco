@@ -152,3 +152,8 @@
   @media (prefers-reduced-motion:reduce){
     .pdp-card,.pdp-rel img{transition:none;}
   }
+
+  /* O cabecalho fixo do site usa backdrop-filter:blur, que o celular compoe a
+     cada quadro de rolagem. Numa pagina longa isso custa caro e o ganho visual
+     e minimo: o fundo ja e quase opaco. Nas PDPs ele vira cor solida. */
+  .pdp header.nav{backdrop-filter:none;background:rgba(11,9,8,.98);}

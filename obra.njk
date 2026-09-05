@@ -28,7 +28,7 @@ layout: pdp.njk
 
 <section class="pdp-hero">
   {% if obra.heroi and obra.heroi.video %}
-  <video id="pdp-hero-video" class="pdp-hero-video" muted loop playsinline aria-hidden="true" poster="{{ obra.heroi.poster }}">
+  <video id="pdp-hero-video" class="pdp-hero-video" muted loop playsinline aria-hidden="true" data-poster="{{ obra.heroi.poster }}">
     <source data-src="{{ obra.heroi.video }}" type="video/mp4">
   </video>
   <div class="pdp-hero-scrim"></div>
