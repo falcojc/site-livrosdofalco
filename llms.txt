@@ -15,7 +15,10 @@ personagem recorrentes.
 - [Categorias](https://www.livrosdofalco.com.br/categoria/): as cinco categorias temáticas do catálogo (Mulheres Donas de Seus Destinos, Raízes/Sacrifício/Família, Submundo/Traições/Mistérios, Jornadas Épicas e Sobrevivência, Fé/Misticismo e o Desconhecido).
 - [Arquétipos](https://www.livrosdofalco.com.br/arquetipos/): os dez arquétipos de personagem do catálogo, com a ficha de cada um (o que buscou, o que custou).
 - [Blog](https://www.livrosdofalco.com.br/blog/): artigos de contexto histórico e bastidores de cada romance.
-- [O Mestre das Tormentas](https://www.livrosdofalco.com.br/o-mestre-das-tormentas): página do livro sobre a saga de John Storm, o Explorador.
+- [Páginas de obra](https://www.livrosdofalco.com.br/o-comandante/): cada obra com página própria traz sinopse, época, cenário, temas, personagens e perguntas frequentes. No ar hoje:
+  - [O Comandante](https://www.livrosdofalco.com.br/o-comandante/): Itália do pós-guerra, de Salerno em 1943 ao porto de Gênova e à revolução do contêiner.
+  - [A Saga Italiana](https://www.livrosdofalco.com.br/a-saga-italiana/): coletânea com Os Dois Irmãos, O Siciliano e Os Italianos, a imigração italiana de 1860 ao século XXI.
+  - [O Mestre das Tormentas](https://www.livrosdofalco.com.br/o-mestre-das-tormentas/): a saga de John Storm, do porto de Londres à Rota da Seda no século XVIII.
 - [Audiolivro de O Comandante](https://www.livrosdofalco.com.br/audiolivro): captação do audiolivro em MP3, capítulo por capítulo.
 - [Newsletter](https://www.livrosdofalco.com.br/newsletter): cadastro para novidades de lançamento.
 - [Sobre o autor](https://www.livrosdofalco.com.br/#sobre): biografia de Domenico Falco.
