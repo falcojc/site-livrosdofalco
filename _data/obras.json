@@ -1816,17 +1816,20 @@
       {
         "titulo": "Os Dois Irmãos",
         "linha": "Da Campânia a Mendoza, a partir de 1860",
-        "desc": "A Unificação Italiana racha uma família ao meio. Giacomo pega em armas com os revoltosos e embarca em Gênova rumo aos vinhedos da Argentina. Giovanni segue o caminho oposto sem sair do país: o dom do próprio ouvido o leva aos salões da nobreza de Nápoles."
+        "desc": "A Unificação Italiana racha uma família ao meio. Giacomo pega em armas com os revoltosos e embarca em Gênova rumo aos vinhedos da Argentina. Giovanni segue o caminho oposto sem sair do país: o dom do próprio ouvido o leva aos salões da nobreza de Nápoles.",
+        "slug": "os-dois-irmaos"
       },
       {
         "titulo": "O Siciliano",
         "linha": "Sicília e Brasil, 1880 a 1943",
-        "desc": "Depois de uma disputa de terras que lhe custa o pai, Matteo cruza o Atlântico para recomeçar nas fazendas de café de Vassouras, no Rio de Janeiro, antes de a família se mudar para São Paulo. Décadas depois, volta à Sicília para acertar o que deixou por resolver."
+        "desc": "Depois de uma disputa de terras que lhe custa o pai, Matteo cruza o Atlântico para recomeçar nas fazendas de café de Vassouras, no Rio de Janeiro, antes de a família se mudar para São Paulo. Décadas depois, volta à Sicília para acertar o que deixou por resolver.",
+        "slug": "o-siciliano"
       },
       {
         "titulo": "Os Italianos",
         "linha": "Calábria, Nova York e São Paulo, 1892 ao século XXI",
-        "desc": "Vincenzo sobrevive aos combates no norte da África e lidera a mudança definitiva da família para São Paulo. Três gerações atravessam duas guerras e uma cidade em plena industrialização, até que um descendente reaparece na Itália, cem anos depois da primeira partida."
+        "desc": "Vincenzo sobrevive aos combates no norte da África e lidera a mudança definitiva da família para São Paulo. Três gerações atravessam duas guerras e uma cidade em plena industrialização, até que um descendente reaparece na Itália, cem anos depois da primeira partida.",
+        "slug": "os-italianos"
       }
     ],
     "capa": "/covers/a-saga-italiana.jpg",
