@@ -84,10 +84,13 @@ layout: pdp.njk
     <div class="pdp-vols">
       {% for v in obra.volumes %}
       <article class="pdp-vol">
-        <div class="num">{{ loop.index }} de {{ obra.volumes | length }}</div>
-        <h3>{{ v.titulo }}</h3>
-        <p class="linha">{{ v.linha }}</p>
-        <p>{{ v.desc }}</p>
+        {% if v.slug %}<img class="pdp-vol-capa" src="/covers/{{ v.slug }}.webp" alt="Capa de {{ v.titulo }}" width="90" height="135" loading="lazy" decoding="async">{% endif %}
+        <div class="pdp-vol-corpo">
+          <div class="num">{{ loop.index }} de {{ obra.volumes | length }}</div>
+          <h3>{{ v.titulo }}</h3>
+          <p class="linha">{{ v.linha }}</p>
+          <p>{{ v.desc }}</p>
+        </div>
       </article>
       {% endfor %}
     </div>

@@ -788,8 +788,8 @@
     "serie": null,
     "volumes": null,
     "capa": "/covers/a-industria-do-vicio.jpg",
-    "capa_w": 289,
-    "capa_h": 436,
+    "capa_w": 400,
+    "capa_h": 497,
     "capa_pdp": null,
     "capa_pdp_w": null,
     "capa_pdp_h": null,
@@ -832,7 +832,7 @@
     "slug": "o-siciliano",
     "slug_url": "o-siciliano",
     "titulo": "O Siciliano",
-    "subtitulo": null,
+    "subtitulo": "De uma disputa de terras no sopé do Etna aos cafezais de Vassouras, a travessia de um homem em busca de um novo começo",
     "asin": "B0D9WS272F",
     "silo": "raizes-sacrificio-familia",
     "silo_nome": "Raízes, Sacrifício e Família",
@@ -842,21 +842,67 @@
     "capa": "/covers/o-siciliano.jpg",
     "capa_w": 289,
     "capa_h": 436,
-    "capa_pdp": null,
-    "capa_pdp_w": null,
-    "capa_pdp_h": null,
+    "capa_pdp": "/covers/pdp/o-siciliano",
+    "capa_pdp_w": 800,
+    "capa_pdp_h": 1201,
     "preco": "9,90",
     "ku": true,
-    "paginas": null,
-    "publicado": null,
-    "gancho": null,
-    "sinopse": null,
-    "temas": null,
-    "epoca": null,
-    "local": null,
-    "leia_se_voce": null,
-    "personagens": null,
-    "faq": null,
+    "paginas": 99,
+    "publicado": "2024-07-22",
+    "gancho": "Ele deixou a Sicília para não morrer. No Brasil, construiu um império.",
+    "sinopse": [
+      "No sopé do Etna, fim do século XIX, Matteo cresce entre o rebanho de ovelhas do pai e a disputa de terras que opõe a família ao vizinho Federico havia gerações. Quando o vulcão desperta e o desentendimento termina em sangue, Matteo tem que escolher entre alimentar a vingança e salvar a própria família: escolhe fugir, na calada da noite, com a esposa Maria e os dois filhos pequenos, deixando para trás um bilhete e uma promessa de voltar.",
+      "No Rio de Janeiro, um conterrâneo os leva para Vassouras, no interior fluminense, onde o ciclo do café ainda sustenta grandes fazendas. Ali Matteo recomeça como trabalhador da terra ao lado de Andrea, o agente de vendas que lhes abre a primeira porta, e vê os filhos crescerem ao lado de Bela, filha do fazendeiro. A prosperidade chega peça por peça, junto com a mudança para São Paulo, atravessando a quebra da bolsa de 1929 e a era Vargas, até que a Segunda Guerra Mundial transforma ser italiano no Brasil em motivo de suspeita, confisco e perseguição.",
+      "Décadas depois, já com sessenta anos e a família próspera, Matteo decide contar aos filhos o segredo que carrega desde aquela noite na Sicília, e resolve fazer a viagem que jurou fazer um dia: voltar à terra do pai para acertar o que deixou por resolver."
+    ],
+    "temas": [
+      "imigração italiana para o Brasil",
+      "o ciclo do café em Vassouras e a era Vargas",
+      "o preço da vingança e o custo de uma segunda chance"
+    ],
+    "epoca": "1880 a 1943",
+    "local": "Catania, Sicília · Vassouras e São Paulo, Brasil",
+    "leia_se_voce": [
+      "gosta de ficção de imigração italiana com raiz histórica de verdade",
+      "quer entender por dentro o ciclo do café e a vida do imigrante no interior do Rio e de São Paulo",
+      "prefere protagonista que carrega um segredo e volta para resolvê-lo, não só para recordar"
+    ],
+    "personagens": [
+      {
+        "nome": "Matteo",
+        "papel": "O filho de pastor que atravessa o Atlântico fugindo de uma vingança e constrói uma nova vida a partir do café."
+      },
+      {
+        "nome": "Maria",
+        "papel": "Esposa de Matteo, que deixa a Sicília e os parentes para trás para proteger o futuro dos filhos."
+      },
+      {
+        "nome": "Ângelo",
+        "papel": "O pai de Matteo, pastor de ovelhas. A disputa de terras que ele trava com o vizinho muda o destino de toda a família."
+      },
+      {
+        "nome": "Andrea",
+        "papel": "Agente de vendas de café em Vassouras, o conterrâneo que abre a Matteo e Maria as primeiras portas no Brasil."
+      },
+      {
+        "nome": "Bela",
+        "papel": "Filha de Andrea, que se torna parte da família de Matteo e ajuda a levar a fazenda adiante."
+      }
+    ],
+    "faq": [
+      {
+        "p": "O Siciliano faz parte de outra edição?",
+        "r": "Sim. Além de estar disponível como livro avulso, O Siciliano também integra a edição especial A Saga Italiana, ao lado de Os Dois Irmãos e Os Italianos. O texto é o mesmo nas duas edições."
+      },
+      {
+        "p": "A história é baseada em fatos reais?",
+        "r": "É ficção ambientada em fatos reais. As disputas de terra na Sicília, a imigração italiana para o Brasil, o ciclo do café em Vassouras e os confiscos de bens de imigrantes italianos durante a Segunda Guerra aconteceram como estão no livro; Matteo e sua família são personagens criados pelo autor."
+      },
+      {
+        "p": "Preciso ler A Saga Italiana antes?",
+        "r": "Não. O Siciliano é uma história fechada, do começo ao fim, e pode ser lida de forma totalmente independente."
+      }
+    ],
     "midia": {
       "youtube_trailer": null,
       "youtube_podcast": null,
@@ -864,21 +910,26 @@
     },
     "heroi": null,
     "extras": null,
-    "posts": null,
-    "relacionadas": null,
-    "avaliacoes": null,
-    "titulo_seo": null,
-    "descricao_seo": null,
-    "onda": null,
+    "posts": [
+      "imigracao-italiana-jornada-mediterraneo-cafezais"
+    ],
+    "relacionadas": [
+      "a-saga-italiana",
+      "os-italianos",
+      "os-dois-irmaos"
+    ],
+    "avaliacoes": {
+      "nota": 4.0,
+      "total": 1
+    },
+    "titulo_seo": "O Siciliano, romance da imigração italiana",
+    "descricao_seo": "Ele deixou a Sicília para não morrer. No Brasil, construiu um império sobre café. Romance histórico de Domenico Falco, também parte da edição especial A Saga Italiana.",
+    "onda": 1,
     "_fonte_desc": "Obrigado a deixar a Sicília após uma disputa de terras, Matteo reconstrói sua vida como imigrante no Rio de Janeiro e em São Paulo, nas primeiras décadas do século XX.",
     "_fonte_docx": "2. Produto/Catalogo/Obras Literárias/16. O Siciliano/1. Manuscrito/O Siciliano.docx",
     "_nota_asin": null,
-    "pronta": false,
-    "_falta": [
-      "gancho",
-      "sinopse",
-      "temas"
-    ]
+    "pronta": true,
+    "_falta": null
   },
   {
     "slug": "o-explorador-desconhecido",
@@ -1144,7 +1195,7 @@
     "slug": "a-vila",
     "slug_url": "a-vila",
     "titulo": "A Vila",
-    "subtitulo": null,
+    "subtitulo": "Numa vila de pescadores no Peloponeso, a força silenciosa de uma mulher segurando a família de pé através da guerra",
     "asin": "B0D8RTKVB8",
     "silo": "raizes-sacrificio-familia",
     "silo_nome": "Raízes, Sacrifício e Família",
@@ -1154,21 +1205,67 @@
     "capa": "/covers/a-vila.jpg",
     "capa_w": 286,
     "capa_h": 436,
-    "capa_pdp": null,
-    "capa_pdp_w": null,
-    "capa_pdp_h": null,
+    "capa_pdp": "/covers/pdp/a-vila",
+    "capa_pdp_w": 800,
+    "capa_pdp_h": 1202,
     "preco": "9,90",
     "ku": true,
-    "paginas": null,
-    "publicado": null,
-    "gancho": null,
-    "sinopse": null,
-    "temas": null,
-    "epoca": null,
-    "local": null,
-    "leia_se_voce": null,
-    "personagens": null,
-    "faq": null,
+    "paginas": 78,
+    "publicado": "2024-07-03",
+    "gancho": "A guerra chegou até a menor aldeia do mundo.",
+    "sinopse": [
+      "Numa pequena vila de pescadores de sardinha no Peloponeso, sul da Grécia, Athena narra em primeira pessoa a própria vida: a infância criada pelo pai depois que a mãe abandona a família, o trabalho na recém-chegada fábrica de conservas de Kalamata e o casamento com Andreas, que une a comunidade num consórcio para comprar e reativar a fábrica da vila, dando aos pescadores locais uma parte do próprio sustento.",
+      "Os filhos chegam, a vila prospera, e a rotina de trabalho, mar e estações segue seu curso até a guerra greco-turca reduzir o fornecimento de peixe e, anos depois, a ocupação nazista transformar tudo: soldados alemães se instalam na própria fábrica da família, a fome vira rotina, e a coragem, obrigação diária. É nesse cenário que nasce um amor que a guerra deveria ter tornado impossível, entre a filha de Athena e o jovem comandante alemão responsável pela vila.",
+      "Enquanto os filhos se engajam na resistência nas montanhas e o front nunca parece longe o bastante, é Athena quem segura a família de pé, com uma força silenciosa que ninguém vê e todos dependem, até décadas depois, quando a ditadura finalmente cai e é possível, enfim, olhar para trás."
+    ],
+    "temas": [
+      "a ocupação nazista na Grécia e a resistência nas montanhas",
+      "a economia da pesca da sardinha e o nascimento de uma fábrica de conservas",
+      "resiliência feminina diante da guerra e da perda"
+    ],
+    "epoca": "início do século XX a 1974",
+    "local": "Peloponeso, Grécia · Kalamata",
+    "leia_se_voce": [
+      "quer um romance histórico sobre a Segunda Guerra longe dos grandes campos de batalha",
+      "gosta de narradora que carrega toda a força emocional da história em primeira pessoa",
+      "se interessa por Grécia moderna além dos mitos: pesca, ocupação e resistência"
+    ],
+    "personagens": [
+      {
+        "nome": "Athena",
+        "papel": "A narradora. Pescadora e depois trabalhadora da fábrica de conservas, é ela quem sustenta a família através de todas as guerras que atravessam a vila."
+      },
+      {
+        "nome": "Andreas",
+        "papel": "Marido de Athena. Toma a iniciativa de unir a comunidade num consórcio para comprar e reativar a fábrica de conservas da vila."
+      },
+      {
+        "nome": "Antônios",
+        "papel": "Pai de Athena, pescador que a cria sozinho depois que a mãe da menina abandona a família."
+      },
+      {
+        "nome": "Anastasia",
+        "papel": "Filha de Athena e Andreas, braço direito da mãe em casa. No centro do amor proibido que a ocupação alemã torna possível."
+      },
+      {
+        "nome": "Theo e Nikos",
+        "papel": "Filhos de Athena e Andreas, que se engajam na resistência grega contra as forças de ocupação alemãs."
+      }
+    ],
+    "faq": [
+      {
+        "p": "A história é baseada em fatos reais?",
+        "r": "É ficção ambientada em fatos reais. A ocupação nazista da Grécia, a resistência armada nas montanhas e a industrialização da pesca da sardinha aconteceram como estão retratados no livro; Athena e sua família são personagens criados pelo autor."
+      },
+      {
+        "p": "O livro é só sobre a guerra?",
+        "r": "Não. Boa parte da história acontece antes da guerra chegar: a infância de Athena, o nascimento da fábrica de conservas e a formação da própria família. A ocupação alemã chega depois de a vila já ter uma vida construída para perder."
+      },
+      {
+        "p": "Preciso ter lido outro livro do autor antes?",
+        "r": "Não. A Vila é uma história fechada, do começo ao fim, e não depende de nenhuma outra obra de Domenico Falco."
+      }
+    ],
     "midia": {
       "youtube_trailer": null,
       "youtube_podcast": null,
@@ -1176,21 +1273,26 @@
     },
     "heroi": null,
     "extras": null,
-    "posts": null,
-    "relacionadas": null,
-    "avaliacoes": null,
-    "titulo_seo": null,
-    "descricao_seo": null,
-    "onda": null,
+    "posts": [
+      "resistencia-grega-romance-proibido-ocupacao-nazista"
+    ],
+    "relacionadas": [
+      "o-comandante",
+      "amor-e-odio",
+      "os-refugiados"
+    ],
+    "avaliacoes": {
+      "nota": 5.0,
+      "total": 1
+    },
+    "titulo_seo": "A Vila, romance da ocupação nazista na Grécia",
+    "descricao_seo": "A guerra chegou até a menor aldeia do mundo. Athena, Andreas e os filhos atravessam a ocupação nazista numa vila de pescadores gregos. Romance histórico de Domenico Falco.",
+    "onda": 1,
     "_fonte_desc": "Numa aldeia de pescadores de sardinhas na Grécia do início do século XX, Athena, Andreas e seus quatro filhos vivem um drama familiar de amor, paixão e tragédia.",
     "_fonte_docx": "2. Produto/Catalogo/Obras Literárias/22. A Vila/1. Manuscrito/A Vila.docx",
     "_nota_asin": null,
-    "pronta": false,
-    "_falta": [
-      "gancho",
-      "sinopse",
-      "temas"
-    ]
+    "pronta": true,
+    "_falta": null
   },
   {
     "slug": "destinos-cruzados",
@@ -1256,8 +1358,8 @@
     "serie": null,
     "volumes": null,
     "capa": "/covers/destinos-cruzados-parte-2.jpg",
-    "capa_w": 289,
-    "capa_h": 436,
+    "capa_w": 400,
+    "capa_h": 643,
     "capa_pdp": null,
     "capa_pdp_w": null,
     "capa_pdp_h": null,
@@ -1456,7 +1558,7 @@
     "slug": "um-lugar-ao-sol",
     "slug_url": "um-lugar-ao-sol",
     "titulo": "Um Lugar ao Sol",
-    "subtitulo": null,
+    "subtitulo": "Cinco alunos de um instituto de artes cênicas em Nova Iorque atravessam os anos 60 e 70 em busca do próprio lugar ao sol",
     "asin": "B0BH1QGXGH",
     "silo": "mulheres-donas-do-seu-destino",
     "silo_nome": "Mulheres Donas de Seus Destinos",
@@ -1466,21 +1568,67 @@
     "capa": "/covers/um-lugar-ao-sol.jpg",
     "capa_w": 600,
     "capa_h": 804,
-    "capa_pdp": null,
-    "capa_pdp_w": null,
-    "capa_pdp_h": null,
+    "capa_pdp": "/covers/pdp/um-lugar-ao-sol",
+    "capa_pdp_w": 800,
+    "capa_pdp_h": 1072,
     "preco": "9,90",
     "ku": true,
-    "paginas": null,
-    "publicado": null,
-    "gancho": null,
-    "sinopse": null,
-    "temas": null,
-    "epoca": null,
-    "local": null,
-    "leia_se_voce": null,
-    "personagens": null,
-    "faq": null,
+    "paginas": 175,
+    "publicado": "2022-10-01",
+    "gancho": "Nova York estava mudando o mundo. E eles queriam estar no palco.",
+    "sinopse": [
+      "No Instituto de Artes Cênicas Sun Shining, mantido pela filantropa Julie às margens do Central Park, um grupo de jovens de origens muito diferentes disputa o próprio espaço: Anne, a mais talentosa e a mais vigiada em casa; Malcolm, ativista gay que enfrenta o preconceito dentro e fora da família; Javier, decidido a construir sucesso com as próprias mãos; e outros colegas que dividem o mesmo sonho de sair dos bastidores para o centro do palco.",
+      "A cidade ao redor deles está em ebulição. Os direitos civis, a contracultura e uma nova liberdade de costumes disputam espaço com a escalada da Guerra do Vietnã, que leva Javier e Michael para o Corpo de Fuzileiros Navais e o front na Indochina. Enquanto isso, o eixo da história se desloca para São Francisco, onde o movimento hippie, o bairro do Castro e a vida noturna de Miss Blonde mostram outra face da mesma década, e a indústria do entretenimento cobra seu preço de quem, como Marion, tenta se encaixar no molde do sucesso.",
+      "Entre ensaios, primeiras noites, cartas de convocação e protestos, cada um desses jovens descobre o que está disposto a sacrificar pelo próprio lugar ao sol, num retrato de juventude, arte e ambição que atravessa da Nova York dos anos 1960 a um mundo que a década seguinte jamais devolveria intacto."
+    ],
+    "temas": [
+      "contracultura e direitos civis na Nova York dos anos 60",
+      "a Guerra do Vietnã e o preço do alistamento",
+      "arte, identidade e o que cada um sacrifica pelo sucesso"
+    ],
+    "epoca": "1960 a 2001",
+    "local": "Nova Iorque · São Francisco",
+    "leia_se_voce": [
+      "gosta de elenco coral atravessando uma década de transformação cultural",
+      "quer ficção histórica sobre a Guerra do Vietnã contada pelo lado de quem ficou e de quem foi",
+      "se interessa por Nova York e São Francisco nos anos 60 e 70: artes, contracultura e movimentos sociais"
+    ],
+    "personagens": [
+      {
+        "nome": "Julie",
+        "papel": "Filantropa e diretora do Instituto Sun Shining, dedicada a moldar o talento de seus jovens alunos."
+      },
+      {
+        "nome": "Anne",
+        "papel": "A aluna mais talentosa e desejada do instituto, que vive sob o controle rígido do padrasto em Manhattan."
+      },
+      {
+        "nome": "Malcolm",
+        "papel": "Jovem afro-americano e ativista gay assumido, que enfrenta o preconceito em casa, na escola e nas ruas com alegria e descontração."
+      },
+      {
+        "nome": "Javier",
+        "papel": "Aluno determinado a construir o próprio caminho de sucesso nas artes, que acaba atraído pela carreira militar."
+      },
+      {
+        "nome": "Michael",
+        "papel": "Jovem afro-americano disciplinado, que divide o tempo entre o trabalho no Harlem e o sonho artístico antes de seguir para o Vietnã."
+      }
+    ],
+    "faq": [
+      {
+        "p": "A história termina nos anos 70?",
+        "r": "As décadas de 1960 e 1970 são o palco central da trama, mas o epílogo acompanha o destino de alguns personagens em décadas seguintes, até o início dos anos 2000."
+      },
+      {
+        "p": "A história é baseada em fatos reais?",
+        "r": "É ficção ambientada em fatos reais. Os direitos civis, a contracultura, o movimento hippie, a cena do Castro em São Francisco e a Guerra do Vietnã aconteceram como estão retratados no livro; os alunos do instituto e Julie são personagens criados pelo autor."
+      },
+      {
+        "p": "Preciso ter lido outro livro do autor antes?",
+        "r": "Não. Um Lugar ao Sol é uma história fechada, do começo ao fim, e não depende de nenhuma outra obra de Domenico Falco."
+      }
+    ],
     "midia": {
       "youtube_trailer": null,
       "youtube_podcast": null,
@@ -1488,21 +1636,22 @@
     },
     "heroi": null,
     "extras": null,
-    "posts": null,
-    "relacionadas": null,
+    "posts": [
+      "nova-york-anos-60-contracultura-woodstock-direitos-civis"
+    ],
+    "relacionadas": [
+      "a-industria-do-vicio",
+      "sangue-frio"
+    ],
     "avaliacoes": null,
-    "titulo_seo": null,
-    "descricao_seo": null,
-    "onda": null,
+    "titulo_seo": "Um Lugar ao Sol, romance da Nova York dos anos 60 e 70",
+    "descricao_seo": "Nova York estava mudando o mundo, e eles queriam estar no palco: direitos civis, contracultura e a Guerra do Vietnã. Romance histórico de Domenico Falco.",
+    "onda": 1,
     "_fonte_desc": "Cinco alunos de um instituto de artes cênicas em Nova Iorque atravessam as grandes transformações culturais das décadas de 1960 e 1970, incluindo a Guerra do Vietnã.",
     "_fonte_docx": "2. Produto/Catalogo/Obras Literárias/28. Um Lugar ao Sol/1. Manuscrito/Um Lugar ao Sol.docx",
     "_nota_asin": null,
-    "pronta": false,
-    "_falta": [
-      "gancho",
-      "sinopse",
-      "temas"
-    ]
+    "pronta": true,
+    "_falta": null
   },
   {
     "slug": "reflexoes-sobre-a-vida",
@@ -1667,17 +1816,20 @@
       {
         "titulo": "Os Dois Irmãos",
         "linha": "Da Campânia a Mendoza, a partir de 1860",
-        "desc": "A Unificação Italiana racha uma família ao meio. Giacomo pega em armas com os revoltosos e embarca em Gênova rumo aos vinhedos da Argentina. Giovanni segue o caminho oposto sem sair do país: o dom do próprio ouvido o leva aos salões da nobreza de Nápoles."
+        "desc": "A Unificação Italiana racha uma família ao meio. Giacomo pega em armas com os revoltosos e embarca em Gênova rumo aos vinhedos da Argentina. Giovanni segue o caminho oposto sem sair do país: o dom do próprio ouvido o leva aos salões da nobreza de Nápoles.",
+        "slug": "os-dois-irmaos"
       },
       {
         "titulo": "O Siciliano",
         "linha": "Sicília e Brasil, 1880 a 1943",
-        "desc": "Depois de uma disputa de terras que lhe custa o pai, Matteo cruza o Atlântico para recomeçar nas fazendas de café de Vassouras, no Rio de Janeiro, antes de a família se mudar para São Paulo. Décadas depois, volta à Sicília para acertar o que deixou por resolver."
+        "desc": "Depois de uma disputa de terras que lhe custa o pai, Matteo cruza o Atlântico para recomeçar nas fazendas de café de Vassouras, no Rio de Janeiro, antes de a família se mudar para São Paulo. Décadas depois, volta à Sicília para acertar o que deixou por resolver.",
+        "slug": "o-siciliano"
       },
       {
         "titulo": "Os Italianos",
         "linha": "Calábria, Nova York e São Paulo, 1892 ao século XXI",
-        "desc": "Vincenzo sobrevive aos combates no norte da África e lidera a mudança definitiva da família para São Paulo. Três gerações atravessam duas guerras e uma cidade em plena industrialização, até que um descendente reaparece na Itália, cem anos depois da primeira partida."
+        "desc": "Vincenzo sobrevive aos combates no norte da África e lidera a mudança definitiva da família para São Paulo. Três gerações atravessam duas guerras e uma cidade em plena industrialização, até que um descendente reaparece na Itália, cem anos depois da primeira partida.",
+        "slug": "os-italianos"
       }
     ],
     "capa": "/covers/a-saga-italiana.jpg",
@@ -1734,9 +1886,9 @@
       "imigracao-italiana-jornada-mediterraneo-cafezais"
     ],
     "relacionadas": [
-      "os-dois-irmaos",
-      "o-siciliano",
-      "os-italianos"
+      "o-comandante",
+      "os-refugiados",
+      "mariana-e-jose-inacio"
     ],
     "avaliacoes": null,
     "titulo_seo": "A Saga Italiana, trilogia da imigração",
@@ -1752,31 +1904,69 @@
     "slug": "destinos-cruzados-fios-do-destino",
     "slug_url": "destinos-cruzados-fios-do-destino",
     "titulo": "Destinos Cruzados: Os Fios do Destino",
-    "subtitulo": null,
+    "subtitulo": "Edição especial: as duas partes de Destinos Cruzados em um único volume, de Delhi à Guerra Fria em Hong Kong",
     "asin": "B0HHKYLVRY",
     "silo": "mulheres-donas-do-seu-destino",
     "silo_nome": "Mulheres Donas de Seus Destinos",
     "ancora": "/categoria/mulheres-donas-do-seu-destino/#destinos-cruzados-fios-do-destino",
     "serie": null,
-    "volumes": null,
+    "volumes": [
+      {
+        "titulo": "Destinos Cruzados",
+        "linha": "Delhi, 1939, e os vinte anos seguintes",
+        "desc": "Três adolescentes dividiam a mesma rua em Delhi. Depois vieram uma guerra, uma partilha e uma revolução, e o mapa passou entre eles.",
+        "slug": "destinos-cruzados"
+      },
+      {
+        "titulo": "Destinos Cruzados: Parte 2",
+        "linha": "Hong Kong, no auge da Guerra Fria",
+        "desc": "Numa colônia britânica encostada na China de Mao, tudo o que era proibido dos dois lados tinha preço. Inclusive uma conta antiga.",
+        "slug": "destinos-cruzados-parte-2"
+      }
+    ],
     "capa": "/covers/destinos-cruzados-fios-do-destino.jpg",
     "capa_w": 400,
-    "capa_h": 596,
-    "capa_pdp": null,
-    "capa_pdp_w": null,
-    "capa_pdp_h": null,
-    "preco": "9,90",
+    "capa_h": 573,
+    "capa_pdp": "/covers/pdp/destinos-cruzados-fios-do-destino",
+    "capa_pdp_w": 800,
+    "capa_pdp_h": 1145,
+    "preco": "12,90",
     "ku": true,
-    "paginas": null,
-    "publicado": null,
-    "gancho": null,
-    "sinopse": null,
-    "temas": null,
-    "epoca": null,
-    "local": null,
-    "leia_se_voce": null,
+    "paginas": 156,
+    "publicado": "2026-09-02",
+    "gancho": "Três adolescentes dividiam a mesma rua em Delhi. Vinte anos depois, dois deles estavam do lado errado da fronteira um do outro.",
+    "sinopse": [
+      "Reúne, pela primeira vez em um único volume, as duas partes de Destinos Cruzados: os mesmos romances publicados antes como títulos independentes, na ordem em que a história acontece. Diferente de uma coletânea de histórias soltas, aqui as duas partes formam uma narrativa contínua: a segunda começa onde a primeira termina, com a geração seguinte dos mesmos personagens.",
+      "Em 1939, três adolescentes dividem o mesmo bazar de Delhi sem motivo nenhum para se conhecer: Julia, filha de um capitão do exército britânico; Hassan, filho de um operário ferroviário; e Wei, filho de um diplomata chinês. O Império que os colocou na mesma rua é o mesmo que, poucos anos depois, os separa em países diferentes e lados opostos: a Segunda Guerra Mundial, a partilha da Índia e do Paquistão, a revolução comunista na China e o início da Guerra Fria atravessam a amizade dos três sem que nenhum deles tenha escolhido isso.",
+      "A segunda parte pula uma geração e chega a Hong Kong, colônia britânica encostada na China de Mao, onde o MI6, a KGB e as tríades disputam um mercado paralelo que os embaixadores negam nos jornais. É lá que um jovem com nome de código descobre que uma conta aberta pelos pais chegou para ele. Esta Edição Especial traz conteúdo inédito: prefácio e posfácio do autor, uma linha do tempo que encaixa a ficção nos acontecimentos reais de 1939 a 1960 e a apresentação dos três mundos que se cruzam na história."
+    ],
+    "temas": [
+      "espionagem e Guerra Fria na Ásia",
+      "a Partição da Índia e do Paquistão",
+      "uma amizade dividida por fronteiras que ninguém escolheu"
+    ],
+    "epoca": "1939 a 1960",
+    "local": "Delhi · Karachi · Londres · Hong Kong",
+    "leia_se_voce": [
+      "gosta de espionagem e Guerra Fria com lastro histórico real",
+      "prefere ler uma duologia completa, sem esperar pela continuação",
+      "quer entender a Partição da Índia e a Guerra Fria na Ásia pela ficção"
+    ],
     "personagens": null,
-    "faq": null,
+    "faq": [
+      {
+        "p": "Preciso ter lido os títulos separados antes?",
+        "r": "Não. Quem já leu Destinos Cruzados e Destinos Cruzados: Parte 2 separadamente encontra aqui o mesmo texto integral, sem alterações, mais o material inédito desta edição. Quem chega agora não precisa se preocupar com a ordem, porque ela já está pronta neste volume."
+      },
+      {
+        "p": "As duas partes são histórias independentes, como em A Saga Italiana?",
+        "r": "Não. Diferente de A Saga Italiana, aqui as duas partes contam uma história contínua: a segunda começa onde a primeira termina, na geração seguinte da mesma família de personagens. Por isso a leitura funciona melhor na ordem em que este volume está organizado."
+      },
+      {
+        "p": "O que tem de inédito nesta edição?",
+        "r": "O prefácio e o posfácio do autor, uma linha do tempo que encaixa a ficção nos acontecimentos reais de 1939 a 1960 e a apresentação dos três mundos que se cruzam na história."
+      }
+    ],
     "midia": {
       "youtube_trailer": null,
       "youtube_podcast": null,
@@ -1784,20 +1974,22 @@
     },
     "heroi": null,
     "extras": null,
-    "posts": null,
-    "relacionadas": null,
+    "posts": [
+      "guerra-fria-asia-espionagem-mi6-kgb-hong-kong"
+    ],
+    "relacionadas": [
+      "a-saga-italiana",
+      "os-refugiados",
+      "a-teia"
+    ],
     "avaliacoes": null,
-    "titulo_seo": null,
-    "descricao_seo": null,
-    "onda": null,
+    "titulo_seo": "Destinos Cruzados: Os Fios do Destino, duologia de espionagem",
+    "descricao_seo": "Três adolescentes dividiam a mesma rua em Delhi. Vinte anos depois, a Guerra Fria dividia o mundo. Edição especial com as duas partes de Destinos Cruzados, de Domenico Falco.",
+    "onda": 1,
     "_fonte_desc": "As duas partes de Destinos Cruzados em um volume unico. De Delhi, 1939, a Hong Kong dos anos 1960: tres adolescentes de tres mundos que a Segunda Guerra, a separacao da India e do Paquistao e a Guerra Fria colocam em lados opostos, e a geracao seguinte, que paga a conta no mercado paralelo de Hong Kong, entre o MI6, a KGB e as triades.",
     "_fonte_docx": "2. Produto/Catalogo/Omnibus/Destinos Cruzados/1. manuscrito/1-prefacio.md",
     "_nota_asin": "Omnibus das Partes 1 e 2, publicado no KDP em 02/09/2026. ASIN gravado em livros.json e EPUB regerado no mesmo dia. Card no site fica pendente do silo 6x5 (ver project_silos_6x5_ldf e project_omnibus_destinos_cruzados_ldf).",
-    "pronta": false,
-    "_falta": [
-      "gancho",
-      "sinopse",
-      "temas"
-    ]
+    "pronta": true,
+    "_falta": null
   }
 ]
