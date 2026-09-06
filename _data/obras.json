@@ -208,7 +208,7 @@
     "slug": "julius",
     "slug_url": "julius",
     "titulo": "Julius",
-    "subtitulo": null,
+    "subtitulo": "Um tribuno romano testemunha os primeiros anos do cristianismo e passa o resto da vida questionando tudo o que aprendeu a servir",
     "asin": "B08YLYRL2B",
     "silo": "fe-misticismo-desconhecido",
     "silo_nome": "Fé, Misticismo e o Desconhecido",
@@ -218,21 +218,67 @@
     "capa": "/covers/julius.jpg",
     "capa_w": 400,
     "capa_h": 596,
-    "capa_pdp": null,
-    "capa_pdp_w": null,
-    "capa_pdp_h": null,
+    "capa_pdp": "/covers/pdp/julius",
+    "capa_pdp_w": 800,
+    "capa_pdp_h": 1193,
     "preco": "9,90",
     "ku": true,
-    "paginas": null,
-    "publicado": null,
-    "gancho": null,
-    "sinopse": null,
-    "temas": null,
-    "epoca": null,
-    "local": null,
-    "leia_se_voce": null,
-    "personagens": null,
-    "faq": null,
+    "paginas": 157,
+    "publicado": "2021-03-10",
+    "gancho": "Ele servia ao Império. Até ouvir falar de um homem chamado Yeshua.",
+    "sinopse": [
+      "Filho de um legionário destruído pela culpa depois de obedecer a uma ordem cruel na Judeia, Julius cresce pobre em Roma no início do primeiro século, na mesma época em que nasce, do outro lado do Império, um carpinteiro chamado Yeshua. Julius segue o único caminho que conhece: torna-se soldado, depois gladiador, e sobe até se casar com Lívia, filha de um general romano, construindo a vida que o pai nunca teve.",
+      "Anos depois, já Tribuno, Julius é enviado para a Judeia, onde comanda legiões contra rebeldes zelotes e acompanha, de perto e disfarçado entre a multidão, as pregações do mesmo Yeshua sobre quem ouvira falar a vida inteira. Quando o profeta é condenado à crucificação, Julius se recusa a usar sua espada contra um homem que via como inocente, uma decisão que o acompanha para o resto da vida.",
+      "De volta à Itália, com a família reunida e em paz, Julius nunca esquece o que testemunhou na Judeia. Anos mais tarde, já sem a farda, ele embarca numa peregrinação pelo Egito, o deserto do Sinai e a Judeia atrás de respostas sobre o homem que via crucificado em seus sonhos, uma jornada que o leva a questionar tudo o que aprendeu sobre deuses, fé e o que realmente sustenta uma vida bem vivida."
+    ],
+    "temas": [
+      "a vida cotidiana e as guerras do Império Romano no século I",
+      "os relatos dos primeiros cristãos sobre Yeshua (Jesus), contados por uma testemunha externa",
+      "fé, dúvida e a busca por sentido fora da religião oficial de Roma"
+    ],
+    "epoca": "ano 1 a meados do século I d.C.",
+    "local": "Roma · Judeia (Jerusalém) · Germânia · Britânia · Alexandria e o deserto do Sinai",
+    "leia_se_voce": [
+      "gosta de ficção histórica ambientada na Roma Antiga contada por um soldado, não por um imperador",
+      "quer uma história sobre a origem do cristianismo pelo olhar cético de quem estava de fora",
+      "prefere personagens que questionam a própria fé em vez de simplesmente encontrá-la"
+    ],
+    "personagens": [
+      {
+        "nome": "Julius",
+        "papel": "Filho de um legionário destruído pela culpa, sobe de soldado a Tribuno romano e testemunha, de perto, os primeiros anos do cristianismo."
+      },
+      {
+        "nome": "Marius",
+        "papel": "Pai de Julius, um legionário que nunca se recupera de uma ordem cruel cumprida na Judeia antes de o filho nascer."
+      },
+      {
+        "nome": "Lívia",
+        "papel": "Filha de um general romano e esposa de Julius, ao lado de quem ele constrói a vida que sempre quis para a própria família."
+      },
+      {
+        "nome": "Yeshua",
+        "papel": "O pregador da Judeia cujas palavras e julgamento Julius acompanha de perto, sem nunca deixar de questionar o que viu."
+      },
+      {
+        "nome": "Pôncio Pilatos",
+        "papel": "Governador romano da Judeia, sob cujo comando Julius serve durante os anos mais decisivos de sua carreira."
+      }
+    ],
+    "faq": [
+      {
+        "p": "A história é baseada em fatos reais?",
+        "r": "É ficção ambientada em fatos reais. O contexto histórico do Império Romano no século I, os relatos sobre a pregação e a crucificação de Yeshua e os primeiros evangelistas cristãos aconteceram como estão descritos no livro; Julius e sua família são personagens criados pelo autor."
+      },
+      {
+        "p": "O livro toma partido sobre a fé cristã?",
+        "r": "Não. A história acompanha Julius como um observador cético e respeitoso, que ouve relatos de diferentes tradições (romana, judaica e cristã) sem que o livro declare qual delas está certa. O objetivo é mostrar o nascimento do cristianismo pelos olhos de quem estava de fora."
+      },
+      {
+        "p": "Preciso ter lido outro livro do autor antes?",
+        "r": "Não. Julius é uma história fechada, do começo ao fim, e não depende de nenhuma outra obra de Domenico Falco."
+      }
+    ],
     "midia": {
       "youtube_trailer": null,
       "youtube_podcast": null,
@@ -240,21 +286,22 @@
     },
     "heroi": null,
     "extras": null,
-    "posts": null,
-    "relacionadas": null,
+    "posts": [
+      "roma-antiga-gladiador-nazareno-pompeia"
+    ],
+    "relacionadas": [
+      "o-jesuita",
+      "os-templarios"
+    ],
     "avaliacoes": null,
-    "titulo_seo": null,
-    "descricao_seo": null,
-    "onda": null,
+    "titulo_seo": "Julius, romance da Roma Antiga e do nascimento do cristianismo",
+    "descricao_seo": "Roma, século I: um tribuno romano testemunha as pregações e a crucificação de Yeshua na Judeia, e passa o resto da vida em busca de respostas. Romance histórico de Domenico Falco.",
+    "onda": 2,
     "_fonte_desc": "Um romano nascido na mesma época de Jesus (Yeshua), que tem sua vida transformada pelo legado do Nazareno.",
     "_fonte_docx": "2. Produto/Catalogo/Obras Literárias/4. Julius/1. Manuscrito/Július.docx",
     "_nota_asin": null,
-    "pronta": false,
-    "_falta": [
-      "gancho",
-      "sinopse",
-      "temas"
-    ]
+    "pronta": true,
+    "_falta": null
   },
   {
     "slug": "o-jesuita",
