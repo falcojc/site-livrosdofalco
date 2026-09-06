@@ -464,7 +464,7 @@
     "slug": "mariana-e-jose-inacio",
     "slug_url": "mariana-e-jose-inacio",
     "titulo": "Mariana e José Inácio",
-    "subtitulo": null,
+    "subtitulo": "No Brasil colonial do século XVI, um casal português constrói um império de açúcar, e descobre que toda fundação cobra um preço",
     "asin": "B092FM4S4Y",
     "silo": "raizes-sacrificio-familia",
     "silo_nome": "Raízes, Sacrifício e Família",
@@ -474,21 +474,63 @@
     "capa": "/covers/mariana-e-jose-inacio.jpg",
     "capa_w": 400,
     "capa_h": 596,
-    "capa_pdp": null,
-    "capa_pdp_w": null,
-    "capa_pdp_h": null,
+    "capa_pdp": "/covers/pdp/mariana-e-jose-inacio",
+    "capa_pdp_w": 800,
+    "capa_pdp_h": 1193,
     "preco": "9,90",
     "ku": true,
-    "paginas": null,
-    "publicado": null,
-    "gancho": null,
-    "sinopse": null,
-    "temas": null,
-    "epoca": null,
-    "local": null,
-    "leia_se_voce": null,
-    "personagens": null,
-    "faq": null,
+    "paginas": 135,
+    "publicado": "2021-04-13",
+    "gancho": "Chegaram a uma terra sem nome, com um contrato e uma promessa.",
+    "sinopse": [
+      "José Inácio, filho de um fidalgo português, embarca com o pai rumo ao Brasil colonial para ajudar a erguer a nova Capitania de Verdes Mares, onde a coroa portuguesa aposta tudo na produção de açúcar. Na recém-fundada Vila de Boa Vista, ele conhece Mariana, filha do próprio governador da capitania: destemida, culta e mais interessada nos negócios da família do que no que se esperava de uma jovem daquela época.",
+      "Enquanto os dois constroem juntos uma vida e um casamento em meio a ataques de corsários franceses, disputas com povos indígenas e a chegada de levas de pessoas escravizadas da África, o engenho da família prospera, e Mariana e José Inácio descobrem, aos poucos, que sustentar um império de açúcar no Novo Mundo exige decisões que nenhum dos dois havia previsto tomar.",
+      "Anos depois, uma reviravolta os tira de tudo o que construíram e os lança rumo ao interior do Brasil, atrás de um novo tipo de riqueza que promete recomeçar sua fortuna, e testar, mais uma vez, até onde a ambição de ambos está disposta a ir."
+    ],
+    "temas": [
+      "a fundação dos primeiros engenhos de açúcar no Brasil colonial",
+      "o conflito entre portugueses, franceses e povos indígenas no litoral do século XVI",
+      "a ambição de um casal disposto a pagar qualquer preço para prosperar no Novo Mundo"
+    ],
+    "epoca": "século XVI",
+    "local": "Capitania de Verdes Mares e São Vicente, Brasil colonial",
+    "leia_se_voce": [
+      "quer ficção histórica ambientada na fundação do Brasil colonial, não só na chegada dos portugueses",
+      "gosta de protagonistas ambiciosos e moralmente complexos, não heróis perfeitos",
+      "se interessa pela disputa entre europeus e povos indígenas pelo controle do litoral brasileiro"
+    ],
+    "personagens": [
+      {
+        "nome": "José Inácio",
+        "papel": "Filho caçula de um fidalgo português, que atravessa o Atlântico em busca de um destino maior do que suas terras na metrópole poderiam oferecer."
+      },
+      {
+        "nome": "Mariana",
+        "papel": "Filha do governador da capitania, tão culta e ambiciosa quanto o marido, e decisiva em cada escolha difícil que o casal enfrenta."
+      },
+      {
+        "nome": "Dom João",
+        "papel": "Pai de José Inácio, fidalgo que arrisca tudo para ajudar a fundar a nova colônia na América portuguesa."
+      },
+      {
+        "nome": "Dom Antônio",
+        "papel": "Governador da Capitania de Verdes Mares e pai de Mariana, o homem que comanda a fundação da Vila de Boa Vista."
+      }
+    ],
+    "faq": [
+      {
+        "p": "A história é baseada em fatos reais?",
+        "r": "É ficção ambientada em fatos reais. O sistema de capitanias hereditárias, a produção de açúcar no Brasil colonial, os ataques de corsários franceses e o tráfico de pessoas escravizadas aconteceram como estão retratados no livro; José Inácio, Mariana e suas famílias são personagens criados pelo autor."
+      },
+      {
+        "p": "O livro romantiza a colonização?",
+        "r": "Não. A história acompanha o ponto de vista dos colonizadores portugueses, mas não esconde o custo humano da colonização, incluindo a escravização de povos indígenas e africanos que sustentava a produção de açúcar."
+      },
+      {
+        "p": "Preciso ter lido outro livro do autor antes?",
+        "r": "Não. Mariana e José Inácio é uma história fechada, do início ao fim, e não depende de nenhuma outra obra de Domenico Falco."
+      }
+    ],
     "midia": {
       "youtube_trailer": null,
       "youtube_podcast": null,
@@ -497,20 +539,19 @@
     "heroi": null,
     "extras": null,
     "posts": null,
-    "relacionadas": null,
+    "relacionadas": [
+      "mestre-das-tormentas",
+      "o-tesouro-maldito"
+    ],
     "avaliacoes": null,
-    "titulo_seo": null,
-    "descricao_seo": null,
-    "onda": null,
+    "titulo_seo": "Mariana e José Inácio, romance do Brasil colonial",
+    "descricao_seo": "Século XVI: um casal português desembarca no Brasil para erguer engenhos de açúcar onde só existe mata. Uma história de fundação, ambição e sobrevivência. Romance histórico de Domenico Falco.",
+    "onda": 2,
     "_fonte_desc": "As aventuras de um casal de portugueses que desembarca no Brasil colonial do século XVI para implantar engenhos e explorar as riquezas geradas pela cana-de-açúcar.",
     "_fonte_docx": "2. Produto/Catalogo/Obras Literárias/8. Mariana & José Inácio/1. Manuscrito/José Inácio.docx",
     "_nota_asin": null,
-    "pronta": false,
-    "_falta": [
-      "gancho",
-      "sinopse",
-      "temas"
-    ]
+    "pronta": true,
+    "_falta": null
   },
   {
     "slug": "o-explorador",
@@ -1135,7 +1176,7 @@
     "slug": "o-asilo",
     "slug_url": "o-asilo",
     "titulo": "O Asilo",
-    "subtitulo": null,
+    "subtitulo": "No litoral fluminense, um asilo de luxo esconde histórias de vida, amor e memória, e um segredo grande demais para ficar enterrado",
     "asin": "B0DDHZZCS1",
     "silo": "submundo-traicoes-misterios",
     "silo_nome": "Submundo, Traições e Mistérios",
@@ -1145,21 +1186,67 @@
     "capa": "/covers/o-asilo.jpg",
     "capa_w": 400,
     "capa_h": 596,
-    "capa_pdp": null,
-    "capa_pdp_w": null,
-    "capa_pdp_h": null,
+    "capa_pdp": "/covers/pdp/o-asilo",
+    "capa_pdp_w": 800,
+    "capa_pdp_h": 1193,
     "preco": "9,90",
     "ku": true,
-    "paginas": null,
-    "publicado": null,
-    "gancho": null,
-    "sinopse": null,
-    "temas": null,
-    "epoca": null,
-    "local": null,
-    "leia_se_voce": null,
-    "personagens": null,
-    "faq": null,
+    "paginas": 127,
+    "publicado": "2024-08-17",
+    "gancho": "Todo velho que ninguém visita já foi alguém que o mundo inteiro conheceu.",
+    "sinopse": [
+      "Um casarão colonial reformado em asilo de luxo nos arredores do Rio de Janeiro, em meados do século XX, reúne hóspedes que a vida e as famílias deixaram para trás: Pedro, um juiz aposentado que um AVC reduziu ao silêncio mas não à lucidez; Mariana, uma executiva bem-sucedida que o Alzheimer isola cada vez mais das próprias memórias; Olivia, ex-diva do teatro de revista que se recusa a aceitar o fim dos holofotes; e Catarina, uma mulher que construiu sozinha a própria fortuna e agora vive em paz, longe do passado que a perseguia.",
+      "Mas nem todo hóspede está ali só por idade ou doença. Um deles guarda, sob um estado mental cada vez mais frágil, um segredo que remonta à Segunda Guerra Mundial, e o dono do asilo tem seus próprios motivos para manter tudo sob sigilo absoluto.",
+      "Entre carnavais improvisados, fugas para a praia e a rotina de quem já viveu o suficiente para não temer mais nada, o Asilo São Pedro é ao mesmo tempo um refúgio e uma bomba-relógio, prestes a explodir e revelar tudo o que suas paredes brancas escondem."
+    ],
+    "temas": [
+      "o cotidiano humano de um asilo de luxo no Rio de Janeiro dos anos 1960",
+      "um fugitivo nazista escondido sob a fachada de paciente comum",
+      "lavagem de dinheiro e corrupção por trás dos cuidados aos idosos"
+    ],
+    "epoca": "década de 1960",
+    "local": "Bela Vista, litoral do Rio de Janeiro",
+    "leia_se_voce": [
+      "gosta de romance coral, com múltiplos personagens e histórias que se cruzam sob o mesmo teto",
+      "quer um mistério que nasce do cotidiano mais improvável: um asilo de idosos",
+      "se interessa pela história real dos nazistas fugitivos que se esconderam na América do Sul"
+    ],
+    "personagens": [
+      {
+        "nome": "Pedro",
+        "papel": "Juiz aposentado que um AVC reduziu ao silêncio e à cadeira de rodas, mas não à lucidez nem à dignidade."
+      },
+      {
+        "nome": "Mariana",
+        "papel": "Executiva à frente de um grupo industrial, internada em segredo pela própria família quando o Alzheimer ameaça expor sua condição."
+      },
+      {
+        "nome": "Olivia",
+        "papel": "Ex-diva do teatro de revista carioca, que se recusa a aceitar que os holofotes já se apagaram."
+      },
+      {
+        "nome": "Catarina",
+        "papel": "Mulher que construiu sozinha, à sua própria maneira, a fortuna que hoje lhe garante paz no asilo."
+      },
+      {
+        "nome": "Dr. Carlos",
+        "papel": "Dono do Asilo São Pedro, um médico que a necessidade transformou num homem disposto a qualquer coisa para manter as aparências."
+      }
+    ],
+    "faq": [
+      {
+        "p": "A história é baseada em fatos reais?",
+        "r": "É ficção ambientada em fatos reais. A fuga de oficiais nazistas para a América do Sul depois da Segunda Guerra e a atuação dos caçadores de nazistas aconteceram como estão retratados no livro; os hóspedes e funcionários do Asilo São Pedro são personagens criados pelo autor."
+      },
+      {
+        "p": "O livro é só sobre o passado nazista de um personagem?",
+        "r": "Não. A maior parte da história acompanha o cotidiano e as histórias de vida de vários hóspedes do asilo, seus dramas pessoais e as amizades improváveis que nascem ali. O segredo de guerra é um dos fios da trama, não o único."
+      },
+      {
+        "p": "Preciso ter lido outro livro do autor antes?",
+        "r": "Não. O Asilo é uma história fechada, do começo ao fim, e não depende de nenhuma outra obra de Domenico Falco."
+      }
+    ],
     "midia": {
       "youtube_trailer": null,
       "youtube_podcast": null,
@@ -1167,27 +1254,28 @@
     },
     "heroi": null,
     "extras": null,
-    "posts": null,
-    "relacionadas": null,
+    "posts": [
+      "nazista-fugitivo-brasil-lavagem-dinheiro-asilo"
+    ],
+    "relacionadas": [
+      "a-viagem",
+      "a-industria-do-vicio"
+    ],
     "avaliacoes": null,
-    "titulo_seo": null,
-    "descricao_seo": null,
-    "onda": null,
+    "titulo_seo": "O Asilo, romance sobre memória e segredos",
+    "descricao_seo": "Num asilo de luxo no litoral fluminense, idosos esquecidos pelo mundo dividem histórias de vida, perda e companheirismo, até um segredo antigo ameaçar vir à tona. Romance de Domenico Falco.",
+    "onda": 2,
     "_fonte_desc": "Em um asilo nos arredores do Rio de Janeiro, em meados do século XX, moradores idosos e enfermos dividem histórias de vida, perda e companheirismo.",
     "_fonte_docx": "2. Produto/Catalogo/Obras Literárias/19. O Asilo/1. Manuscrito/o Asilo.docx",
     "_nota_asin": null,
-    "pronta": false,
-    "_falta": [
-      "gancho",
-      "sinopse",
-      "temas"
-    ]
+    "pronta": true,
+    "_falta": null
   },
   {
     "slug": "a-viagem",
     "slug_url": "a-viagem",
     "titulo": "A Viagem",
-    "subtitulo": null,
+    "subtitulo": "Três casais brasileiros embarcam num iate de luxo pelo Mediterrâneo, até o confinamento forçado revelar quem cada um realmente é",
     "asin": "B0DFV7X19D",
     "silo": "submundo-traicoes-misterios",
     "silo_nome": "Submundo, Traições e Mistérios",
@@ -1197,21 +1285,67 @@
     "capa": "/covers/a-viagem.jpg",
     "capa_w": 291,
     "capa_h": 436,
-    "capa_pdp": null,
-    "capa_pdp_w": null,
-    "capa_pdp_h": null,
+    "capa_pdp": "/covers/pdp/a-viagem",
+    "capa_pdp_w": 800,
+    "capa_pdp_h": 1189,
     "preco": "9,90",
     "ku": true,
-    "paginas": null,
-    "publicado": null,
-    "gancho": null,
-    "sinopse": null,
-    "temas": null,
-    "epoca": null,
-    "local": null,
-    "leia_se_voce": null,
-    "personagens": null,
-    "faq": null,
+    "paginas": 107,
+    "publicado": "2024-09-01",
+    "gancho": "Um iate de luxo. Seis pessoas. Nenhum lugar para se esconder.",
+    "sinopse": [
+      "Emília e Miguel, Sophia e Arthur, Emma e Lorenzo: três casais de herdeiros de grandes grupos empresariais de São Paulo embarcam no luxuoso iate Aurora para uma temporada de verão pelo Mediterrâneo, sob o comando do capitão Pierre. Amigos de infância unidos mais pelo dinheiro e pelo nome de família do que pelos próprios casamentos, esperam da viagem apenas festas, praias e a liberdade que só um mês inteiro longe de casa pode dar.",
+      "Mas o confinamento a bordo revela rachaduras que a vida em terra firme sabia esconder: desejos reprimidos, casamentos por conveniência e atrações que nenhum dos seis estava preparado para admitir. E quando o Aurora resgata três homens de um barco à deriva no meio do mar Egeu, o que parecia um gesto de solidariedade transforma a viagem dos sonhos numa luta desesperada pela vida.",
+      "Confinados no mesmo convés, sem para onde fugir e sem ninguém a quem recorrer em águas internacionais, os seis amigos e a tripulação precisam decidir até onde estão dispostos a ir, e o que estão dispostos a esconder, para sobreviver ao resto da viagem."
+    ],
+    "temas": [
+      "tensão psicológica e infidelidade em espaço confinado",
+      "tráfico internacional de drogas no Mediterrâneo",
+      "até onde a sobrevivência justifica o que se está disposto a fazer"
+    ],
+    "epoca": "contemporâneo",
+    "local": "Mediterrâneo: Marselha, Sardenha, Creta, Istambul, Malta",
+    "leia_se_voce": [
+      "gosta de thriller psicológico onde o verdadeiro perigo é ficar confinado com pessoas que você pensava conhecer",
+      "quer tensão crescente que passa de drama de infidelidade a luta pela sobrevivência sem aviso",
+      "prefere personagens moralmente ambíguos, testados até o limite"
+    ],
+    "personagens": [
+      {
+        "nome": "Pierre",
+        "papel": "O capitão do Aurora, o único a bordo que realmente sabe o que fazer quando tudo sai do controle."
+      },
+      {
+        "nome": "Emma",
+        "papel": "A mais destemida dos seis amigos, disposta a ir mais longe que qualquer um dos outros para sobreviver."
+      },
+      {
+        "nome": "Sophia",
+        "papel": "Casada por conveniência e não por amor, encontra na viagem uma tentação que não esperava."
+      },
+      {
+        "nome": "Miguel",
+        "papel": "O mais racional do grupo, sempre em busca de uma saída segura para todos."
+      },
+      {
+        "nome": "Lorenzo",
+        "papel": "Aventureiro e impulsivo, o primeiro a propor os planos mais arriscados quando o perigo aparece."
+      }
+    ],
+    "faq": [
+      {
+        "p": "O livro é baseado em fatos reais?",
+        "r": "É ficção. O cenário do tráfico de drogas no Mediterrâneo e as rotas marítimas descritas refletem problemas reais da região, mas os personagens e os eventos da trama são inteiramente criados pelo autor."
+      },
+      {
+        "p": "É um romance ou um thriller?",
+        "r": "Começa como um drama sobre casamentos, ciúme e desejo entre amigos de infância, mas se transforma rapidamente num thriller de sobrevivência. Espere tensão crescente, não um romance tranquilo."
+      },
+      {
+        "p": "Preciso ter lido outro livro do autor antes?",
+        "r": "Não. A Viagem é uma história fechada, do início ao fim, e não depende de nenhuma outra obra de Domenico Falco."
+      }
+    ],
     "midia": {
       "youtube_trailer": null,
       "youtube_podcast": null,
@@ -1219,21 +1353,22 @@
     },
     "heroi": null,
     "extras": null,
-    "posts": null,
-    "relacionadas": null,
+    "posts": [
+      "psicologia-confinamento-resgate-mar-mediterraneo-iate"
+    ],
+    "relacionadas": [
+      "o-asilo",
+      "a-industria-do-vicio"
+    ],
     "avaliacoes": null,
-    "titulo_seo": null,
-    "descricao_seo": null,
-    "onda": null,
+    "titulo_seo": "A Viagem, thriller de sobrevivência no Mediterrâneo",
+    "descricao_seo": "Três casais jovens e ricos partem num iate de luxo pelo Mediterrâneo. O que começa como fuga do tédio vira uma luta pela sobrevivência. Thriller de Domenico Falco.",
+    "onda": 2,
     "_fonte_desc": "A bordo do iate de luxo Aurora, três casais jovens e ricos navegam pelo Mediterrâneo, até que o confinamento e o imprevisível coloquem suas crenças e destinos em xeque.",
     "_fonte_docx": "2. Produto/Catalogo/Obras Literárias/20. A Viagem/1. Manuscrito/A Viagem.docx",
     "_nota_asin": null,
-    "pronta": false,
-    "_falta": [
-      "gancho",
-      "sinopse",
-      "temas"
-    ]
+    "pronta": true,
+    "_falta": null
   },
   {
     "slug": "amor-e-odio",
@@ -1542,7 +1677,7 @@
     "slug": "o-que-eu-lembro-deles",
     "slug_url": "o-que-eu-lembro-deles",
     "titulo": "O que eu lembro deles",
-    "subtitulo": null,
+    "subtitulo": "Do Blitz de 1941 ao conflito na Irlanda do Norte, duas gerações de uma família de Belfast contadas pela memória de um homem que perdeu quase todos que amou",
     "asin": "B0DGDB77M9",
     "silo": "raizes-sacrificio-familia",
     "silo_nome": "Raízes, Sacrifício e Família",
@@ -1552,21 +1687,67 @@
     "capa": "/covers/o-que-eu-lembro-deles.jpg",
     "capa_w": 400,
     "capa_h": 596,
-    "capa_pdp": null,
-    "capa_pdp_w": null,
-    "capa_pdp_h": null,
+    "capa_pdp": "/covers/pdp/o-que-eu-lembro-deles",
+    "capa_pdp_w": 800,
+    "capa_pdp_h": 1193,
     "preco": "9,90",
     "ku": true,
-    "paginas": null,
-    "publicado": null,
-    "gancho": null,
-    "sinopse": null,
-    "temas": null,
-    "epoca": null,
-    "local": null,
-    "leia_se_voce": null,
-    "personagens": null,
-    "faq": null,
+    "paginas": 81,
+    "publicado": "2024-09-07",
+    "gancho": "Em Belfast, até o amor tinha que escolher um lado.",
+    "sinopse": [
+      "Numa manhã de domingo em abril de 1941, um bombardeio alemão sobre Belfast une, no meio do caos, dois jovens católicos: Killian e Eileen. O que começa como um ato de sobrevivência se transforma num amor que atravessa o fim da guerra, o trabalho duro nas minas de carvão e a formação de uma família, sempre à sombra das tensões crescentes entre católicos e protestantes na Irlanda do Norte.",
+      "Décadas depois, já pais de três filhos, Killian e Eileen veem o conflito que sempre rondou a cidade bater à porta de casa, e cada um dos filhos responde a ele de um jeito diferente: um busca a paz longe de tudo o que conhece, o outro se deixa consumir pela luta armada, carregando um segredo que nem a própria família suspeita.",
+      "Contada em grande parte pela memória de Killian, já um homem idoso, essa é a história de uma família que atravessou o pior da guerra, tanto a que veio do céu quanto a que dividiu sua própria cidade em dois lados, e do que resta do amor quando quase tudo o que se ama já se foi."
+    ],
+    "temas": [
+      "o Blitz de Belfast na Segunda Guerra Mundial",
+      "o conflito entre católicos e protestantes na Irlanda do Norte (the Troubles)",
+      "família, luto e o peso dos segredos que carregamos sozinhos"
+    ],
+    "epoca": "1941 à segunda metade do século XX",
+    "local": "Belfast, Irlanda do Norte · Nova York, EUA",
+    "leia_se_voce": [
+      "quer entender o conflito da Irlanda do Norte pelo lado de uma família comum, não das manchetes",
+      "gosta de romance histórico contado em grande parte como memória, por um narrador que já viveu o suficiente para saber o que vale a pena lembrar",
+      "busca uma história sobre amor, fé e família que atravessa gerações sem poupar a dor de nenhuma delas"
+    ],
+    "personagens": [
+      {
+        "nome": "Killian",
+        "papel": "O narrador de grande parte da história. Um homem que construiu e perdeu uma família inteira em Belfast antes de encontrar um novo lar."
+      },
+      {
+        "nome": "Eileen",
+        "papel": "Esposa de Killian desde os dias do Blitz, o alicerce silencioso que sustenta a família através de cada tragédia."
+      },
+      {
+        "nome": "Aidan",
+        "papel": "O filho mais velho, que a raiva contra a opressão empurra para dentro da luta armada, e que carrega um segredo que nunca conta ao pai."
+      },
+      {
+        "nome": "Lian",
+        "papel": "O filho mais novo, que se apaixona por uma jovem protestante e precisa escolher entre pertencer e amar."
+      },
+      {
+        "nome": "Grace",
+        "papel": "A jovem protestante por quem Lian se apaixona, uma escolha que a Irlanda do Norte dividida não facilita para nenhum dos dois."
+      }
+    ],
+    "faq": [
+      {
+        "p": "A história é baseada em fatos reais?",
+        "r": "É ficção ambientada em fatos reais. O bombardeio alemão de Belfast em 1941 e o conflito entre católicos e protestantes na Irlanda do Norte aconteceram como estão retratados no livro; Killian, Eileen e seus filhos são personagens criados pelo autor."
+      },
+      {
+        "p": "O livro é pesado demais?",
+        "r": "É uma história sobre guerra, perda e os custos pessoais de um conflito que durou décadas, mas também sobre a resiliência de uma família e o amor que sobrevive a quase tudo. Não é uma leitura leve, mas termina em paz."
+      },
+      {
+        "p": "Preciso ter lido outro livro do autor antes?",
+        "r": "Não. O Que Eu Lembro Deles é uma história fechada, do começo ao fim, e não depende de nenhuma outra obra de Domenico Falco."
+      }
+    ],
     "midia": {
       "youtube_trailer": null,
       "youtube_podcast": null,
@@ -1574,21 +1755,22 @@
     },
     "heroi": null,
     "extras": null,
-    "posts": null,
-    "relacionadas": null,
+    "posts": [
+      "blitz-belfast-conflito-irlanda-do-norte-the-troubles"
+    ],
+    "relacionadas": [
+      "a-vila",
+      "amor-e-odio"
+    ],
     "avaliacoes": null,
-    "titulo_seo": null,
-    "descricao_seo": null,
-    "onda": null,
+    "titulo_seo": "O Que Eu Lembro Deles, romance de Belfast e The Troubles",
+    "descricao_seo": "De um bombardeio nazista em 1941 aos anos mais duros do conflito na Irlanda do Norte: a saga de Killian e Eileen e dos filhos que criaram. Romance histórico de Domenico Falco.",
+    "onda": 2,
     "_fonte_desc": "Kilian e Eileen se apaixonam em Belfast durante os anos mais duros dos conflitos entre católicos e protestantes, um drama sobre amor, tradição e as escolhas que moldam um destino.",
     "_fonte_docx": "2. Produto/Catalogo/Obras Literárias/25. O que eu lembro deles/1. Manuscrito/O que eu lembro.docx",
     "_nota_asin": null,
-    "pronta": false,
-    "_falta": [
-      "gancho",
-      "sinopse",
-      "temas"
-    ]
+    "pronta": true,
+    "_falta": null
   },
   {
     "slug": "os-refugiados",
