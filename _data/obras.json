@@ -312,7 +312,7 @@
     "slug": "os-italianos",
     "slug_url": "os-italianos",
     "titulo": "Os Italianos",
-    "subtitulo": null,
+    "subtitulo": "Calábria, Nova York e São Paulo: três gerações de uma família italiana atravessando um século de guerras e recomeços",
     "asin": "B08XKM6LVM",
     "silo": "raizes-sacrificio-familia",
     "silo_nome": "Raízes, Sacrifício e Família",
@@ -322,21 +322,67 @@
     "capa": "/covers/os-italianos.jpg",
     "capa_w": 400,
     "capa_h": 596,
-    "capa_pdp": null,
-    "capa_pdp_w": null,
-    "capa_pdp_h": null,
+    "capa_pdp": "/covers/pdp/os-italianos",
+    "capa_pdp_w": 800,
+    "capa_pdp_h": 1193,
     "preco": "9,90",
     "ku": true,
-    "paginas": null,
-    "publicado": null,
-    "gancho": null,
-    "sinopse": null,
-    "temas": null,
-    "epoca": null,
-    "local": null,
-    "leia_se_voce": null,
-    "personagens": null,
-    "faq": null,
+    "paginas": 188,
+    "publicado": "2021-02-25",
+    "gancho": "Uma família, dois continentes, cem anos de história.",
+    "sinopse": [
+      "Pepe nasce em 1899 numa pequena cidade da Calábria, sobrevive à Primeira Guerra Mundial como soldado da infantaria mecanizada e, de volta para casa, perde os pais para a gripe espanhola. Casa-se com a prima Angelina, tem cinco filhos e, alimentado pelos relatos de colegas de caserna sobre a América, embarca sozinho para Nova York em 1925, deixando a família na Itália à espera do que a viagem pode trazer.",
+      "Em Nova York, Pepe se aproxima da comunidade ítalo-americana e chega perto do submundo da máfia local, enquanto na Itália os filhos crescem sob o fascismo de Mussolini. Quando a Segunda Guerra Mundial estoura, o filho Vincenzo enfrenta a Campanha do Deserto no norte da África, é feito prisioneiro pelos Aliados na Tunísia e sobrevive para reconstruir, ao lado da prima Tereza, a próxima geração da família.",
+      "No pós-guerra, o primeiro filho, Antônio, cruza o Atlântico outra vez, mas rumo ao Brasil: São Paulo vira o novo capítulo da família, dos cortiços do Bexiga às décadas de crescimento que transformam a cidade no motor econômico do país. Gerações depois, um descendente reaparece na Itália, no mesmo ponto de partida de Pepe, cem anos e um oceano inteiro depois."
+    ],
+    "temas": [
+      "imigração italiana para os Estados Unidos e o Brasil",
+      "duas guerras mundiais vividas por gerações diferentes da mesma família",
+      "o crescimento de São Paulo como motor econômico do Brasil"
+    ],
+    "epoca": "1899 à década de 2020",
+    "local": "Calábria, Itália · Nova York, EUA · São Paulo, Brasil",
+    "leia_se_voce": [
+      "quer uma saga de imigração que atravessa cem anos e três gerações, não só uma travessia",
+      "gosta de ficção histórica que mistura front de guerra, máfia ítalo-americana e reconstrução no Brasil",
+      "tem raízes italianas e quer ver o mesmo século contado por dois continentes ao mesmo tempo"
+    ],
+    "personagens": [
+      {
+        "nome": "Pepe",
+        "papel": "O patriarca. Sobrevive à Primeira Guerra e à gripe espanhola antes de embarcar sozinho para Nova York em busca do sonho americano."
+      },
+      {
+        "nome": "Vincenzo",
+        "papel": "Segundo filho de Pepe. Combatente da Campanha do Deserto na Segunda Guerra Mundial, feito prisioneiro pelos Aliados no norte da África."
+      },
+      {
+        "nome": "Antônio",
+        "papel": "Primeiro filho de Pepe. Depois da guerra, é ele quem leva a família para um novo continente: o Brasil."
+      },
+      {
+        "nome": "Tereza",
+        "papel": "Prima e esposa de Vincenzo, ao lado de quem a família reconstrói sua vida na Calábria do pós-guerra antes da mudança ao Brasil."
+      },
+      {
+        "nome": "Luigi",
+        "papel": "Neto de Pepe, filho de Vincenzo e Tereza, que constrói sua própria família em São Paulo enquanto o Brasil atravessa décadas de transformação."
+      }
+    ],
+    "faq": [
+      {
+        "p": "Os Italianos faz parte de outra edição?",
+        "r": "Sim. Além de estar disponível como livro avulso, Os Italianos também integra a edição especial A Saga Italiana, ao lado de Os Dois Irmãos e O Siciliano. O texto é o mesmo nas duas edições."
+      },
+      {
+        "p": "A história é baseada em fatos reais?",
+        "r": "É ficção baseada em fatos e personagens reais. A imigração italiana para os Estados Unidos e o Brasil, a Campanha do Deserto na Segunda Guerra Mundial e o crescimento industrial de São Paulo aconteceram como estão no livro."
+      },
+      {
+        "p": "Preciso ler A Saga Italiana antes?",
+        "r": "Não. Os Italianos é uma história fechada, do começo ao fim, e pode ser lida de forma totalmente independente."
+      }
+    ],
     "midia": {
       "youtube_trailer": null,
       "youtube_podcast": null,
@@ -344,21 +390,23 @@
     },
     "heroi": null,
     "extras": null,
-    "posts": null,
-    "relacionadas": null,
+    "posts": [
+      "imigracao-italiana-jornada-mediterraneo-cafezais"
+    ],
+    "relacionadas": [
+      "a-saga-italiana",
+      "o-siciliano",
+      "os-dois-irmaos"
+    ],
     "avaliacoes": null,
-    "titulo_seo": null,
-    "descricao_seo": null,
-    "onda": null,
+    "titulo_seo": "Os Italianos, saga da imigração italiana em 100 anos",
+    "descricao_seo": "Da Calábria a Nova York e São Paulo: cem anos e três gerações de uma família italiana atravessando duas guerras mundiais. Romance histórico de Domenico Falco, também parte da edição especial A Saga Italiana.",
+    "onda": 1,
     "_fonte_desc": "A história de uma família de italianos em busca de melhores condições de vida na América do Norte e do Sul, uma ficção baseada em fatos reais que atravessa todo o século XX até o início do XXI.",
     "_fonte_docx": "2. Produto/Catalogo/Obras Literárias/6. Os Italianos/1. Manuscrito/Os Italianos.docx",
     "_nota_asin": null,
-    "pronta": false,
-    "_falta": [
-      "gancho",
-      "sinopse",
-      "temas"
-    ]
+    "pronta": true,
+    "_falta": null
   },
   {
     "slug": "a-casa-dos-prazeres",
@@ -676,7 +724,7 @@
     "slug": "os-dois-irmaos",
     "slug_url": "os-dois-irmaos",
     "titulo": "Os Dois Irmãos",
-    "subtitulo": null,
+    "subtitulo": "Da Campânia a Mendoza, dois irmãos escolhem caminhos opostos numa Itália que ainda está aprendendo a ser um país só",
     "asin": "B0D8L9HR4H",
     "silo": "raizes-sacrificio-familia",
     "silo_nome": "Raízes, Sacrifício e Família",
@@ -686,21 +734,67 @@
     "capa": "/covers/os-dois-irmaos.jpg",
     "capa_w": 291,
     "capa_h": 438,
-    "capa_pdp": null,
-    "capa_pdp_w": null,
-    "capa_pdp_h": null,
+    "capa_pdp": "/covers/pdp/os-dois-irmaos",
+    "capa_pdp_w": 800,
+    "capa_pdp_h": 1213,
     "preco": "9,90",
     "ku": true,
-    "paginas": null,
-    "publicado": null,
-    "gancho": null,
-    "sinopse": null,
-    "temas": null,
-    "epoca": null,
-    "local": null,
-    "leia_se_voce": null,
-    "personagens": null,
-    "faq": null,
+    "paginas": 79,
+    "publicado": "2024-07-02",
+    "gancho": "O mesmo sangue não garante o mesmo caminho.",
+    "sinopse": [
+      "Giacomo, de 18 anos, e Giovanni, de 15, são filhos de pequenos camponeses da Campânia, no centro-sul da Itália. Giacomo é forte e favorito do pai; Giovanni é franzino e ouve, sem saber explicar, músicas inteiras dentro da própria cabeça. Quando a Unificação Italiana de 1860 chega com as promessas do general Garibaldi, Giacomo abandona a lavoura para se alistar, enquanto Giovanni é descoberto por uma duquesa napolitana que reconhece nele um dom raríssimo: o ouvido absoluto ao piano.",
+      "Decepcionado ao ver que a unificação não trouxe terra nem justiça aos pobres, Giacomo vira brigante, um fora da lei nas montanhas do sul da Itália, enfrentando prisão, fuga e uma perseguição implacável ao lado da companheira Emma. Enquanto isso, Giovanni sobe como pianista prodígio pelos salões de Nápoles, Milão e Paris, sustentado por uma nobreza que o trata como propriedade e por uma vida de excessos que cobra sua própria conta.",
+      "Anos depois, já refeito numa vida nova nos vinhedos de Mendoza, na Argentina, ao lado de uma nova família, Giacomo finalmente reúne coragem para voltar à Itália e encarar o que restou de tudo que deixou para trás, num reencontro que mede o preço de cada escolha que os dois irmãos fizeram desde aquela noite em que se separaram."
+    ],
+    "temas": [
+      "a Unificação Italiana e o banditismo (brigantaggio) que ela deixou como herança",
+      "o dom musical como bilhete de entrada, e de prisão, na nobreza napolitana",
+      "imigração italiana para a Argentina e os vinhedos de Mendoza"
+    ],
+    "epoca": "1860 a 1880",
+    "local": "Campânia, Itália · Nápoles e Paris · Mendoza, Argentina",
+    "leia_se_voce": [
+      "quer entender o banditismo (brigantaggio) que a Unificação Italiana deixou como herança no sul do país",
+      "gosta de dois protagonistas com destinos opostos que espelham as duas Itálias, a do campo e a da nobreza",
+      "prefere imigração italiana contada pelo lado argentino, não só pelo Brasil ou pelos Estados Unidos"
+    ],
+    "personagens": [
+      {
+        "nome": "Giacomo",
+        "papel": "O filho mais velho, forte e leal ao pai, que a decepção com a Unificação empurra para a vida de brigante nas montanhas da Campânia."
+      },
+      {
+        "nome": "Giovanni",
+        "papel": "O filho franzino, descoberto pela nobreza napolitana por um dom raro: o ouvido absoluto ao piano."
+      },
+      {
+        "nome": "Duquesa Francesca",
+        "papel": "Aristocrata de Nápoles que faz de Giovanni seu pupilo e sua atração de prestígio nos salões da corte."
+      },
+      {
+        "nome": "Emma",
+        "papel": "Companheira de Giacomo entre os brigantes, que atravessa com ele a fuga, a prisão e a travessia rumo à Argentina."
+      },
+      {
+        "nome": "Carmela",
+        "papel": "Filha do dono de uma vinícola em Mendoza, o recomeço que Giacomo não esperava encontrar do outro lado do Atlântico."
+      }
+    ],
+    "faq": [
+      {
+        "p": "Os Dois Irmãos faz parte de outra edição?",
+        "r": "Sim. Além de estar disponível como livro avulso, Os Dois Irmãos também integra a edição especial A Saga Italiana, ao lado de O Siciliano e Os Italianos. O texto é o mesmo nas duas edições."
+      },
+      {
+        "p": "A história é baseada em fatos reais?",
+        "r": "É ficção ambientada em fatos reais. A Unificação Italiana, o fenômeno do brigantaggio no sul da Itália e a imigração para os vinhedos de Mendoza aconteceram como estão no livro; Giacomo, Giovanni e suas famílias são personagens criados pelo autor."
+      },
+      {
+        "p": "Preciso ler A Saga Italiana antes?",
+        "r": "Não. Os Dois Irmãos é uma história fechada, do começo ao fim, e pode ser lida de forma totalmente independente."
+      }
+    ],
     "midia": {
       "youtube_trailer": null,
       "youtube_podcast": null,
@@ -708,21 +802,23 @@
     },
     "heroi": null,
     "extras": null,
-    "posts": null,
-    "relacionadas": null,
+    "posts": [
+      "imigracao-italiana-jornada-mediterraneo-cafezais"
+    ],
+    "relacionadas": [
+      "a-saga-italiana",
+      "o-siciliano",
+      "os-italianos"
+    ],
     "avaliacoes": null,
-    "titulo_seo": null,
-    "descricao_seo": null,
-    "onda": null,
+    "titulo_seo": "Os Dois Irmãos, romance da Unificação Italiana",
+    "descricao_seo": "Campânia, 1860: enquanto a Itália se unifica, dois irmãos escolhem caminhos opostos, um pega em armas, o outro descobre um dom raro. Romance histórico de Domenico Falco, também parte da edição especial A Saga Italiana.",
+    "onda": 1,
     "_fonte_desc": "Na Campagna dos anos 1860, dois irmãos italianos atravessam provações que testam os laços de sangue, uma história densa e imprevisível sobre redenção e superação.",
     "_fonte_docx": "2. Produto/Catalogo/Obras Literárias/13. Os Dois Irmãos/1. Manuscrito/Os Dois Irmãos.docx",
     "_nota_asin": null,
-    "pronta": false,
-    "_falta": [
-      "gancho",
-      "sinopse",
-      "temas"
-    ]
+    "pronta": true,
+    "_falta": null
   },
   {
     "slug": "o-tesouro-maldito",
@@ -1143,7 +1239,7 @@
     "slug": "amor-e-odio",
     "slug_url": "amor-e-odio",
     "titulo": "Amor e Ódio",
-    "subtitulo": null,
+    "subtitulo": "Na Andaluzia da Guerra Civil Espanhola, amizade, ambição e desejo viram as armas mais perigosas de todas",
     "asin": "B0D8RTCPNP",
     "silo": "submundo-traicoes-misterios",
     "silo_nome": "Submundo, Traições e Mistérios",
@@ -1153,21 +1249,63 @@
     "capa": "/covers/amor-e-odio.jpg",
     "capa_w": 289,
     "capa_h": 436,
-    "capa_pdp": null,
-    "capa_pdp_w": null,
-    "capa_pdp_h": null,
+    "capa_pdp": "/covers/pdp/amor-e-odio",
+    "capa_pdp_w": 800,
+    "capa_pdp_h": 1199,
     "preco": "9,90",
     "ku": true,
-    "paginas": null,
-    "publicado": null,
-    "gancho": null,
-    "sinopse": null,
-    "temas": null,
-    "epoca": null,
-    "local": null,
-    "leia_se_voce": null,
-    "personagens": null,
-    "faq": null,
+    "paginas": 73,
+    "publicado": "2024-07-03",
+    "gancho": "Uma amizade de infância, uma guerra civil e um triângulo amoroso que a paz não consegue desarmar.",
+    "sinopse": [
+      "Em Águas Calmas, vilarejo fictício da Andaluzia, Carmem, Javier e Paco crescem juntos entre a igreja e as plantações de oliveiras. Mas a barreira de classe fala mais alto que a amizade: Carmem, herdeira de uma grande fazenda, é casada aos 18 anos com Javier, unindo duas fortunas, enquanto Paco, filho do capataz, engole o próprio sentimento por ela em nome do que resta da amizade dos três.",
+      "Quando a Guerra Civil Espanhola estoura em 1936, Javier e Paco seguem lado a lado para lutar pelo exército de Franco, e a experiência do front muda os dois de formas que nenhuma amizade de infância sobrevive intacta. Da tomada de Málaga ao corpo a corpo dentro de uma igreja ocupada, a guerra cobra seu preço, e quando as armas finalmente se calam em 1939, Javier, Paco e Carmem já não são as mesmas pessoas que se despediram anos antes.",
+      "No pós-guerra, Paco troca a farda pelo poder político, e o poder político por uma ambição que não conhece limite: de prefeito de Águas Calmas a governador da Andaluzia, cada degrau que ele sobe custa uma peça da vida de Carmem e de Javier. Um romance sobre como a guerra não termina quando o último tiro é disparado, e sobre até onde alguém é capaz de ir quando descobre, enfim, que pode ter tudo o que sempre quis."
+    ],
+    "temas": [
+      "a Guerra Civil Espanhola e o fim de uma amizade de infância",
+      "ambição, poder e corrupção na Andaluzia franquista",
+      "o preço pessoal de escolher (e vencer) o lado certo da guerra"
+    ],
+    "epoca": "década de 1930 ao pós-guerra europeu",
+    "local": "Águas Calmas e Sevilha, Andaluzia, Espanha",
+    "leia_se_voce": [
+      "quer um romance sobre a Guerra Civil Espanhola contado pelo lado provinciano, não pelas grandes batalhas",
+      "gosta de tramas em que amizade e ambição pessoal pesam tanto quanto ideologia",
+      "prefere protagonistas moralmente ambíguos, sem heróis nem vilões absolutos"
+    ],
+    "personagens": [
+      {
+        "nome": "Paco",
+        "papel": "Filho do capataz da fazenda, apaixonado por Carmem desde a infância. A farda de Franco lhe dá o poder que o nascimento nunca daria."
+      },
+      {
+        "nome": "Carmem",
+        "papel": "Herdeira de uma das grandes fazendas de oliveiras da Andaluzia, casada por conveniência com Javier. No centro do triângulo que a guerra transforma em tragédia."
+      },
+      {
+        "nome": "Javier",
+        "papel": "Amigo de infância de Paco, casado com Carmem para unir duas fortunas de terra. A guerra muda para sempre o que resta da sua vida."
+      },
+      {
+        "nome": "Sarita",
+        "papel": "A jovem assistente que Paco leva para dentro do próprio esquema de poder, com planos que ele está longe de imaginar."
+      }
+    ],
+    "faq": [
+      {
+        "p": "A história é baseada em fatos reais?",
+        "r": "É ficção ambientada em fatos reais. A Guerra Civil Espanhola, a ascensão de Francisco Franco e o cerco de Málaga aconteceram como estão no livro; Paco, Carmem e Javier são personagens criados pelo autor."
+      },
+      {
+        "p": "O livro toma partido na Guerra Civil Espanhola?",
+        "r": "Não. A história acompanha o lado nacionalista pela posição social dos protagonistas, mas retrata a ambiguidade moral dos dois lados do conflito, sem transformar nenhum deles em herói."
+      },
+      {
+        "p": "Preciso ter lido outro livro do autor antes?",
+        "r": "Não. Amor e Ódio é uma história fechada, do começo ao fim, e não depende de nenhuma outra obra de Domenico Falco."
+      }
+    ],
     "midia": {
       "youtube_trailer": null,
       "youtube_podcast": null,
@@ -1175,21 +1313,23 @@
     },
     "heroi": null,
     "extras": null,
-    "posts": null,
-    "relacionadas": null,
+    "posts": [
+      "guerra-civil-espanhola-andaluzia-poder-traicao"
+    ],
+    "relacionadas": [
+      "a-vila",
+      "o-comandante",
+      "os-refugiados"
+    ],
     "avaliacoes": null,
-    "titulo_seo": null,
-    "descricao_seo": null,
-    "onda": null,
+    "titulo_seo": "Amor e Ódio, romance da Guerra Civil Espanhola",
+    "descricao_seo": "Espanha, anos 1930: um triângulo entre amigos de infância sobrevive às trincheiras da Guerra Civil e não sobrevive à paz. Romance histórico de Domenico Falco.",
+    "onda": 1,
     "_fonte_desc": "Entre a Guerra Civil Espanhola e a Segunda Guerra Mundial, um triângulo amoroso se transforma em traições e crimes passionais e políticos, revelando personalidades tão ambíguas quanto a própria guerra.",
     "_fonte_docx": "2. Produto/Catalogo/Obras Literárias/21. Amor e Ódio/1. Manuscrito/Amor e òdio 1.docx",
     "_nota_asin": null,
-    "pronta": false,
-    "_falta": [
-      "gancho",
-      "sinopse",
-      "temas"
-    ]
+    "pronta": true,
+    "_falta": null
   },
   {
     "slug": "a-vila",
@@ -1454,7 +1594,7 @@
     "slug": "os-refugiados",
     "slug_url": "os-refugiados",
     "titulo": "Os Refugiados",
-    "subtitulo": null,
+    "subtitulo": "Uma família síria de classe média contada por suas próprias vozes, do mercado milenar de Alepo à busca por reencontro do outro lado da guerra",
     "asin": "B0D8MYQFGV",
     "silo": "raizes-sacrificio-familia",
     "silo_nome": "Raízes, Sacrifício e Família",
@@ -1464,21 +1604,67 @@
     "capa": "/covers/os-refugiados.jpg",
     "capa_w": 286,
     "capa_h": 436,
-    "capa_pdp": null,
-    "capa_pdp_w": null,
-    "capa_pdp_h": null,
+    "capa_pdp": "/covers/pdp/os-refugiados",
+    "capa_pdp_w": 800,
+    "capa_pdp_h": 1212,
     "preco": "9,90",
     "ku": true,
-    "paginas": null,
-    "publicado": null,
-    "gancho": null,
-    "sinopse": null,
-    "temas": null,
-    "epoca": null,
-    "local": null,
-    "leia_se_voce": null,
-    "personagens": null,
-    "faq": null,
+    "paginas": 78,
+    "publicado": "2024-07-02",
+    "gancho": "Antes da guerra, eles tinham uma casa, um emprego e planos para o verão.",
+    "sinopse": [
+      "Samir, de 17 anos, narra em primeira pessoa a manhã de sábado em que a guerra civil síria chega ao Soco de Alepo, o mercado milenar onde seu pai Hassan trabalha, e transforma para sempre a vida tranquila de classe média de sua família: os pais Hassan e Alzira, médica formada em Damasco, e as irmãs Latifah e Soraia.",
+      "Nos meses seguintes, com as escolas fechadas, o comércio parado e a violência cada vez mais perto de casa, a família toma a decisão mais difícil de suas vidas: deixar Alepo a pé rumo à fronteira turca, junto com milhares de outros sírios, em busca de um campo de refugiados onde reconstruir alguma normalidade.",
+      "Mas a fuga não termina na fronteira. Cada narrador, Samir, Latifah e a mãe Alzira, segue dali um caminho separado e imprevisível pela Europa, enquanto a família tenta, contra todas as probabilidades, se reencontrar do outro lado da guerra."
+    ],
+    "temas": [
+      "a guerra civil síria e o colapso repentino de uma vida de classe média",
+      "a rota de fuga de Alepo à fronteira turca e os campos de refugiados",
+      "o tráfico humano que atinge famílias refugiadas na Europa"
+    ],
+    "epoca": "2011 a cerca de 2015",
+    "local": "Alepo, Síria · campo de refugiados na Turquia · Amsterdã · Paris",
+    "leia_se_voce": [
+      "quer entender a guerra civil síria pelo lado de uma família comum, não pelas manchetes",
+      "gosta de narrativa em múltiplas vozes, contada em primeira pessoa por personagens diferentes da mesma família",
+      "busca uma história de guerra que também é sobre resiliência, busca e reencontro"
+    ],
+    "personagens": [
+      {
+        "nome": "Samir",
+        "papel": "O filho mais velho, de 17 anos, cuja voz abre a história no dia em que a guerra civil chega ao mercado onde o pai trabalha."
+      },
+      {
+        "nome": "Hassan",
+        "papel": "O pai, braço direito do superintendente do Soco de Alepo. A explosão que atinge o mercado muda o destino de toda a família."
+      },
+      {
+        "nome": "Alzira",
+        "papel": "A mãe, médica formada em Damasco, que se recusa a parar de procurar os filhos, não importa quantas fronteiras seja preciso atravessar."
+      },
+      {
+        "nome": "Latifah",
+        "papel": "A filha do meio, que sonhava em seguir medicina como a mãe antes de a guerra decidir por ela um caminho muito diferente."
+      },
+      {
+        "nome": "Jamile",
+        "papel": "Voluntária da ONU no campo de refugiados na Turquia, cuja amizade com a família atravessa anos e fronteiras."
+      }
+    ],
+    "faq": [
+      {
+        "p": "A história é baseada em fatos reais?",
+        "r": "É ficção ambientada em fatos reais. A guerra civil síria a partir de 2011, a rota de fuga para a Turquia, os campos de refugiados e o trabalho do Comitê Internacional da Cruz Vermelha na reconexão de famílias aconteceram como estão no livro; Samir, Alzira e sua família são personagens criados pelo autor."
+      },
+      {
+        "p": "O livro é pesado demais?",
+        "r": "É uma história sobre guerra, deslocamento forçado e as piores coisas que pessoas fazem a outras pessoas em meio ao caos, mas também sobre a resiliência de uma família que se recusa a desistir umas das outras. Não é uma leitura leve, mas termina em esperança."
+      },
+      {
+        "p": "Como a história é contada?",
+        "r": "Em primeira pessoa, alternando entre as vozes de diferentes membros da família, o que permite acompanhar os caminhos separados que a guerra impõe a cada um deles."
+      }
+    ],
     "midia": {
       "youtube_trailer": null,
       "youtube_podcast": null,
@@ -1486,21 +1672,23 @@
     },
     "heroi": null,
     "extras": null,
-    "posts": null,
-    "relacionadas": null,
+    "posts": [
+      "guerra-siria-campo-refugiados-cruz-vermelha-familias-separadas"
+    ],
+    "relacionadas": [
+      "a-vila",
+      "destinos-cruzados-fios-do-destino",
+      "amor-e-odio"
+    ],
     "avaliacoes": null,
-    "titulo_seo": null,
-    "descricao_seo": null,
-    "onda": null,
+    "titulo_seo": "Os Refugiados, romance da guerra civil síria",
+    "descricao_seo": "Alepo, 2011: uma família de classe média vê a vida normal virar escombros da noite para o dia. Contada pelas vozes dos próprios personagens, uma história de guerra, separação e busca. Romance de Domenico Falco.",
+    "onda": 2,
     "_fonte_desc": "Contada pelos próprios personagens, esta é a história de uma família síria de classe média que atravessa a guerra civil e se torna símbolo de resiliência e esperança.",
     "_fonte_docx": "2. Produto/Catalogo/Obras Literárias/26. Os Refugiados/1. Manuscrito/Refugiados.docx",
     "_nota_asin": null,
-    "pronta": false,
-    "_falta": [
-      "gancho",
-      "sinopse",
-      "temas"
-    ]
+    "pronta": true,
+    "_falta": null
   },
   {
     "slug": "o-reino",
