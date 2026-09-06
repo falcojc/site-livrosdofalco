@@ -58,7 +58,9 @@
   /* sinopse e volumes */
   .pdp-sinopse p{margin:0 0 18px;}
   .pdp-vols{display:grid;gap:16px;margin-top:26px;}
-  .pdp-vol{border:1px solid var(--card-border);border-radius:4px;padding:20px 22px;background:var(--bg-alt);}
+  .pdp-vol{display:flex;gap:16px;border:1px solid var(--card-border);border-radius:4px;padding:20px 22px;background:var(--bg-alt);}
+  .pdp-vol-capa{width:72px;height:108px;object-fit:cover;border-radius:3px;flex-shrink:0;}
+  .pdp-vol-corpo{min-width:0;}
   .pdp-vol .num{font-family:Cinzel,serif;font-size:11px;letter-spacing:.2em;color:var(--gold);text-transform:uppercase;}
   .pdp-vol h3{font-size:19px;margin:8px 0 4px;font-weight:600;}
   .pdp-vol .linha{font-size:13px;color:var(--gold-bright);margin:0 0 10px;}
@@ -99,7 +101,18 @@
   .pdp-card .sub{font-size:13px;color:var(--text-muted);margin:0;}
   .pdp-rel{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
   .pdp-rel a{display:block;text-align:center;}
-  .pdp-rel img{width:100%;height:auto;border:1px solid var(--card-border);border-radius:3px;background:var(--bg-alt);transition:border-color .2s;}
+  {# a capa de cada obra do catalogo tem uma proporcao nativa diferente (a arte
+     de IA nunca sai identica). Sem aspect-ratio + object-fit, cada card deste
+     grid ficava com uma altura diferente, seguindo a proporcao da propria
+     imagem: descoberto quando a fileira de recomendadas da A Vila saiu
+     serrilhada. Fixando 2:3 (a mesma proporcao que o resto do site assume
+     como padrao de capa), todo card nasce do mesmo tamanho e a imagem e
+     cortada pelo centro, nunca esticada. #}
+  {# height:auto precisa vir explicito: o atributo HTML height="598" do <img>
+     tem prioridade sobre aspect-ratio quando nada sobrescreve height, e a
+     imagem nascia esticada na caixa 100% de largura x 598px de altura fixos
+     em vez de respeitar o 2:3. #}
+  .pdp-rel img{width:100%;height:auto;aspect-ratio:2/3;object-fit:cover;border:1px solid var(--card-border);border-radius:3px;background:var(--bg-alt);transition:border-color .2s;}
   .pdp-rel a:hover img{border-color:var(--gold);}
   .pdp-rel .tit{font-family:Cinzel,serif;font-size:14px;margin:10px 0 0;line-height:1.3;}
 

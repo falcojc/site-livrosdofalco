@@ -788,8 +788,8 @@
     "serie": null,
     "volumes": null,
     "capa": "/covers/a-industria-do-vicio.jpg",
-    "capa_w": 289,
-    "capa_h": 436,
+    "capa_w": 400,
+    "capa_h": 497,
     "capa_pdp": null,
     "capa_pdp_w": null,
     "capa_pdp_h": null,
@@ -1358,8 +1358,8 @@
     "serie": null,
     "volumes": null,
     "capa": "/covers/destinos-cruzados-parte-2.jpg",
-    "capa_w": 289,
-    "capa_h": 436,
+    "capa_w": 400,
+    "capa_h": 643,
     "capa_pdp": null,
     "capa_pdp_w": null,
     "capa_pdp_h": null,
@@ -1883,9 +1883,9 @@
       "imigracao-italiana-jornada-mediterraneo-cafezais"
     ],
     "relacionadas": [
-      "os-dois-irmaos",
-      "o-siciliano",
-      "os-italianos"
+      "o-comandante",
+      "os-refugiados",
+      "mariana-e-jose-inacio"
     ],
     "avaliacoes": null,
     "titulo_seo": "A Saga Italiana, trilogia da imigração",
@@ -1911,20 +1911,22 @@
       {
         "titulo": "Destinos Cruzados",
         "linha": "Delhi, 1939, e os vinte anos seguintes",
-        "desc": "Três adolescentes dividiam a mesma rua em Delhi. Depois vieram uma guerra, uma partilha e uma revolução, e o mapa passou entre eles."
+        "desc": "Três adolescentes dividiam a mesma rua em Delhi. Depois vieram uma guerra, uma partilha e uma revolução, e o mapa passou entre eles.",
+        "slug": "destinos-cruzados"
       },
       {
         "titulo": "Destinos Cruzados: Parte 2",
         "linha": "Hong Kong, no auge da Guerra Fria",
-        "desc": "Numa colônia britânica encostada na China de Mao, tudo o que era proibido dos dois lados tinha preço. Inclusive uma conta antiga."
+        "desc": "Numa colônia britânica encostada na China de Mao, tudo o que era proibido dos dois lados tinha preço. Inclusive uma conta antiga.",
+        "slug": "destinos-cruzados-parte-2"
       }
     ],
     "capa": "/covers/destinos-cruzados-fios-do-destino.jpg",
     "capa_w": 400,
-    "capa_h": 596,
+    "capa_h": 573,
     "capa_pdp": "/covers/pdp/destinos-cruzados-fios-do-destino",
     "capa_pdp_w": 800,
-    "capa_pdp_h": 1192,
+    "capa_pdp_h": 1145,
     "preco": "12,90",
     "ku": true,
     "paginas": 156,
@@ -1973,9 +1975,9 @@
       "guerra-fria-asia-espionagem-mi6-kgb-hong-kong"
     ],
     "relacionadas": [
-      "destinos-cruzados",
-      "destinos-cruzados-parte-2",
-      "a-saga-italiana"
+      "a-saga-italiana",
+      "os-refugiados",
+      "a-teia"
     ],
     "avaliacoes": null,
     "titulo_seo": "Destinos Cruzados: Os Fios do Destino, duologia de espionagem",
