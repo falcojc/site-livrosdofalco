@@ -782,7 +782,7 @@
     "slug": "o-explorador",
     "slug_url": "o-explorador",
     "titulo": "O Explorador — Em Busca do Desconhecido (Parte 1)",
-    "subtitulo": null,
+    "subtitulo": "Filho caçula de um industrial têxtil de Manchester, James troca conforto por risco em expedições que atravessam o Ártico, a África e os Andes, até desaparecer rumo ao fim do mundo",
     "asin": "B0DJZG19NX",
     "silo": "jornadas-epicas-sobrevivencia",
     "silo_nome": "Jornadas Épicas e Sobrevivência",
@@ -792,21 +792,71 @@
     "capa": "/covers/o-explorador.jpg",
     "capa_w": 600,
     "capa_h": 804,
-    "capa_pdp": null,
-    "capa_pdp_w": null,
-    "capa_pdp_h": null,
+    "capa_pdp": "/covers/pdp/o-explorador",
+    "capa_pdp_w": 800,
+    "capa_pdp_h": 1072,
     "preco": "9,90",
     "ku": true,
-    "paginas": null,
-    "publicado": null,
-    "gancho": null,
-    "sinopse": null,
-    "temas": null,
-    "epoca": null,
-    "local": null,
-    "leia_se_voce": null,
-    "personagens": null,
-    "faq": null,
+    "paginas": 120,
+    "publicado": "2024-10-13",
+    "gancho": "O mundo ainda tinha lugares sem nome. Ele quis conhecer todos, e nunca soube parar a tempo.",
+    "sinopse": [
+      "James é o filho caçula de um industrial têxtil de Manchester, no início do século XIX. Enquanto os três irmãos mais velhos partem para a guerra contra Napoleão, ele cresce fascinado pelo movimento dos exploradores britânicos. Depois da guerra, muda-se para Londres e entra para a prestigiada Associação dos Exploradores, apadrinhado pelo célebre Thomas White, e começa seu treinamento a bordo de um navio baleeiro.",
+      "Seguem-se expedições que compõem a espinha dorsal de sua vida: uma tentativa de encontrar a Passagem Noroeste pelo Ártico, uma grande travessia pela África central até o rio Congo, uma jornada científica pelos Andes argentinos e pelo deserto do Atacama, e uma missão comercial ao Egito e ao Sudão para garantir algodão à fábrica da família. Ao longo do caminho ele forma amizades e amores que raramente sobrevivem à próxima partida.",
+      "Cansado dos jogos políticos do império e depois de perder quase tudo que amou, James parte com Thomas, sem intenção de voltar, rumo à Nova Zelândia. De lá, por impulso, os dois embarcam num navio em direção ao Polo Sul. Nenhum dos dois é visto de novo."
+    ],
+    "temas": [
+      "exploração geográfica e científica no auge do Império Britânico",
+      "colonialismo e o custo humano da expansão territorial",
+      "amor e amizade postos à prova pela obsessão de partir sempre de novo"
+    ],
+    "epoca": "século XIX, do fim das guerras napoleônicas à era vitoriana",
+    "local": "Manchester e Londres (Inglaterra) · Ártico · África (Cabo, Kalahari, Congo, Etiópia, Egito, Sudão) · Andes e deserto do Atacama (América do Sul) · Nova Zelândia",
+    "leia_se_voce": [
+      "gosta de aventura de exploração no estilo dos grandes exploradores vitorianos",
+      "quer uma jornada que atravessa quase todos os continentes num só livro",
+      "aceita temas adultos e violência de guerra como parte da ambientação histórica"
+    ],
+    "personagens": [
+      {
+        "nome": "James",
+        "papel": "Protagonista, filho caçula de um industrial têxtil de Manchester, movido por uma obsessão por lugares ainda sem nome no mapa."
+      },
+      {
+        "nome": "Thomas White",
+        "papel": "Célebre explorador polar, mentor e depois amigo inseparável de James."
+      },
+      {
+        "nome": "Willian",
+        "papel": "Irmão mais velho de James, assume os negócios da família depois da guerra contra Napoleão."
+      },
+      {
+        "nome": "Henry",
+        "papel": "Arpoador que treina James no navio baleeiro e o acompanha em expedições posteriores."
+      },
+      {
+        "nome": "Kelly",
+        "papel": "Jovem irlandesa resgatada da miséria por James, nutre por ele um amor nunca plenamente correspondido."
+      },
+      {
+        "nome": "Coronel Pedro",
+        "papel": "Militar boliviano que recebe James e Thomas na expedição aos Andes e ao Lago Titicaca."
+      }
+    ],
+    "faq": [
+      {
+        "p": "Esse livro tem continuação?",
+        "r": "Sim. O Explorador II: Em Busca do Desconhecido continua diretamente a história, a partir do momento em que James desaparece rumo ao Polo Sul."
+      },
+      {
+        "p": "O livro tem conteúdo adulto?",
+        "r": "Sim. A trama inclui violência de guerra, cativeiro, colonialismo e cenas de conteúdo sexual, tratados como parte da ambientação histórica, sem entrar em detalhes gráficos no material de venda."
+      },
+      {
+        "p": "A história é baseada em fatos reais?",
+        "r": "O pano de fundo histórico (as guerras napoleônicas, a Grande Fome irlandesa, a expansão colonial britânica) é real; James, Thomas e os demais personagens centrais são ficção."
+      }
+    ],
     "midia": {
       "youtube_trailer": null,
       "youtube_podcast": null,
@@ -815,20 +865,18 @@
     "heroi": null,
     "extras": null,
     "posts": null,
-    "relacionadas": null,
+    "relacionadas": [
+      "o-explorador-desconhecido"
+    ],
     "avaliacoes": null,
-    "titulo_seo": null,
-    "descricao_seo": null,
-    "onda": null,
+    "titulo_seo": "O Explorador, romance histórico de aventura e exploração no século XIX",
+    "descricao_seo": "James troca o conforto de Manchester por expedições no Ártico, na África e nos Andes, movido por uma obsessão por lugares sem nome no mapa. Primeiro volume da duologia de aventura de Domenico Falco, continua em O Explorador II.",
+    "onda": 5,
     "_fonte_desc": "A história de um jovem inglês do século XIX, apaixonado por aventuras e ávido por conhecer o mundo.",
     "_fonte_docx": "2. Produto/Catalogo/Obras Literárias/9. O Explorador I/1. Manuscrito/O Explorador.docx",
     "_nota_asin": "Parte 1. Tem DUAS listagens Kindle da mesma obra: B0DJZG19NX (2024, capa nova, canonica) e B08W9M3N8X (2021, a descontinuar). Impresso B08W7GB6PY fica publicado sem divulgacao.",
-    "pronta": false,
-    "_falta": [
-      "gancho",
-      "sinopse",
-      "temas"
-    ]
+    "pronta": true,
+    "_falta": null
   },
   {
     "slug": "sangue-frio",
@@ -1515,7 +1563,7 @@
     "slug": "o-explorador-desconhecido",
     "slug_url": "o-explorador-desconhecido",
     "titulo": "O Explorador: Em Busca do Desconhecido",
-    "subtitulo": null,
+    "subtitulo": "Resgatado sem memória nas águas geladas da Antártida, James encontra em Luna, uma cientista argentina, o fio que o guia de volta a si mesmo, e a um segredo que a Amazônia guarda a sete chaves",
     "asin": "B0DKCDG3LS",
     "silo": "jornadas-epicas-sobrevivencia",
     "silo_nome": "Jornadas Épicas e Sobrevivência",
@@ -1525,21 +1573,63 @@
     "capa": "/covers/o-explorador-desconhecido.jpg",
     "capa_w": 600,
     "capa_h": 804,
-    "capa_pdp": null,
-    "capa_pdp_w": null,
-    "capa_pdp_h": null,
+    "capa_pdp": "/covers/pdp/o-explorador-desconhecido",
+    "capa_pdp_w": 800,
+    "capa_pdp_h": 1072,
     "preco": "9,90",
     "ku": true,
-    "paginas": null,
-    "publicado": null,
-    "gancho": null,
-    "sinopse": null,
-    "temas": null,
-    "epoca": null,
-    "local": null,
-    "leia_se_voce": null,
-    "personagens": null,
-    "faq": null,
+    "paginas": 82,
+    "publicado": "2024-10-19",
+    "gancho": "Resgatado à deriva na Antártida. Sem memória. Sem nome. Só um segredo que insiste em voltar.",
+    "sinopse": [
+      "Num veleiro à deriva perto da Antártida, um navio de pesquisa argentino resgata dois náufragos: o mais velho não sobrevive, e o mais jovem, um inglês chamado James, está vivo mas sem memória, guiado só por flashes de uma tempestade. A cientista marinha Luna assume seus cuidados durante a viagem até Ushuaia, e a convivência vira um romance intenso.",
+      "Quando o trabalho de Luna a leva às Ilhas Galápagos, James começa a ter crises e flashbacks: fragmentos de um segredo que a própria mente dele escondeu. Movidos por entender o que houve, os dois partem para a Amazônia Andina com uma pequena equipe de expedição, entre eles o guia indígena Aruatam e o americano John Spencer, cujas motivações nem sempre são as que ele declara.",
+      "A floresta cobra seu preço: perigos crescentes, um cativeiro que testa os limites de sobrevivência do grupo, e visões diante de um lago sagrado que confrontam os medos mais profundos de James. De volta a Buenos Aires, o casal enfrenta o desafio mais difícil de todos, um que nenhuma expedição prepara ninguém para enfrentar."
+    ],
+    "temas": [
+      "memória e identidade depois de um trauma sem nome",
+      "exploração científica em Galápagos e na Amazônia Andina",
+      "amor, ciência e o preço de reconstruir uma vida do zero"
+    ],
+    "epoca": "início do século XX",
+    "local": "Antártida · Ushuaia e Buenos Aires (Argentina) · Ilhas Galápagos (Equador) · Amazônia Andina · Manchester (Inglaterra)",
+    "leia_se_voce": [
+      "já leu O Explorador e quer saber o que aconteceu com James depois do naufrágio",
+      "gosta de aventura com base científica real (evolução, biologia marinha, botânica amazônica)",
+      "aceita temas adultos e violência como parte de uma jornada de sobrevivência"
+    ],
+    "personagens": [
+      {
+        "nome": "James",
+        "papel": "Explorador inglês resgatado sem memória, tenta reconstruir o próprio passado."
+      },
+      {
+        "nome": "Luna",
+        "papel": "Cientista marinha argentina que cuida de James e se torna sua parceira de vida e de pesquisa."
+      },
+      {
+        "nome": "Aruatam",
+        "papel": "Guerreiro e xamã indígena, guia espiritual e prático da expedição pela Amazônia."
+      },
+      {
+        "nome": "John Spencer",
+        "papel": "Americano que se apresenta como geólogo na expedição, mas esconde motivações próprias."
+      }
+    ],
+    "faq": [
+      {
+        "p": "Preciso ler O Explorador antes deste?",
+        "r": "Sim. É uma continuação direta, que começa exatamente onde o primeiro livro termina, com James à deriva e sem memória."
+      },
+      {
+        "p": "O livro tem conteúdo pesado?",
+        "r": "Sim. Há violência gráfica, uma cena de risco à integridade física de Luna e menções a canibalismo dentro de uma tribo isolada, além de conteúdo sexual sugerido entre o casal."
+      },
+      {
+        "p": "Esse universo continua em outra obra?",
+        "r": "Ainda não há uma Parte 3 publicada, mas o final do livro deixa uma porta aberta para novas histórias dentro do mesmo universo."
+      }
+    ],
     "midia": {
       "youtube_trailer": null,
       "youtube_podcast": null,
@@ -1548,20 +1638,18 @@
     "heroi": null,
     "extras": null,
     "posts": null,
-    "relacionadas": null,
+    "relacionadas": [
+      "o-explorador"
+    ],
     "avaliacoes": null,
-    "titulo_seo": null,
-    "descricao_seo": null,
-    "onda": null,
+    "titulo_seo": "O Explorador II: Em Busca do Desconhecido, romance de aventura, ciência e amnésia",
+    "descricao_seo": "Resgatado à deriva perto da Antártida e sem memória, o explorador James encontra em Luna, cientista argentina, o caminho para reconstruir o próprio passado entre Galápagos e a Amazônia Andina. Continuação de O Explorador, romance de Domenico Falco.",
+    "onda": 5,
     "_fonte_desc": "Resgatado à deriva perto da Antártida e sem memória, o explorador James encontra em Luna, uma cientista argentina, o caminho para novas aventuras em Galápagos e na Amazônia Andina.",
     "_fonte_docx": "2. Produto/Catalogo/Obras Literárias/17. O Explorador II - Em busca do desconhecido/1. Manuscrito/O Explorador - Parte 2.docx",
     "_nota_asin": null,
-    "pronta": false,
-    "_falta": [
-      "gancho",
-      "sinopse",
-      "temas"
-    ]
+    "pronta": true,
+    "_falta": null
   },
   {
     "slug": "a-teia",
@@ -2054,7 +2142,7 @@
     "slug": "destinos-cruzados",
     "slug_url": "destinos-cruzados",
     "titulo": "Destinos Cruzados",
-    "subtitulo": null,
+    "subtitulo": "Três adolescentes dividem o mesmo bazar em Delhi, em 1939. Duas décadas de guerra, partilha e revolução depois, a amizade dos três atravessa fronteiras que nenhum deles escolheu",
     "asin": "B0CTHS12QF",
     "silo": "mulheres-donas-do-seu-destino",
     "silo_nome": "Mulheres Donas de Seus Destinos",
@@ -2064,21 +2152,71 @@
     "capa": "/covers/destinos-cruzados.jpg",
     "capa_w": 400,
     "capa_h": 596,
-    "capa_pdp": null,
-    "capa_pdp_w": null,
-    "capa_pdp_h": null,
+    "capa_pdp": "/covers/pdp/destinos-cruzados",
+    "capa_pdp_w": 800,
+    "capa_pdp_h": 1193,
     "preco": "9,90",
     "ku": true,
-    "paginas": null,
-    "publicado": null,
-    "gancho": null,
-    "sinopse": null,
-    "temas": null,
-    "epoca": null,
-    "local": null,
-    "leia_se_voce": null,
-    "personagens": null,
-    "faq": null,
+    "paginas": 162,
+    "publicado": "2024-03-15",
+    "gancho": "Três adolescentes dividiam a mesma rua em Delhi. Vinte anos depois, a História os colocou em lados opostos da fronteira um do outro.",
+    "sinopse": [
+      "Em Delhi, 1939, a inglesa Julia, filha de um capitão do exército britânico, forma um trio inseparável com o paquistanês Hassan e o chinês Wei. Quando a Segunda Guerra Mundial convoca Hassan para a frente asiática, ele e Julia vivem um romance que muda tudo; Hassan é capturado pelos japoneses na Birmânia, sobrevive a um cativeiro brutal, e ao voltar reencontra Julia grávida, mas desaparece, radicalizado pela luta anticolonial.",
+      "Magoada e simpatizante do comunismo, Julia se aproxima de Wei, que retorna a Delhi como emissário do Partido Comunista Chinês, e o segue para a China recém-tomada por Mao, levando o filho pequeno. A reforma agrária do novo regime a leva a uma cidade de fronteira no Himalaia, onde a fome e a violência a fazem romper de vez com o comunismo e voltar sozinha para Londres.",
+      "Em Londres, já médica renomada, Julia reencontra Hassan, agora imigrante paquistanês reconstruindo a cidade destruída pela guerra. O reencontro revela a existência do filho, William, e parece abrir uma segunda chance para os três viverem como família, até que o passado político de Julia volta a bater à porta, e a Guerra Fria que começa a se desenhar decide o resto por eles."
+    ],
+    "temas": [
+      "o fim do Império Britânico e a Partição da Índia e do Paquistão",
+      "a revolução comunista chinesa e o preço humano da reforma agrária",
+      "uma amizade de infância fraturada por três lados opostos da História"
+    ],
+    "epoca": "1939 a meados da década de 1950",
+    "local": "Delhi (Índia Britânica) · Birmânia · China e uma cidade fictícia de fronteira no Himalaia · Lahore e Karachi (Paquistão) · Londres (Inglaterra)",
+    "leia_se_voce": [
+      "gosta de sagas históricas que atravessam impérios, guerras e revoluções",
+      "quer entender a Partição da Índia e a ascensão comunista na China pela ficção",
+      "aceita violência histórica de massa (guerra, partilha, fome) como parte real da ambientação"
+    ],
+    "personagens": [
+      {
+        "nome": "Julia",
+        "papel": "Jovem inglesa, filha de um capitão do exército britânico; depois médica; mãe de William."
+      },
+      {
+        "nome": "Hassan",
+        "papel": "Jovem paquistanês, soldado e prisioneiro de guerra, depois ativista anticolonial e imigrante em Londres; pai de William."
+      },
+      {
+        "nome": "Wei",
+        "papel": "Jovem chinês, apaixonado não correspondido por Julia; torna-se quadro do Partido Comunista Chinês."
+      },
+      {
+        "nome": "Jade",
+        "papel": "Filha de um comerciante indiano, esposa de Hassan."
+      },
+      {
+        "nome": "Ming",
+        "papel": "Jovem governador comunista de uma cidade fronteiriça, amante secreto de Wei."
+      },
+      {
+        "nome": "Capitão Peter",
+        "papel": "Pai de Julia, oficial do exército britânico responsável pela segurança de Delhi."
+      }
+    ],
+    "faq": [
+      {
+        "p": "O livro tem violência gráfica?",
+        "r": "Sim. A Segunda Guerra, o cativeiro de prisioneiros de guerra e a violência de massa da Partição da Índia são retratados sem meias medidas, incluindo cenas de grande impacto."
+      },
+      {
+        "p": "Esse livro tem continuação?",
+        "r": "Sim. Destinos Cruzados: Parte 2 continua a história na geração seguinte, com o filho do trio, William, já adulto. As duas partes também saem juntas na edição especial Destinos Cruzados: Os Fios do Destino."
+      },
+      {
+        "p": "É baseado em fatos reais?",
+        "r": "O pano de fundo histórico (a Segunda Guerra Mundial, a Partição da Índia, a revolução comunista chinesa) é real; Julia, Hassan, Wei e os demais personagens centrais são ficção."
+      }
+    ],
     "midia": {
       "youtube_trailer": null,
       "youtube_podcast": null,
@@ -2087,26 +2225,25 @@
     "heroi": null,
     "extras": null,
     "posts": null,
-    "relacionadas": null,
+    "relacionadas": [
+      "destinos-cruzados-parte-2",
+      "destinos-cruzados-fios-do-destino"
+    ],
     "avaliacoes": null,
-    "titulo_seo": null,
-    "descricao_seo": null,
-    "onda": null,
+    "titulo_seo": "Destinos Cruzados, romance histórico sobre a Segunda Guerra, a Partição da Índia e a revolução chinesa",
+    "descricao_seo": "Em 1939, uma inglesa, um paquistanês e um chinês dividem a mesma rua em Delhi. A Segunda Guerra Mundial, a Partição da Índia e a revolução comunista chinesa os separam em lados opostos da História. Primeiro volume da duologia de Domenico Falco, continua em Destinos Cruzados: Parte 2.",
+    "onda": 5,
     "_fonte_desc": "Uma inglesa, um chinês e um indiano, três jovens amigos cujas vidas são moldadas pelos grandes acontecimentos históricos das décadas de 1940 e 1950.",
     "_fonte_docx": "2. Produto/Catalogo/Obras Literárias/23. Destinos Cruzados/1. Manuscrito/Destinos Cruzados.docx",
     "_nota_asin": null,
-    "pronta": false,
-    "_falta": [
-      "gancho",
-      "sinopse",
-      "temas"
-    ]
+    "pronta": true,
+    "_falta": null
   },
   {
     "slug": "destinos-cruzados-parte-2",
     "slug_url": "destinos-cruzados-parte-2",
     "titulo": "Destinos Cruzados — Parte 2",
-    "subtitulo": null,
+    "subtitulo": "Agente do MI6 em Hong Kong, William negocia no escuro com uma voz que domina o mercado negro da Guerra Fria, sem saber que está prestes a encontrar o segredo mais bem guardado da própria família",
     "asin": "B0D8M6361T",
     "silo": "mulheres-donas-do-seu-destino",
     "silo_nome": "Mulheres Donas de Seus Destinos",
@@ -2116,21 +2253,67 @@
     "capa": "/covers/destinos-cruzados-parte-2.jpg",
     "capa_w": 400,
     "capa_h": 643,
-    "capa_pdp": null,
-    "capa_pdp_w": null,
-    "capa_pdp_h": null,
+    "capa_pdp": "/covers/pdp/destinos-cruzados-parte-2",
+    "capa_pdp_w": 800,
+    "capa_pdp_h": 1286,
     "preco": "9,90",
     "ku": true,
-    "paginas": null,
-    "publicado": null,
-    "gancho": null,
-    "sinopse": null,
-    "temas": null,
-    "epoca": null,
-    "local": null,
-    "leia_se_voce": null,
-    "personagens": null,
-    "faq": null,
+    "paginas": 86,
+    "publicado": "2024-07-02",
+    "gancho": "Ele tem uma missão do MI6. E uma missão que é só dele.",
+    "sinopse": [
+      "Criado na Inglaterra sem os pais, oficialmente \"desaparecidos em missão\", William é recrutado ainda jovem para um departamento de elite do MI6 criado para enfrentar a KGB na Guerra Fria, e vira o agente de codinome AE-5. Fluente em vários idiomas, ele aceita uma missão disfarçada em Hong Kong: infiltrar-se nas tríades chinesas para recuperar documentos tecnológicos roubados, sob a operação de codinome \"Ponta de Lança\".",
+      "As negociações avançam por meio de uma misteriosa \"voz\" que lidera o mercado paralelo a partir da escuridão, sempre em encontros às cegas. Mas o disfarce de William é comprometido, e o confronto escala entre o MI6, a KGB soviética e as tríades chinesas, com a Yakuza e o Partido Comunista também disputando pedaços do mesmo jogo.",
+      "Entre traições, tortura e um atentado, William se aproxima cada vez mais da verdade sobre o paradeiro dos pais que nunca conheceu, sem imaginar o quanto essa verdade está mais perto dele do que qualquer pista que a inteligência britânica já lhe deu."
+    ],
+    "temas": [
+      "espionagem e a Guerra Fria na Ásia",
+      "tríades chinesas, KGB e o mercado paralelo de tecnologia",
+      "um filho criado pela ausência que reencontra a própria história numa missão"
+    ],
+    "epoca": "início da década de 1960",
+    "local": "Hong Kong · Londres (Inglaterra) · China continental",
+    "leia_se_voce": [
+      "gosta de thriller de espionagem ambientado na Guerra Fria",
+      "já leu Destinos Cruzados e quer saber o que aconteceu com o filho do trio",
+      "aceita violência gráfica (tortura, execução) como parte de um romance de espionagem adulto"
+    ],
+    "personagens": [
+      {
+        "nome": "William",
+        "papel": "Protagonista, agente do MI6 em Hong Kong sob o codinome AE-5, filho de Julia e Hassan."
+      },
+      {
+        "nome": "Julia",
+        "papel": "Mãe de William, vive sob identidade falsa em Hong Kong e lidera secretamente uma tríade chinesa."
+      },
+      {
+        "nome": "Ming",
+        "papel": "Pescador e contrabandista chinês, aliado leal de William em Hong Kong."
+      },
+      {
+        "nome": "Sergey",
+        "papel": "Chefe da espionagem soviética na China, antagonista principal."
+      },
+      {
+        "nome": "Peter",
+        "papel": "Jovem agente sob o comando de William em Hong Kong."
+      }
+    ],
+    "faq": [
+      {
+        "p": "Preciso ler Destinos Cruzados antes deste?",
+        "r": "Sim. É uma continuação direta que revela o destino dos personagens do primeiro livro através da busca de William por seus pais."
+      },
+      {
+        "p": "O livro tem violência gráfica?",
+        "r": "Sim, incluindo uma cena de tortura e um confronto final letal. É um thriller de espionagem para leitor adulto."
+      },
+      {
+        "p": "É baseado em fatos reais?",
+        "r": "O pano de fundo (a Guerra Fria, a ascensão do transistor, as tríades de Hong Kong) é real; William e os demais personagens centrais são ficção."
+      }
+    ],
     "midia": {
       "youtube_trailer": null,
       "youtube_podcast": null,
@@ -2138,21 +2321,22 @@
     },
     "heroi": null,
     "extras": null,
-    "posts": null,
-    "relacionadas": null,
+    "posts": [
+      "guerra-fria-asia-espionagem-mi6-kgb-hong-kong"
+    ],
+    "relacionadas": [
+      "destinos-cruzados",
+      "destinos-cruzados-fios-do-destino"
+    ],
     "avaliacoes": null,
-    "titulo_seo": null,
-    "descricao_seo": null,
-    "onda": null,
+    "titulo_seo": "Destinos Cruzados: Parte 2, thriller de espionagem na Guerra Fria em Hong Kong",
+    "descricao_seo": "Hong Kong, anos 1960: o agente do MI6 William negocia no mercado negro da Guerra Fria em busca de sua mãe desaparecida, sem saber que está cara a cara com o segredo da própria família. Continuação de Destinos Cruzados, romance de Domenico Falco.",
+    "onda": 5,
     "_fonte_desc": "Já agente do MI6, o jovem William parte para a Hong Kong dos anos 1960 em busca de sua mãe desaparecida, uma missão que mistura espionagem e história pessoal.",
     "_fonte_docx": "2. Produto/Catalogo/Obras Literárias/24. Destinos Cruzados Parte 2/1. Manuscrito/Destinos Cruzados parte 2.docx",
     "_nota_asin": null,
-    "pronta": false,
-    "_falta": [
-      "gancho",
-      "sinopse",
-      "temas"
-    ]
+    "pronta": true,
+    "_falta": null
   },
   {
     "slug": "o-que-eu-lembro-deles",
