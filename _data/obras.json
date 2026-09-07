@@ -589,7 +589,7 @@
     "slug": "a-casa-dos-prazeres",
     "slug_url": "a-casa-dos-prazeres",
     "titulo": "A Casa dos Prazeres",
-    "subtitulo": null,
+    "subtitulo": "Uma acusação forjada destrói sua família num único dia. Vendida a um bordel no Japão feudal, Yoko transforma servidão em poder, e nada a impede de se aproximar do homem que arruinou tudo",
     "asin": "B09G1J8GKR",
     "silo": "mulheres-donas-do-seu-destino",
     "silo_nome": "Mulheres Donas de Seus Destinos",
@@ -599,21 +599,71 @@
     "capa": "/covers/a-casa-dos-prazeres.jpg",
     "capa_w": 400,
     "capa_h": 600,
-    "capa_pdp": null,
-    "capa_pdp_w": null,
-    "capa_pdp_h": null,
+    "capa_pdp": "/covers/pdp/a-casa-dos-prazeres",
+    "capa_pdp_w": 800,
+    "capa_pdp_h": 1201,
     "preco": "9,90",
     "ku": true,
-    "paginas": null,
-    "publicado": null,
-    "gancho": null,
-    "sinopse": null,
-    "temas": null,
-    "epoca": null,
-    "local": null,
-    "leia_se_voce": null,
-    "personagens": null,
-    "faq": null,
+    "paginas": 143,
+    "publicado": "2021-09-12",
+    "gancho": "Ela perdeu o pai, a família e o nome em um único dia. O homem que destruiu tudo isso nunca soube que dormiria, anos depois, ao lado da própria vingança.",
+    "sinopse": [
+      "Em Sapporo, na ilha de Hokkaido, Kiichi administra as finanças da cidade há vinte anos com uma honestidade que incomoda o novo governador, Yuri, ambicioso e disposto a enriquecer à custa do povo. Uma acusação forjada de desvio de dinheiro basta para prendê-lo, e ele amanhece morto no próprio gabinete, segurando uma carta em que jura inocência. Como punição \"branda\", a família inteira é destroçada num único dia: o filho Hayato é mandado para servir como prisioneiro na marinha imperial, a filha Yoko é entregue a uma casa de prazeres sob os cuidados da cafetina Kioko, e a mãe Sakura é expulsa à própria sorte, sem nada.",
+      "Cada um reconstrói a vida a partir do zero. Sakura cai na miséria antes de se reerguer com um pequeno negócio próprio. Yoko é treinada como cortesã de elite e se torna a mulher mais cobiçada de Sapporo, o que a coloca, cedo ou tarde, no caminho do próprio Yuri, o homem que destruiu sua família. Hayato sobrevive a um confronto naval contra a Rússia, é resgatado por uma jovem do povo nativo Ainu e se torna mediador de um conflito sangrento entre colonos japoneses e aldeias indígenas, sob a tutela do samurai Yamamoto, que guarda havia anos um segredo capaz de provar a inocência de Kiichi.",
+      "Aos poucos, mãe e filhos voltam a se cruzar, e a família se reconstitui peça por peça, enquanto o próprio Japão feudal caminha para o colapso: terremotos, rebeliões internas e o avanço de potências estrangeiras empurram o país para o fim de uma era. Nem todos os reencontros trazem paz, e a linha entre justiça e vingança fica cada vez mais difícil de enxergar."
+    ],
+    "temas": [
+      "Japão feudal, honra samurai e a corrupção que a corrói por dentro",
+      "a vida numa casa de cortesãs como caminho forçado de sobrevivência, e depois de poder",
+      "uma família destroçada por injustiça e o longo caminho até o reencontro"
+    ],
+    "epoca": "início do século XIX, Japão feudal em transição para o fim do xogunato",
+    "local": "Sapporo e terras do povo Ainu, ilha de Hokkaido, Japão",
+    "leia_se_voce": [
+      "gosta de dramas de honra e vingança ambientados no Japão feudal",
+      "quer acompanhar uma família reconstruída peça por peça depois de perder tudo",
+      "aceita temas adultos (vida numa casa de prazeres, drogas) tratados sem cena explícita"
+    ],
+    "personagens": [
+      {
+        "nome": "Kiichi",
+        "papel": "Administrador financeiro honesto de Sapporo, vítima de uma acusação forjada que desencadeia toda a história."
+      },
+      {
+        "nome": "Sakura",
+        "papel": "Mãe da família, expulsa à própria sorte, que se reergue sozinha até reconquistar dignidade."
+      },
+      {
+        "nome": "Yoko",
+        "papel": "Filha de Kiichi e Sakura, entregue a uma casa de prazeres e treinada como cortesã de elite."
+      },
+      {
+        "nome": "Hayato",
+        "papel": "Filho de Kiichi e Sakura, sobrevivente de um naufrágio, acolhido pelo povo Ainu."
+      },
+      {
+        "nome": "Yamamoto",
+        "papel": "Samurai e comandante militar, guardião de um segredo ligado à morte de Kiichi."
+      },
+      {
+        "nome": "Yuri",
+        "papel": "Governador corrupto de Hokkaido, responsável pela acusação que destrói a família."
+      }
+    ],
+    "faq": [
+      {
+        "p": "Esse livro tem ligação com outras obras do autor?",
+        "r": "Sim. A família que nasce da união entre Hayato e a filha do samurai Yamamoto segue adiante na história, e o herdeiro dessa geração é o protagonista de Akira: O Senhor das Armas, ambientado já na era Meiji que se abre no fim deste livro."
+      },
+      {
+        "p": "O livro tem conteúdo sexual explícito?",
+        "r": "Não. A \"casa dos prazeres\" do título é de fato um bordel, e o tema da prostituição é central na trama, mas tratado de forma literária e elíptica, sem cenas detalhadas. O livro trata de temas adultos (prostituição, uso de drogas, violência de guerra) sem explicitação gráfica."
+      },
+      {
+        "p": "Preciso conhecer a cultura ou a história do Japão feudal para entender a história?",
+        "r": "Não. O contexto histórico, incluindo os costumes samurais e a organização de uma casa de prazeres, é explicado ao longo do livro."
+      }
+    ],
     "midia": {
       "youtube_trailer": null,
       "youtube_podcast": null,
@@ -622,20 +672,18 @@
     "heroi": null,
     "extras": null,
     "posts": null,
-    "relacionadas": null,
+    "relacionadas": [
+      "akira"
+    ],
     "avaliacoes": null,
-    "titulo_seo": null,
-    "descricao_seo": null,
-    "onda": null,
+    "titulo_seo": "A Casa dos Prazeres, romance histórico sobre honra e vingança no Japão feudal",
+    "descricao_seo": "Uma família honrada é destruída por uma acusação forjada no Japão feudal: o pai morto, os filhos separados, a mãe nas ruas. Anos depois, Yoko se torna a cortesã mais poderosa de Sapporo, e se aproxima do homem que arruinou tudo. Romance histórico de Domenico Falco, ligado a Akira.",
+    "onda": 4,
     "_fonte_desc": "Uma família que, apesar de sofrer uma grande injustiça, consegue se reerguer aproveitando oportunidades inesperadas que a vida lhe oferece, um romance ambientado no Japão feudal.",
     "_fonte_docx": "2. Produto/Catalogo/Obras Literárias/7. A casa dos Prazeres/1. Manuscrito/A Casa dos Prazeres.docx",
     "_nota_asin": null,
-    "pronta": false,
-    "_falta": [
-      "gancho",
-      "sinopse",
-      "temas"
-    ]
+    "pronta": true,
+    "_falta": null
   },
   {
     "slug": "mariana-e-jose-inacio",
@@ -887,7 +935,7 @@
     "slug": "akira",
     "slug_url": "akira",
     "titulo": "Akira",
-    "subtitulo": null,
+    "subtitulo": "Neto de um samurai que a nova era descartou, Akira troca a fazenda da avó pela farda, e a farda pela indústria bélica, até descobrir que construir um império tem um preço que a própria família não perdoa",
     "asin": "B0BH89HQH6",
     "silo": "jornadas-epicas-sobrevivencia",
     "silo_nome": "Jornadas Épicas e Sobrevivência",
@@ -897,21 +945,63 @@
     "capa": "/covers/akira.jpg",
     "capa_w": 400,
     "capa_h": 600,
-    "capa_pdp": null,
-    "capa_pdp_w": null,
-    "capa_pdp_h": null,
+    "capa_pdp": "/covers/pdp/akira",
+    "capa_pdp_w": 800,
+    "capa_pdp_h": 1201,
     "preco": "9,90",
     "ku": true,
-    "paginas": null,
-    "publicado": null,
-    "gancho": null,
-    "sinopse": null,
-    "temas": null,
-    "epoca": null,
-    "local": null,
-    "leia_se_voce": null,
-    "personagens": null,
-    "faq": null,
+    "paginas": 47,
+    "publicado": "2022-10-04",
+    "gancho": "Ele foi condecorado como herói. E descobriu que a guerra dos outros também dá lucro.",
+    "sinopse": [
+      "Numa fazenda perto de Sapporo, na ilha de Hokkaido, Akira cresce sem rumo definido, neto da avó Sakura e filho de Hayato, instrutor de artes marciais, e Aiko, médica de medicina tradicional. Depois da morte serena da avó, a família se muda para a cidade, e Akira, sem vocação nem dinheiro, se alista no exército imperial japonês, contrariando o afastamento que a família sempre manteve de qualquer envolvimento com política.",
+      "Enviado à Coreia no confronto entre Japão e China, ele assume o comando de sua unidade quando o comandante morre em combate, é ferido gravemente e recusa a amputação. Condecorado como herói e com pensão vitalícia garantida, pede para estudar mecânica e siderurgia nos Estados Unidos antes de voltar ao Japão com um plano: abrir uma fábrica de material bélico para o exército imperial, o negócio que lhe rende o apelido de \"Senhor das Armas\".",
+      "Uma explosão fatal na fábrica muda os rumos do que ele construiu, e é nesse momento que nasce a aliança com Yume, operária que se revela uma estrategista fria e calculista. Juntos, os dois transformam a tragédia em oportunidade e ampliam o negócio bem no momento em que o Japão se prepara para uma nova guerra, contra a Rússia. O que fica cada vez mais claro é que o casamento entre eles é uma aliança de poder, não de amor, e que o preço desse império ainda não foi cobrado por completo."
+    ],
+    "temas": [
+      "a modernização militar e industrial do Japão da era Meiji",
+      "ambição e a linha tênue entre a honra herdada e o poder construído",
+      "um casamento que nasce como aliança de poder, não de amor"
+    ],
+    "epoca": "era Meiji, da Guerra Sino-Japonesa (1894-1895) à véspera da Guerra Russo-Japonesa",
+    "local": "Hokkaido (Sapporo) · Coreia · Estados Unidos · região de Tóquio, Japão",
+    "leia_se_voce": [
+      "gosta de ficção histórica sobre a ascensão de impérios industriais",
+      "quer entender o Japão que decidiu virar potência militar mundial",
+      "prefere uma leitura mais curta e direta, com um protagonista que também é seu próprio antagonista"
+    ],
+    "personagens": [
+      {
+        "nome": "Akira",
+        "papel": "Protagonista, neto de samurai que troca a farda pela indústria bélica e se torna um dos homens mais poderosos do Japão Meiji."
+      },
+      {
+        "nome": "Yume",
+        "papel": "Operária da fábrica que se torna parceira estratégica e esposa de Akira."
+      },
+      {
+        "nome": "Sakura",
+        "papel": "Avó de Akira, matriarca da fazenda em Hokkaido, cuja morte no início do livro muda o destino da família."
+      },
+      {
+        "nome": "Hayato e Aiko",
+        "papel": "Pais de Akira, instrutor de artes marciais e médica de medicina tradicional, avessos ao poder que o filho persegue."
+      }
+    ],
+    "faq": [
+      {
+        "p": "Esse livro tem ligação com outras obras do autor?",
+        "r": "Sim. Akira é filho de Hayato e Aiko e neto da matriarca Sakura, personagens centrais de A Casa dos Prazeres. A leitura de um não depende do outro, mas juntos formam duas gerações da mesma família, do Japão feudal à era Meiji."
+      },
+      {
+        "p": "O livro tem violência gráfica?",
+        "r": "Há cenas de combate na Guerra Sino-Japonesa e um acidente industrial fatal, descritos de forma direta mas breve, sem se estender em detalhes gráficos prolongados."
+      },
+      {
+        "p": "Por que o livro é mais curto que os outros do catálogo?",
+        "r": "É uma das obras mais curtas do autor, com 47 páginas, e conta uma ascensão condensada, do campo de batalha ao topo da indústria bélica japonesa."
+      }
+    ],
     "midia": {
       "youtube_trailer": null,
       "youtube_podcast": null,
@@ -920,26 +1010,24 @@
     "heroi": null,
     "extras": null,
     "posts": null,
-    "relacionadas": null,
+    "relacionadas": [
+      "a-casa-dos-prazeres"
+    ],
     "avaliacoes": null,
-    "titulo_seo": null,
-    "descricao_seo": null,
-    "onda": null,
+    "titulo_seo": "Akira, O Senhor das Armas: romance histórico sobre a ascensão de um industrial bélico no Japão Meiji",
+    "descricao_seo": "Do campo de batalha da Guerra Sino-Japonesa aos escritórios de uma fábrica de armas em ascensão, Akira troca a farda pelo poder industrial e se torna um dos homens mais temidos do Japão Meiji. Romance histórico de Domenico Falco, ligado a A Casa dos Prazeres.",
+    "onda": 4,
     "_fonte_desc": "No Japão em plena modernização após o fim do xogunato, o jovem Akira troca a vida simples na fazenda da avó pela disciplina do exército imperial. Ferido e condecorado como herói, reconstrói-se como um dos mais poderosos industriais do ramo de armamentos, \"O Senhor das Armas\".",
     "_fonte_docx": "2. Produto/Catalogo/Obras Literárias/11. Akira/1. Manuscrito/Akira.docx",
     "_nota_asin": null,
-    "pronta": false,
-    "_falta": [
-      "gancho",
-      "sinopse",
-      "temas"
-    ]
+    "pronta": true,
+    "_falta": null
   },
   {
     "slug": "joana",
     "slug_url": "joana",
     "titulo": "Joana, a Dama da Noite",
-    "subtitulo": null,
+    "subtitulo": "Aos 16 anos ela decide não voltar para casa. Entre os cabarés da Paris da Belle Époque e a Legião Estrangeira Francesa, uma família aprende que sobreviver também é uma forma de se reinventar",
     "asin": "B0BH3KL167",
     "silo": "mulheres-donas-do-seu-destino",
     "silo_nome": "Mulheres Donas de Seus Destinos",
@@ -949,21 +1037,67 @@
     "capa": "/covers/joana.jpg",
     "capa_w": 400,
     "capa_h": 600,
-    "capa_pdp": null,
-    "capa_pdp_w": null,
-    "capa_pdp_h": null,
+    "capa_pdp": "/covers/pdp/joana",
+    "capa_pdp_w": 800,
+    "capa_pdp_h": 1201,
     "preco": "9,90",
     "ku": true,
-    "paginas": null,
-    "publicado": null,
-    "gancho": null,
-    "sinopse": null,
-    "temas": null,
-    "epoca": null,
-    "local": null,
-    "leia_se_voce": null,
-    "personagens": null,
-    "faq": null,
+    "paginas": 89,
+    "publicado": "2022-10-02",
+    "gancho": "Ela foi a Paris ver uma exposição e nunca mais voltou para casa. Dar as cartas era bem mais interessante do que ser dada em casamento.",
+    "sinopse": [
+      "Filha de uma família simples de Reims, Joana tem 16 anos quando uma viagem à Exposição Universal de Paris, em 1900, muda o rumo da sua vida: ela decide ficar na cidade. Sozinha, é introduzida no mundo do lendário Cabaré Vermelho por Antoine, um artista que se apresenta também sob o nome de Valérie, e ali aprende rápido que beleza sem inteligência é armadilha. De garçonete a jogadora de cartas de alto nível, ela chama a atenção de Maurice, um sedutor charmoso que esconde um passado muito mais perigoso do que aparenta.",
+      "Da relação com Maurice nasce uma filha, Alice, que Joana entrega aos cuidados dos próprios pais para seguir sua vida independente entre jogo, bebida e a companhia da elite parisiense. Enquanto isso, seu irmão Jean troca a garagem da família por uma bicicleta de corrida, disputa a recém-criada Volta da França e, depois de uma tragédia na pista, busca redenção alistando-se na Legião Estrangeira Francesa, servindo na Argélia e em Madagascar.",
+      "Anos depois, com a eclosão da Primeira Guerra Mundial, os caminhos de Joana, Jean e Maurice voltam a se cruzar de um jeito que nenhum dos três esperava, e a família se vê forçada a atravessar o Atlântico rumo a uma nova vida na América do Sul. Um segredo de paternidade guardado só por Joana segue os três, sem que ela saiba até onde ele vai alcançar."
+    ],
+    "temas": [
+      "a Belle Époque parisiense, cabarés e a vida entre cartas e champanhe",
+      "a Legião Estrangeira Francesa e as colônias na África e na Guiana Francesa",
+      "uma família dividida entre a luz de Paris e as sombras que ela escondia"
+    ],
+    "epoca": "1900 a 1914, da Belle Époque à eclosão da Primeira Guerra Mundial",
+    "local": "Reims e Paris (França) · Argélia · Madagascar · Guiana Francesa · travessia até o Rio de Janeiro (Brasil)",
+    "leia_se_voce": [
+      "gosta de romances de época ambientados na Belle Époque e nos bastidores de um cabaré",
+      "quer uma saga de família que atravessa continentes, da França à Legião Estrangeira e ao Brasil",
+      "aceita temas adultos, incluindo relações de poder desiguais e ambientes de prisão colonial"
+    ],
+    "personagens": [
+      {
+        "nome": "Joana",
+        "papel": "Protagonista, jovem de Reims que constrói uma vida independente nos cabarés e salões de Paris."
+      },
+      {
+        "nome": "Maurice",
+        "papel": "Sedutor parisiense que esconde um passado no submundo do crime."
+      },
+      {
+        "nome": "Jean",
+        "papel": "Irmão de Joana, ciclista profissional que busca redenção na Legião Estrangeira Francesa."
+      },
+      {
+        "nome": "Antoine",
+        "papel": "Artista do Cabaré Vermelho, também conhecido como Valérie, mentor e confidente de Joana."
+      },
+      {
+        "nome": "Pierre e Marie",
+        "papel": "Pais de Joana e Jean, que criam a neta Alice em Reims na ausência da filha."
+      }
+    ],
+    "faq": [
+      {
+        "p": "O livro tem conteúdo adulto?",
+        "r": "Sim. A trama passa pela vida noturna parisiense, relações de poder desiguais, violência colonial e o ambiente de uma prisão na Guiana Francesa. É tratado sem cenas gráficas explícitas, mas não é uma leitura leve."
+      },
+      {
+        "p": "O contexto histórico é real?",
+        "r": "Sim. A Exposição Universal de 1900, a primeira Volta da França (1903), a Legião Estrangeira Francesa nas colônias e a eclosão da Primeira Guerra Mundial em 1914 são pano de fundo histórico real. Joana, Jean e Maurice são personagens de ficção."
+      },
+      {
+        "p": "É preciso ler outro livro do autor antes deste?",
+        "r": "Não. A história é independente e acompanha só esta família, do início ao embarque rumo ao Brasil."
+      }
+    ],
     "midia": {
       "youtube_trailer": null,
       "youtube_podcast": null,
@@ -974,18 +1108,14 @@
     "posts": null,
     "relacionadas": null,
     "avaliacoes": null,
-    "titulo_seo": null,
-    "descricao_seo": null,
-    "onda": null,
+    "titulo_seo": "Joana, a Dama da Noite: romance histórico sobre a Belle Époque parisiense e a Primeira Guerra Mundial",
+    "descricao_seo": "Na Paris da Belle Époque, Joana troca a casa dos pais por um cabaré e transforma charme em poder. Enquanto o irmão Jean busca redenção na Legião Estrangeira Francesa, a Primeira Guerra Mundial empurra a família rumo a um novo continente. Romance histórico de Domenico Falco.",
+    "onda": 4,
     "_fonte_desc": "A história da irreverente Joana, seus familiares, amores e aventuras, durante a primeira metade do século XX, entre a França e o Brasil.",
     "_fonte_docx": "2. Produto/Catalogo/Obras Literárias/12. Joana/1. Manuscrito/Joana.docx",
     "_nota_asin": null,
-    "pronta": false,
-    "_falta": [
-      "gancho",
-      "sinopse",
-      "temas"
-    ]
+    "pronta": true,
+    "_falta": null
   },
   {
     "slug": "os-dois-irmaos",
@@ -1184,7 +1314,7 @@
     "slug": "a-industria-do-vicio",
     "slug_url": "a-industria-do-vicio",
     "titulo": "A Indústria do Vício",
-    "subtitulo": null,
+    "subtitulo": "Proibiram o álcool, e quatro amigos de Little Italy transformaram isso no negócio mais lucrativo da América. O problema é que todo império tem herdeiros impacientes",
     "asin": "B0D917Q6XB",
     "silo": "submundo-traicoes-misterios",
     "silo_nome": "Submundo, Traições e Mistérios",
@@ -1194,21 +1324,71 @@
     "capa": "/covers/a-industria-do-vicio.jpg",
     "capa_w": 400,
     "capa_h": 497,
-    "capa_pdp": null,
-    "capa_pdp_w": null,
-    "capa_pdp_h": null,
+    "capa_pdp": "/covers/pdp/a-industria-do-vicio",
+    "capa_pdp_w": 800,
+    "capa_pdp_h": 994,
     "preco": "9,90",
     "ku": true,
-    "paginas": null,
-    "publicado": null,
-    "gancho": null,
-    "sinopse": null,
-    "temas": null,
-    "epoca": null,
-    "local": null,
-    "leia_se_voce": null,
-    "personagens": null,
-    "faq": null,
+    "paginas": 97,
+    "publicado": "2024-07-07",
+    "gancho": "Proibiram o álcool. E quatro garotos de bairro descobriram como transformar isso no negócio mais lucrativo da América.",
+    "sinopse": [
+      "Em plena onda de imigração italiana para os Estados Unidos, quatro amigos de infância, Sal, Joe, Leo e Vince, crescem em Little Italy sob a proteção do restaurante da família de Vito e Assunta. Quando a Lei Seca chega, em 1920, o chefão local Don Domenico monta uma operação clandestina de contrabando de álcool, e os quatro amigos entram para a organização, crescendo junto com ela. Um deles se envolve com Marta, mulher sob domínio de um chefão irlandês rival, e o resgate dela desencadeia uma guerra territorial que muda os rumos de todos.",
+      "A fama da organização atrai a atenção da máfia de Chicago, e um episódio de violência atinge diretamente o círculo dos quatro amigos. Vince se torna o conselheiro de confiança de Don Domenico, enquanto Joe assume os negócios de jogo em Atlantic City e chega a ser eleito prefeito da cidade, misturando definitivamente o crime organizado à política e à economia do entretenimento.",
+      "O crash da Bolsa de Nova York, em 1929, abala até o dinheiro sujo da organização, e a crise abre caminho para o tráfico de drogas e uma disputa territorial contra gangues chinesas em Atlantic City. A história termina no fim da Lei Seca, em 1933, com uma organização que precisa decidir em que vai se transformar, e uma amizade que nem todos atravessam inteiros."
+    ],
+    "temas": [
+      "a Lei Seca americana e a ascensão do crime organizado ítalo-americano",
+      "amizade, lealdade e o preço pessoal do poder",
+      "a fronteira entre crime, política e negócio legítimo em Atlantic City"
+    ],
+    "epoca": "1920 a 1933, os treze anos da Lei Seca americana",
+    "local": "Nova York (Little Italy, Manhattan) · Nova Jersey · Atlantic City, Estados Unidos",
+    "leia_se_voce": [
+      "gosta de romances de máfia sobre a ascensão e a queda de impérios criminosos",
+      "quer ver o crime organizado se infiltrar na política e na economia americana dos anos 1920",
+      "aceita violência gráfica (execuções, uma cena de tortura) como parte da ambientação"
+    ],
+    "personagens": [
+      {
+        "nome": "Don Domenico",
+        "papel": "Chefão da máfia ítalo-americana em Nova York, estrategista frio por trás da operação de contrabando."
+      },
+      {
+        "nome": "Vince",
+        "papel": "Um dos quatro amigos de infância, torna-se o conselheiro de confiança de Don Domenico."
+      },
+      {
+        "nome": "Sal",
+        "papel": "O mais impulsivo dos quatro amigos, seu envolvimento com Marta desencadeia a guerra contra os irlandeses."
+      },
+      {
+        "nome": "Joe",
+        "papel": "Assume os negócios de jogo em Atlantic City e chega a ser eleito prefeito da cidade."
+      },
+      {
+        "nome": "Leo",
+        "papel": "O mais cauteloso dos quatro, tenta investir em negócios lícitos antes do crash de 1929."
+      },
+      {
+        "nome": "Marta",
+        "papel": "Mulher sob domínio de um chefão irlandês rival, cujo resgate detona a guerra territorial."
+      }
+    ],
+    "faq": [
+      {
+        "p": "O livro tem violência gráfica?",
+        "r": "Sim, de forma explícita em vários pontos, incluindo execuções e uma cena de tortura. É um romance de máfia para leitor adulto, sem meio-termo na hora de mostrar o preço do poder."
+      },
+      {
+        "p": "A história é baseada em fatos reais?",
+        "r": "O pano de fundo é real: a Lei Seca, o crash da Bolsa de 1929 e a presença de figuras como Al Capone como referência histórica. Don Domenico, Vince e os demais personagens centrais são ficção."
+      },
+      {
+        "p": "O livro tem conteúdo sexual?",
+        "r": "Há uma cena de conteúdo sexual mais direto no início do livro, mas o restante da obra concentra o peso da narrativa na violência e na estratégia do crime organizado, não na sexualidade."
+      }
+    ],
     "midia": {
       "youtube_trailer": null,
       "youtube_podcast": null,
@@ -1219,18 +1399,14 @@
     "posts": null,
     "relacionadas": null,
     "avaliacoes": null,
-    "titulo_seo": null,
-    "descricao_seo": null,
-    "onda": null,
+    "titulo_seo": "A Indústria do Vício: romance histórico de máfia sobre a Lei Seca americana",
+    "descricao_seo": "Nova York, anos 1920: quatro amigos de Little Italy constroem um império de contrabando sob o comando de Don Domenico durante a Lei Seca. Ambição, guerra territorial e traição levam a organização de Manhattan a Atlantic City. Romance histórico de Domenico Falco.",
+    "onda": 4,
     "_fonte_desc": "Durante a Lei Seca americana, o capo Don Domenico e seu conselheiro Vince constroem um império à sombra da lei nas ruas de Nova Iorque e Atlantic City.",
     "_fonte_docx": "2. Produto/Catalogo/Obras Literárias/15. A indústria do vício/1. Manuscrito/A industria do vicio.docx",
     "_nota_asin": null,
-    "pronta": false,
-    "_falta": [
-      "gancho",
-      "sinopse",
-      "temas"
-    ]
+    "pronta": true,
+    "_falta": null
   },
   {
     "slug": "o-siciliano",
@@ -1391,7 +1567,7 @@
     "slug": "a-teia",
     "slug_url": "a-teia",
     "titulo": "A Teia",
-    "subtitulo": null,
+    "subtitulo": "Nascidos na mesma favela carioca, Joca virou o rei de um império de apostas e tráfico. Isabela, promotora pública, jurou destruí-lo. Nenhum dos dois esperava se apaixonar pelo próprio inimigo",
     "asin": "B0DH2QRJ26",
     "silo": "submundo-traicoes-misterios",
     "silo_nome": "Submundo, Traições e Mistérios",
@@ -1401,21 +1577,63 @@
     "capa": "/covers/a-teia.jpg",
     "capa_w": 289,
     "capa_h": 436,
-    "capa_pdp": null,
-    "capa_pdp_w": null,
-    "capa_pdp_h": null,
+    "capa_pdp": "/covers/pdp/a-teia",
+    "capa_pdp_w": 800,
+    "capa_pdp_h": 1200,
     "preco": "9,90",
     "ku": true,
-    "paginas": null,
-    "publicado": null,
-    "gancho": null,
-    "sinopse": null,
-    "temas": null,
-    "epoca": null,
-    "local": null,
-    "leia_se_voce": null,
-    "personagens": null,
-    "faq": null,
+    "paginas": 93,
+    "publicado": "2024-09-14",
+    "gancho": "Nasceram na mesma favela. Ele virou o crime. Ela jurou destruí-lo. Nenhum dos dois esperava se apaixonar pelo próprio inimigo.",
+    "sinopse": [
+      "Kátia cria os cinco filhos sozinha numa favela carioca, sustentando a família com o trabalho em um bar de praia. Joca, o segundo filho, sonha em ser jogador de futebol como via de escape, enquanto o tráfico local ronda os garotos do bairro como ele. Com o sacrifício da mãe, ele consegue um teste num clube de Niterói e vira jogador promissor, chegando a virar herói local depois de sobreviver a uma tragédia no alojamento do time.",
+      "O salário de um time pequeno não sustenta a ambição, e Joca é aliciado por um esquema de manipulação de apostas esportivas. Some do futebol e vira empresário de apostas eletrônicas, monta um esquema de lavagem de dinheiro usando os próprios irmãos, e entra na política para proteger o negócio por dentro da lei.",
+      "No Carnaval, ele cruza o caminho de uma promotora pública que investiga secretamente seu esquema de lavagem. Entre a atração e o risco, os dois descobrem que a linha entre a lei e o crime é bem mais fina do que qualquer um dos dois imaginava, e que ninguém escapa inteiro do lugar de onde veio."
+    ],
+    "temas": [
+      "manipulação de apostas esportivas e o submundo das casas de apostas eletrônicas",
+      "corrupção política e lavagem de dinheiro via empresas de fachada",
+      "ascensão social pela favela, entre o futebol e o crime organizado"
+    ],
+    "epoca": "contemporâneo, sem data histórica fixa",
+    "local": "Rio de Janeiro e Niterói (Brasil) · Tulum, México · Bahamas",
+    "leia_se_voce": [
+      "gosta de thriller policial contemporâneo sobre crime organizado e apostas esportivas",
+      "quer uma história de dois destinos opostos que nasceram no mesmo lugar",
+      "procura o único romance do catálogo ambientado no presente, fora da ficção histórica de época"
+    ],
+    "personagens": [
+      {
+        "nome": "Joca",
+        "papel": "Protagonista, sai da favela carioca para virar jogador de futebol e depois um poderoso empresário de apostas e lavagem de dinheiro."
+      },
+      {
+        "nome": "Isabela",
+        "papel": "Promotora pública que investiga secretamente o esquema de Joca e se envolve com ele."
+      },
+      {
+        "nome": "Kátia",
+        "papel": "Mãe de Joca, mulher batalhadora que se sacrifica pelos filhos."
+      },
+      {
+        "nome": "Tonhão",
+        "papel": "Chefão histórico do crime organizado carioca, ligado ao passado de Kátia."
+      }
+    ],
+    "faq": [
+      {
+        "p": "Por que esse livro foge da ficção histórica de época do autor?",
+        "r": "É o único título do catálogo ambientado no presente, sem recorte histórico definido. A trama gira em torno de temas atuais, como apostas esportivas online e manipulação de resultados no futebol."
+      },
+      {
+        "p": "O livro tem violência gráfica?",
+        "r": "Sim. Há cenas de confronto armado e execução, tratadas de forma direta, mas sem se estender em detalhes gráficos prolongados."
+      },
+      {
+        "p": "É preciso conhecer o sistema de apostas esportivas para entender a trama?",
+        "r": "Não. O funcionamento do esquema de manipulação e lavagem de dinheiro é explicado ao longo da história."
+      }
+    ],
     "midia": {
       "youtube_trailer": null,
       "youtube_podcast": null,
@@ -1426,18 +1644,14 @@
     "posts": null,
     "relacionadas": null,
     "avaliacoes": null,
-    "titulo_seo": null,
-    "descricao_seo": null,
-    "onda": null,
+    "titulo_seo": "A Teia: thriller sobre crime organizado, apostas esportivas e corrupção no Rio de Janeiro",
+    "descricao_seo": "Nascidos na mesma favela do Rio de Janeiro, Joca constrói um império de apostas e tráfico enquanto uma promotora pública investiga em segredo para derrubá-lo. Thriller contemporâneo de Domenico Falco sobre poder, corrupção e as regras que ninguém respeita.",
+    "onda": 4,
     "_fonte_desc": "Nascidos na mesma favela carioca, Joca se torna um criminoso poderoso e Helena, promotora pública decidida a desmontar seu império, até seus caminhos se cruzarem de novo.",
     "_fonte_docx": "2. Produto/Catalogo/Obras Literárias/18. A Teia/1. Manuscrito/A Teia.docx",
     "_nota_asin": null,
-    "pronta": false,
-    "_falta": [
-      "gancho",
-      "sinopse",
-      "temas"
-    ]
+    "pronta": true,
+    "_falta": null
   },
   {
     "slug": "o-asilo",
@@ -2331,7 +2545,7 @@
     "slug": "reflexoes-sobre-a-vida",
     "slug_url": "reflexoes-sobre-a-vida",
     "titulo": "Reflexões sobre a vida",
-    "subtitulo": null,
+    "subtitulo": "Depois de mais de trinta romances sobre a vida dos outros, Domenico Falco fala em nome próprio: memória, família e o isolamento de 2020, num livro curto para ler devagar",
     "asin": "B08W9PWJPS",
     "silo": "raizes-sacrificio-familia",
     "silo_nome": "Raízes, Sacrifício e Família",
@@ -2341,21 +2555,46 @@
     "capa": "/covers/reflexoes-sobre-a-vida.jpg",
     "capa_w": 600,
     "capa_h": 804,
-    "capa_pdp": null,
-    "capa_pdp_w": null,
-    "capa_pdp_h": null,
+    "capa_pdp": "/covers/pdp/reflexoes-sobre-a-vida",
+    "capa_pdp_w": 800,
+    "capa_pdp_h": 1072,
     "preco": "9,90",
     "ku": true,
-    "paginas": null,
-    "publicado": null,
-    "gancho": null,
-    "sinopse": null,
-    "temas": null,
-    "epoca": null,
-    "local": null,
-    "leia_se_voce": null,
+    "paginas": 36,
+    "publicado": "2021-02-09",
+    "gancho": "Antes de contar histórias que atravessam séculos, o autor parou para contar a própria.",
+    "sinopse": [
+      "Depois de mais de trinta romances históricos, Domenico Falco sai da ficção para falar de si mesmo. \"Reflexões sobre a Vida\" reúne dezesseis crônicas curtas e independentes: memórias de infância contadas através de um alter ego, as pequenas manias que viram marca de identidade ao longo de uma vida inteira, e a amizade em suas diferentes formas, do playground ao ambiente de trabalho.",
+      "Boa parte dos textos nasceu durante o isolamento da pandemia de 2020: o silêncio nas ruas, o medo, a relação com o tempo e com os idosos em situação de risco, ao lado de crônicas que personificam a natureza, como o sol e a chuva, como uma forma de consolo. O livro inclui até um depoimento emocionado escrito pela própria filha do autor, dedicado a ele.",
+      "É um livro curto, de 36 páginas, pensado para ler devagar, sem compromisso de enredo, uma oportunidade de conhecer o homem por trás das sagas de família que atravessam o Japão feudal, a Lei Seca americana e as Cruzadas."
+    ],
+    "temas": [
+      "memória de infância e as pequenas manias que constroem uma identidade",
+      "a pandemia de 2020 vista de dentro do isolamento",
+      "amizade, família e o que resta depois que o tempo passa"
+    ],
+    "epoca": "escrito majoritariamente durante a pandemia de 2020",
+    "local": "São Paulo, Brasil",
+    "leia_se_voce": [
+      "já leu outro romance de Domenico Falco e tem curiosidade sobre o autor por trás das histórias",
+      "gosta de crônicas curtas e reflexivas, no estilo de cronistas como Rubem Braga",
+      "viveu o isolamento de 2020 e quer um relato pessoal e bem-humorado sobre aquele período"
+    ],
     "personagens": null,
-    "faq": null,
+    "faq": [
+      {
+        "p": "Esse livro é ficção, como os outros do autor?",
+        "r": "Não. É uma coletânea de crônicas e reflexões pessoais, o único título não ficcional do catálogo. Aqui o autor fala de si mesmo, da própria família e da própria época, em vez de criar uma história."
+      },
+      {
+        "p": "Preciso ler os romances do autor antes deste?",
+        "r": "Não, mas quem já leu outros livros de Domenico Falco costuma aproveitar mais, por reconhecer o autor por trás das sagas históricas que ele escreve."
+      },
+      {
+        "p": "O livro toca em temas pesados, como doença ou luto?",
+        "r": "De forma leve e sem drama excessivo. Há menções ao isolamento de idosos durante a pandemia e a uma condição de saúde pessoal do autor, tratadas com o mesmo tom bem-humorado do restante do livro."
+      }
+    ],
     "midia": {
       "youtube_trailer": null,
       "youtube_podcast": null,
@@ -2366,18 +2605,14 @@
     "posts": null,
     "relacionadas": null,
     "avaliacoes": null,
-    "titulo_seo": null,
-    "descricao_seo": null,
-    "onda": null,
+    "titulo_seo": "Reflexões sobre a Vida: crônicas pessoais de Domenico Falco sobre família, memória e a pandemia",
+    "descricao_seo": "Depois de mais de trinta romances históricos, Domenico Falco escreve em nome próprio: crônicas curtas sobre infância, família, amizade e o isolamento vivido durante a pandemia de 2020. Um livro diferente de tudo mais no catálogo do autor.",
+    "onda": 4,
     "_fonte_desc": "Reflexões e pensamentos sobre a vida, e também sobre os tempos vividos durante a pandemia.",
     "_fonte_docx": "2. Produto/Catalogo/Obras Literárias/29. Reflexões sobre a vida/1. Manuscrito/Reflexões.docx",
     "_nota_asin": null,
-    "pronta": false,
-    "_falta": [
-      "gancho",
-      "sinopse",
-      "temas"
-    ]
+    "pronta": true,
+    "_falta": null
   },
   {
     "slug": "o-comandante",
