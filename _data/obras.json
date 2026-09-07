@@ -3,7 +3,7 @@
     "slug": "o-marciano",
     "slug_url": "o-marciano",
     "titulo": "O Marciano",
-    "subtitulo": null,
+    "subtitulo": "Disfarçado de humano, um visitante de Marte observa a vida contemporânea na Terra, e o que ele encontra rende mais piadas do que respostas",
     "asin": "B07R9KRZTJ",
     "silo": "fe-misticismo-desconhecido",
     "silo_nome": "Fé, Misticismo e o Desconhecido",
@@ -13,21 +13,63 @@
     "capa": "/covers/o-marciano.jpg",
     "capa_w": 400,
     "capa_h": 596,
-    "capa_pdp": null,
-    "capa_pdp_w": null,
-    "capa_pdp_h": null,
+    "capa_pdp": "/covers/pdp/o-marciano",
+    "capa_pdp_w": 800,
+    "capa_pdp_h": 1193,
     "preco": "9,90",
     "ku": true,
-    "paginas": null,
-    "publicado": null,
-    "gancho": null,
-    "sinopse": null,
-    "temas": null,
-    "epoca": null,
-    "local": null,
-    "leia_se_voce": null,
-    "personagens": null,
-    "faq": null,
+    "paginas": 139,
+    "publicado": "2019-04-27",
+    "gancho": "Ele veio estudar a Terra de perto. O que descobriu sobre nós rendeu mais piadas do que respostas.",
+    "sinopse": [
+      "Disfarçado de humano, um visitante de Marte desembarca no meio da rotina de uma grande cidade, entre shopping centers e o bombardeio diário de notícias e redes sociais. Com o distanciamento de quem vem de fora, ele estranha o que a Terra trata como normal: a divisão automática de qualquer assunto em dois lados opostos, o consumo sem fim, a burocracia que trava a vida das pessoas.",
+      "A história se expande para o próprio mundo do protagonista, sua sociedade marciana e uma década de viagens por mais de dez planetas inventados, cada um levando ao extremo algum traço reconhecível da própria humanidade: sociedades presas ao consumo, prisioneiros satisfeitos com a própria prisão, mundos inteiros organizados em torno de uma única obsessão.",
+      "Depois de dez anos marcianos entre exploração interestelar e perdas pessoais, o protagonista volta para casa acompanhado da filha, encontrando uma família que seguiu em frente sem ele. O livro fecha num tom mais contemplativo que cômico: depois de tanta jornada, o que resta é o tempo que não voltou e as memórias do que foi vivido."
+    ],
+    "temas": [
+      "sátira social sobre polarização política, consumismo e vício em tecnologia, narrada por um alienígena disfarçado de humano",
+      "ficção científica com humor: mais de dez planetas e civilizações inventadas",
+      "o preço pessoal e familiar de uma vida inteira dedicada a explorar o desconhecido"
+    ],
+    "epoca": "contemporâneo, com incursões de ficção científica",
+    "local": "Terra (um shopping e a rotina urbana) · Marte · dez planetas fictícios, entre eles Primus, Dolorem e Tanaris",
+    "leia_se_voce": [
+      "quer um livro de ficção científica com humor, não drama",
+      "gosta de sátira sobre redes sociais, polarização e consumismo vista de fora",
+      "topa sair da ficção histórica que domina o catálogo de Domenico Falco para algo bem diferente"
+    ],
+    "personagens": [
+      {
+        "nome": "Marciano",
+        "papel": "Protagonista, habitante de Marte disfarçado de humano em visita à Terra."
+      },
+      {
+        "nome": "YODO",
+        "papel": "Mestre em filosofia que acompanha e comenta as descobertas do protagonista."
+      },
+      {
+        "nome": "Fortis",
+        "papel": "Líder de um grupo de marcianos insatisfeitos, num dos livros seguintes da saga."
+      },
+      {
+        "nome": "Salvator",
+        "papel": "Habitante do planeta Dolorem, ligado à parte final da jornada."
+      }
+    ],
+    "faq": [
+      {
+        "p": "Esse livro é ficção histórica, como o resto do catálogo?",
+        "r": "Não. É o único desvio de Domenico Falco para a ficção científica com humor: um marciano disfarçado de humano observando e satirizando a vida contemporânea na Terra."
+      },
+      {
+        "p": "É indicado para quem nunca leu o autor?",
+        "r": "Sim, é uma porta de entrada diferente: não depende de nenhuma outra obra e tem tom leve, quase infantojuvenil em alguns momentos, apesar da crítica social por trás."
+      },
+      {
+        "p": "O livro toma partido político?",
+        "r": "Não. A crítica é à polarização em si, a ideia de que só existem dois lados possíveis para qualquer assunto, e não a um lado específico do espectro político."
+      }
+    ],
     "midia": {
       "youtube_trailer": null,
       "youtube_podcast": null,
@@ -35,21 +77,21 @@
     },
     "heroi": null,
     "extras": null,
-    "posts": null,
-    "relacionadas": null,
+    "posts": [
+      "o-marciano-satira-ficcao-cientifica-consumismo"
+    ],
+    "relacionadas": [
+      "o-reino"
+    ],
     "avaliacoes": null,
-    "titulo_seo": null,
-    "descricao_seo": null,
-    "onda": null,
+    "titulo_seo": "O Marciano, sátira de ficção científica sobre a vida contemporânea na Terra",
+    "descricao_seo": "Um marciano disfarçado de humano visita a Terra e comenta, com humor, a polarização, o consumismo e o vício em tecnologia da vida contemporânea. O único desvio de Domenico Falco para a ficção científica.",
+    "onda": 3,
     "_fonte_desc": "Um raro desvio da ficção histórica de Falco: sob um céu alienígena pairando sobre dunas avermelhadas, um conto especulativo sobre solidão, contato e o desconhecido.",
     "_fonte_docx": "2. Produto/Catalogo/Obras Literárias/1. O Marciano/1. Manuscrito/O Marciano.docx",
     "_nota_asin": null,
-    "pronta": false,
-    "_falta": [
-      "gancho",
-      "sinopse",
-      "temas"
-    ]
+    "pronta": true,
+    "_falta": null
   },
   {
     "slug": "mestre-das-tormentas",
@@ -156,7 +198,7 @@
     "slug": "os-templarios",
     "slug_url": "os-templarios",
     "titulo": "Os Templários",
-    "subtitulo": null,
+    "subtitulo": "Um cavaleiro templário parte para a Terra Santa em busca do Santo Graal, e o que ele encontra muda o destino de gerações que ainda vão nascer em Portugal",
     "asin": "B098R7RXN8",
     "silo": "fe-misticismo-desconhecido",
     "silo_nome": "Fé, Misticismo e o Desconhecido",
@@ -166,21 +208,67 @@
     "capa": "/covers/os-templarios.jpg",
     "capa_w": 400,
     "capa_h": 596,
-    "capa_pdp": null,
-    "capa_pdp_w": null,
-    "capa_pdp_h": null,
+    "capa_pdp": "/covers/pdp/os-templarios",
+    "capa_pdp_w": 800,
+    "capa_pdp_h": 1193,
     "preco": "9,90",
     "ku": true,
-    "paginas": null,
-    "publicado": null,
-    "gancho": null,
-    "sinopse": null,
-    "temas": null,
-    "epoca": null,
-    "local": null,
-    "leia_se_voce": null,
-    "personagens": null,
-    "faq": null,
+    "paginas": 85,
+    "publicado": "2021-07-06",
+    "gancho": "Dois cavaleiros juraram encontrar o Santo Graal. Nenhum dos dois imaginava que o juramento seguiria vivo gerações depois deles.",
+    "sinopse": [
+      "No auge das Cruzadas, o jovem cavaleiro francês Godofredo e seu amigo cipriota Nicos se juntam à recém-fundada Ordem dos Cavaleiros Templários, criada por Hugo de Payens para proteger os peregrinos cristãos na Terra Santa. Entre batalhas contra Saladino e o mundo muçulmano, os dois embarcam numa busca por um cálice sagrado, dado como o Santo Graal, cujos poderes sobrenaturais parecem tão capazes de salvar quanto de amaldiçoar quem o possui.",
+      "A relíquia os acompanha por anos de guerra e de fé posta à prova, enquanto a própria Ordem do Templo se vê cada vez mais cercada, entre inimigos externos e ameaças vindas de dentro dos seus próprios muros. O que começa como uma missão de guerra santa se transforma numa corrida contra o tempo, quando a perseguição movida pelo rei Felipe IV da França ameaça apagar a Ordem da história.",
+      "Décadas depois, já com famílias formadas em Portugal, Godofredo e Nicos morrem sem nunca revelar todo o segredo do cálice, que vira lenda perseguida por senhores feudais e reis. Mas o sangue dos dois cavaleiros segue adiante: entre seus netos e bisnetos estão os fidalgos que, gerações mais tarde, protagonizam Mariana e José Inácio e, na geração seguinte, O Jesuíta, dois outros romances de Domenico Falco."
+    ],
+    "temas": [
+      "as Cruzadas, a Ordem dos Templários e a perseguição que a extinguiu",
+      "uma relíquia sagrada com poderes que abençoam e amaldiçoam ao mesmo tempo",
+      "o elo secreto entre um cavaleiro templário e a família que, gerações depois, se instala no Brasil colonial"
+    ],
+    "epoca": "século XII ao início do XIV, das Cruzadas à extinção da Ordem em 1312",
+    "local": "Terra Santa (Jerusalém) · Chipre · Portugal (Algarve)",
+    "leia_se_voce": [
+      "gosta de aventura medieval nas Cruzadas, com cavaleiros, relíquias e mistério",
+      "quer entender a origem da família que protagoniza Mariana e José Inácio e O Jesuíta",
+      "procura ficção histórica com um toque de fantasia, com uma relíquia de poderes reais na trama"
+    ],
+    "personagens": [
+      {
+        "nome": "Godofredo",
+        "papel": "Cavaleiro templário francês, protagonista da busca pelo Santo Graal."
+      },
+      {
+        "nome": "Nicos",
+        "papel": "Cavaleiro cipriota, companheiro de armas e de jornada de Godofredo."
+      },
+      {
+        "nome": "Hugo de Payens",
+        "papel": "Fundador histórico da Ordem dos Cavaleiros Templários."
+      },
+      {
+        "nome": "Saladino",
+        "papel": "Líder muçulmano que os cavaleiros enfrentam na Terra Santa."
+      },
+      {
+        "nome": "Felipe IV",
+        "papel": "Rei da França responsável pela perseguição que leva à extinção da Ordem."
+      }
+    ],
+    "faq": [
+      {
+        "p": "A Ordem dos Templários e as Cruzadas são retratadas com fidelidade histórica?",
+        "r": "O pano de fundo é real: a fundação da Ordem por Hugo de Payens, o confronto com Saladino e a perseguição do rei Felipe IV, que a extinguiu em 1312, aconteceram como descrito. Godofredo, Nicos e o cálice sagrado que eles buscam são ficção."
+      },
+      {
+        "p": "Esse livro tem ligação com outras obras do autor?",
+        "r": "Sim. O final do livro liga a descendência de Godofredo e Nicos aos protagonistas de Mariana e José Inácio e, na geração seguinte, de O Jesuíta. Nenhuma leitura depende da outra, mas as três juntas formam uma saga de família ao longo de quatro séculos."
+      },
+      {
+        "p": "Preciso saber sobre as Cruzadas para entender a história?",
+        "r": "Não. O contexto histórico é explicado ao longo do livro, sem exigir nenhum conhecimento prévio do leitor."
+      }
+    ],
     "midia": {
       "youtube_trailer": null,
       "youtube_podcast": null,
@@ -189,20 +277,23 @@
     "heroi": null,
     "extras": null,
     "posts": null,
-    "relacionadas": null,
-    "avaliacoes": null,
-    "titulo_seo": null,
-    "descricao_seo": null,
-    "onda": null,
+    "relacionadas": [
+      "mariana-e-jose-inacio",
+      "o-jesuita",
+      "julius"
+    ],
+    "avaliacoes": {
+      "nota": 2.7,
+      "total": 3
+    },
+    "titulo_seo": "Os Templários, romance histórico de cavaleiros nas Cruzadas em busca do Santo Graal",
+    "descricao_seo": "Um cavaleiro templário busca o Santo Graal na Terra Santa e enfrenta Saladino, traições dentro da própria Ordem e a perseguição que a extinguiria. Romance histórico de Domenico Falco, ligado a Mariana e José Inácio e O Jesuíta.",
+    "onda": 3,
     "_fonte_desc": "Dois cavaleiros templários vivem aventuras na Terra Santa e na Europa em busca do Santo Graal.",
     "_fonte_docx": "2. Produto/Catalogo/Obras Literárias/3. Os Templários/1. Manuscrito/Templarios.docx",
     "_nota_asin": null,
-    "pronta": false,
-    "_falta": [
-      "gancho",
-      "sinopse",
-      "temas"
-    ]
+    "pronta": true,
+    "_falta": null
   },
   {
     "slug": "julius",
@@ -307,7 +398,7 @@
     "slug": "o-jesuita",
     "slug_url": "o-jesuita",
     "titulo": "O Jesuíta",
-    "subtitulo": null,
+    "subtitulo": "Filho de fidalgos desaparecidos, um jesuíta atravessa impérios em ruínas e sobrevive ao cativeiro na África, até que um encontro no meio da noite reabre a busca pelos próprios pais",
     "asin": "B099R4XN7F",
     "silo": "fe-misticismo-desconhecido",
     "silo_nome": "Fé, Misticismo e o Desconhecido",
@@ -317,21 +408,63 @@
     "capa": "/covers/o-jesuita.jpg",
     "capa_w": 400,
     "capa_h": 596,
-    "capa_pdp": null,
-    "capa_pdp_w": null,
-    "capa_pdp_h": null,
+    "capa_pdp": "/covers/pdp/o-jesuita",
+    "capa_pdp_w": 800,
+    "capa_pdp_h": 1193,
     "preco": "9,90",
     "ku": true,
-    "paginas": null,
-    "publicado": null,
-    "gancho": null,
-    "sinopse": null,
-    "temas": null,
-    "epoca": null,
-    "local": null,
-    "leia_se_voce": null,
-    "personagens": null,
-    "faq": null,
+    "paginas": 81,
+    "publicado": "2021-07-19",
+    "gancho": "Ele nasceu filho de fidalgos desaparecidos. Cresceu para servir a Deus, sem saber que a fé um dia o levaria de volta a eles.",
+    "sinopse": [
+      "Órfãos na prática desde que os pais, fidalgos portugueses, foram expulsos do Brasil colonial por tentarem declarar a independência da capitania de Verdes Mares, João Antônio e sua irmã Madalena crescem em Portugal sob a guarda de parentes. Enquanto ela herda o espírito ativo da mãe, ele se volta para os assuntos divinos e, já adulto, toma os votos na Companhia de Jesus fundada por Inácio de Loyola, tornando-se um dos milhares de jesuítas que a Europa católica espalha pelo mundo.",
+      "O trabalho missionário o leva para longe de casa, e numa travessia pela costa da África Oriental seu navio é capturado num conflito entre portugueses e o sultanato de Omã. João Antônio passa meses em cativeiro, sujeito a trabalhos forçados que matam boa parte dos outros prisioneiros, e só a fé o sustenta até ser libertado. Anos mais tarde, já de volta às colônias americanas, ele dedica parte da missão a proteger os nativos guarani da escravização por colonos europeus, pagando com o próprio corpo o peso de décadas de estrada.",
+      "Já idoso e cansado, trabalhando com os desamparados do porto de Santos, João Antônio ouve por acaso a história de um homem arruinado que um dia trabalhou numa fazenda de açúcar comandada por um casal de portugueses idosos. O nome dos dois é o suficiente para reabrir uma busca que ele havia deixado de sonhar, e o jesuíta parte, uma última vez, atrás dos pais que não vê desde criança."
+    ],
+    "temas": [
+      "a Companhia de Jesus e o trabalho missionário no império português",
+      "escravidão e cativeiro vividos em primeira pessoa, da África ao Brasil colonial",
+      "uma família separada por gerações, e o que resta dela ao fim de uma vida"
+    ],
+    "epoca": "segunda metade do século XVI",
+    "local": "Portugal (Algarve) · Brasil colonial (capitania de Verdes Mares, Santos) · costa da África Oriental",
+    "leia_se_voce": [
+      "já leu Mariana e José Inácio e quer saber o que aconteceu com o filho que o casal perdeu",
+      "gosta de ficção histórica sobre fé, missão e os limites da devoção",
+      "quer uma história sobre escravidão contada por quem a sofreu, não só por quem a observou de fora"
+    ],
+    "personagens": [
+      {
+        "nome": "João Antônio",
+        "papel": "Filho de Mariana e José Inácio, torna-se jesuíta e dedica a vida à missão sem saber, por décadas, o paradeiro dos próprios pais."
+      },
+      {
+        "nome": "Madalena",
+        "papel": "Irmã de João Antônio, fruto do relacionamento da mãe com o francês Jean Jacques durante a ocupação de Verdes Mares."
+      },
+      {
+        "nome": "Pedro e Mateus",
+        "papel": "Jesuítas que acompanham João Antônio em parte de sua jornada missionária."
+      },
+      {
+        "nome": "Tadeu e Tiago",
+        "papel": "Nativos guarani que o jesuíta ajuda a proteger da escravização por colonos europeus."
+      }
+    ],
+    "faq": [
+      {
+        "p": "Preciso ter lido Mariana e José Inácio antes de O Jesuíta?",
+        "r": "Não é obrigatório: O Jesuíta se sustenta sozinho. Mas João Antônio é filho do casal protagonista de Mariana e José Inácio, e ler os dois na ordem (primeiro os pais, depois o filho) revela uma continuidade de família que a leitura isolada não mostra."
+      },
+      {
+        "p": "A obra é baseada em fatos reais?",
+        "r": "É ficção ambientada em fatos e contexto histórico reais: a fundação da Companhia de Jesus por Inácio de Loyola e o trabalho missionário jesuíta nas colônias portuguesas aconteceram como descritos. João Antônio, Madalena e sua família são personagens criados pelo autor."
+      },
+      {
+        "p": "O livro trata de temas pesados?",
+        "r": "Sim. Boa parte da jornada do protagonista envolve cativeiro e trabalho forçado, incluindo a morte de companheiros de prisão. Não é só uma leitura contemplativa sobre fé: é também sobre o preço físico da missão."
+      }
+    ],
     "midia": {
       "youtube_trailer": null,
       "youtube_podcast": null,
@@ -340,20 +473,20 @@
     "heroi": null,
     "extras": null,
     "posts": null,
-    "relacionadas": null,
+    "relacionadas": [
+      "mariana-e-jose-inacio",
+      "os-templarios",
+      "julius"
+    ],
     "avaliacoes": null,
-    "titulo_seo": null,
-    "descricao_seo": null,
-    "onda": null,
+    "titulo_seo": "O Jesuíta, romance histórico sobre fé, missão e escravidão no império português",
+    "descricao_seo": "Filho de fidalgos desaparecidos, um jesuíta atravessa o império português em missão, sobrevive ao cativeiro na África e protege os guarani da escravidão, até reencontrar os próprios pais. Romance histórico de Domenico Falco.",
+    "onda": 3,
     "_fonte_desc": "Sob o capuz de um velho missionário pesa um passado de escolhas difíceis. Entre mapas antigos e ruínas de impérios, uma história sobre fé, culpa e os limites da devoção.",
     "_fonte_docx": "2. Produto/Catalogo/Obras Literárias/5. O Jesuita/1. Manuscrito/Jesuita.docx",
     "_nota_asin": null,
-    "pronta": false,
-    "_falta": [
-      "gancho",
-      "sinopse",
-      "temas"
-    ]
+    "pronta": true,
+    "_falta": null
   },
   {
     "slug": "os-italianos",
@@ -656,7 +789,7 @@
     "slug": "sangue-frio",
     "slug_url": "sangue-frio",
     "titulo": "Sangue Frio",
-    "subtitulo": null,
+    "subtitulo": "Escravizado desde a infância nas minas de ouro da África, um homem sem nome atravessa a escravidão americana, a Guerra Civil e a Corrida do Ouro construindo, à própria custa, a única justiça que aquele mundo lhe oferece",
     "asin": "B0BH4VJDBN",
     "silo": "jornadas-epicas-sobrevivencia",
     "silo_nome": "Jornadas Épicas e Sobrevivência",
@@ -666,21 +799,71 @@
     "capa": "/covers/sangue-frio.jpg",
     "capa_w": 400,
     "capa_h": 596,
-    "capa_pdp": null,
-    "capa_pdp_w": null,
-    "capa_pdp_h": null,
+    "capa_pdp": "/covers/pdp/sangue-frio",
+    "capa_pdp_w": 800,
+    "capa_pdp_h": 1193,
     "preco": "9,90",
     "ku": true,
-    "paginas": null,
-    "publicado": null,
-    "gancho": null,
-    "sinopse": null,
-    "temas": null,
-    "epoca": null,
-    "local": null,
-    "leia_se_voce": null,
-    "personagens": null,
-    "faq": null,
+    "paginas": 111,
+    "publicado": "2022-10-03",
+    "gancho": "Tiraram-lhe o nome, a família e a liberdade. Não conseguiram tirar sua pontaria.",
+    "sinopse": [
+      "Vendido como escravo na infância depois que a guerra tribal mata seus pais, um jovem nativo da costa oeste da África passa anos no fundo de uma mina de ouro, onde ninguém tem nome próprio, só apelidos dados pelos guardas. Uma tentativa de fuga mal sucedida de outro prisioneiro, castigada com brutalidade extrema, mostra a ele exatamente o preço de qualquer desobediência, e o empurra para sua própria fuga.",
+      "Levado através do Atlântico, ele é vendido de novo, agora para uma fazenda de algodão no sul dos Estados Unidos comandada pelo casal Butler e Virginia, onde enfrenta humilhação, punição psicológica e a perda de quem ama. Uma liberdade parcial chega com a Guerra Civil, mas não apaga décadas de ódio acumulado, nem devolve o nome que lhe tiraram ainda menino.",
+      "Depois da guerra, ele segue para o oeste atrás do ouro, formando uma aliança improvável com o imigrante chinês Wong e o mexicano José contra Big John, o chefe de bando que controla os garimpos na base da força e do terror. É nessa reta final, entre traições e vingança, que nasce a lenda do homem da capa preta: sem nome, sem passado e sem medo."
+    ],
+    "temas": [
+      "escravidão, das minas de ouro da África às plantações do sul dos Estados Unidos",
+      "a Guerra Civil americana e a Corrida do Ouro pelos olhos de quem nunca teve um nome próprio",
+      "violência gráfica como preço da sobrevivência e da vingança"
+    ],
+    "epoca": "século XIX, da primeira metade aos anos seguintes à Guerra Civil americana",
+    "local": "costa oeste da África · sul dos Estados Unidos · Califórnia",
+    "leia_se_voce": [
+      "quer um faroeste sobre escravidão, contado do ponto de vista de quem a sofreu",
+      "aceita violência gráfica como parte de uma história sobre dignidade reconquistada à força",
+      "gosta de sagas de sobrevivência que atravessam continentes e décadas"
+    ],
+    "personagens": [
+      {
+        "nome": "\"Sem Nome\"",
+        "papel": "Protagonista, nativo africano escravizado desde a infância, que nunca recupera o próprio nome."
+      },
+      {
+        "nome": "Zuri",
+        "papel": "Nativa da costa sudoeste da África, ligada à infância do protagonista."
+      },
+      {
+        "nome": "Butler e Virginia",
+        "papel": "Donos da fazenda de algodão onde o protagonista é escravizado nos Estados Unidos."
+      },
+      {
+        "nome": "Wong",
+        "papel": "Imigrante chinês, parceiro do protagonista na Corrida do Ouro."
+      },
+      {
+        "nome": "José",
+        "papel": "Mexicano comprador de ouro, aliado na reta final da história."
+      },
+      {
+        "nome": "Big John",
+        "papel": "Chefe de bandidos que domina os garimpos e se torna o alvo final do protagonista."
+      }
+    ],
+    "faq": [
+      {
+        "p": "O livro contém violência gráfica?",
+        "r": "Sim, de forma explícita. A história narra tortura, execuções e vingança direta como parte da experiência de escravidão do protagonista. Não é uma leitura leve."
+      },
+      {
+        "p": "O protagonista tem um nome real?",
+        "r": "Não. Ele é chamado de \"Sem Nome\" durante toda a história, um apelido imposto por seus captores que ele nunca troca por outro. É parte central do que o livro discute sobre identidade roubada."
+      },
+      {
+        "p": "A obra é baseada em fatos reais?",
+        "r": "É ficção ambientada em contexto histórico real: a escravidão nas minas africanas, o sistema escravista americano, a Guerra Civil e a Corrida do Ouro na Califórnia aconteceram como pano de fundo. O protagonista e os eventos centrais da trama são criação do autor."
+      }
+    ],
     "midia": {
       "youtube_trailer": null,
       "youtube_podcast": null,
@@ -689,20 +872,19 @@
     "heroi": null,
     "extras": null,
     "posts": null,
-    "relacionadas": null,
+    "relacionadas": [
+      "a-viagem",
+      "um-lugar-ao-sol"
+    ],
     "avaliacoes": null,
-    "titulo_seo": null,
-    "descricao_seo": null,
-    "onda": null,
+    "titulo_seo": "Sangue Frio, faroeste histórico sobre escravidão, Guerra Civil e vingança",
+    "descricao_seo": "Escravizado desde criança nas minas de ouro da África, um homem sem nome atravessa o Atlântico, sobrevive à escravidão americana e à Guerra Civil, e vira lenda armada na Corrida do Ouro. Romance histórico de Domenico Falco.",
+    "onda": 3,
     "_fonte_desc": "O sofrimento e a luta de um homem escravizado desde o nascimento para vencer o preconceito e o ódio impostos à sua condição humana, em meados do século XIX, entre a África e os Estados Unidos.",
     "_fonte_docx": "2. Produto/Catalogo/Obras Literárias/10. Sangue Frio/1. Manuscrito/Sangue Frio - O Sem Nome.docx",
     "_nota_asin": null,
-    "pronta": false,
-    "_falta": [
-      "gancho",
-      "sinopse",
-      "temas"
-    ]
+    "pronta": true,
+    "_falta": null
   },
   {
     "slug": "akira",
@@ -912,7 +1094,7 @@
     "slug": "o-tesouro-maldito",
     "slug_url": "o-tesouro-maldito",
     "titulo": "O Tesouro Maldito",
-    "subtitulo": null,
+    "subtitulo": "Um capitão rouba um tesouro asteca e foge pelo Caribe, sem saber que algo veio junto na carga",
     "asin": "B0DHW84JJW",
     "silo": "fe-misticismo-desconhecido",
     "silo_nome": "Fé, Misticismo e o Desconhecido",
@@ -922,21 +1104,63 @@
     "capa": "/covers/o-tesouro-maldito.jpg",
     "capa_w": 400,
     "capa_h": 596,
-    "capa_pdp": null,
-    "capa_pdp_w": null,
-    "capa_pdp_h": null,
+    "capa_pdp": "/covers/pdp/o-tesouro-maldito",
+    "capa_pdp_w": 800,
+    "capa_pdp_h": 1193,
     "preco": "9,90",
     "ku": true,
-    "paginas": null,
-    "publicado": null,
-    "gancho": null,
-    "sinopse": null,
-    "temas": null,
-    "epoca": null,
-    "local": null,
-    "leia_se_voce": null,
-    "personagens": null,
-    "faq": null,
+    "paginas": 79,
+    "publicado": "2024-09-24",
+    "gancho": "Ele roubou o tesouro de um império inteiro. O que veio junto na carga não tinha preço.",
+    "sinopse": [
+      "No início do século XVI, na esteira da conquista espanhola do império asteca, o capitão Diego García foge pelo Caribe com um tesouro roubado no porão do seu galeão. A fortuna deveria ser o fim de todos os seus problemas, mas o alívio da fuga dura pouco: sinais de que algo mais viaja junto com o ouro começam a se multiplicar a bordo.",
+      "Uma passageira misteriosa chamada Alice desperta desejo e desconfiança entre a tripulação, enquanto homens começam a desaparecer sem explicação. Entre Tortuga e o resto do Caribe, o que parecia aventura de pirataria vira uma corrida contra algo que nenhuma arma da tripulação consegue deter.",
+      "Numa noite de tempestade, a verdadeira natureza da passageira se revela, e o navio se transforma no palco de uma perseguição da qual poucos escapam. Quando o galeão finalmente chega a Cartagena, o que resta a bordo não é riqueza: é um mistério que a tripulação leva para o fundo do mar, e uma maldição que ninguém mais ousa reivindicar."
+    ],
+    "temas": [
+      "piratas no Caribe do início do século XVI, na esteira da conquista do México",
+      "uma maldição e uma criatura sobrenatural a bordo de um navio, em tom de horror marítimo",
+      "ganância como motor da própria destruição"
+    ],
+    "epoca": "início do século XVI",
+    "local": "Caribe (Tortuga, Cartagena) · México (contexto da conquista do império asteca)",
+    "leia_se_voce": [
+      "gosta de aventura de piratas com um toque de horror sobrenatural",
+      "quer uma história curta e direta sobre ganância e maldição no Caribe colonial",
+      "prefere um final que deixa mistério em aberto a uma explicação fechada"
+    ],
+    "personagens": [
+      {
+        "nome": "Diego García",
+        "papel": "Capitão que rouba o tesouro asteca e desencadeia a maldição."
+      },
+      {
+        "nome": "Alonzo",
+        "papel": "Imediato do navio, que enfrenta o que viaja a bordo junto com o ouro."
+      },
+      {
+        "nome": "Alice",
+        "papel": "Passageira misteriosa cuja verdadeira natureza a tripulação descobre tarde demais."
+      },
+      {
+        "nome": "Montezuma e Cortés",
+        "papel": "Figuras históricas cujo confronto dá origem ao tesouro saqueado."
+      }
+    ],
+    "faq": [
+      {
+        "p": "O livro é baseado em fatos reais?",
+        "r": "O pano de fundo é real: a conquista espanhola do império asteca sob Cortés e a era da pirataria no Caribe do século XVI. Diego García, Alice e a maldição do tesouro são ficção."
+      },
+      {
+        "p": "Tem elementos sobrenaturais?",
+        "r": "Sim. Apesar de começar como aventura histórica de piratas, o livro vira horror marítimo puro na segunda metade, com uma criatura sobrenatural a bordo."
+      },
+      {
+        "p": "É uma leitura pesada?",
+        "r": "Tem violência gráfica na reta final, coerente com o tom de horror que a história assume. Não é indicado para quem busca só aventura histórica leve."
+      }
+    ],
     "midia": {
       "youtube_trailer": null,
       "youtube_podcast": null,
@@ -945,20 +1169,19 @@
     "heroi": null,
     "extras": null,
     "posts": null,
-    "relacionadas": null,
+    "relacionadas": [
+      "os-templarios",
+      "o-reino"
+    ],
     "avaliacoes": null,
-    "titulo_seo": null,
-    "descricao_seo": null,
-    "onda": null,
+    "titulo_seo": "O Tesouro Maldito, aventura de piratas com horror sobrenatural no Caribe",
+    "descricao_seo": "Um capitão rouba um tesouro asteca e foge pelo Caribe amaldiçoado por algo que viajou junto na carga. Horror marítimo e aventura de piratas do início do século XVI, por Domenico Falco.",
+    "onda": 3,
     "_fonte_desc": "No início do século XVI, o capitão Diego García rouba um tesouro asteca e foge amaldiçoado pelos mares do Caribe, enquanto uma criatura misteriosa começa a rondar seu navio.",
     "_fonte_docx": "2. Produto/Catalogo/Obras Literárias/14. O Tesouro Maldito/1. Manuscrito/O Tesouro Maldito.docx",
     "_nota_asin": null,
-    "pronta": false,
-    "_falta": [
-      "gancho",
-      "sinopse",
-      "temas"
-    ]
+    "pronta": true,
+    "_falta": null
   },
   {
     "slug": "a-industria-do-vicio",
@@ -1923,7 +2146,7 @@
     "slug": "o-reino",
     "slug_url": "o-reino",
     "titulo": "O Reino",
-    "subtitulo": null,
+    "subtitulo": "Visitantes de outro planeta se apresentam como deuses a um rei faminto por poder, que envia um jovem guerreiro numa missão impossível atrás da vida eterna",
     "asin": "B0CGBFTGMW",
     "silo": "fe-misticismo-desconhecido",
     "silo_nome": "Fé, Misticismo e o Desconhecido",
@@ -1933,21 +2156,59 @@
     "capa": "/covers/o-reino.jpg",
     "capa_w": 600,
     "capa_h": 804,
-    "capa_pdp": null,
-    "capa_pdp_w": null,
-    "capa_pdp_h": null,
+    "capa_pdp": "/covers/pdp/o-reino",
+    "capa_pdp_w": 800,
+    "capa_pdp_h": 1072,
     "preco": "9,90",
     "ku": true,
-    "paginas": null,
-    "publicado": null,
-    "gancho": null,
-    "sinopse": null,
-    "temas": null,
-    "epoca": null,
-    "local": null,
-    "leia_se_voce": null,
-    "personagens": null,
-    "faq": null,
+    "paginas": 175,
+    "publicado": "2023-08-22",
+    "gancho": "Eles já tinham tudo o que o poder podia comprar. Só faltava comprar a própria imortalidade.",
+    "sinopse": [
+      "Quando visitantes de outro planeta chegam se apresentando como deuses, o soberano Turkik, do reino de Entre Rios, se deixa seduzir por Trom, um deles, que promete lhe dar vida eterna em troca de uma tarefa aparentemente impossível. Cego pela promessa, Turkik convoca o jovem guerreiro Felipe para cumprir a missão em seu lugar.",
+      "A jornada de Felipe atravessa territórios guardados por criaturas que parecem saídas de lenda: um monstro marinho, um lobo de três cabeças, um lagarto gigante escondido na floresta. Cada obstáculo é uma prova de coragem, e cada vitória aproxima Felipe menos de servir ao seu rei e mais de descobrir uma verdade que ninguém em Entre Rios está pronto para ouvir.",
+      "De volta à capital com a água que supostamente traria a vida eterna, Felipe escolhe falar diante de todo o povo antes de entregá-la a Turkik. Ao expor Trom como um impostor sem nenhum poder real, e derramar a água no chão diante da multidão, ele muda o destino do reino: quem tudo quer, nada tem."
+    ],
+    "temas": [
+      "um impostor vindo de outro planeta que se apresenta como deus para explorar a ganância de um rei",
+      "a busca por vida eterna como prova que corrompe quem a persegue",
+      "fantasia e ficção científica com criaturas míticas: dragão, monstro marinho, lobo de três cabeças"
+    ],
+    "epoca": "fantasia, sem período histórico real definido",
+    "local": "o reino fictício de Entre Rios, após a chegada de visitantes vindos do cosmos (Bankor)",
+    "leia_se_voce": [
+      "gosta de fantasia com criaturas míticas e uma jornada impossível como prova de coragem",
+      "quer uma história sobre o preço da ganância e da busca por vida eterna",
+      "procura o outro desvio de ficção especulativa de Domenico Falco, ao lado de O Marciano"
+    ],
+    "personagens": [
+      {
+        "nome": "Felipe",
+        "papel": "Jovem guerreiro enviado numa missão impossível, que se torna herói ao desmascarar um impostor."
+      },
+      {
+        "nome": "Turkik",
+        "papel": "Soberano do reino de Entre Rios, seduzido pela promessa de vida eterna."
+      },
+      {
+        "nome": "Trom",
+        "papel": "Visitante do planeta Bankor que se apresenta como deus para enganar Turkik."
+      }
+    ],
+    "faq": [
+      {
+        "p": "É ficção científica ou fantasia?",
+        "r": "As duas coisas. O gatilho da história é a chegada de uma civilização de outro planeta que se apresenta como deuses, mas a jornada do herói é pura fantasia, com dragão, monstro marinho e outras criaturas míticas."
+      },
+      {
+        "p": "É uma sequência de alguma outra obra do autor?",
+        "r": "Não. É uma história fechada, e junto com O Marciano forma os dois únicos desvios de Domenico Falco para fora da ficção histórica."
+      },
+      {
+        "p": "Tem cenas fortes?",
+        "r": "Tem violência de fantasia, como batalhas contra criaturas e traições na corte, mas sem o peso histórico de escravidão ou guerra real presente em outras obras do catálogo."
+      }
+    ],
     "midia": {
       "youtube_trailer": null,
       "youtube_podcast": null,
@@ -1956,20 +2217,19 @@
     "heroi": null,
     "extras": null,
     "posts": null,
-    "relacionadas": null,
+    "relacionadas": [
+      "o-tesouro-maldito",
+      "o-marciano"
+    ],
     "avaliacoes": null,
-    "titulo_seo": null,
-    "descricao_seo": null,
-    "onda": null,
+    "titulo_seo": "O Reino, fantasia sobre um falso deus, um rei ganancioso e a busca por vida eterna",
+    "descricao_seo": "Visitantes de outro planeta se apresentam como deuses a um rei faminto por poder, que envia um jovem guerreiro numa missão impossível atrás da vida eterna. Fantasia e ficção científica de Domenico Falco.",
+    "onda": 3,
     "_fonte_desc": "Homens poderosos, dispostos a tudo para alcançar o que desejam, inclusive viver para sempre.",
     "_fonte_docx": "2. Produto/Catalogo/Obras Literárias/27. O Reino/1. Manuscrito/O Reino.docx",
     "_nota_asin": null,
-    "pronta": false,
-    "_falta": [
-      "gancho",
-      "sinopse",
-      "temas"
-    ]
+    "pronta": true,
+    "_falta": null
   },
   {
     "slug": "um-lugar-ao-sol",
